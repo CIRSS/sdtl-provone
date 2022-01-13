@@ -1,0 +1,71 @@
+{
+  "@context": [
+    {
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "sdth": "https://rdf-vocabulary.ddialliance.org/sdth#"
+    },
+    {
+      "run": "http://wholetale.org/program/1119/"
+    }
+
+  ],
+  "@graph": [
+    {
+      "@id": "run:program/1",
+      "@type": "sdth:Program",
+      "sdth:hasProgramStep": [ 
+        
+        {
+          "@id": "run:step/1",
+          "@type": "sdth:ProgramStep",
+          "sdth:loadsFile": {
+            "@id": "run:file/1",
+            "@type": "sdth:File",
+            "sdth:hasName": "df.csv",
+            "sdth:hasFormat": "csv"
+          },
+          "sdth:producesDataframe": {
+            "@id": "run:dataframe/1",
+            "@type": "sdth:Dataframe",
+            "sdth:hasName": "df",
+            "sdth:includesVariable": [
+              {
+                "@id": "run:variable/1",
+                "@type": "stdh:Variable",
+                "sdth:hasName": "A"
+              },
+              {
+                "@id": "run:variable/2",
+                "@type": "sdth:Variable",
+                "sdth:hasName": "B"
+              }
+            ]
+          },
+          "sdth:assignsVariable": [
+            { "@id": "run:variable/1" },
+            { "@id": "run:variable/2" }
+          ],
+          "sdth:hasSourceCode": "df = pd.read_csv('../data/df.csv')"
+        },
+        
+        {
+          "@id": "run:step/8",
+          "@type": "sdth:ProgramStep",
+          "sdth:consumesDataframe": {"@id": "run:dataframe/1"},
+          "sdth:usesVariable": [
+            { "@id": "run:variable/1" },
+            { "@id": "run:variable/2" }
+          ],
+          "sdth:savesFile": {
+            "@id": "run:file/2",
+            "@type": "sdth:File",
+            "sdth:hasName": "df_updated.csv",
+            "sdth:hasFormat": "csv"
+          },
+          "sdth:hasSourceCode": "df.to_csv('outputs/df_updated.csv', index=False)"
+        }
+
+      ]
+    }
+  ]
+}
