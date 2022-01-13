@@ -19,6 +19,11 @@ RUN echo '***** Install packages required for creating this image *****'    \
     && echo '***** Install command-line utility packages *****'             \
     && apt -y install sudo man less file tree jq graphviz libxml2-utils
 
+RUN echo '***** Install python3 and required pip packages *****'            \
+    && apt -y install python3 python3-pip                                   \
+    && pip3 install -U pip                                                  \
+    && pip3 install pandas
+
 RUN echo '***** Add the REPRO user and group *****'                         \
     && groupadd ${REPRO_USER} --gid ${REPRO_GID}                            \
     && useradd ${REPRO_USER} --uid ${REPRO_UID} --gid ${REPRO_GID}          \

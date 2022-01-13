@@ -1,3 +1,3 @@
-# Geist
+# SDTL-ProvOne
 
-Language and libraries for multiparadigm logic programs. 
+Geist queries and reports over SDTL and ProvONE
