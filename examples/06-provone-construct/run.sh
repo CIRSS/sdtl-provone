@@ -65,16 +65,34 @@ __END_SCRIPT__
 
 # *****************************************************************************
 
+# *****************************************************************************
 
-    
-#     {{ range $DataframeProducer := (select_dataframe_producers | rows) }}
-#         {{ with $StepName := (index $DataframeProducer 0) }}
-#             <{{ $StepName }}> provone:hasOutputPort <{{ $StepName }}/dataframeport/{{ index $DataframeProducer 2 }}_out> .
-#         {{ end }}
-#     {{ end }}
+bash ${RUNNER} R3 "CONSTRUCT NEW DATAFRAME PORT IDENTIFIERS" << '__END_SCRIPT__'
 
-#     {{ range $DataframeConsumer := (select_dataframe_consumers | rows) }}
-#         {{ with $StepName := (index $DataframeConsumer 0) }}
-#             <{{ $StepName }}> provone:hasInputPort <{{ $StepName }}/dataframeport/{{ index $DataframeConsumer 2 }}_in> .
-#         {{ end }}
-#     {{ end }}
+(
+geist report << '__END_REPORT_TEMPLATE__'
+
+    {{{
+        {{ include "../common/sdth.g" }}
+    }}}
+                                                                                                                            \\
+    {{ range $DataframeProducer := (select_dataframe_producers | rows) }}                                                   \\
+        {{ with $StepName := (index $DataframeProducer 0) }}                                                                \\
+            <{{ $StepName }}> provone:hasOutputPort <{{ $StepName }}/dataframeport/{{ index $DataframeProducer 2 }}_out> .  \\
+        {{ end }}                                                                                                           \\
+    {{ end }}                                                                                                               \\
+
+    {{ range $DataframeConsumer := (select_dataframe_consumers | rows) }}                                                   \\
+        {{ with $StepName := (index $DataframeConsumer 0) }}                                                                \\
+            <{{ $StepName }}> provone:hasInputPort <{{ $StepName }}/dataframeport/{{ index $DataframeConsumer 2 }}_in> .    \\
+        {{ end }}                                                                                                           \\
+    {{ end }}                                                                                                               \\
+                                                                                                                            \\
+__END_REPORT_TEMPLATE__
+) | sort
+
+__END_SCRIPT__
+
+# *****************************************************************************
+
+
