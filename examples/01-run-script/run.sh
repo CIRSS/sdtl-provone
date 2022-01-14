@@ -7,7 +7,7 @@ RUNNER='../common/run_command.sh'
 
 bash ${RUNNER} COMPUTE "Run the compute script" << END_COMMAND
 
-python3 ../python/compute.py
+python3 compute.py
 
 END_COMMAND
 

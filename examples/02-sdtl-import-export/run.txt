@@ -197,12 +197,12 @@ geist export --format nt | sort
 <http://wholetale.org/program/1119/expression/5> <https://rdf-vocabulary.ddialliance.org/sdtl#IsSdtlName> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://wholetale.org/program/1119/load/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdtl#Load> .
 <http://wholetale.org/program/1119/load/1> <https://rdf-vocabulary.ddialliance.org/sdtl#FileFormat> "csv"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://wholetale.org/program/1119/load/1> <https://rdf-vocabulary.ddialliance.org/sdtl#FileName> "df.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/load/1> <https://rdf-vocabulary.ddialliance.org/sdtl#FileName> "inputs/df.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/load/1> <https://rdf-vocabulary.ddialliance.org/sdtl#ProducesDataframe> <http://wholetale.org/program/1119/dataframe/1> .
 <http://wholetale.org/program/1119/load/1> <https://rdf-vocabulary.ddialliance.org/sdtl#SourceInformation> <http://wholetale.org/program/1119/sourceinfo/1> .
 <http://wholetale.org/program/1119/load/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdtl#Load> .
 <http://wholetale.org/program/1119/load/2> <https://rdf-vocabulary.ddialliance.org/sdtl#FileFormat> "csv"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://wholetale.org/program/1119/load/2> <https://rdf-vocabulary.ddialliance.org/sdtl#FileName> "temps.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/load/2> <https://rdf-vocabulary.ddialliance.org/sdtl#FileName> "inputs/temps.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/load/2> <https://rdf-vocabulary.ddialliance.org/sdtl#ProducesDataframe> <http://wholetale.org/program/1119/dataframe/5> .
 <http://wholetale.org/program/1119/load/2> <https://rdf-vocabulary.ddialliance.org/sdtl#SourceInformation> <http://wholetale.org/program/1119/sourceinfo/5> .
 <http://wholetale.org/program/1119/program/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdtl#Program> .
@@ -219,7 +219,7 @@ geist export --format nt | sort
 <http://wholetale.org/program/1119/save/2> <https://rdf-vocabulary.ddialliance.org/sdtl#SourceInformation> <http://wholetale.org/program/1119/sourceinfo/9> .
 <http://wholetale.org/program/1119/sourceinfo/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdtl#SourceInformation> .
 <http://wholetale.org/program/1119/sourceinfo/1> <https://rdf-vocabulary.ddialliance.org/sdtl#LineNumberStart> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://wholetale.org/program/1119/sourceinfo/1> <https://rdf-vocabulary.ddialliance.org/sdtl#OriginalSourceText> "df = pd.read_csv('../data/df.csv')"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/sourceinfo/1> <https://rdf-vocabulary.ddialliance.org/sdtl#OriginalSourceText> "df = pd.read_csv('inputs/df.csv')"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/sourceinfo/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdtl#SourceInformation> .
 <http://wholetale.org/program/1119/sourceinfo/2> <https://rdf-vocabulary.ddialliance.org/sdtl#LineNumberStart> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://wholetale.org/program/1119/sourceinfo/2> <https://rdf-vocabulary.ddialliance.org/sdtl#OriginalSourceText> "df['A'] = 3"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -231,7 +231,7 @@ geist export --format nt | sort
 <http://wholetale.org/program/1119/sourceinfo/4> <https://rdf-vocabulary.ddialliance.org/sdtl#OriginalSourceText> "df['C'] = df.A - df.B"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/sourceinfo/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdtl#SourceInformation> .
 <http://wholetale.org/program/1119/sourceinfo/5> <https://rdf-vocabulary.ddialliance.org/sdtl#LineNumberStart> "20"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://wholetale.org/program/1119/sourceinfo/5> <https://rdf-vocabulary.ddialliance.org/sdtl#OriginalSourceText> "temps = pd.read_csv('../data/temps.csv')"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/sourceinfo/5> <https://rdf-vocabulary.ddialliance.org/sdtl#OriginalSourceText> "temps = pd.read_csv('inputs/temps.csv')"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/sourceinfo/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdtl#SourceInformation> .
 <http://wholetale.org/program/1119/sourceinfo/6> <https://rdf-vocabulary.ddialliance.org/sdtl#LineNumberStart> "24"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://wholetale.org/program/1119/sourceinfo/6> <https://rdf-vocabulary.ddialliance.org/sdtl#OriginalSourceText> "temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))"^^<http://www.w3.org/2001/XMLSchema#string> .

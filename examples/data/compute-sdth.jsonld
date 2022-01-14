@@ -21,7 +21,7 @@
           "sdth:loadsFile": {
             "@id": "run:file/1",
             "@type": "sdth:File",
-            "sdth:hasName": "df.csv",
+            "sdth:hasName": "inputs/df.csv",
             "sdth:hasFormat": "csv"
           },
           "sdth:producesDataframe": {
@@ -45,7 +45,7 @@
             { "@id": "run:variable/1" },
             { "@id": "run:variable/2" }
           ],
-          "sdth:hasSourceCode": "df = pd.read_csv('../data/df.csv')"
+          "sdth:hasSourceCode": "df = pd.read_csv('inputs/df.csv')"
         },
         
         {

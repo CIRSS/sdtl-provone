@@ -35,13 +35,3 @@ END_SCRIPT
 
 # END_SCRIPT
 
-# *****************************************************************************
-
-# bash ${RUNNER} DUMP-3 "IMPORT TOMMY'S JSON-LD FILE AND EXPORT AS N-TRIPLES" << END_SCRIPT
-
-# geist destroy --dataset kb --quiet
-# geist create --dataset kb --quiet
-# geist import --format jsonld --file ../data/rdf.jsonld
-# geist export --format nt | sort
-
-# END_SCRIPT

@@ -1,7 +1,7 @@
 import pandas as pd
 
 print('Load two variables A and B from df.csv', '\n')
-df = pd.read_csv('../data/df.csv')
+df = pd.read_csv('inputs/df.csv')
 print(df, '\n')
 
 print('Overwrite variable with 3', '\n')
@@ -17,7 +17,7 @@ df['C'] = df.A - df.B
 print(df, '\n')
 
 print('Load Fahrenheit variable from temps.csv', '\n')
-temps = pd.read_csv('../data/temps.csv')
+temps = pd.read_csv('inputs/temps.csv')
 print(temps, '\n')
 
 print('Append new variable Celcius', '\n')

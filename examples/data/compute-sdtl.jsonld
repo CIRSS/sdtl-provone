@@ -20,7 +20,7 @@
           "rdf:_1": {
             "@id": "run:load/1",
             "@type": "sdtl:Load",
-            "sdtl:FileName": "df.csv",
+            "sdtl:FileName": "inputs/df.csv",
             "sdtl:FileFormat": "csv",
             "sdtl:ProducesDataframe": {
               "@id": "run:dataframe/1",
@@ -47,7 +47,7 @@
                 "@id": "run:sourceinfo/1",
                 "@type": "sdtl:SourceInformation",
                 "sdtl:LineNumberStart": 4,
-                "sdtl:OriginalSourceText": "df = pd.read_csv('../data/df.csv')"
+                "sdtl:OriginalSourceText": "df = pd.read_csv('inputs/df.csv')"
             }
           },
           "rdf:_2": {
@@ -232,7 +232,7 @@
           "rdf:_5": {
             "@id": "run:load/2",
             "@type": "sdtl:Load",
-            "sdtl:FileName": "temps.csv",
+            "sdtl:FileName": "inputs/temps.csv",
             "sdtl:FileFormat": "csv",
             "sdtl:ProducesDataframe": {
               "@id": "run:dataframe/5",
@@ -254,7 +254,7 @@
               "@id": "run:sourceinfo/5",
               "@type": "sdtl:SourceInformation",
               "sdtl:LineNumberStart": 20,
-              "sdtl:OriginalSourceText": "temps = pd.read_csv('../data/temps.csv')"
+              "sdtl:OriginalSourceText": "temps = pd.read_csv('inputs/temps.csv')"
             }
           },
           "rdf:_6": {

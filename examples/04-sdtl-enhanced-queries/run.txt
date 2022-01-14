@@ -315,12 +315,12 @@ geist export --format nt | sort
 <http://wholetale.org/program/1119/expression/5> <https://rdf-vocabulary.ddialliance.org/sdtl#OperatesOn> <http://wholetale.org/program/1119/argumentvalue/12> .
 <http://wholetale.org/program/1119/load/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdtl#Load> .
 <http://wholetale.org/program/1119/load/1> <https://rdf-vocabulary.ddialliance.org/sdtl#FileFormat> "csv"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://wholetale.org/program/1119/load/1> <https://rdf-vocabulary.ddialliance.org/sdtl#FileName> "df.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/load/1> <https://rdf-vocabulary.ddialliance.org/sdtl#FileName> "inputs/df.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/load/1> <https://rdf-vocabulary.ddialliance.org/sdtl#ProducesDataframe> <http://wholetale.org/program/1119/dataframe/1> .
 <http://wholetale.org/program/1119/load/1> <https://rdf-vocabulary.ddialliance.org/sdtl#SourceInformation> <http://wholetale.org/program/1119/sourceinfo/1> .
 <http://wholetale.org/program/1119/load/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdtl#Load> .
 <http://wholetale.org/program/1119/load/2> <https://rdf-vocabulary.ddialliance.org/sdtl#FileFormat> "csv"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://wholetale.org/program/1119/load/2> <https://rdf-vocabulary.ddialliance.org/sdtl#FileName> "temps.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/load/2> <https://rdf-vocabulary.ddialliance.org/sdtl#FileName> "inputs/temps.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/load/2> <https://rdf-vocabulary.ddialliance.org/sdtl#ProducesDataframe> <http://wholetale.org/program/1119/dataframe/5> .
 <http://wholetale.org/program/1119/load/2> <https://rdf-vocabulary.ddialliance.org/sdtl#SourceInformation> <http://wholetale.org/program/1119/sourceinfo/5> .
 <http://wholetale.org/program/1119/program/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdtl#Program> .
@@ -337,7 +337,7 @@ geist export --format nt | sort
 <http://wholetale.org/program/1119/save/2> <https://rdf-vocabulary.ddialliance.org/sdtl#SourceInformation> <http://wholetale.org/program/1119/sourceinfo/9> .
 <http://wholetale.org/program/1119/sourceinfo/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdtl#SourceInformation> .
 <http://wholetale.org/program/1119/sourceinfo/1> <https://rdf-vocabulary.ddialliance.org/sdtl#LineNumberStart> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://wholetale.org/program/1119/sourceinfo/1> <https://rdf-vocabulary.ddialliance.org/sdtl#OriginalSourceText> "df = pd.read_csv('../data/df.csv')"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/sourceinfo/1> <https://rdf-vocabulary.ddialliance.org/sdtl#OriginalSourceText> "df = pd.read_csv('inputs/df.csv')"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/sourceinfo/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdtl#SourceInformation> .
 <http://wholetale.org/program/1119/sourceinfo/2> <https://rdf-vocabulary.ddialliance.org/sdtl#LineNumberStart> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://wholetale.org/program/1119/sourceinfo/2> <https://rdf-vocabulary.ddialliance.org/sdtl#OriginalSourceText> "df['A'] = 3"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -349,7 +349,7 @@ geist export --format nt | sort
 <http://wholetale.org/program/1119/sourceinfo/4> <https://rdf-vocabulary.ddialliance.org/sdtl#OriginalSourceText> "df['C'] = df.A - df.B"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/sourceinfo/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdtl#SourceInformation> .
 <http://wholetale.org/program/1119/sourceinfo/5> <https://rdf-vocabulary.ddialliance.org/sdtl#LineNumberStart> "20"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://wholetale.org/program/1119/sourceinfo/5> <https://rdf-vocabulary.ddialliance.org/sdtl#OriginalSourceText> "temps = pd.read_csv('../data/temps.csv')"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/sourceinfo/5> <https://rdf-vocabulary.ddialliance.org/sdtl#OriginalSourceText> "temps = pd.read_csv('inputs/temps.csv')"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/sourceinfo/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdtl#SourceInformation> .
 <http://wholetale.org/program/1119/sourceinfo/6> <https://rdf-vocabulary.ddialliance.org/sdtl#LineNumberStart> "24"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://wholetale.org/program/1119/sourceinfo/6> <https://rdf-vocabulary.ddialliance.org/sdtl#OriginalSourceText> "temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -910,13 +910,13 @@ __END_QUERY__
 
 affected_variable | command                                     | source_line | source_text
 ==============================================================================================================================
-A                 | http://wholetale.org/program/1119/load/1    | 4           | df = pd.read_csv('../data/df.csv')
+A                 | http://wholetale.org/program/1119/load/1    | 4           | df = pd.read_csv('inputs/df.csv')
 A                 | http://wholetale.org/program/1119/compute/1 | 8           | df['A'] = 3
-B                 | http://wholetale.org/program/1119/load/1    | 4           | df = pd.read_csv('../data/df.csv')
+B                 | http://wholetale.org/program/1119/load/1    | 4           | df = pd.read_csv('inputs/df.csv')
 B                 | http://wholetale.org/program/1119/compute/2 | 12          | df['B'] = df.B + 6.5
 C                 | http://wholetale.org/program/1119/compute/3 | 16          | df['C'] = df.A - df.B
 Celsius           | http://wholetale.org/program/1119/compute/4 | 24          | temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))
-Fahrenheit        | http://wholetale.org/program/1119/load/2    | 20          | temps = pd.read_csv('../data/temps.csv')
+Fahrenheit        | http://wholetale.org/program/1119/load/2    | 20          | temps = pd.read_csv('inputs/temps.csv')
 Kelvin            | http://wholetale.org/program/1119/compute/5 | 28          | temps = temps.assign(Kelvin=(temps.Celsius + 273))
 
 
@@ -997,13 +997,13 @@ Dataframe df
 
 Variable A
 -------------------
-Load    | Line 4 | df = pd.read_csv('../data/df.csv')
+Load    | Line 4 | df = pd.read_csv('inputs/df.csv')
 Compute | Line 8 | df['A'] = 3
 Save    | Line 32 | df.to_csv('outputs/df_updated.csv', index=False)
 
 Variable B
 -------------------
-Load    | Line 4 | df = pd.read_csv('../data/df.csv')
+Load    | Line 4 | df = pd.read_csv('inputs/df.csv')
 Compute | Line 12 | df['B'] = df.B + 6.5
 Save    | Line 32 | df.to_csv('outputs/df_updated.csv', index=False)
 
@@ -1019,7 +1019,7 @@ Dataframe temps
 
 Variable Fahrenheit
 -------------------
-Load    | Line 20 | temps = pd.read_csv('../data/temps.csv')
+Load    | Line 20 | temps = pd.read_csv('inputs/temps.csv')
 Save    | Line 35 | temps.to_csv('outputs/temps_updated.csv', index=False)
 
 Variable Kelvin
@@ -1068,13 +1068,13 @@ __END_REPORT_TEMPLATE__
 
 written_variable | source_line | source_text
 ===============================================================================
-A                | 4           | df = pd.read_csv('../data/df.csv')
+A                | 4           | df = pd.read_csv('inputs/df.csv')
 A                | 8           | df['A'] = 3
-B                | 4           | df = pd.read_csv('../data/df.csv')
+B                | 4           | df = pd.read_csv('inputs/df.csv')
 B                | 12          | df['B'] = df.B + 6.5
 C                | 16          | df['C'] = df.A - df.B
 Celsius          | 24          | temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))
-Fahrenheit       | 20          | temps = pd.read_csv('../data/temps.csv')
+Fahrenheit       | 20          | temps = pd.read_csv('inputs/temps.csv')
 Kelvin           | 28          | temps = temps.assign(Kelvin=(temps.Celsius + 273))
 
 
@@ -1159,20 +1159,20 @@ __END_REPORT_TEMPLATE__
 
 variable   | writer_line | writer_text                                                     | reader_line | reader_text
 ===============================================================================================================================================
-A          | 4           | df = pd.read_csv('../data/df.csv')                              | 16          | df['C'] = df.A - df.B
-A          | 4           | df = pd.read_csv('../data/df.csv')                              | 32          | df.to_csv('outputs/df_updated.csv', index=False)
+A          | 4           | df = pd.read_csv('inputs/df.csv')                               | 16          | df['C'] = df.A - df.B
+A          | 4           | df = pd.read_csv('inputs/df.csv')                               | 32          | df.to_csv('outputs/df_updated.csv', index=False)
 A          | 8           | df['A'] = 3                                                     | 16          | df['C'] = df.A - df.B
 A          | 8           | df['A'] = 3                                                     | 32          | df.to_csv('outputs/df_updated.csv', index=False)
-B          | 4           | df = pd.read_csv('../data/df.csv')                              | 12          | df['B'] = df.B + 6.5
-B          | 4           | df = pd.read_csv('../data/df.csv')                              | 16          | df['C'] = df.A - df.B
-B          | 4           | df = pd.read_csv('../data/df.csv')                              | 32          | df.to_csv('outputs/df_updated.csv', index=False)
+B          | 4           | df = pd.read_csv('inputs/df.csv')                               | 12          | df['B'] = df.B + 6.5
+B          | 4           | df = pd.read_csv('inputs/df.csv')                               | 16          | df['C'] = df.A - df.B
+B          | 4           | df = pd.read_csv('inputs/df.csv')                               | 32          | df.to_csv('outputs/df_updated.csv', index=False)
 B          | 12          | df['B'] = df.B + 6.5                                            | 16          | df['C'] = df.A - df.B
 B          | 12          | df['B'] = df.B + 6.5                                            | 32          | df.to_csv('outputs/df_updated.csv', index=False)
 C          | 16          | df['C'] = df.A - df.B                                           | 32          | df.to_csv('outputs/df_updated.csv', index=False)
 Celsius    | 24          | temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9)) | 28          | temps = temps.assign(Kelvin=(temps.Celsius + 273))
 Celsius    | 24          | temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9)) | 35          | temps.to_csv('outputs/temps_updated.csv', index=False)
-Fahrenheit | 20          | temps = pd.read_csv('../data/temps.csv')                        | 24          | temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))
-Fahrenheit | 20          | temps = pd.read_csv('../data/temps.csv')                        | 35          | temps.to_csv('outputs/temps_updated.csv', index=False)
+Fahrenheit | 20          | temps = pd.read_csv('inputs/temps.csv')                         | 24          | temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))
+Fahrenheit | 20          | temps = pd.read_csv('inputs/temps.csv')                         | 35          | temps.to_csv('outputs/temps_updated.csv', index=False)
 Kelvin     | 28          | temps = temps.assign(Kelvin=(temps.Celsius + 273))              | 35          | temps.to_csv('outputs/temps_updated.csv', index=False)
 
 
@@ -1213,10 +1213,10 @@ __END_REPORT_TEMPLATE__
 
 ---------- COMMANDS THAT READ VARIABLES WRITTEN BY MULTIPLE UPSTREAM COMMANDS ----------
 
-variable | writer_line | writer_text                        | intermediate_writer_line | intermediate_writer_text | reader_line | reader_text
-===================================================================================================================================
-B        | 4           | df = pd.read_csv('../data/df.csv') | 12                       | df['B'] = df.B + 6.5     | 16          | df['C'] = df.A - df.B
-B        | 4           | df = pd.read_csv('../data/df.csv') | 12                       | df['B'] = df.B + 6.5     | 32          | df.to_csv('outputs/df_updated.csv', index=False)
+variable | writer_line | writer_text                       | intermediate_writer_line | intermediate_writer_text | reader_line | reader_text
+==================================================================================================================================
+B        | 4           | df = pd.read_csv('inputs/df.csv') | 12                       | df['B'] = df.B + 6.5     | 16          | df['C'] = df.A - df.B
+B        | 4           | df = pd.read_csv('inputs/df.csv') | 12                       | df['B'] = df.B + 6.5     | 32          | df.to_csv('outputs/df_updated.csv', index=False)
 
 
 
@@ -1276,11 +1276,11 @@ subgraph cluster_program_graph_inner { label=""; color=white
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
 node[width=8]
 
-"http://wholetale.org/program/1119/load/1" [label="df = pd.read_csv('../data/df.csv')"]
+"http://wholetale.org/program/1119/load/1" [label="df = pd.read_csv('inputs/df.csv')"]
 "http://wholetale.org/program/1119/compute/1" [label="df['A'] = 3"]
 "http://wholetale.org/program/1119/compute/2" [label="df['B'] = df.B + 6.5"]
 "http://wholetale.org/program/1119/compute/3" [label="df['C'] = df.A - df.B"]
-"http://wholetale.org/program/1119/load/2" [label="temps = pd.read_csv('../data/temps.csv')"]
+"http://wholetale.org/program/1119/load/2" [label="temps = pd.read_csv('inputs/temps.csv')"]
 "http://wholetale.org/program/1119/compute/4" [label="temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))"]
 "http://wholetale.org/program/1119/compute/5" [label="temps = temps.assign(Kelvin=(temps.Celsius + 273))"]
 "http://wholetale.org/program/1119/save/1" [label="df.to_csv('outputs/df_updated.csv', index=False)"]
@@ -1354,11 +1354,11 @@ subgraph cluster_program_graph_inner { label=""; color=white
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
 node[width=8]
 
-"http://wholetale.org/program/1119/load/1" [label="df = pd.read_csv('../data/df.csv')"]
+"http://wholetale.org/program/1119/load/1" [label="df = pd.read_csv('inputs/df.csv')"]
 "http://wholetale.org/program/1119/compute/1" [label="df['A'] = 3"]
 "http://wholetale.org/program/1119/compute/2" [label="df['B'] = df.B + 6.5"]
 "http://wholetale.org/program/1119/compute/3" [label="df['C'] = df.A - df.B"]
-"http://wholetale.org/program/1119/load/2" [label="temps = pd.read_csv('../data/temps.csv')"]
+"http://wholetale.org/program/1119/load/2" [label="temps = pd.read_csv('inputs/temps.csv')"]
 "http://wholetale.org/program/1119/compute/4" [label="temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))"]
 "http://wholetale.org/program/1119/compute/5" [label="temps = temps.assign(Kelvin=(temps.Celsius + 273))"]
 "http://wholetale.org/program/1119/save/1" [label="df.to_csv('outputs/df_updated.csv', index=False)"]
