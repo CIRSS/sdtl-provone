@@ -17,42 +17,15 @@ END_SCRIPT
 
 bash ${RUNNER} E1 "EXPORT ORIGINAL SDTL AS N-TRIPLES" << END_SCRIPT
 
-geist export --format nt | sort
+geist export --format nt --sort
 
 END_SCRIPT
 
+# *****************************************************************************
 
-bash ${RUNNER} Q1 "CONSTRUCT PROVONE PROGRAMS VIA SPARQL CONSTRUCT QUERY" << END_SCRIPT
+bash ${RUNNER} R1 "CONSTRUCT PROVONE PROGRAMS" << '__END_SCRIPT__'
 
-geist query --format table << __END_QUERY__
-
-    PREFIX prov: <http://www.w3.org/ns/prov#>
-    PREFIX provone: <http://purl.dataone.org/provone/2015/01/15/ontology#>
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX sdth: <https://rdf-vocabulary.ddialliance.org/sdth#>
-
-    CONSTRUCT {
-        ?program rdf:type provone:Program . 
-    }
-    WHERE {
-        {
-            ?program rdf:type sdth:Program . 
-        }
-        UNION
-        {
-            ?program rdf:type sdth:ProgramStep .
-        }
-    }
-
-__END_QUERY__
-
-END_SCRIPT
-
-
-bash ${RUNNER} R1 "CONSTRUCT PROVONE PROGRAMS VIA GEIST TEMPLATE" << '__END_SCRIPT__'
-
-( 
+(
 geist report << '__END_REPORT_TEMPLATE__'
 
     {{{
@@ -64,11 +37,11 @@ geist report << '__END_REPORT_TEMPLATE__'
     {{ end }}                                                                           \
                                                                                         \\
 __END_REPORT_TEMPLATE__
-
 ) | sort
 
 __END_SCRIPT__
 
+# *****************************************************************************
 
 
 #    {{ range $Program := select_sdth_program | vector }}                                \\
