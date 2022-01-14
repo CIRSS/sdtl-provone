@@ -43,16 +43,16 @@ geist query --format table << __END_QUERY__
         {
             ?program rdf:type sdth:ProgramStep .
         }
-    } 
-
+    }
 
 __END_QUERY__
 
 END_SCRIPT
 
 
-bash ${RUNNER} R1 "CONSTRUCT PROVONE PROGRAMS VIA GEIST REPORT" << '__END_SCRIPT__'
+bash ${RUNNER} R1 "CONSTRUCT PROVONE PROGRAMS VIA GEIST TEMPLATE" << '__END_SCRIPT__'
 
+( 
 geist report << '__END_REPORT_TEMPLATE__'
 
     {{{
@@ -63,24 +63,28 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ ntriple_print $Program }}
     {{ end }}                                                                           \
                                                                                         \\
-    {{ range $Program := select_sdth_program | vector }}                                \\
-        {{ range $ProgramStep := (select_sdth_program_steps $Program | rows) }}         \\
-            <{{$Program}}> provone:hasSubProgram <{{ index $ProgramStep 0 }}> .
-        {{ end }}
-    {{ end }}
-    
-    {{ range $DataframeProducer := (select_dataframe_producers | rows) }}
-        {{ with $StepName := (index $DataframeProducer 0) }}
-            <{{ $StepName }}> provone:hasOutputPort <{{ $StepName }}/dataframeport/{{ index $DataframeProducer 2 }}_out> .
-        {{ end }}
-    {{ end }}
-
-    {{ range $DataframeConsumer := (select_dataframe_consumers | rows) }}
-        {{ with $StepName := (index $DataframeConsumer 0) }}
-            <{{ $StepName }}> provone:hasInputPort <{{ $StepName }}/dataframeport/{{ index $DataframeConsumer 2 }}_in> .
-        {{ end }}
-    {{ end }}
-
 __END_REPORT_TEMPLATE__
 
+) | sort
+
 __END_SCRIPT__
+
+
+
+#    {{ range $Program := select_sdth_program | vector }}                                \\
+#         {{ range $ProgramStep := (select_sdth_program_steps $Program | rows) }}         \\
+#             <{{$Program}}> provone:hasSubProgram <{{ index $ProgramStep 0 }}> .
+#         {{ end }}
+#     {{ end }}
+    
+#     {{ range $DataframeProducer := (select_dataframe_producers | rows) }}
+#         {{ with $StepName := (index $DataframeProducer 0) }}
+#             <{{ $StepName }}> provone:hasOutputPort <{{ $StepName }}/dataframeport/{{ index $DataframeProducer 2 }}_out> .
+#         {{ end }}
+#     {{ end }}
+
+#     {{ range $DataframeConsumer := (select_dataframe_consumers | rows) }}
+#         {{ with $StepName := (index $DataframeConsumer 0) }}
+#             <{{ $StepName }}> provone:hasInputPort <{{ $StepName }}/dataframeport/{{ index $DataframeConsumer 2 }}_in> .
+#         {{ end }}
+#     {{ end }}

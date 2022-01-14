@@ -73,8 +73,7 @@ geist query --format table << __END_QUERY__
         {
             ?program rdf:type sdth:ProgramStep .
         }
-    } 
-
+    }
 
 __END_QUERY__
 
@@ -82,15 +81,16 @@ __END_QUERY__
 
 subject                                     | predicate                                       | object                                                      | context
 ================================================================================================================================================================
-http://wholetale.org/program/1119/program/1 | http://www.w3.org/1999/02/22-rdf-syntax-ns#type | http://purl.dataone.org/provone/2015/01/15/ontology#Program | 
 http://wholetale.org/program/1119/step/1    | http://www.w3.org/1999/02/22-rdf-syntax-ns#type | http://purl.dataone.org/provone/2015/01/15/ontology#Program | 
 http://wholetale.org/program/1119/step/8    | http://www.w3.org/1999/02/22-rdf-syntax-ns#type | http://purl.dataone.org/provone/2015/01/15/ontology#Program | 
+http://wholetale.org/program/1119/program/1 | http://www.w3.org/1999/02/22-rdf-syntax-ns#type | http://purl.dataone.org/provone/2015/01/15/ontology#Program | 
 
 
 ******************************************* EXAMPLE R1 ************************************************
 
-# CONSTRUCT PROVONE PROGRAMS VIA GEIST REPORT
+# CONSTRUCT PROVONE PROGRAMS VIA GEIST TEMPLATE
 
+( 
 geist report << '__END_REPORT_TEMPLATE__'
 
     {{{
@@ -100,46 +100,13 @@ geist report << '__END_REPORT_TEMPLATE__'
     {{ range $Program := (sdth_construct_provone_program_triples | rows) }}             \
         {{ ntriple_print $Program }}
     {{ end }}                                                                                                                                                                   \
-    {{ range $Program := select_sdth_program | vector }}                                \
-        {{ range $ProgramStep := (select_sdth_program_steps $Program | rows) }}         \
-            <{{$Program}}> provone:hasSubProgram <{{ index $ProgramStep 0 }}> .
-        {{ end }}
-    {{ end }}
-    
-    {{ range $DataframeProducer := (select_dataframe_producers | rows) }}
-        {{ with $StepName := (index $DataframeProducer 0) }}
-            <{{ $StepName }}> provone:hasOutputPort <{{ $StepName }}/dataframeport/{{ index $DataframeProducer 2 }}_out> .
-        {{ end }}
-    {{ end }}
-
-    {{ range $DataframeConsumer := (select_dataframe_consumers | rows) }}
-        {{ with $StepName := (index $DataframeConsumer 0) }}
-            <{{ $StepName }}> provone:hasInputPort <{{ $StepName }}/dataframeport/{{ index $DataframeConsumer 2 }}_in> .
-        {{ end }}
-    {{ end }}
-
 __END_REPORT_TEMPLATE__
+
+) | sort
 
 ------------------------------------------- R1 OUTPUTS ------------------------------------------------
 
+<http://wholetale.org/program/1119/program/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://wholetale.org/program/1119/step/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://wholetale.org/program/1119/step/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
-<http://wholetale.org/program/1119/program/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
-<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/1> .
-<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/8> .
-
-
-
-
-
-<http://wholetale.org/program/1119/step/1> provone:hasOutputPort <http://wholetale.org/program/1119/step/1/dataframeport/df_out> .
-
-
-
-
-
-<http://wholetale.org/program/1119/step/8> provone:hasInputPort <http://wholetale.org/program/1119/step/8/dataframeport/df_in> .
-
-
-
 

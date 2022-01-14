@@ -25,7 +25,7 @@
         {
             ?program rdf:type sdth:ProgramStep .
         }
-    } 
+    } ORDER BY ?program
 '''}}
 
 {{ query "select_sdth_program" '''
