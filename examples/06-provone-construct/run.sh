@@ -102,26 +102,26 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ include "../common/sdth.g" }}
     }}}
                                                                                                                             \\
-    {{ range $VariableProducer := (select_variable_producers | rows) }}                                                     \\
-        {{ with $StepName := (index $VariableProducer 0) }}                                                                 \\                   
-        {{ with $VariableId := (index $VariableProducer 1) }}                                                               \\
-        {{ with $VariableName := (index $VariableProducer 2) }}                                                             \\
-        {{ with $VariablePortId := (printf "%s/variableport/%s_out" $StepName $VariableName ) }}                            \\
-            <{{ $StepName }}> provone:hasOutputPort <{{ $VariablePortId }}> .  
-            <{{ $VariablePortId }}> sdth:hasVariable <{{ $VariableId }}> .
+    {{ range $VarProducer := (select_variable_producers | rows) }}                                                     \\
+        {{ with $StepName := (index $VarProducer 0) }}                                                                 \\                   
+        {{ with $VarId := (index $VarProducer 1) }}                                                               \\
+        {{ with $VarName := (index $VarProducer 2) }}                                                             \\
+        {{ with $PortId := (var_out_port_id $StepName $VarName) }}                            \\
+            <{{ $StepName }}> provone:hasOutputPort <{{ $PortId }}> .  
+            <{{ $PortId }}> sdth:hasVariable <{{ $VarId }}> .
         {{ end }}                                                                                                           \\
         {{ end }}                                                                                                           \\
         {{ end }}                                                                                                           \\
         {{ end }}                                                                                                           \\
     {{ end }}                                                                                                               \\
 
-    {{ range $VariableConsumer := (select_variable_consumers | rows) }}                                                     \\
-        {{ with $StepName := (index $VariableConsumer 0) }}                                                                 \\
-        {{ with $VariableId := (index $VariableConsumer 1) }}                                                               \\
-        {{ with $VariableName := (index $VariableConsumer 2) }}                                                             \\
-        {{ with $VariablePortId := (printf "%s/variableport/%s_in" $StepName $VariableName ) }}                             \\
-            <{{ $StepName }}> provone:hasInputPort <{{ $VariablePortId }}> .  
-            <{{ $VariablePortId }}> sdth:hasVariable <{{ $VariableId }}> .
+    {{ range $VarConsumer := (select_variable_consumers | rows) }}                                                     \\
+        {{ with $StepName := (index $VarConsumer 0) }}                                                                 \\
+        {{ with $VarId := (index $VarConsumer 1) }}                                                               \\
+        {{ with $VarName := (index $VarConsumer 2) }}                                                             \\
+        {{ with $PortId := (var_in_port_id $StepName $VarName) }}                             \\
+            <{{ $StepName }}> provone:hasInputPort <{{ $PortId }}> .  
+            <{{ $PortId }}> sdth:hasVariable <{{ $VarId }}> .
         {{ end }}                                                                                                           \\
         {{ end }}                                                                                                           \\
         {{ end }}                                                                                                           \\

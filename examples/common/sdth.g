@@ -9,8 +9,18 @@
 
 
 {{ macro "ntriple_print" "Triple" '''
-        <{{ index $Triple 0 }}> <{{ index $Triple 1 }}> <{{ index $Triple 2 }}> .
+    <{{ index $Triple 0 }}> <{{ index $Triple 1 }}> <{{ index $Triple 2 }}> .
     ''' 
+}}
+
+{{ macro "var_out_port_id" "StepName" "VariableName" '''
+    {{ printf "%s/variableport/%s_out" $StepName $VariableName }}
+    '''
+}}
+
+{{ macro "var_in_port_id" "StepName" "VariableName" '''
+    {{ printf "%s/variableport/%s_in" $StepName $VariableName }}
+    '''
 }}
 
 {{ query "sdth_construct_provone_program_triples" '''
