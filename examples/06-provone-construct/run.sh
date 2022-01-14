@@ -32,8 +32,8 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ include "../common/sdth.g" }}
     }}}
                                                                                         \\
-    {{ range $Program := (sdth_construct_provone_program_triples | rows) }}             \\
-        {{ ntriple_print $Program }}
+    {{ range $T := (sdth_construct_provone_program_triples | rows) }}                   \\
+        {{ ntriple_print $T }}
     {{ end }}                                                                           \
                                                                                         \\
 __END_REPORT_TEMPLATE__
@@ -43,12 +43,29 @@ __END_SCRIPT__
 
 # *****************************************************************************
 
+bash ${RUNNER} R2 "CONSTRUCT PROVONE HASSUBPROGRAM TRIPLES" << '__END_SCRIPT__'
 
-#    {{ range $Program := select_sdth_program | vector }}                                \\
-#         {{ range $ProgramStep := (select_sdth_program_steps $Program | rows) }}         \\
-#             <{{$Program}}> provone:hasSubProgram <{{ index $ProgramStep 0 }}> .
-#         {{ end }}
-#     {{ end }}
+(
+geist report << '__END_REPORT_TEMPLATE__'
+
+    {{{
+        {{ include "../common/sdth.g" }}
+    }}}
+                                                                                        \\
+    {{ range $Program := select_sdth_program | vector }}                                \\
+        {{ range $Step := (select_sdth_program_steps $Program | vector) }}              \\
+            <{{$Program}}> provone:hasSubProgram <{{$Step}}> .
+        {{ end }}
+    {{ end }}
+                                                                                        \\
+__END_REPORT_TEMPLATE__
+) | sort
+
+__END_SCRIPT__
+
+# *****************************************************************************
+
+
     
 #     {{ range $DataframeProducer := (select_dataframe_producers | rows) }}
 #         {{ with $StepName := (index $DataframeProducer 0) }}
