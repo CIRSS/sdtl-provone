@@ -102,15 +102,29 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ include "../common/sdth.g" }}
     }}}
                                                                                                                             \\
-    {{ range $VariableProducer := (select_variable_producers | rows) }}                                                   \\
-        {{ with $StepName := (index $VariableProducer 0) }}                                                                \\
-            <{{ $StepName }}> provone:hasOutputPort <{{ $StepName }}/variableport/{{ index $VariableProducer 2 }}_out> .  
+    {{ range $VariableProducer := (select_variable_producers | rows) }}                                                     \\
+        {{ with $StepName := (index $VariableProducer 0) }}                                                                 \\                   
+        {{ with $VariableId := (index $VariableProducer 1) }}                                                               \\
+        {{ with $VariableName := (index $VariableProducer 2) }}                                                             \\
+        {{ with $VariablePortId := (printf "%s/variableport/%s_out" $StepName $VariableName ) }}                            \\
+            <{{ $StepName }}> provone:hasOutputPort <{{ $VariablePortId }}> .  
+            <{{ $VariablePortId }}> sdth:hasVariable <{{ $VariableId }}> .
+        {{ end }}                                                                                                           \\
+        {{ end }}                                                                                                           \\
+        {{ end }}                                                                                                           \\
         {{ end }}                                                                                                           \\
     {{ end }}                                                                                                               \\
 
-    {{ range $VariableConsumer := (select_variable_consumers | rows) }}                                                   \\
-        {{ with $StepName := (index $VariableConsumer 0) }}                                                                \\
-            <{{ $StepName }}> provone:hasInputPort <{{ $StepName }}/variableport/{{ index $VariableConsumer 2 }}_in> .  
+    {{ range $VariableConsumer := (select_variable_consumers | rows) }}                                                     \\
+        {{ with $StepName := (index $VariableConsumer 0) }}                                                                 \\
+        {{ with $VariableId := (index $VariableConsumer 1) }}                                                               \\
+        {{ with $VariableName := (index $VariableConsumer 2) }}                                                             \\
+        {{ with $VariablePortId := (printf "%s/variableport/%s_in" $StepName $VariableName ) }}                             \\
+            <{{ $StepName }}> provone:hasInputPort <{{ $VariablePortId }}> .  
+            <{{ $VariablePortId }}> sdth:hasVariable <{{ $VariableId }}> .
+        {{ end }}                                                                                                           \\
+        {{ end }}                                                                                                           \\
+        {{ end }}                                                                                                           \\
         {{ end }}                                                                                                           \\
     {{ end }}                                                                                                               \\
                                                                                                                             \\
