@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-RUNNER='../../common/run_script_example.sh'
-GRAPHER='../../common/run_dot_examples.sh'
+RUNNER='../common/run_script_example.sh'
+GRAPHER='../common/run_dot_examples.sh'
 
 # *****************************************************************************
 
@@ -250,8 +250,8 @@ bash ${GRAPHER} GRAPH-1 "DATAFRAME FLOW THROUGH COMMANDS" \
 geist report << '__END_REPORT_TEMPLATE__'
 
     {{{
-        {{ include "../../common/graphviz.g" }}
-        {{ include "../../common/sdtl.g" }}
+        {{ include "../common/graphviz.g" }}
+        {{ include "../common/sdtl.g" }}
     }}}
 
     {{ gv_graph "sdtl_program" }}

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-RUNNER='../../common/run_command.sh'
+RUNNER='../common/run_command.sh'
 
 # *****************************************************************************
 

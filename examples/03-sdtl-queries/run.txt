@@ -597,8 +597,8 @@ Kelvin            | Celsius            | http://wholetale.org/program/1119/compu
 geist report << '__END_REPORT_TEMPLATE__'
 
     {{{
-        {{ include "../../common/graphviz.g" }}
-        {{ include "../../common/sdtl.g" }}
+        {{ include "../common/graphviz.g" }}
+        {{ include "../common/sdtl.g" }}
     }}}
 
     {{ gv_graph "sdtl_program" }}

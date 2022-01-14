@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-RUNNER='../../common/run_script_example.sh'
-GRAPHER='../../common/run_dot_examples.sh'
+RUNNER='../common/run_script_example.sh'
+GRAPHER='../common/run_dot_examples.sh'
 
 # *****************************************************************************
 
@@ -56,7 +56,7 @@ bash ${RUNNER} R1 "CONSTRUCT PROVONE PROGRAMS VIA GEIST REPORT" << '__END_SCRIPT
 geist report << '__END_REPORT_TEMPLATE__'
 
     {{{
-        {{ include "../../common/sdth.g" }}
+        {{ include "../common/sdth.g" }}
     }}}
                                                                                         \\
     {{ range $Program := (sdth_construct_provone_program_triples | rows) }}             \\

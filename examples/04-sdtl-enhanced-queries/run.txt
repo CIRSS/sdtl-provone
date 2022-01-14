@@ -717,7 +717,7 @@ geist query --format table << __END_QUERY__
 
     {{{
 
-    {{ include "../../common/sdtl.g" }}
+    {{ include "../common/sdtl.g" }}
 
     }}}
 
@@ -752,7 +752,7 @@ geist query --format table << __END_QUERY__
 
     {{{
 
-    {{ include "../../common/sdtl.g" }}
+    {{ include "../common/sdtl.g" }}
 
     }}}
 
@@ -788,7 +788,7 @@ geist query --format table << __END_QUERY__
 
     {{{
 
-    {{ include "../../common/sdtl.g" }}
+    {{ include "../common/sdtl.g" }}
 
     }}}
 
@@ -820,7 +820,7 @@ geist query --format table << __END_QUERY__
 
     {{{
 
-    {{ include "../../common/sdtl.g" }}
+    {{ include "../common/sdtl.g" }}
 
     }}}
 
@@ -882,7 +882,7 @@ geist query --format table << __END_QUERY__
 
     {{{
 
-    {{ include "../../common/sdtl.g" }}
+    {{ include "../common/sdtl.g" }}
 
     }}}
 
@@ -928,7 +928,7 @@ geist query --format table << __END_QUERY__
 
     {{{
 
-    {{ include "../../common/sdtl.g" }}
+    {{ include "../common/sdtl.g" }}
 
     }}}
 
@@ -960,7 +960,7 @@ A        | 8           | df['A'] = 3 | 32          | df.to_csv('outputs/df_updat
 geist report << '__END_REPORT_TEMPLATE__'
 
 {{{
-    {{ include "../../common/sdtl.g" }}
+    {{ include "../common/sdtl.g" }}
 }}}
 
 ---------- VARIABLE HISTORY REPORT ----------
@@ -1044,7 +1044,7 @@ Save    | Line 35 | temps.to_csv('outputs/temps_updated.csv', index=False)
 geist report << '__END_REPORT_TEMPLATE__'
 
 {{{
-    {{ include "../../common/sdtl.g" }}
+    {{ include "../common/sdtl.g" }}
 }}}
 
 ---------- COMMANDS THAT WRITE TO EACH VARIABLE ----------
@@ -1087,7 +1087,7 @@ Kelvin           | 28          | temps = temps.assign(Kelvin=(temps.Celsius + 27
 geist report << '__END_REPORT_TEMPLATE__'
 
 {{{
-    {{ include "../../common/sdtl.g" }}
+    {{ include "../common/sdtl.g" }}
 }}}
 
 ---------- COMMANDS THAT READ FROM EACH VARIABLE ----------
@@ -1133,7 +1133,7 @@ Kelvin        | 35          | temps.to_csv('outputs/temps_updated.csv', index=Fa
 geist report << '__END_REPORT_TEMPLATE__'
 
 {{{
-    {{ include "../../common/sdtl.g" }}
+    {{ include "../common/sdtl.g" }}
 }}}
 
 ---------- COMMANDS THAT WRITE VARIABLES READ BY DOWNSTREAM COMMANDS ----------
@@ -1185,7 +1185,7 @@ Kelvin     | 28          | temps = temps.assign(Kelvin=(temps.Celsius + 273))   
 geist report << '__END_REPORT_TEMPLATE__'
 
 {{{
-    {{ include "../../common/sdtl.g" }}
+    {{ include "../common/sdtl.g" }}
 }}}
 
 ---------- COMMANDS THAT READ VARIABLES WRITTEN BY MULTIPLE UPSTREAM COMMANDS ----------
@@ -1228,8 +1228,8 @@ B        | 4           | df = pd.read_csv('../data/df.csv') | 12                
 geist report << '__END_REPORT_TEMPLATE__'
 
     {{{
-        {{ include "../../common/graphviz.g" }}
-        {{ include "../../common/sdtl.g" }}
+        {{ include "../common/graphviz.g" }}
+        {{ include "../common/sdtl.g" }}
     }}}
 
     {{ gv_graph "sdtl_program" }}
@@ -1306,8 +1306,8 @@ node[width=8]
 geist report << '__END_REPORT_TEMPLATE__'
 
     {{{
-        {{ include "../../common/graphviz.g" }}
-        {{ include "../../common/sdtl.g" }}
+        {{ include "../common/graphviz.g" }}
+        {{ include "../common/sdtl.g" }}
     }}}
 
     {{ gv_graph "sdtl_program" }}

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-RUNNER='../../common/run_script_example.sh'
-GRAPHER='../../common/run_dot_examples.sh'
+RUNNER='../common/run_script_example.sh'
+GRAPHER='../common/run_dot_examples.sh'
 
 # *****************************************************************************
 
@@ -233,8 +233,8 @@ END_SCRIPT
 # # geist report << '__END_REPORT_TEMPLATE__'
 
 # #     {{{
-# #         {{ include "../../common/graphviz.g" }}
-# #         {{ include "../../common/sdtl.g" }}
+# #         {{ include "../common/graphviz.g" }}
+# #         {{ include "../common/sdtl.g" }}
 # #     }}}
 
 # #     {{ gv_graph "sdtl_program" }}
@@ -276,7 +276,7 @@ END_SCRIPT
 
 #     {{{
 
-#     {{ include "../../common/sdtl.g" }}
+#     {{ include "../common/sdtl.g" }}
 
 #     }}}
 
@@ -303,7 +303,7 @@ END_SCRIPT
 
 #     {{{
 
-#     {{ include "../../common/sdtl.g" }}
+#     {{ include "../common/sdtl.g" }}
 
 #     }}}
 
@@ -330,7 +330,7 @@ END_SCRIPT
 
 #     {{{
 
-#     {{ include "../../common/sdtl.g" }}
+#     {{ include "../common/sdtl.g" }}
 
 #     }}}
 
@@ -357,7 +357,7 @@ END_SCRIPT
 
 #     {{{
 
-#     {{ include "../../common/sdtl.g" }}
+#     {{ include "../common/sdtl.g" }}
 
 #     }}}
 
@@ -408,7 +408,7 @@ END_SCRIPT
 
 #     {{{
 
-#     {{ include "../../common/sdtl.g" }}
+#     {{ include "../common/sdtl.g" }}
 
 #     }}}
 
@@ -442,7 +442,7 @@ END_SCRIPT
 
 #     {{{
 
-#     {{ include "../../common/sdtl.g" }}
+#     {{ include "../common/sdtl.g" }}
 
 #     }}}
 
@@ -466,7 +466,7 @@ END_SCRIPT
 # geist report << '__END_REPORT_TEMPLATE__'
 
 # {{{
-#     {{ include "../../common/sdtl.g" }}
+#     {{ include "../common/sdtl.g" }}
 # }}}
 
 # ---------- VARIABLE HISTORY REPORT ----------
@@ -501,7 +501,7 @@ END_SCRIPT
 # geist report << '__END_REPORT_TEMPLATE__'
 
 # {{{
-#     {{ include "../../common/sdtl.g" }}
+#     {{ include "../common/sdtl.g" }}
 # }}}
 
 # ---------- COMMANDS THAT WRITE TO EACH VARIABLE ----------
@@ -528,7 +528,7 @@ END_SCRIPT
 # geist report << '__END_REPORT_TEMPLATE__'
 
 # {{{
-#     {{ include "../../common/sdtl.g" }}
+#     {{ include "../common/sdtl.g" }}
 # }}}
 
 # ---------- COMMANDS THAT READ FROM EACH VARIABLE ----------
@@ -554,7 +554,7 @@ END_SCRIPT
 # geist report << '__END_REPORT_TEMPLATE__'
 
 # {{{
-#     {{ include "../../common/sdtl.g" }}
+#     {{ include "../common/sdtl.g" }}
 # }}}
 
 # ---------- COMMANDS THAT WRITE VARIABLES READ BY DOWNSTREAM COMMANDS ----------
@@ -582,7 +582,7 @@ END_SCRIPT
 # geist report << '__END_REPORT_TEMPLATE__'
 
 # {{{
-#     {{ include "../../common/sdtl.g" }}
+#     {{ include "../common/sdtl.g" }}
 # }}}
 
 # ---------- COMMANDS THAT READ VARIABLES WRITTEN BY MULTIPLE UPSTREAM COMMANDS ----------
@@ -615,8 +615,8 @@ END_SCRIPT
 # # geist report << '__END_REPORT_TEMPLATE__'
 
 # #     {{{
-# #         {{ include "../../common/graphviz.g" }}
-# #         {{ include "../../common/sdtl.g" }}
+# #         {{ include "../common/graphviz.g" }}
+# #         {{ include "../common/sdtl.g" }}
 # #     }}}
 
 # #     {{ gv_graph "sdtl_program" }}
@@ -658,8 +658,8 @@ END_SCRIPT
 # # geist report << '__END_REPORT_TEMPLATE__'
 
 # #     {{{
-# #         {{ include "../../common/graphviz.g" }}
-# #         {{ include "../../common/sdtl.g" }}
+# #         {{ include "../common/graphviz.g" }}
+# #         {{ include "../common/sdtl.g" }}
 # #     }}}
 
 # #     {{ gv_graph "sdtl_program" }}
