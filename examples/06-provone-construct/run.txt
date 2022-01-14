@@ -104,7 +104,7 @@ __END_REPORT_TEMPLATE__
 
 ******************************************* EXAMPLE R3 ************************************************
 
-# CONSTRUCT NEW DATAFRAME PORT IDENTIFIERS
+# CONSTRUCT DATAFRAME PORTS
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
@@ -115,13 +115,13 @@ geist report << '__END_REPORT_TEMPLATE__'
                                                                                                                             \
     {{ range $DataframeProducer := (select_dataframe_producers | rows) }}                                                   \
         {{ with $StepName := (index $DataframeProducer 0) }}                                                                \
-            <{{ $StepName }}> provone:hasOutputPort <{{ $StepName }}/dataframeport/{{ index $DataframeProducer 2 }}_out> .  \
+            <{{ $StepName }}> provone:hasOutputPort <{{ $StepName }}/dataframeport/{{ index $DataframeProducer 2 }}_out> .
         {{ end }}                                                                                                           \
     {{ end }}                                                                                                               \
 
     {{ range $DataframeConsumer := (select_dataframe_consumers | rows) }}                                                   \
         {{ with $StepName := (index $DataframeConsumer 0) }}                                                                \
-            <{{ $StepName }}> provone:hasInputPort <{{ $StepName }}/dataframeport/{{ index $DataframeConsumer 2 }}_in> .    \
+            <{{ $StepName }}> provone:hasInputPort <{{ $StepName }}/dataframeport/{{ index $DataframeConsumer 2 }}_in> .
         {{ end }}                                                                                                           \
     {{ end }}                                                                                                               \
                                                                                                                             \
@@ -130,6 +130,42 @@ __END_REPORT_TEMPLATE__
 
 ------------------------------------------- R3 OUTPUTS ------------------------------------------------
 
+
 <http://wholetale.org/program/1119/step/1> provone:hasOutputPort <http://wholetale.org/program/1119/step/1/dataframeport/df_out> .
 <http://wholetale.org/program/1119/step/8> provone:hasInputPort <http://wholetale.org/program/1119/step/8/dataframeport/df_in> .
+
+
+******************************************* EXAMPLE R3 ************************************************
+
+# CONSTRUCT VARIABLE PORTS
+
+(
+geist report << '__END_REPORT_TEMPLATE__'
+
+    {{{
+        {{ include "../common/sdth.g" }}
+    }}}
+                                                                                                                            \
+    {{ range $VariableProducer := (select_variable_producers | rows) }}                                                   \
+        {{ with $StepName := (index $VariableProducer 0) }}                                                                \
+            <{{ $StepName }}> provone:hasOutputPort <{{ $StepName }}/variableport/{{ index $VariableProducer 2 }}_out> .  
+        {{ end }}                                                                                                           \
+    {{ end }}                                                                                                               \
+
+    {{ range $VariableConsumer := (select_variable_consumers | rows) }}                                                   \
+        {{ with $StepName := (index $VariableConsumer 0) }}                                                                \
+            <{{ $StepName }}> provone:hasInputPort <{{ $StepName }}/variableport/{{ index $VariableConsumer 2 }}_in> .  
+        {{ end }}                                                                                                           \
+    {{ end }}                                                                                                               \
+                                                                                                                            \
+__END_REPORT_TEMPLATE__
+) | sort
+
+------------------------------------------- R3 OUTPUTS ------------------------------------------------
+
+
+<http://wholetale.org/program/1119/step/1> provone:hasOutputPort <http://wholetale.org/program/1119/step/1/variableport/A_out> .
+<http://wholetale.org/program/1119/step/1> provone:hasOutputPort <http://wholetale.org/program/1119/step/1/variableport/B_out> .
+<http://wholetale.org/program/1119/step/8> provone:hasInputPort <http://wholetale.org/program/1119/step/8/variableport/A_in> .
+<http://wholetale.org/program/1119/step/8> provone:hasInputPort <http://wholetale.org/program/1119/step/8/variableport/B_in> .
 

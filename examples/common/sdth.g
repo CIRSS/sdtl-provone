@@ -58,3 +58,19 @@
         ?dataframe_id sdth:hasName ?dataframe_name .
     }
 '''}}
+
+{{ query "select_variable_producers" '''
+    SELECT ?program_id ?variable_id ?variable_name 
+    WHERE {
+        ?program_id sdth:assignsVariable ?variable_id .
+        ?variable_id sdth:hasName ?variable_name .
+    }
+'''}}
+
+{{ query "select_variable_consumers" '''
+    SELECT ?program_id ?variable_id ?variable_name 
+    WHERE {
+        ?program_id sdth:usesVariable ?variable_id .
+        ?variable_id sdth:hasName ?variable_name .
+    }
+'''}}

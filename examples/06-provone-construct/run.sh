@@ -65,9 +65,7 @@ __END_SCRIPT__
 
 # *****************************************************************************
 
-# *****************************************************************************
-
-bash ${RUNNER} R3 "CONSTRUCT NEW DATAFRAME PORT IDENTIFIERS" << '__END_SCRIPT__'
+bash ${RUNNER} R3 "CONSTRUCT DATAFRAME PORTS" << '__END_SCRIPT__'
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
@@ -78,13 +76,13 @@ geist report << '__END_REPORT_TEMPLATE__'
                                                                                                                             \\
     {{ range $DataframeProducer := (select_dataframe_producers | rows) }}                                                   \\
         {{ with $StepName := (index $DataframeProducer 0) }}                                                                \\
-            <{{ $StepName }}> provone:hasOutputPort <{{ $StepName }}/dataframeport/{{ index $DataframeProducer 2 }}_out> .  \\
+            <{{ $StepName }}> provone:hasOutputPort <{{ $StepName }}/dataframeport/{{ index $DataframeProducer 2 }}_out> .
         {{ end }}                                                                                                           \\
     {{ end }}                                                                                                               \\
 
     {{ range $DataframeConsumer := (select_dataframe_consumers | rows) }}                                                   \\
         {{ with $StepName := (index $DataframeConsumer 0) }}                                                                \\
-            <{{ $StepName }}> provone:hasInputPort <{{ $StepName }}/dataframeport/{{ index $DataframeConsumer 2 }}_in> .    \\
+            <{{ $StepName }}> provone:hasInputPort <{{ $StepName }}/dataframeport/{{ index $DataframeConsumer 2 }}_in> .
         {{ end }}                                                                                                           \\
     {{ end }}                                                                                                               \\
                                                                                                                             \\
@@ -95,4 +93,31 @@ __END_SCRIPT__
 
 # *****************************************************************************
 
+bash ${RUNNER} R3 "CONSTRUCT VARIABLE PORTS" << '__END_SCRIPT__'
+
+(
+geist report << '__END_REPORT_TEMPLATE__'
+
+    {{{
+        {{ include "../common/sdth.g" }}
+    }}}
+                                                                                                                            \\
+    {{ range $VariableProducer := (select_variable_producers | rows) }}                                                   \\
+        {{ with $StepName := (index $VariableProducer 0) }}                                                                \\
+            <{{ $StepName }}> provone:hasOutputPort <{{ $StepName }}/variableport/{{ index $VariableProducer 2 }}_out> .  
+        {{ end }}                                                                                                           \\
+    {{ end }}                                                                                                               \\
+
+    {{ range $VariableConsumer := (select_variable_consumers | rows) }}                                                   \\
+        {{ with $StepName := (index $VariableConsumer 0) }}                                                                \\
+            <{{ $StepName }}> provone:hasInputPort <{{ $StepName }}/variableport/{{ index $VariableConsumer 2 }}_in> .  
+        {{ end }}                                                                                                           \\
+    {{ end }}                                                                                                               \\
+                                                                                                                            \\
+__END_REPORT_TEMPLATE__
+) | sort
+
+__END_SCRIPT__
+
+# *****************************************************************************
 
