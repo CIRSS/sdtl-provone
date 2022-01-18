@@ -73,19 +73,33 @@ geist report << '__END_REPORT_TEMPLATE__'
     {{{
         {{ include "../common/sdth.g" }}
     }}}
-                                                                                                                            \\
-    {{ range $DataframeProducer := (select_dataframe_producers | rows) }}                                                   \\
-        {{ with $StepName := (index $DataframeProducer 0) }}                                                                \\
-            {{uri $StepName}} provone:hasOutputPort <{{ $StepName }}/dataframeport/{{ index $DataframeProducer 2 }}_out> .
-        {{ end }}                                                                                                           \\
-    {{ end }}                                                                                                               \\
+                                                                            \\
+    {{ range $DataframeProducer := (select_dataframe_producers | rows) }}   \\
+        {{ with $StepName := (index $DataframeProducer 0) }}                \\
+        {{ with $VarId := (index $DataframeProducer 1) }}                   \\
+        {{ with $VarName := (index $DataframeProducer 2) }}                 \\
+        {{ with $PortId := (dataframe_out_port_id $StepName $VarName) }}    \\
+            {{uri $StepName}} provone:hasOutputPort {{uri $PortId}} .
+            {{uri $PortId }} sdth:hasDataframe {{uri $VarId}} .
+        {{ end }}                                                           \\
+        {{ end }}                                                           \\
+        {{ end }}                                                           \\
+        {{ end }}                                                           \\
+    {{ end }}                                                               \\
 
-    {{ range $DataframeConsumer := (select_dataframe_consumers | rows) }}                                                   \\
-        {{ with $StepName := (index $DataframeConsumer 0) }}                                                                \\
-            {{uri $StepName }} provone:hasInputPort <{{ $StepName }}/dataframeport/{{ index $DataframeConsumer 2 }}_in> .
-        {{ end }}                                                                                                           \\
-    {{ end }}                                                                                                               \\
-                                                                                                                            \\
+    {{ range $DataframeConsumer := (select_dataframe_consumers | rows) }}   \\
+        {{ with $StepName := (index $DataframeConsumer 0) }}                \\
+        {{ with $VarId := (index $DataframeConsumer 1) }}                   \\
+        {{ with $VarName := (index $DataframeConsumer 2) }}                 \\
+        {{ with $PortId := (dataframe_in_port_id $StepName $VarName) }}     \\
+            {{uri $StepName }} provone:hasInputPort {{uri $PortId}} .
+            {{uri $PortId }} sdth:hasDataframe {{uri $VarId}} .
+        {{ end }}                                                           \\
+        {{ end }}                                                           \\
+        {{ end }}                                                           \\
+        {{ end }}                                                           \\
+    {{ end }}                                                               \\
+                                                                            \\
 __END_REPORT_TEMPLATE__
 ) | sort
 

@@ -7,7 +7,6 @@
 {{ prefix "rdfs"       "http://www.w3.org/2000/01/rdf-schema#" }}
 {{ prefix "sdth"       "https://rdf-vocabulary.ddialliance.org/sdth#" }}
 
-
 {{ macro "uri" "URI" '''
         {{ printf "<%s>" $URI }}
     '''
@@ -18,13 +17,27 @@
     ''' 
 }}
 
-{{ macro "var_out_port_id" "StepName" "VariableName" '''
-    {{ printf "%s/variableport/%s_out" $StepName $VariableName }}
+# Returns the id of the output port associated with a given step id and variable name.
+{{ macro "var_out_port_id" "StepId" "VariableName" '''
+    {{ printf "%s/variableport/%s_out" $StepId $VariableName }}
     '''
 }}
 
-{{ macro "var_in_port_id" "StepName" "VariableName" '''
-    {{ printf "%s/variableport/%s_in" $StepName $VariableName }}
+# Returns the id of the input port associated with a given step id and variable name.
+{{ macro "var_in_port_id" "StepId" "VariableName" '''
+    {{ printf "%s/variableport/%s_in" $StepId $VariableName }}
+    '''
+}}
+
+# Returns the id of the output port associated with a given step id and dataframe name.
+{{ macro "dataframe_out_port_id" "StepId" "DataframeName" '''
+    {{ printf "%s/dataframeport/%s_out" $StepId $DataframeName }}
+    '''
+}}
+
+# Returns the id of the input port associated with a given step id and dataframe name.
+{{ macro "dataframe_in_port_id" "StepId" "DataframeName" '''
+    {{ printf "%s/dataframeport/%s_in" $StepId $DataframeName }}
     '''
 }}
 
@@ -59,33 +72,33 @@
 
 
 {{ query "select_dataframe_producers" '''
-    SELECT ?program_id ?dataframe_id ?dataframe_name 
+    SELECT ?step_id ?dataframe_id ?dataframe_name 
     WHERE {
-        ?program_id sdth:producesDataframe ?dataframe_id .
+        ?step_id sdth:producesDataframe ?dataframe_id .
         ?dataframe_id sdth:hasName ?dataframe_name .
     }
 '''}}
 
 {{ query "select_dataframe_consumers" '''
-    SELECT ?program_id ?dataframe_id ?dataframe_name 
+    SELECT ?step_id ?dataframe_id ?dataframe_name 
     WHERE {
-        ?program_id sdth:consumesDataframe ?dataframe_id .
+        ?step_id sdth:consumesDataframe ?dataframe_id .
         ?dataframe_id sdth:hasName ?dataframe_name .
     }
 '''}}
 
 {{ query "select_variable_producers" '''
-    SELECT ?program_id ?variable_id ?variable_name 
+    SELECT ?step_id ?variable_id ?variable_name 
     WHERE {
-        ?program_id sdth:assignsVariable ?variable_id .
+        ?step_id sdth:assignsVariable ?variable_id .
         ?variable_id sdth:hasName ?variable_name .
     }
 '''}}
 
 {{ query "select_variable_consumers" '''
-    SELECT ?program_id ?variable_id ?variable_name 
+    SELECT ?step_id ?variable_id ?variable_name 
     WHERE {
-        ?program_id sdth:usesVariable ?variable_id .
+        ?step_id sdth:usesVariable ?variable_id .
         ?variable_id sdth:hasName ?variable_name .
     }
 '''}}
