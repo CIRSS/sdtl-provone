@@ -79,7 +79,7 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ with $DataframeId := (index $DataframeProducer 1) }}                 \\
         {{ with $DataframeName := (index $DataframeProducer 2) }}               \\
         {{ with $PortId := (dataframe_out_port_id $StepId $DataframeName) }}    \\
-            {{uri $StepId}} provone:hasOutputPort {{uri $PortId}} .
+            {{uri $StepId}} provone:hasOutPort {{uri $PortId}} .
             {{uri $PortId }} sdth:hasDataframe {{uri $DataframeId}} .
         {{ end }}                                                               \\
         {{ end }}                                                               \\
@@ -92,7 +92,7 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ with $DataframeId := (index $DataframeConsumer 1) }}                 \\
         {{ with $DataframeName := (index $DataframeConsumer 2) }}               \\
         {{ with $PortId := (dataframe_in_port_id $StepId $DataframeName) }}     \\
-            {{uri $StepId }} provone:hasInputPort {{uri $PortId}} .
+            {{uri $StepId }} provone:hasInPort {{uri $PortId}} .
             {{uri $PortId }} sdth:hasDataframe {{uri $DataframeId}} .
         {{ end }}                                                               \\
         {{ end }}                                                               \\
@@ -121,7 +121,7 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ with $VarId := (index $VarProducer 1) }}                     \\
         {{ with $VarName := (index $VarProducer 2) }}                   \\
         {{ with $PortId := (var_out_port_id $StepId $VarName) }}        \\
-            {{uri $StepId}} provone:hasOutputPort {{uri $PortId}} .  
+            {{uri $StepId}} provone:hasOutPort {{uri $PortId}} .  
             {{uri $PortId }} sdth:hasVariable {{uri $VarId}} .
         {{ end }}                                                       \\
         {{ end }}                                                       \\
@@ -134,7 +134,7 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ with $VarId := (index $VarConsumer 1) }}                     \\
         {{ with $VarName := (index $VarConsumer 2) }}                   \\
         {{ with $PortId := (var_in_port_id $StepId $VarName) }}         \\
-            {{uri $StepId}} provone:hasInputPort {{uri $PortId}} .  
+            {{uri $StepId}} provone:hasInPort {{uri $PortId}} .  
             {{uri $PortId}} sdth:hasVariable {{uri $VarId}} .
         {{ end }}                                                       \\
         {{ end }}                                                       \\

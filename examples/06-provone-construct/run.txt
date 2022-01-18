@@ -116,7 +116,7 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ with $DataframeId := (index $DataframeProducer 1) }}                 \
         {{ with $DataframeName := (index $DataframeProducer 2) }}               \
         {{ with $PortId := (dataframe_out_port_id $StepId $DataframeName) }}    \
-            {{uri $StepId}} provone:hasOutputPort {{uri $PortId}} .
+            {{uri $StepId}} provone:hasOutPort {{uri $PortId}} .
             {{uri $PortId }} sdth:hasDataframe {{uri $DataframeId}} .
         {{ end }}                                                               \
         {{ end }}                                                               \
@@ -129,7 +129,7 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ with $DataframeId := (index $DataframeConsumer 1) }}                 \
         {{ with $DataframeName := (index $DataframeConsumer 2) }}               \
         {{ with $PortId := (dataframe_in_port_id $StepId $DataframeName) }}     \
-            {{uri $StepId }} provone:hasInputPort {{uri $PortId}} .
+            {{uri $StepId }} provone:hasInPort {{uri $PortId}} .
             {{uri $PortId }} sdth:hasDataframe {{uri $DataframeId}} .
         {{ end }}                                                               \
         {{ end }}                                                               \
@@ -144,9 +144,9 @@ __END_REPORT_TEMPLATE__
 
 
 <http://wholetale.org/program/1119/step/1/dataframeport/df_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/1> .
-<http://wholetale.org/program/1119/step/1> provone:hasOutputPort <http://wholetale.org/program/1119/step/1/dataframeport/df_out> .
+<http://wholetale.org/program/1119/step/1> provone:hasOutPort <http://wholetale.org/program/1119/step/1/dataframeport/df_out> .
 <http://wholetale.org/program/1119/step/8/dataframeport/df_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/1> .
-<http://wholetale.org/program/1119/step/8> provone:hasInputPort <http://wholetale.org/program/1119/step/8/dataframeport/df_in> .
+<http://wholetale.org/program/1119/step/8> provone:hasInPort <http://wholetale.org/program/1119/step/8/dataframeport/df_in> .
 
 
 ******************************************* EXAMPLE R3 ************************************************
@@ -165,7 +165,7 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ with $VarId := (index $VarProducer 1) }}                     \
         {{ with $VarName := (index $VarProducer 2) }}                   \
         {{ with $PortId := (var_out_port_id $StepId $VarName) }}        \
-            {{uri $StepId}} provone:hasOutputPort {{uri $PortId}} .  
+            {{uri $StepId}} provone:hasOutPort {{uri $PortId}} .  
             {{uri $PortId }} sdth:hasVariable {{uri $VarId}} .
         {{ end }}                                                       \
         {{ end }}                                                       \
@@ -178,7 +178,7 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ with $VarId := (index $VarConsumer 1) }}                     \
         {{ with $VarName := (index $VarConsumer 2) }}                   \
         {{ with $PortId := (var_in_port_id $StepId $VarName) }}         \
-            {{uri $StepId}} provone:hasInputPort {{uri $PortId}} .  
+            {{uri $StepId}} provone:hasInPort {{uri $PortId}} .  
             {{uri $PortId}} sdth:hasVariable {{uri $VarId}} .
         {{ end }}                                                       \
         {{ end }}                                                       \
@@ -194,10 +194,10 @@ __END_REPORT_TEMPLATE__
 
 <http://wholetale.org/program/1119/step/1/variableport/A_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/1> .
 <http://wholetale.org/program/1119/step/1/variableport/B_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
-<http://wholetale.org/program/1119/step/1> provone:hasOutputPort <http://wholetale.org/program/1119/step/1/variableport/A_out> .
-<http://wholetale.org/program/1119/step/1> provone:hasOutputPort <http://wholetale.org/program/1119/step/1/variableport/B_out> .
+<http://wholetale.org/program/1119/step/1> provone:hasOutPort <http://wholetale.org/program/1119/step/1/variableport/A_out> .
+<http://wholetale.org/program/1119/step/1> provone:hasOutPort <http://wholetale.org/program/1119/step/1/variableport/B_out> .
 <http://wholetale.org/program/1119/step/8/variableport/A_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/1> .
 <http://wholetale.org/program/1119/step/8/variableport/B_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
-<http://wholetale.org/program/1119/step/8> provone:hasInputPort <http://wholetale.org/program/1119/step/8/variableport/A_in> .
-<http://wholetale.org/program/1119/step/8> provone:hasInputPort <http://wholetale.org/program/1119/step/8/variableport/B_in> .
+<http://wholetale.org/program/1119/step/8> provone:hasInPort <http://wholetale.org/program/1119/step/8/variableport/A_in> .
+<http://wholetale.org/program/1119/step/8> provone:hasInPort <http://wholetale.org/program/1119/step/8/variableport/B_in> .
 

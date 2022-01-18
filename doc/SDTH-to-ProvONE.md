@@ -5,7 +5,7 @@
 And add a triple using the `provone:hasSubProgram` predicate relating each ProgramStep to its containing
 sdth:Program.
 
-2. For each program step that produces or consumes dataframes create new identifiers for output and input ports respectively, assign to them a new type derived from `provone:Port`, `DataframePort`,  to distinguish them from ports representing the flow of variables (`sdth:VariablePort`, see 3 below), and construct a new triple for each port with the `provone:hasInputPort` or `provone:hasOuputPort` predicate. 
+2. For each program step that produces or consumes dataframes create new identifiers for output and input ports respectively, assign to them a new type derived from `provone:Port`, `DataframePort`,  to distinguish them from ports representing the flow of variables (`sdth:VariablePort`, see 3 below), and construct a new triple for each port with the `provone:hasInPort` or `provone:hasOutPort` predicate. 
 
 3. For each step construct new `sdth:VariablePort` identifiers similarly for each variable in an input or output dataframe that is used or assigned respectively.
 
