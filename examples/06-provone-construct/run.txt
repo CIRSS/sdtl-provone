@@ -87,7 +87,7 @@ geist report << '__END_REPORT_TEMPLATE__'
                                                                                         \
     {{ range $Program := select_sdth_program | vector }}                                \
         {{ range $Step := (select_sdth_program_steps $Program | vector) }}              \
-            <{{$Program}}> provone:hasSubProgram <{{$Step}}> .
+            {{uri $Program}} provone:hasSubProgram {{uri $Step}} .
         {{ end }}
     {{ end }}
                                                                                         \
@@ -115,13 +115,13 @@ geist report << '__END_REPORT_TEMPLATE__'
                                                                                                                             \
     {{ range $DataframeProducer := (select_dataframe_producers | rows) }}                                                   \
         {{ with $StepName := (index $DataframeProducer 0) }}                                                                \
-            <{{ $StepName }}> provone:hasOutputPort <{{ $StepName }}/dataframeport/{{ index $DataframeProducer 2 }}_out> .
+            {{uri $StepName}} provone:hasOutputPort <{{ $StepName }}/dataframeport/{{ index $DataframeProducer 2 }}_out> .
         {{ end }}                                                                                                           \
     {{ end }}                                                                                                               \
 
     {{ range $DataframeConsumer := (select_dataframe_consumers | rows) }}                                                   \
         {{ with $StepName := (index $DataframeConsumer 0) }}                                                                \
-            <{{ $StepName }}> provone:hasInputPort <{{ $StepName }}/dataframeport/{{ index $DataframeConsumer 2 }}_in> .
+            {{uri $StepName }} provone:hasInputPort <{{ $StepName }}/dataframeport/{{ index $DataframeConsumer 2 }}_in> .
         {{ end }}                                                                                                           \
     {{ end }}                                                                                                               \
                                                                                                                             \
@@ -151,8 +151,8 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ with $VarId := (index $VarProducer 1) }}                     \
         {{ with $VarName := (index $VarProducer 2) }}                   \
         {{ with $PortId := (var_out_port_id $StepName $VarName) }}      \
-            <{{ $StepName }}> provone:hasOutputPort <{{ $PortId }}> .  
-            <{{ $PortId }}> sdth:hasVariable <{{ $VarId }}> .
+            {{uri $StepName}} provone:hasOutputPort {{uri $PortId}} .  
+            {{uri $PortId }} sdth:hasVariable {{uri $VarId}} .
         {{ end }}                                                       \
         {{ end }}                                                       \
         {{ end }}                                                       \
@@ -164,8 +164,8 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ with $VarId := (index $VarConsumer 1) }}                     \
         {{ with $VarName := (index $VarConsumer 2) }}                   \
         {{ with $PortId := (var_in_port_id $StepName $VarName) }}       \
-            <{{ $StepName }}> provone:hasInputPort <{{ $PortId }}> .  
-            <{{ $PortId }}> sdth:hasVariable <{{ $VarId }}> .
+            {{uri $StepName}} provone:hasInputPort {{uri $PortId}} .  
+            {{uri $PortId}} sdth:hasVariable {{uri $VarId}} .
         {{ end }}                                                       \
         {{ end }}                                                       \
         {{ end }}                                                       \

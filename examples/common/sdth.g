@@ -8,8 +8,13 @@
 {{ prefix "sdth"       "https://rdf-vocabulary.ddialliance.org/sdth#" }}
 
 
+{{ macro "uri" "URI" '''
+        {{ printf "<%s>" $URI }}
+    '''
+}}
+
 {{ macro "ntriple_print" "Triple" '''
-    <{{ index $Triple 0 }}> <{{ index $Triple 1 }}> <{{ index $Triple 2 }}> .
+    {{index $Triple 0 | uri}} {{index $Triple 1 | uri}} {{index $Triple 2 | uri}} .
     ''' 
 }}
 
