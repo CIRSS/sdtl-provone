@@ -17,25 +17,25 @@
     ''' 
 }}
 
-# Returns the id of the output port associated with a given step id and variable name.
+# Expands to the id of the output port associated with a given step and variable.
 {{ macro "var_out_port_id" "StepId" "VariableName" '''
     {{ printf "%s/variableport/%s_out" $StepId $VariableName }}
     '''
 }}
 
-# Returns the id of the input port associated with a given step id and variable name.
+# Expands to the id of the input port associated with a given step and variable.
 {{ macro "var_in_port_id" "StepId" "VariableName" '''
     {{ printf "%s/variableport/%s_in" $StepId $VariableName }}
     '''
 }}
 
-# Returns the id of the output port associated with a given step id and dataframe name.
+# Expands to the id of the output port associated with a given step and dataframe.
 {{ macro "dataframe_out_port_id" "StepId" "DataframeName" '''
     {{ printf "%s/dataframeport/%s_out" $StepId $DataframeName }}
     '''
 }}
 
-# Returns the id of the input port associated with a given step id and dataframe name.
+# Expands to the id of the input port associated with a given step and dataframe.
 {{ macro "dataframe_in_port_id" "StepId" "DataframeName" '''
     {{ printf "%s/dataframeport/%s_in" $StepId $DataframeName }}
     '''
