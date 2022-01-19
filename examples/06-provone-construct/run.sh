@@ -149,3 +149,55 @@ __END_SCRIPT__
 
 # *****************************************************************************
 
+bash ${RUNNER} R4 "CONSTRUCT DATAFRAME CHANNELS" << '__END_SCRIPT__'
+
+(
+geist report << '__END_REPORT_TEMPLATE__'
+
+    {{{
+        {{ include "../common/sdth.g" }}
+    }}}
+                                                                                        \\
+    {{ range $ChannelIndex, $DataframeChannel := (select_dataframe_channels | rows) }}  \\
+        {{ with $WorkflowId := (index $DataframeChannel 0) }}                           \\
+        {{ with $DataframeName := (index $DataframeChannel 1) }}                        \\
+        {{ with $OutStepId := (index $DataframeChannel 2) }}                            \\
+        {{ with $InStepId := (index $DataframeChannel 3) }}                             \\
+        {{ with $ChannelId := (dataframe_channel_id $OutStepId (printf "%d" $ChannelIndex)) }}    \\
+        {{ with $OutPortId := (dataframe_out_port_id $OutStepId $DataframeName) }}      \\
+        {{ with $InPortId := (dataframe_in_port_id $InStepId $DataframeName) }}         \\
+            {{uri $OutPortId}} provone:connectsTo {{$ChannelId}} .
+            {{uri $InPortId}} provone:connectsTo {{$ChannelId}} .
+        {{ end }}                                                                       \\
+        {{ end }}                                                                       \\
+        {{ end }}                                                                       \\
+        {{ end }}                                                                       \\
+        {{ end }}                                                                       \\
+        {{ end }}                                                                       \\
+        {{ end }}                                                                       \\
+    {{ end }}                                                                           \\
+
+__END_REPORT_TEMPLATE__
+) | sort
+
+__END_SCRIPT__
+
+
+    # {{ range $ChannelIndex, $DataframeChannel:= (select_dataframe_channels | rows) }}   \\
+    #     {{ with $WorkflowId := (index $DataframeChannel 0) }}                           \\
+    #     {{ with $DataframeName := (index $DataframeChannel 1) }}                        \\
+    #     {{ with $OutStepId := (index $DataframeChannel 2) }}                            \\
+    #     {{ with $InStepId := (index $DataframeChannel 3) }}                             \\
+    #     {{ with $ChannelId := (dataframe_channel_id $WorkflowId $ChannelIndex) }}       \\
+    #     {{ with $OutPortId := (dataframe_out_port_id $OutStepId $DataframeName) }}      \\
+    #     {{ with $InPortId := (dataframe_in_port_id $InStepId $DataframeName) }}         \\
+    #         {{uri $OutPortId}} provone:connectsTo {{$ChannelId}} .
+    #         {{uri $InPortId}} provone:connectsTo {{$ChannelId}} .
+    #     {{ end }}                                                                       \\
+    #     {{ end }}                                                                       \\
+    #     {{ end }}                                                                       \\
+    #     {{ end }}                                                                       \\
+    #     {{ end }}                                                                       \\
+    #     {{ end }}                                                                       \\
+    #     {{ end }}                                                                       \\
+    # {{ end }}   

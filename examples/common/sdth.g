@@ -41,6 +41,13 @@
     '''
 }}
 
+# Expands to the id of the dataframe channel in the given workflow with the given index.
+# NOTE: Both arguments to this macro must be strings, i.e. ChannelIndex cannot be an integer.
+{{ macro "dataframe_channel_id" "WorkflowId" "ChannelIndex" '''
+    {{ printf "%s/dataframechannel/%s" $WorkflowId $ChannelIndex }}
+    '''
+}}
+
 {{ query "sdth_construct_provone_program_triples" '''
     CONSTRUCT {
         ?program rdf:type provone:Program .
@@ -100,5 +107,15 @@
     WHERE {
         ?step_id sdth:usesVariable ?variable_id .
         ?variable_id sdth:hasName ?variable_name .
+    }
+'''}}
+
+{{ query "select_dataframe_channels" '''
+    SELECT ?workflow_id ?dataframe_name ?producer_step_id ?consumer_step_id 
+    WHERE {
+        ?workflow_id sdth:hasProgramStep ?producer_step_id .
+        ?producer_step_id sdth:producesDataframe ?dataframe_id .
+        ?consumer_step_id sdth:consumesDataframe ?dataframe_id .
+        ?dataframe_id sdth:hasName ?dataframe_name .
     }
 '''}}
