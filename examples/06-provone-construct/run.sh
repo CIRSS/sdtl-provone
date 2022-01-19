@@ -183,21 +183,38 @@ __END_REPORT_TEMPLATE__
 __END_SCRIPT__
 
 
-    # {{ range $ChannelIndex, $DataframeChannel:= (select_dataframe_channels | rows) }}   \\
-    #     {{ with $WorkflowId := (index $DataframeChannel 0) }}                           \\
-    #     {{ with $DataframeName := (index $DataframeChannel 1) }}                        \\
-    #     {{ with $OutStepId := (index $DataframeChannel 2) }}                            \\
-    #     {{ with $InStepId := (index $DataframeChannel 3) }}                             \\
-    #     {{ with $ChannelId := (dataframe_channel_id $WorkflowId $ChannelIndex) }}       \\
-    #     {{ with $OutPortId := (dataframe_out_port_id $OutStepId $DataframeName) }}      \\
-    #     {{ with $InPortId := (dataframe_in_port_id $InStepId $DataframeName) }}         \\
-    #         {{uri $OutPortId}} provone:connectsTo {{$ChannelId}} .
-    #         {{uri $InPortId}} provone:connectsTo {{$ChannelId}} .
-    #     {{ end }}                                                                       \\
-    #     {{ end }}                                                                       \\
-    #     {{ end }}                                                                       \\
-    #     {{ end }}                                                                       \\
-    #     {{ end }}                                                                       \\
-    #     {{ end }}                                                                       \\
-    #     {{ end }}                                                                       \\
-    # {{ end }}   
+# *****************************************************************************
+
+bash ${RUNNER} R4 "CONSTRUCT VARIABLE CHANNELS" << '__END_SCRIPT__'
+
+(
+geist report << '__END_REPORT_TEMPLATE__'
+
+    {{{
+        {{ include "../common/sdth.g" }}
+    }}}
+
+    {{ range $ChannelIndex, $VariableChannel := (select_variable_channels | rows) }}  \\
+        {{ with $WorkflowId := (index $VariableChannel 0) }}                           \\
+        {{ with $VariableName := (index $VariableChannel 1) }}                        \\
+        {{ with $OutStepId := (index $VariableChannel 2) }}                            \\
+        {{ with $InStepId := (index $VariableChannel 3) }}                             \\
+        {{ with $ChannelId := (variable_channel_id $OutStepId (printf "%d" $ChannelIndex)) }}    \\
+        {{ with $OutPortId := (var_out_port_id $OutStepId $VariableName) }}      \\
+        {{ with $InPortId := (var_in_port_id $InStepId $VariableName) }}         \\
+            {{uri $OutPortId}} provone:connectsTo {{$ChannelId}} .
+            {{uri $InPortId}} provone:connectsTo {{$ChannelId}} .
+        {{ end }}                                                                       \\
+        {{ end }}                                                                       \\
+        {{ end }}                                                                       \\
+        {{ end }}                                                                       \\
+        {{ end }}                                                                       \\
+        {{ end }}                                                                       \\
+        {{ end }}                                                                       \\
+    {{ end }}                                                                           \\
+
+
+__END_REPORT_TEMPLATE__
+) | sort
+
+__END_SCRIPT__

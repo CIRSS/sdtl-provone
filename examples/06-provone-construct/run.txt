@@ -241,3 +241,48 @@ __END_REPORT_TEMPLATE__
 <http://wholetale.org/program/1119/step/1/dataframeport/df_out> provone:connectsTo http://wholetale.org/program/1119/step/1/dataframechannel/0 .
 <http://wholetale.org/program/1119/step/8/dataframeport/df_in> provone:connectsTo http://wholetale.org/program/1119/step/1/dataframechannel/0 .
 
+
+******************************************* EXAMPLE R4 ************************************************
+
+# CONSTRUCT VARIABLE CHANNELS
+
+(
+geist report << '__END_REPORT_TEMPLATE__'
+
+    {{{
+        {{ include "../common/sdth.g" }}
+    }}}
+
+    {{ range $ChannelIndex, $VariableChannel := (select_variable_channels | rows) }}  \
+        {{ with $WorkflowId := (index $VariableChannel 0) }}                           \
+        {{ with $VariableName := (index $VariableChannel 1) }}                        \
+        {{ with $OutStepId := (index $VariableChannel 2) }}                            \
+        {{ with $InStepId := (index $VariableChannel 3) }}                             \
+        {{ with $ChannelId := (variable_channel_id $OutStepId (printf "%d" $ChannelIndex)) }}    \
+        {{ with $OutPortId := (var_out_port_id $OutStepId $VariableName) }}      \
+        {{ with $InPortId := (var_in_port_id $InStepId $VariableName) }}         \
+            {{uri $OutPortId}} provone:connectsTo {{$ChannelId}} .
+            {{uri $InPortId}} provone:connectsTo {{$ChannelId}} .
+        {{ end }}                                                                       \
+        {{ end }}                                                                       \
+        {{ end }}                                                                       \
+        {{ end }}                                                                       \
+        {{ end }}                                                                       \
+        {{ end }}                                                                       \
+        {{ end }}                                                                       \
+    {{ end }}                                                                           \
+
+
+__END_REPORT_TEMPLATE__
+) | sort
+
+------------------------------------------- R4 OUTPUTS ------------------------------------------------
+
+
+
+
+<http://wholetale.org/program/1119/step/1/variableport/A_out> provone:connectsTo http://wholetale.org/program/1119/step/1/variablechannel/0 .
+<http://wholetale.org/program/1119/step/1/variableport/B_out> provone:connectsTo http://wholetale.org/program/1119/step/1/variablechannel/1 .
+<http://wholetale.org/program/1119/step/8/variableport/A_in> provone:connectsTo http://wholetale.org/program/1119/step/1/variablechannel/0 .
+<http://wholetale.org/program/1119/step/8/variableport/B_in> provone:connectsTo http://wholetale.org/program/1119/step/1/variablechannel/1 .
+
