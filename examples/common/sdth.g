@@ -8,7 +8,7 @@
 {{ prefix "sdth"       "https://rdf-vocabulary.ddialliance.org/sdth#" }}
 
 {{ macro "uri" "URI" '''
-        {{ printf "<%s>" $URI }}
+        <{{ $URI }}>
     '''
 }}
 
@@ -19,39 +19,39 @@
 
 # Expands to the id of the output port associated with a given step and variable.
 {{ macro "var_out_port_id" "StepId" "VariableName" '''
-    {{ printf "%s/variableport/%s_out" $StepId $VariableName }}
+    {{ $StepId }}/variableport/{{ $VariableName }}_out
     '''
 }}
 
 # Expands to the id of the input port associated with a given step and variable.
 {{ macro "var_in_port_id" "StepId" "VariableName" '''
-    {{ printf "%s/variableport/%s_in" $StepId $VariableName }}
+    {{ $StepId }}/variableport/{{ $VariableName }}_in
     '''
 }}
 
 # Expands to the id of the output port associated with a given step and dataframe.
 {{ macro "dataframe_out_port_id" "StepId" "DataframeName" '''
-    {{ printf "%s/dataframeport/%s_out" $StepId $DataframeName }}
+    {{ $StepId }}/dataframeport/{{ $DataframeName }}_out
     '''
 }}
 
 # Expands to the id of the input port associated with a given step and dataframe.
 {{ macro "dataframe_in_port_id" "StepId" "DataframeName" '''
-    {{ printf "%s/dataframeport/%s_in" $StepId $DataframeName }}
+    {{ $StepId }}/dataframeport/{{ $DataframeName }}_in
     '''
 }}
 
 # Expands to the id of the dataframe channel in the given workflow with the given index.
 # NOTE: Both arguments to this macro must be strings, i.e. ChannelIndex cannot be an integer.
 {{ macro "dataframe_channel_id" "WorkflowId" "ChannelIndex" '''
-    {{ printf "%s/dataframechannel/%s" $WorkflowId $ChannelIndex }}
+    {{ $WorkflowId }}/dataframechannel/{{ $ChannelIndex }}
     '''
 }}
 
 # Expands to the id of the dataframe channel in the given workflow with the given index.
 # NOTE: Both arguments to this macro must be strings, i.e. ChannelIndex cannot be an integer.
 {{ macro "variable_channel_id" "WorkflowId" "ChannelIndex" '''
-    {{ printf "%s/variablechannel/%s" $WorkflowId $ChannelIndex }}
+    {{ $WorkflowId }}/variablechannel/{{ $ChannelIndex }}
     '''
 }}
 
