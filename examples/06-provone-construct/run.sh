@@ -49,7 +49,7 @@ bash ${RUNNER} R2 "CONSTRUCT HASSUBPROGRAM TRIPLES" << '__END_SCRIPT__'
 geist report << '__END_REPORT_TEMPLATE__'
     {{{ {{ include "../common/sdth.g" }} }}}
 
-    {{ has_subprogram_triples }}
+    {{ construct_subprogram_triples }}
 __END_REPORT_TEMPLATE__
 ) | sort
 
@@ -123,7 +123,7 @@ bash ${RUNNER} R7 "CONSTRUCT ALL PROVONE TRIPLES" << '__END_SCRIPT__'
 geist report << '__END_REPORT_TEMPLATE__'
     {{{ {{ include "../common/sdth.g" }} }}}
  
-    {{ has_subprogram_triples }}
+    {{ construct_subprogram_triples }}
     {{ construct_dataframe_out_ports }}
     {{ construct_dataframe_in_ports }}
     {{ construct_variable_out_ports }}

@@ -78,10 +78,11 @@
     }
 '''}}
 
-{{ query "select_sdth_program_steps" "ProgramID" '''
-    SELECT ?step
+
+{{ query "select_program_steps" '''
+    SELECT ?program ?step
     WHERE {
-        <{{$ProgramID}}> sdth:hasProgramStep ?step .
+        ?program sdth:hasProgramStep ?step .
     }
 '''}}
 
@@ -137,15 +138,6 @@
         ?variable_id sdth:hasName ?variable_name .
     }
 '''}}
-
-{{ macro "has_subprogram_triples" '''
-    {{ range $Program := select_sdth_program | vector }}
-        {{ range $Step := (select_sdth_program_steps $Program | vector) }}
-            {{uri $Program}} provone:hasSubProgram {{uri $Step}} .
-        {{ end }}
-    {{ end }}
-    '''
-}}
 
 {{ macro "construct_dataframe_out_ports" '''
     {{ range $DataframeProducer := (select_dataframe_producers | rows) }}
@@ -254,3 +246,17 @@
     {{ end }}                                                                                   \\
     '''
 }}
+
+{{ macro "construct_subprogram_triples" '''
+    {{ range $ProgramStep := (select_program_steps | rows) }}                                   \\
+        {{ with $ProgramId := (index $ProgramStep 0) }}                                         \\
+        {{ with $StepId := (index $ProgramStep 1) }}                                            \\
+            {{uri $ProgramId}} provone:hasSubProgram {{uri $StepId}} .
+        {{ end }}                                                                               \\
+        {{ end }}                                                                               \\
+    {{ end }}                                                                                   \\
+    '''
+}}
+
+
+

@@ -82,12 +82,11 @@ __END_REPORT_TEMPLATE__
 geist report << '__END_REPORT_TEMPLATE__'
     {{{ {{ include "../common/sdth.g" }} }}}
 
-    {{ has_subprogram_triples }}
+    {{ construct_subprogram_triples }}
 __END_REPORT_TEMPLATE__
 ) | sort
 
 ------------------------------------------- R2 OUTPUTS ------------------------------------------------
-
 
 <http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/1> .
 <http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/8> .
@@ -186,7 +185,7 @@ __END_REPORT_TEMPLATE__
 geist report << '__END_REPORT_TEMPLATE__'
     {{{ {{ include "../common/sdth.g" }} }}}
  
-    {{ has_subprogram_triples }}
+    {{ construct_subprogram_triples }}
     {{ construct_dataframe_out_ports }}
     {{ construct_dataframe_in_ports }}
     {{ construct_variable_out_ports }}
@@ -197,7 +196,6 @@ __END_REPORT_TEMPLATE__
 ) | sort
 
 ------------------------------------------- R7 OUTPUTS ------------------------------------------------
-
 
 
 <http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/1> .
