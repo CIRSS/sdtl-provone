@@ -113,3 +113,24 @@ __END_REPORT_TEMPLATE__
 ) | sort
 
 __END_SCRIPT__
+
+
+# *****************************************************************************
+
+bash ${RUNNER} R7 "CONSTRUCT ALL PROVONE TRIPLES" << '__END_SCRIPT__'
+
+(
+geist report << '__END_REPORT_TEMPLATE__'
+    {{{ {{ include "../common/sdth.g" }} }}}
+ 
+    {{ has_subprogram_triples }}
+    {{ construct_dataframe_out_ports }}
+    {{ construct_dataframe_in_ports }}
+    {{ construct_variable_out_ports }}
+    {{ construct_variable_in_ports }}
+    {{ construct_dataframe_channels }}
+    {{ construct_variable_channels }}
+__END_REPORT_TEMPLATE__
+) | sort
+
+__END_SCRIPT__
