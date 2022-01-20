@@ -43,21 +43,13 @@ __END_SCRIPT__
 
 # *****************************************************************************
 
-bash ${RUNNER} R2 "CONSTRUCT PROVONE HASSUBPROGRAM TRIPLES" << '__END_SCRIPT__'
+bash ${RUNNER} R2 "CONSTRUCT HASSUBPROGRAM TRIPLES" << '__END_SCRIPT__'
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
+    {{{ {{ include "../common/sdth.g" }} }}}
 
-    {{{
-        {{ include "../common/sdth.g" }}
-    }}}
-                                                                            \\
-    {{ range $Program := select_sdth_program | vector }}                    \\
-        {{ range $Step := (select_sdth_program_steps $Program | vector) }}  \\
-            {{uri $Program}} provone:hasSubProgram {{uri $Step}} .
-        {{ end }}                                                           \\
-    {{ end }}                                                               \\
-                                                                            \\
+    {{ has_subprogram_triples }}
 __END_REPORT_TEMPLATE__
 ) | sort
 
@@ -69,37 +61,10 @@ bash ${RUNNER} R3 "CONSTRUCT DATAFRAME PORTS" << '__END_SCRIPT__'
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
+    {{{ {{ include "../common/sdth.g" }} }}}
 
-    {{{
-        {{ include "../common/sdth.g" }}
-    }}}
-                                                                                \\
-    {{ range $DataframeProducer := (select_dataframe_producers | rows) }}       \\
-        {{ with $StepId := (index $DataframeProducer 0) }}                      \\
-        {{ with $DataframeId := (index $DataframeProducer 1) }}                 \\
-        {{ with $DataframeName := (index $DataframeProducer 2) }}               \\
-        {{ with $PortId := (dataframe_out_port_id $StepId $DataframeName) }}    \\
-            {{uri $StepId}} provone:hasOutPort {{uri $PortId}} .
-            {{uri $PortId }} sdth:hasDataframe {{uri $DataframeId}} .
-        {{ end }}                                                               \\
-        {{ end }}                                                               \\
-        {{ end }}                                                               \\
-        {{ end }}                                                               \\
-    {{ end }}                                                                   \\
-
-    {{ range $DataframeConsumer := (select_dataframe_consumers | rows) }}       \\
-        {{ with $StepId := (index $DataframeConsumer 0) }}                      \\
-        {{ with $DataframeId := (index $DataframeConsumer 1) }}                 \\
-        {{ with $DataframeName := (index $DataframeConsumer 2) }}               \\
-        {{ with $PortId := (dataframe_in_port_id $StepId $DataframeName) }}     \\
-            {{uri $StepId }} provone:hasInPort {{uri $PortId}} .
-            {{uri $PortId }} sdth:hasDataframe {{uri $DataframeId}} .
-        {{ end }}                                                               \\
-        {{ end }}                                                               \\
-        {{ end }}                                                               \\
-        {{ end }}                                                               \\
-    {{ end }}                                                                   \\
-                                                                                \\
+    {{ construct_dataframe_out_ports }}
+    {{ construct_dataframe_in_ports }}
 __END_REPORT_TEMPLATE__
 ) | sort
 
@@ -107,41 +72,14 @@ __END_SCRIPT__
 
 # *****************************************************************************
 
-bash ${RUNNER} R3 "CONSTRUCT VARIABLE PORTS" << '__END_SCRIPT__'
+bash ${RUNNER} R4 "CONSTRUCT VARIABLE PORTS" << '__END_SCRIPT__'
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
+    {{{ {{ include "../common/sdth.g" }} }}}
 
-    {{{
-        {{ include "../common/sdth.g" }}
-    }}}
-                                                                        \\
-    {{ range $VarProducer := (select_variable_producers | rows) }}      \\
-        {{ with $StepId := (index $VarProducer 0) }}                    \\                   
-        {{ with $VarId := (index $VarProducer 1) }}                     \\
-        {{ with $VarName := (index $VarProducer 2) }}                   \\
-        {{ with $PortId := (var_out_port_id $StepId $VarName) }}        \\
-            {{uri $StepId}} provone:hasOutPort {{uri $PortId}} .  
-            {{uri $PortId }} sdth:hasVariable {{uri $VarId}} .
-        {{ end }}                                                       \\
-        {{ end }}                                                       \\
-        {{ end }}                                                       \\
-        {{ end }}                                                       \\
-    {{ end }}                                                           \\
-
-    {{ range $VarConsumer := (select_variable_consumers | rows) }}      \\
-        {{ with $StepId := (index $VarConsumer 0) }}                    \\
-        {{ with $VarId := (index $VarConsumer 1) }}                     \\
-        {{ with $VarName := (index $VarConsumer 2) }}                   \\
-        {{ with $PortId := (var_in_port_id $StepId $VarName) }}         \\
-            {{uri $StepId}} provone:hasInPort {{uri $PortId}} .  
-            {{uri $PortId}} sdth:hasVariable {{uri $VarId}} .
-        {{ end }}                                                       \\
-        {{ end }}                                                       \\
-        {{ end }}                                                       \\
-        {{ end }}                                                       \\
-    {{ end }}                                                           \\
-                                                                        \\
+    {{ construct_variable_out_ports }}
+    {{ construct_variable_in_ports }}
 __END_REPORT_TEMPLATE__
 ) | sort
 
@@ -149,34 +87,13 @@ __END_SCRIPT__
 
 # *****************************************************************************
 
-bash ${RUNNER} R4 "CONSTRUCT DATAFRAME CHANNELS" << '__END_SCRIPT__'
+bash ${RUNNER} R5 "CONSTRUCT DATAFRAME CHANNELS" << '__END_SCRIPT__'
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
-
-    {{{
-        {{ include "../common/sdth.g" }}
-    }}}
-                                                                                        \\
-    {{ range $ChannelIndex, $DataframeChannel := (select_dataframe_channels | rows) }}  \\
-        {{ with $WorkflowId := (index $DataframeChannel 0) }}                           \\
-        {{ with $DataframeName := (index $DataframeChannel 1) }}                        \\
-        {{ with $OutStepId := (index $DataframeChannel 2) }}                            \\
-        {{ with $InStepId := (index $DataframeChannel 3) }}                             \\
-        {{ with $ChannelId := (dataframe_channel_id $OutStepId (printf "%d" $ChannelIndex)) }}    \\
-        {{ with $OutPortId := (dataframe_out_port_id $OutStepId $DataframeName) }}      \\
-        {{ with $InPortId := (dataframe_in_port_id $InStepId $DataframeName) }}         \\
-            {{uri $OutPortId}} provone:connectsTo {{$ChannelId}} .
-            {{uri $InPortId}} provone:connectsTo {{$ChannelId}} .
-        {{ end }}                                                                       \\
-        {{ end }}                                                                       \\
-        {{ end }}                                                                       \\
-        {{ end }}                                                                       \\
-        {{ end }}                                                                       \\
-        {{ end }}                                                                       \\
-        {{ end }}                                                                       \\
-    {{ end }}                                                                           \\
-
+    {{{ {{ include "../common/sdth.g" }} }}}
+ 
+    {{ construct_dataframe_channels }}
 __END_REPORT_TEMPLATE__
 ) | sort
 
@@ -185,35 +102,13 @@ __END_SCRIPT__
 
 # *****************************************************************************
 
-bash ${RUNNER} R4 "CONSTRUCT VARIABLE CHANNELS" << '__END_SCRIPT__'
+bash ${RUNNER} R6 "CONSTRUCT VARIABLE CHANNELS" << '__END_SCRIPT__'
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
-
-    {{{
-        {{ include "../common/sdth.g" }}
-    }}}
-
-    {{ range $ChannelIndex, $VariableChannel := (select_variable_channels | rows) }}  \\
-        {{ with $WorkflowId := (index $VariableChannel 0) }}                           \\
-        {{ with $VariableName := (index $VariableChannel 1) }}                        \\
-        {{ with $OutStepId := (index $VariableChannel 2) }}                            \\
-        {{ with $InStepId := (index $VariableChannel 3) }}                             \\
-        {{ with $ChannelId := (variable_channel_id $OutStepId (printf "%d" $ChannelIndex)) }}    \\
-        {{ with $OutPortId := (var_out_port_id $OutStepId $VariableName) }}      \\
-        {{ with $InPortId := (var_in_port_id $InStepId $VariableName) }}         \\
-            {{uri $OutPortId}} provone:connectsTo {{$ChannelId}} .
-            {{uri $InPortId}} provone:connectsTo {{$ChannelId}} .
-        {{ end }}                                                                       \\
-        {{ end }}                                                                       \\
-        {{ end }}                                                                       \\
-        {{ end }}                                                                       \\
-        {{ end }}                                                                       \\
-        {{ end }}                                                                       \\
-        {{ end }}                                                                       \\
-    {{ end }}                                                                           \\
-
-
+    {{{ {{ include "../common/sdth.g" }} }}}
+ 
+    {{ construct_variable_channels }}
 __END_REPORT_TEMPLATE__
 ) | sort
 
