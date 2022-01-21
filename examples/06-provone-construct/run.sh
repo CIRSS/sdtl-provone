@@ -5,17 +5,18 @@ GRAPHER='../common/run_dot_examples.sh'
 
 # *****************************************************************************
 
-bash ${RUNNER} SETUP "IMPORT SDTL AS JSON-LD" << END_SCRIPT
+bash ${RUNNER} SETUP-1 "CREATE NEW DATASET AND LOAD RULES" << END_SCRIPT
 
 geist destroy --dataset kb --quiet
-geist create --dataset kb --quiet 
+geist create --dataset kb --quiet --infer owl
+geist import --file ../data/provone-rules.ttl
 geist import --format jsonld --file ../data/compute-sdth.jsonld
 
 END_SCRIPT
 
 # *****************************************************************************
 
-bash ${RUNNER} E1 "EXPORT ORIGINAL SDTL AS N-TRIPLES" << END_SCRIPT
+bash ${RUNNER} E2 "EXPORT LOADED SDTL AND RULES AS N-TRIPLES" << END_SCRIPT
 
 geist export --format nt --sort
 
@@ -119,6 +120,8 @@ __END_SCRIPT__
 
 bash ${RUNNER} R7 "CONSTRUCT ALL PROVONE TRIPLES" << '__END_SCRIPT__'
 
+cp ../data/prefixes.ttl outputs/augment.ttl
+
 (
 geist report << '__END_REPORT_TEMPLATE__'
     {{{ {{ include "../common/sdth.g" }} }}}
@@ -131,6 +134,17 @@ geist report << '__END_REPORT_TEMPLATE__'
     {{ construct_dataframe_channels }}
     {{ construct_variable_channels }}
 __END_REPORT_TEMPLATE__
-) | sort
+) | sort >> outputs/augment.ttl
+
+cat outputs/augment.ttl
 
 __END_SCRIPT__
+
+# *****************************************************************************
+
+bash ${RUNNER} LOAD-3 "LOAD PROVONE TRIPLES" << '__END_SCRIPT__'
+
+geist import --file outputs/augment.ttl
+
+__END_SCRIPT__
+

@@ -1,0 +1,19 @@
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wt: <http://wholetale.org/ontology/wt#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix provone: <http://purl.dataone.org/provone/2015/01/15/ontology#> .
+@prefix sdth: <https://rdf-vocabulary.ddialliance.org/sdth#> .
+
+provone:hasSubProgram rdfs:domain provone:Program .
+provone:hasSubProgram rdfs:range provone:Program .
+
+provone:hasOutPort rdfs:domain provone:Program .
+provone:hasOutPort rdfs:range provone:Port .
+
+provone:hasInPort rdfs:domain provone:Program .
+provone:hasInPort rdfs:range provone:Port .
+
+provone:connectsTo rdfs:domain provone:Port .
+provone:connectsTo rdfs:range provone:Channel .

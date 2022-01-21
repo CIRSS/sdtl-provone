@@ -31,7 +31,7 @@
             "sdth:includesVariable": [
               {
                 "@id": "run:variable/1",
-                "@type": "stdh:Variable",
+                "@type": "sdth:Variable",
                 "sdth:hasName": "A"
               },
               {

@@ -212,8 +212,8 @@
         {{ with $ChannelId := (dataframe_channel_id $OutStepId (printf "%d" $ChannelIndex)) }}  \\
         {{ with $OutPortId := (dataframe_out_port_id $OutStepId $DataframeName) }}              \\
         {{ with $InPortId := (dataframe_in_port_id $InStepId $DataframeName) }}                 \\
-            {{uri $OutPortId}} provone:connectsTo {{$ChannelId}} .
-            {{uri $InPortId}} provone:connectsTo {{$ChannelId}} .
+            {{uri $OutPortId}} provone:connectsTo {{uri $ChannelId}} .
+            {{uri $InPortId}} provone:connectsTo {{uri $ChannelId}} .
         {{ end }}                                                                               \\
         {{ end }}                                                                               \\
         {{ end }}                                                                               \\
@@ -234,8 +234,8 @@
         {{ with $ChannelId := (variable_channel_id $OutStepId (printf "%d" $ChannelIndex)) }}   \\
         {{ with $OutPortId := (var_out_port_id $OutStepId $VariableName) }}                     \\
         {{ with $InPortId := (var_in_port_id $InStepId $VariableName) }}                        \\
-            {{uri $OutPortId}} provone:connectsTo {{$ChannelId}} .
-            {{uri $InPortId}} provone:connectsTo {{$ChannelId}} .
+            {{uri $OutPortId}} provone:connectsTo {{uri $ChannelId}} .
+            {{uri $InPortId}} provone:connectsTo {{uri $ChannelId}} .
         {{ end }}                                                                               \\
         {{ end }}                                                                               \\
         {{ end }}                                                                               \\
