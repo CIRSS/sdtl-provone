@@ -23,33 +23,127 @@ geist export --format nt | sort
 <http://wholetale.org/program/1119/dataframe/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/dataframe/1> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/1> .
 <http://wholetale.org/program/1119/dataframe/1> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/dataframe/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/2> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/1 > .
+<http://wholetale.org/program/1119/dataframe/2> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/dataframe/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/3> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/dataframe/3> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/dataframe/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/4> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/4> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/dataframe/4> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/dataframe/4> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/3> .
+<http://wholetale.org/program/1119/dataframe/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/5> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "temps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/5> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/dataframe/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/6> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "temps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/6> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/dataframe/6> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/dataframe/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/7> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "temps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/7> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/dataframe/7> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/dataframe/7> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/6> .
 <http://wholetale.org/program/1119/file/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#File> .
 <http://wholetale.org/program/1119/file/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasFormat> "csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/file/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "inputs/df.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/file/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#File> .
 <http://wholetale.org/program/1119/file/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasFormat> "csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/file/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "df_updated.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/file/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "inputs/temps.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/file/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#File> .
+<http://wholetale.org/program/1119/file/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasFormat> "csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/file/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "temps_updated.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/program/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Program> .
 <http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/1> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/2> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/3> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/4> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/5> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/6> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/7> .
 <http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/8> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/9> .
 <http://wholetale.org/program/1119/step/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
 <http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/1> .
 <http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/2> .
-<http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "LoadAB"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "load_1"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "df = pd.read_csv('inputs/df.csv')"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#loadsFile> <http://wholetale.org/program/1119/file/1> .
 <http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/1> .
+<http://wholetale.org/program/1119/step/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/2> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/step/2> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/1> .
+<http://wholetale.org/program/1119/step/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "compute_1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "df['A'] = 3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/2> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/2> .
+<http://wholetale.org/program/1119/step/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/2> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "compute_2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "df['B'] = df.B + 6.5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/3> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/3> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "compute_3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "df['C'] = df.A - df.B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/4> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/5> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/5> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "load_2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/5> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "temps = pd.read_csv('inputs/temps.csv')"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/5> <https://rdf-vocabulary.ddialliance.org/sdth#loadsFile> <http://wholetale.org/program/1119/file/2> .
+<http://wholetale.org/program/1119/step/5> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/5> .
+<http://wholetale.org/program/1119/step/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/5> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "compute_4"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/6> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/6> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/6> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "compute_5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "temps = temps.assign(Kelvin=(temps.Celsius + 273))"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/7> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/5> .
 <http://wholetale.org/program/1119/step/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
-<http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/1> .
-<http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "SaveAB"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/4> .
+<http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "save_1"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "df.to_csv('outputs/df_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#savesFile> <http://wholetale.org/program/1119/file/2> .
 <http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/1> .
 <http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/3> .
+<http://wholetale.org/program/1119/step/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/7> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "save_2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "temps.to_csv('outputs/temps_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#savesFile> <http://wholetale.org/program/1119/file/3> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/6> .
 <http://wholetale.org/program/1119/variable/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
 <http://wholetale.org/program/1119/variable/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "A"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/variable/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
 <http://wholetale.org/program/1119/variable/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
+<http://wholetale.org/program/1119/variable/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "C"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
+<http://wholetale.org/program/1119/variable/4> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "Fahrenheit"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
+<http://wholetale.org/program/1119/variable/5> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "Celsius"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
+<http://wholetale.org/program/1119/variable/6> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "Kelvin"^^<http://www.w3.org/2001/XMLSchema#string> .
 
 
 ******************************************* EXAMPLE Q1 ************************************************
@@ -74,9 +168,16 @@ __END_QUERY__
 ------------------------------------------- Q1 OUTPUTS ------------------------------------------------
 
 step                                     | step_source_text
-===========================================================================================
+==========================================================================================================
 http://wholetale.org/program/1119/step/1 | df = pd.read_csv('inputs/df.csv')
+http://wholetale.org/program/1119/step/2 | df['A'] = 3
+http://wholetale.org/program/1119/step/3 | df['B'] = df.B + 6.5
+http://wholetale.org/program/1119/step/4 | df['C'] = df.A - df.B
+http://wholetale.org/program/1119/step/5 | temps = pd.read_csv('inputs/temps.csv')
+http://wholetale.org/program/1119/step/6 | temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))
+http://wholetale.org/program/1119/step/7 | temps = temps.assign(Kelvin=(temps.Celsius + 273))
 http://wholetale.org/program/1119/step/8 | df.to_csv('outputs/df_updated.csv', index=False)
+http://wholetale.org/program/1119/step/9 | temps.to_csv('outputs/temps_updated.csv', index=False)
 
 
 ******************************************* EXAMPLE Q2 ************************************************
@@ -100,9 +201,11 @@ __END_QUERY__
 
 ------------------------------------------- Q2 OUTPUTS ------------------------------------------------
 
-file_name     | step                                     | step_source_text
-=============================================================================================
-inputs/df.csv | http://wholetale.org/program/1119/step/1 | df = pd.read_csv('inputs/df.csv')
+file_name        | step                                     | step_source_text
+======================================================================================================
+inputs/df.csv    | http://wholetale.org/program/1119/step/1 | df = pd.read_csv('inputs/df.csv')
+df_updated.csv   | http://wholetale.org/program/1119/step/5 | temps = pd.read_csv('inputs/temps.csv')
+inputs/temps.csv | http://wholetale.org/program/1119/step/5 | temps = pd.read_csv('inputs/temps.csv')
 
 
 ******************************************* EXAMPLE Q3 ************************************************
@@ -126,9 +229,11 @@ __END_QUERY__
 
 ------------------------------------------- Q3 OUTPUTS ------------------------------------------------
 
-file_name      | step                                     | step_source_text
-=============================================================================================================
-df_updated.csv | http://wholetale.org/program/1119/step/8 | df.to_csv('outputs/df_updated.csv', index=False)
+file_name         | step                                     | step_source_text
+======================================================================================================================
+df_updated.csv    | http://wholetale.org/program/1119/step/8 | df.to_csv('outputs/df_updated.csv', index=False)
+inputs/temps.csv  | http://wholetale.org/program/1119/step/8 | df.to_csv('outputs/df_updated.csv', index=False)
+temps_updated.csv | http://wholetale.org/program/1119/step/9 | temps.to_csv('outputs/temps_updated.csv', index=False)
 
 
 ******************************************* EXAMPLE Q4 ************************************************
@@ -156,9 +261,10 @@ __END_QUERY__
 ------------------------------------------- Q4 OUTPUTS ------------------------------------------------
 
 dataframe_name | variable_name | step_source_text
-==================================================
+=============================================================
 df             | A             | df = pd.read_csv('inputs/df.csv')
 df             | B             | df = pd.read_csv('inputs/df.csv')
+temps          | Fahrenheit    | temps = pd.read_csv('inputs/temps.csv')
 
 
 ******************************************* EXAMPLE Q5 ************************************************
@@ -187,7 +293,11 @@ __END_QUERY__
 ------------------------------------------- Q5 OUTPUTS ------------------------------------------------
 
 dataframe_name | variable_name | step_source_text
-==========================================================
+============================================================================
 df             | A             | df.to_csv('outputs/df_updated.csv', index=False)
 df             | B             | df.to_csv('outputs/df_updated.csv', index=False)
+df             | C             | df.to_csv('outputs/df_updated.csv', index=False)
+temps          | Fahrenheit    | temps.to_csv('outputs/temps_updated.csv', index=False)
+temps          | Celsius       | temps.to_csv('outputs/temps_updated.csv', index=False)
+temps          | Kelvin        | temps.to_csv('outputs/temps_updated.csv', index=False)
 

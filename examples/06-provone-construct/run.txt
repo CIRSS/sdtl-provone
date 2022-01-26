@@ -55,40 +55,153 @@ geist export --format nt --sort
 <http://wholetale.org/program/1119/dataframe/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/dataframe/1> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/1> .
 <http://wholetale.org/program/1119/dataframe/1> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/dataframe/2> <http://purl.org/dc/terms/identifier> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/2> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/1 > .
+<http://wholetale.org/program/1119/dataframe/2> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/dataframe/3> <http://purl.org/dc/terms/identifier> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/3> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/dataframe/3> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/dataframe/4> <http://purl.org/dc/terms/identifier> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/4> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/4> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/dataframe/4> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/dataframe/4> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/3> .
+<http://wholetale.org/program/1119/dataframe/5> <http://purl.org/dc/terms/identifier> "temps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/5> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "temps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/5> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/dataframe/6> <http://purl.org/dc/terms/identifier> "temps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/6> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "temps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/6> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/dataframe/6> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/dataframe/7> <http://purl.org/dc/terms/identifier> "temps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/7> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "temps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/7> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/dataframe/7> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/dataframe/7> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/6> .
 <http://wholetale.org/program/1119/file/1> <http://purl.org/dc/terms/identifier> "inputs/df.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/file/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#File> .
 <http://wholetale.org/program/1119/file/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasFormat> "csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/file/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "inputs/df.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/file/2> <http://purl.org/dc/terms/identifier> "df_updated.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/file/2> <http://purl.org/dc/terms/identifier> "inputs/temps.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/file/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#File> .
 <http://wholetale.org/program/1119/file/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasFormat> "csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/file/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "df_updated.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/file/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "inputs/temps.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/file/3> <http://purl.org/dc/terms/identifier> "temps_updated.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/file/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#File> .
+<http://wholetale.org/program/1119/file/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasFormat> "csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/file/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "temps_updated.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/program/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Workflow> .
 <http://wholetale.org/program/1119/program/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Program> .
 <http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/1> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/2> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/3> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/4> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/5> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/6> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/7> .
 <http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/8> .
-<http://wholetale.org/program/1119/step/1> <http://purl.org/dc/terms/identifier> "LoadAB"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/9> .
+<http://wholetale.org/program/1119/step/1> <http://purl.org/dc/terms/identifier> "load_1"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
 <http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/1> .
 <http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/2> .
-<http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "LoadAB"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "load_1"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "df = pd.read_csv('inputs/df.csv')"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#loadsFile> <http://wholetale.org/program/1119/file/1> .
 <http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/1> .
-<http://wholetale.org/program/1119/step/8> <http://purl.org/dc/terms/identifier> "SaveAB"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/2> <http://purl.org/dc/terms/identifier> "compute_1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/2> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/step/2> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/1> .
+<http://wholetale.org/program/1119/step/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "compute_1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "df['A'] = 3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/2> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/2> .
+<http://wholetale.org/program/1119/step/3> <http://purl.org/dc/terms/identifier> "compute_2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/2> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "compute_2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "df['B'] = df.B + 6.5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/3> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/4> <http://purl.org/dc/terms/identifier> "compute_3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/3> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "compute_3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "df['C'] = df.A - df.B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/4> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/5> <http://purl.org/dc/terms/identifier> "load_2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/5> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/5> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "load_2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/5> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "temps = pd.read_csv('inputs/temps.csv')"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/5> <https://rdf-vocabulary.ddialliance.org/sdth#loadsFile> <http://wholetale.org/program/1119/file/2> .
+<http://wholetale.org/program/1119/step/5> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/5> .
+<http://wholetale.org/program/1119/step/6> <http://purl.org/dc/terms/identifier> "compute_4"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/5> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "compute_4"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/6> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/7> <http://purl.org/dc/terms/identifier> "compute_5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/6> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/6> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "compute_5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "temps = temps.assign(Kelvin=(temps.Celsius + 273))"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/7> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/8> <http://purl.org/dc/terms/identifier> "save_1"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
-<http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/1> .
-<http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "SaveAB"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/4> .
+<http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "save_1"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "df.to_csv('outputs/df_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#savesFile> <http://wholetale.org/program/1119/file/2> .
 <http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/1> .
 <http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/3> .
+<http://wholetale.org/program/1119/step/9> <http://purl.org/dc/terms/identifier> "save_2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/7> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "save_2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "temps.to_csv('outputs/temps_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#savesFile> <http://wholetale.org/program/1119/file/3> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/6> .
 <http://wholetale.org/program/1119/variable/1> <http://purl.org/dc/terms/identifier> "A"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/variable/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
 <http://wholetale.org/program/1119/variable/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "A"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/variable/2> <http://purl.org/dc/terms/identifier> "B"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/variable/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
 <http://wholetale.org/program/1119/variable/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/3> <http://purl.org/dc/terms/identifier> "C"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
+<http://wholetale.org/program/1119/variable/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "C"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/4> <http://purl.org/dc/terms/identifier> "Fahrenheit"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
+<http://wholetale.org/program/1119/variable/4> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "Fahrenheit"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/5> <http://purl.org/dc/terms/identifier> "Celsius"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
+<http://wholetale.org/program/1119/variable/5> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "Celsius"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/6> <http://purl.org/dc/terms/identifier> "Kelvin"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
+<http://wholetale.org/program/1119/variable/6> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "Kelvin"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt> .
@@ -338,7 +451,14 @@ __END_REPORT_TEMPLATE__
 
 <http://wholetale.org/program/1119/program/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://wholetale.org/program/1119/step/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://wholetale.org/program/1119/step/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://wholetale.org/program/1119/step/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://wholetale.org/program/1119/step/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://wholetale.org/program/1119/step/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://wholetale.org/program/1119/step/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://wholetale.org/program/1119/step/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://wholetale.org/program/1119/step/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://wholetale.org/program/1119/step/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 
 
 ******************************************* EXAMPLE R2 ************************************************
@@ -356,7 +476,14 @@ __END_REPORT_TEMPLATE__
 ------------------------------------------- R2 OUTPUTS ------------------------------------------------
 
 <http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/1> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/2> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/3> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/4> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/5> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/6> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/7> .
 <http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/8> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/9> .
 
 
 ******************************************* EXAMPLE R3 ************************************************
@@ -374,10 +501,142 @@ __END_REPORT_TEMPLATE__
 
 ------------------------------------------- R3 OUTPUTS ------------------------------------------------
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <http://wholetale.org/program/1119/step/1/dataframeport/df_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/1> .
 <http://wholetale.org/program/1119/step/1> provone:hasOutPort <http://wholetale.org/program/1119/step/1/dataframeport/df_out> .
-<http://wholetale.org/program/1119/step/8/dataframeport/df_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/1> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/1> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/2> .
+<http://wholetale.org/program/1119/step/2> provone:hasInPort <http://wholetale.org/program/1119/step/2/dataframeport/df_in> .
+<http://wholetale.org/program/1119/step/2> provone:hasOutPort <http://wholetale.org/program/1119/step/2/dataframeport/df_out> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/2> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/3> .
+<http://wholetale.org/program/1119/step/3> provone:hasInPort <http://wholetale.org/program/1119/step/3/dataframeport/df_in> .
+<http://wholetale.org/program/1119/step/3> provone:hasOutPort <http://wholetale.org/program/1119/step/3/dataframeport/df_out> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/3> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/4> .
+<http://wholetale.org/program/1119/step/4> provone:hasInPort <http://wholetale.org/program/1119/step/4/dataframeport/df_in> .
+<http://wholetale.org/program/1119/step/4> provone:hasOutPort <http://wholetale.org/program/1119/step/4/dataframeport/df_out> .
+<http://wholetale.org/program/1119/step/5/dataframeport/temps_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/5> .
+<http://wholetale.org/program/1119/step/5> provone:hasOutPort <http://wholetale.org/program/1119/step/5/dataframeport/temps_out> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/5> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/6> .
+<http://wholetale.org/program/1119/step/6> provone:hasInPort <http://wholetale.org/program/1119/step/6/dataframeport/temps_in> .
+<http://wholetale.org/program/1119/step/6> provone:hasOutPort <http://wholetale.org/program/1119/step/6/dataframeport/temps_out> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/6> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/7> .
+<http://wholetale.org/program/1119/step/7> provone:hasInPort <http://wholetale.org/program/1119/step/7/dataframeport/temps_in> .
+<http://wholetale.org/program/1119/step/7> provone:hasOutPort <http://wholetale.org/program/1119/step/7/dataframeport/temps_out> .
+<http://wholetale.org/program/1119/step/8/dataframeport/df_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/4> .
 <http://wholetale.org/program/1119/step/8> provone:hasInPort <http://wholetale.org/program/1119/step/8/dataframeport/df_in> .
+<http://wholetale.org/program/1119/step/9/dataframeport/temps_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/7> .
+<http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/dataframeport/temps_in> .
 
 
 ******************************************* EXAMPLE R4 ************************************************
@@ -396,14 +655,50 @@ __END_REPORT_TEMPLATE__
 ------------------------------------------- R4 OUTPUTS ------------------------------------------------
 
 
+
+
+
+
+
+
 <http://wholetale.org/program/1119/step/1/variableport/A_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/1> .
 <http://wholetale.org/program/1119/step/1/variableport/B_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
 <http://wholetale.org/program/1119/step/1> provone:hasOutPort <http://wholetale.org/program/1119/step/1/variableport/A_out> .
 <http://wholetale.org/program/1119/step/1> provone:hasOutPort <http://wholetale.org/program/1119/step/1/variableport/B_out> .
+<http://wholetale.org/program/1119/step/2/variableport/A_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/step/2> provone:hasOutPort <http://wholetale.org/program/1119/step/2/variableport/A_out> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/3> provone:hasInPort <http://wholetale.org/program/1119/step/3/variableport/B_in> .
+<http://wholetale.org/program/1119/step/3> provone:hasOutPort <http://wholetale.org/program/1119/step/3/variableport/B_out> .
+<http://wholetale.org/program/1119/step/4/variableport/A_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/4> provone:hasInPort <http://wholetale.org/program/1119/step/4/variableport/A_in> .
+<http://wholetale.org/program/1119/step/4> provone:hasInPort <http://wholetale.org/program/1119/step/4/variableport/B_in> .
+<http://wholetale.org/program/1119/step/4> provone:hasOutPort <http://wholetale.org/program/1119/step/4/variableport/B_out> .
+<http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/5> provone:hasOutPort <http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> .
+<http://wholetale.org/program/1119/step/6/variableport/Celsius_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/6/variableport/Fahrenheit_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/6> provone:hasInPort <http://wholetale.org/program/1119/step/6/variableport/Fahrenheit_in> .
+<http://wholetale.org/program/1119/step/6> provone:hasOutPort <http://wholetale.org/program/1119/step/6/variableport/Celsius_out> .
+<http://wholetale.org/program/1119/step/7/variableport/Celsius_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/7/variableport/Kelvin_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/6> .
+<http://wholetale.org/program/1119/step/7> provone:hasInPort <http://wholetale.org/program/1119/step/7/variableport/Celsius_in> .
+<http://wholetale.org/program/1119/step/7> provone:hasOutPort <http://wholetale.org/program/1119/step/7/variableport/Kelvin_out> .
 <http://wholetale.org/program/1119/step/8/variableport/A_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/1> .
 <http://wholetale.org/program/1119/step/8/variableport/B_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/8/variableport/C_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/3> .
 <http://wholetale.org/program/1119/step/8> provone:hasInPort <http://wholetale.org/program/1119/step/8/variableport/A_in> .
 <http://wholetale.org/program/1119/step/8> provone:hasInPort <http://wholetale.org/program/1119/step/8/variableport/B_in> .
+<http://wholetale.org/program/1119/step/8> provone:hasInPort <http://wholetale.org/program/1119/step/8/variableport/C_in> .
+<http://wholetale.org/program/1119/step/9/variableport/Celsius_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/9/variableport/Fahrenheit_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/6> .
+<http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Celsius_in> .
+<http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Fahrenheit_in> .
+<http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> .
 
 
 ******************************************* EXAMPLE R5 ************************************************
@@ -421,7 +716,19 @@ __END_REPORT_TEMPLATE__
 ------------------------------------------- R5 OUTPUTS ------------------------------------------------
 
 <http://wholetale.org/program/1119/step/1/dataframeport/df_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/dataframechannel/0> .
-<http://wholetale.org/program/1119/step/8/dataframeport/df_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/dataframechannel/0> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/dataframechannel/0> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_out> provone:connectsTo <http://wholetale.org/program/1119/step/2/dataframechannel/1> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_in> provone:connectsTo <http://wholetale.org/program/1119/step/2/dataframechannel/1> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_out> provone:connectsTo <http://wholetale.org/program/1119/step/3/dataframechannel/2> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_in> provone:connectsTo <http://wholetale.org/program/1119/step/3/dataframechannel/2> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_out> provone:connectsTo <http://wholetale.org/program/1119/step/4/dataframechannel/3> .
+<http://wholetale.org/program/1119/step/5/dataframeport/temps_out> provone:connectsTo <http://wholetale.org/program/1119/step/5/dataframechannel/4> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_in> provone:connectsTo <http://wholetale.org/program/1119/step/5/dataframechannel/4> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_out> provone:connectsTo <http://wholetale.org/program/1119/step/6/dataframechannel/5> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_in> provone:connectsTo <http://wholetale.org/program/1119/step/6/dataframechannel/5> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_out> provone:connectsTo <http://wholetale.org/program/1119/step/7/dataframechannel/6> .
+<http://wholetale.org/program/1119/step/8/dataframeport/df_in> provone:connectsTo <http://wholetale.org/program/1119/step/4/dataframechannel/3> .
+<http://wholetale.org/program/1119/step/9/dataframeport/temps_in> provone:connectsTo <http://wholetale.org/program/1119/step/7/dataframechannel/6> .
 
 
 ******************************************* EXAMPLE R6 ************************************************
@@ -439,9 +746,41 @@ __END_REPORT_TEMPLATE__
 ------------------------------------------- R6 OUTPUTS ------------------------------------------------
 
 <http://wholetale.org/program/1119/step/1/variableport/A_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/0> .
-<http://wholetale.org/program/1119/step/1/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/1> .
-<http://wholetale.org/program/1119/step/8/variableport/A_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/0> .
-<http://wholetale.org/program/1119/step/8/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/1> .
+<http://wholetale.org/program/1119/step/1/variableport/A_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/2> .
+<http://wholetale.org/program/1119/step/1/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/10> .
+<http://wholetale.org/program/1119/step/1/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/4> .
+<http://wholetale.org/program/1119/step/1/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/7> .
+<http://wholetale.org/program/1119/step/2/variableport/A_out> provone:connectsTo <http://wholetale.org/program/1119/step/2/variablechannel/1> .
+<http://wholetale.org/program/1119/step/2/variableport/A_out> provone:connectsTo <http://wholetale.org/program/1119/step/2/variablechannel/3> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/4> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/5> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/6> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/11> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/5> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/8> .
+<http://wholetale.org/program/1119/step/4/variableport/A_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/0> .
+<http://wholetale.org/program/1119/step/4/variableport/A_in> provone:connectsTo <http://wholetale.org/program/1119/step/2/variablechannel/1> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/7> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/8> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/9> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/12> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/6> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/9> .
+<http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> provone:connectsTo <http://wholetale.org/program/1119/step/5/variablechannel/13> .
+<http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> provone:connectsTo <http://wholetale.org/program/1119/step/5/variablechannel/14> .
+<http://wholetale.org/program/1119/step/6/variableport/Celsius_out> provone:connectsTo <http://wholetale.org/program/1119/step/6/variablechannel/15> .
+<http://wholetale.org/program/1119/step/6/variableport/Celsius_out> provone:connectsTo <http://wholetale.org/program/1119/step/6/variablechannel/16> .
+<http://wholetale.org/program/1119/step/6/variableport/Fahrenheit_in> provone:connectsTo <http://wholetale.org/program/1119/step/5/variablechannel/13> .
+<http://wholetale.org/program/1119/step/7/variableport/Celsius_in> provone:connectsTo <http://wholetale.org/program/1119/step/6/variablechannel/15> .
+<http://wholetale.org/program/1119/step/7/variableport/Kelvin_out> provone:connectsTo <http://wholetale.org/program/1119/step/7/variablechannel/17> .
+<http://wholetale.org/program/1119/step/8/variableport/A_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/2> .
+<http://wholetale.org/program/1119/step/8/variableport/A_in> provone:connectsTo <http://wholetale.org/program/1119/step/2/variablechannel/3> .
+<http://wholetale.org/program/1119/step/8/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/10> .
+<http://wholetale.org/program/1119/step/8/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/11> .
+<http://wholetale.org/program/1119/step/8/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/12> .
+<http://wholetale.org/program/1119/step/9/variableport/Celsius_in> provone:connectsTo <http://wholetale.org/program/1119/step/6/variablechannel/16> .
+<http://wholetale.org/program/1119/step/9/variableport/Fahrenheit_in> provone:connectsTo <http://wholetale.org/program/1119/step/5/variablechannel/14> .
+<http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> provone:connectsTo <http://wholetale.org/program/1119/step/7/variablechannel/17> .
 
 
 ******************************************* EXAMPLE R7 ************************************************
@@ -475,26 +814,245 @@ cat outputs/augment.ttl
 @prefix provone: <http://purl.dataone.org/provone/2015/01/15/ontology#> .
 @prefix sdth: <https://rdf-vocabulary.ddialliance.org/sdth#> .
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/1> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/2> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/3> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/4> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/5> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/6> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/7> .
 <http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/8> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/9> .
 <http://wholetale.org/program/1119/step/1/dataframeport/df_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/dataframechannel/0> .
 <http://wholetale.org/program/1119/step/1/dataframeport/df_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/1> .
 <http://wholetale.org/program/1119/step/1/variableport/A_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/0> .
+<http://wholetale.org/program/1119/step/1/variableport/A_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/2> .
 <http://wholetale.org/program/1119/step/1/variableport/A_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/1> .
-<http://wholetale.org/program/1119/step/1/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/1> .
+<http://wholetale.org/program/1119/step/1/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/10> .
+<http://wholetale.org/program/1119/step/1/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/4> .
+<http://wholetale.org/program/1119/step/1/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/7> .
 <http://wholetale.org/program/1119/step/1/variableport/B_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
 <http://wholetale.org/program/1119/step/1> provone:hasOutPort <http://wholetale.org/program/1119/step/1/dataframeport/df_out> .
 <http://wholetale.org/program/1119/step/1> provone:hasOutPort <http://wholetale.org/program/1119/step/1/variableport/A_out> .
 <http://wholetale.org/program/1119/step/1> provone:hasOutPort <http://wholetale.org/program/1119/step/1/variableport/B_out> .
-<http://wholetale.org/program/1119/step/8/dataframeport/df_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/dataframechannel/0> .
-<http://wholetale.org/program/1119/step/8/dataframeport/df_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/1> .
-<http://wholetale.org/program/1119/step/8/variableport/A_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/0> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/dataframechannel/0> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/1> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_out> provone:connectsTo <http://wholetale.org/program/1119/step/2/dataframechannel/1> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/2> .
+<http://wholetale.org/program/1119/step/2/variableport/A_out> provone:connectsTo <http://wholetale.org/program/1119/step/2/variablechannel/1> .
+<http://wholetale.org/program/1119/step/2/variableport/A_out> provone:connectsTo <http://wholetale.org/program/1119/step/2/variablechannel/3> .
+<http://wholetale.org/program/1119/step/2/variableport/A_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/step/2> provone:hasInPort <http://wholetale.org/program/1119/step/2/dataframeport/df_in> .
+<http://wholetale.org/program/1119/step/2> provone:hasOutPort <http://wholetale.org/program/1119/step/2/dataframeport/df_out> .
+<http://wholetale.org/program/1119/step/2> provone:hasOutPort <http://wholetale.org/program/1119/step/2/variableport/A_out> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_in> provone:connectsTo <http://wholetale.org/program/1119/step/2/dataframechannel/1> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/2> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_out> provone:connectsTo <http://wholetale.org/program/1119/step/3/dataframechannel/2> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/3> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/4> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/5> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/6> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/11> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/5> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/8> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/3> provone:hasInPort <http://wholetale.org/program/1119/step/3/dataframeport/df_in> .
+<http://wholetale.org/program/1119/step/3> provone:hasInPort <http://wholetale.org/program/1119/step/3/variableport/B_in> .
+<http://wholetale.org/program/1119/step/3> provone:hasOutPort <http://wholetale.org/program/1119/step/3/dataframeport/df_out> .
+<http://wholetale.org/program/1119/step/3> provone:hasOutPort <http://wholetale.org/program/1119/step/3/variableport/B_out> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_in> provone:connectsTo <http://wholetale.org/program/1119/step/3/dataframechannel/2> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/3> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_out> provone:connectsTo <http://wholetale.org/program/1119/step/4/dataframechannel/3> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/4> .
+<http://wholetale.org/program/1119/step/4/variableport/A_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/0> .
+<http://wholetale.org/program/1119/step/4/variableport/A_in> provone:connectsTo <http://wholetale.org/program/1119/step/2/variablechannel/1> .
+<http://wholetale.org/program/1119/step/4/variableport/A_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/7> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/8> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/9> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/12> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/6> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/9> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/4> provone:hasInPort <http://wholetale.org/program/1119/step/4/dataframeport/df_in> .
+<http://wholetale.org/program/1119/step/4> provone:hasInPort <http://wholetale.org/program/1119/step/4/variableport/A_in> .
+<http://wholetale.org/program/1119/step/4> provone:hasInPort <http://wholetale.org/program/1119/step/4/variableport/B_in> .
+<http://wholetale.org/program/1119/step/4> provone:hasOutPort <http://wholetale.org/program/1119/step/4/dataframeport/df_out> .
+<http://wholetale.org/program/1119/step/4> provone:hasOutPort <http://wholetale.org/program/1119/step/4/variableport/B_out> .
+<http://wholetale.org/program/1119/step/5/dataframeport/temps_out> provone:connectsTo <http://wholetale.org/program/1119/step/5/dataframechannel/4> .
+<http://wholetale.org/program/1119/step/5/dataframeport/temps_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/5> .
+<http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> provone:connectsTo <http://wholetale.org/program/1119/step/5/variablechannel/13> .
+<http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> provone:connectsTo <http://wholetale.org/program/1119/step/5/variablechannel/14> .
+<http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/5> provone:hasOutPort <http://wholetale.org/program/1119/step/5/dataframeport/temps_out> .
+<http://wholetale.org/program/1119/step/5> provone:hasOutPort <http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_in> provone:connectsTo <http://wholetale.org/program/1119/step/5/dataframechannel/4> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/5> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_out> provone:connectsTo <http://wholetale.org/program/1119/step/6/dataframechannel/5> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/6> .
+<http://wholetale.org/program/1119/step/6/variableport/Celsius_out> provone:connectsTo <http://wholetale.org/program/1119/step/6/variablechannel/15> .
+<http://wholetale.org/program/1119/step/6/variableport/Celsius_out> provone:connectsTo <http://wholetale.org/program/1119/step/6/variablechannel/16> .
+<http://wholetale.org/program/1119/step/6/variableport/Celsius_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/6/variableport/Fahrenheit_in> provone:connectsTo <http://wholetale.org/program/1119/step/5/variablechannel/13> .
+<http://wholetale.org/program/1119/step/6/variableport/Fahrenheit_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/6> provone:hasInPort <http://wholetale.org/program/1119/step/6/dataframeport/temps_in> .
+<http://wholetale.org/program/1119/step/6> provone:hasInPort <http://wholetale.org/program/1119/step/6/variableport/Fahrenheit_in> .
+<http://wholetale.org/program/1119/step/6> provone:hasOutPort <http://wholetale.org/program/1119/step/6/dataframeport/temps_out> .
+<http://wholetale.org/program/1119/step/6> provone:hasOutPort <http://wholetale.org/program/1119/step/6/variableport/Celsius_out> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_in> provone:connectsTo <http://wholetale.org/program/1119/step/6/dataframechannel/5> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/6> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_out> provone:connectsTo <http://wholetale.org/program/1119/step/7/dataframechannel/6> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/7> .
+<http://wholetale.org/program/1119/step/7/variableport/Celsius_in> provone:connectsTo <http://wholetale.org/program/1119/step/6/variablechannel/15> .
+<http://wholetale.org/program/1119/step/7/variableport/Celsius_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/7/variableport/Kelvin_out> provone:connectsTo <http://wholetale.org/program/1119/step/7/variablechannel/17> .
+<http://wholetale.org/program/1119/step/7/variableport/Kelvin_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/6> .
+<http://wholetale.org/program/1119/step/7> provone:hasInPort <http://wholetale.org/program/1119/step/7/dataframeport/temps_in> .
+<http://wholetale.org/program/1119/step/7> provone:hasInPort <http://wholetale.org/program/1119/step/7/variableport/Celsius_in> .
+<http://wholetale.org/program/1119/step/7> provone:hasOutPort <http://wholetale.org/program/1119/step/7/dataframeport/temps_out> .
+<http://wholetale.org/program/1119/step/7> provone:hasOutPort <http://wholetale.org/program/1119/step/7/variableport/Kelvin_out> .
+<http://wholetale.org/program/1119/step/8/dataframeport/df_in> provone:connectsTo <http://wholetale.org/program/1119/step/4/dataframechannel/3> .
+<http://wholetale.org/program/1119/step/8/dataframeport/df_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/4> .
+<http://wholetale.org/program/1119/step/8/variableport/A_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/2> .
+<http://wholetale.org/program/1119/step/8/variableport/A_in> provone:connectsTo <http://wholetale.org/program/1119/step/2/variablechannel/3> .
 <http://wholetale.org/program/1119/step/8/variableport/A_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/1> .
-<http://wholetale.org/program/1119/step/8/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/1> .
+<http://wholetale.org/program/1119/step/8/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/10> .
+<http://wholetale.org/program/1119/step/8/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/11> .
+<http://wholetale.org/program/1119/step/8/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/12> .
 <http://wholetale.org/program/1119/step/8/variableport/B_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/8/variableport/C_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/3> .
 <http://wholetale.org/program/1119/step/8> provone:hasInPort <http://wholetale.org/program/1119/step/8/dataframeport/df_in> .
 <http://wholetale.org/program/1119/step/8> provone:hasInPort <http://wholetale.org/program/1119/step/8/variableport/A_in> .
 <http://wholetale.org/program/1119/step/8> provone:hasInPort <http://wholetale.org/program/1119/step/8/variableport/B_in> .
+<http://wholetale.org/program/1119/step/8> provone:hasInPort <http://wholetale.org/program/1119/step/8/variableport/C_in> .
+<http://wholetale.org/program/1119/step/9/dataframeport/temps_in> provone:connectsTo <http://wholetale.org/program/1119/step/7/dataframechannel/6> .
+<http://wholetale.org/program/1119/step/9/dataframeport/temps_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/7> .
+<http://wholetale.org/program/1119/step/9/variableport/Celsius_in> provone:connectsTo <http://wholetale.org/program/1119/step/6/variablechannel/16> .
+<http://wholetale.org/program/1119/step/9/variableport/Celsius_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/9/variableport/Fahrenheit_in> provone:connectsTo <http://wholetale.org/program/1119/step/5/variablechannel/14> .
+<http://wholetale.org/program/1119/step/9/variableport/Fahrenheit_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> provone:connectsTo <http://wholetale.org/program/1119/step/7/variablechannel/17> .
+<http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/6> .
+<http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/dataframeport/temps_in> .
+<http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Celsius_in> .
+<http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Fahrenheit_in> .
+<http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> .
 
 
 ******************************************* EXAMPLE LOAD-3 ************************************************
@@ -550,72 +1108,346 @@ geist export --format nt --sort
 <http://wholetale.org/program/1119/dataframe/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/dataframe/1> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/1> .
 <http://wholetale.org/program/1119/dataframe/1> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/dataframe/2> <http://purl.org/dc/terms/identifier> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/2> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/1 > .
+<http://wholetale.org/program/1119/dataframe/2> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/dataframe/3> <http://purl.org/dc/terms/identifier> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/3> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/dataframe/3> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/dataframe/4> <http://purl.org/dc/terms/identifier> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/4> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/4> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/dataframe/4> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/dataframe/4> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/3> .
+<http://wholetale.org/program/1119/dataframe/5> <http://purl.org/dc/terms/identifier> "temps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/5> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "temps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/5> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/dataframe/6> <http://purl.org/dc/terms/identifier> "temps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/6> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "temps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/6> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/dataframe/6> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/dataframe/7> <http://purl.org/dc/terms/identifier> "temps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Dataframe> .
+<http://wholetale.org/program/1119/dataframe/7> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "temps"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/dataframe/7> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/dataframe/7> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/dataframe/7> <https://rdf-vocabulary.ddialliance.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/6> .
 <http://wholetale.org/program/1119/file/1> <http://purl.org/dc/terms/identifier> "inputs/df.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/file/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#File> .
 <http://wholetale.org/program/1119/file/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasFormat> "csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/file/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "inputs/df.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/file/2> <http://purl.org/dc/terms/identifier> "df_updated.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/file/2> <http://purl.org/dc/terms/identifier> "inputs/temps.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/file/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#File> .
 <http://wholetale.org/program/1119/file/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasFormat> "csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/file/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "df_updated.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/file/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "inputs/temps.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/file/3> <http://purl.org/dc/terms/identifier> "temps_updated.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/file/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#File> .
+<http://wholetale.org/program/1119/file/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasFormat> "csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/file/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "temps_updated.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/program/1> <http://purl.dataone.org/provone/2015/01/15/ontology#hasSubProgram> <http://wholetale.org/program/1119/step/1> .
+<http://wholetale.org/program/1119/program/1> <http://purl.dataone.org/provone/2015/01/15/ontology#hasSubProgram> <http://wholetale.org/program/1119/step/2> .
+<http://wholetale.org/program/1119/program/1> <http://purl.dataone.org/provone/2015/01/15/ontology#hasSubProgram> <http://wholetale.org/program/1119/step/3> .
+<http://wholetale.org/program/1119/program/1> <http://purl.dataone.org/provone/2015/01/15/ontology#hasSubProgram> <http://wholetale.org/program/1119/step/4> .
+<http://wholetale.org/program/1119/program/1> <http://purl.dataone.org/provone/2015/01/15/ontology#hasSubProgram> <http://wholetale.org/program/1119/step/5> .
+<http://wholetale.org/program/1119/program/1> <http://purl.dataone.org/provone/2015/01/15/ontology#hasSubProgram> <http://wholetale.org/program/1119/step/6> .
+<http://wholetale.org/program/1119/program/1> <http://purl.dataone.org/provone/2015/01/15/ontology#hasSubProgram> <http://wholetale.org/program/1119/step/7> .
 <http://wholetale.org/program/1119/program/1> <http://purl.dataone.org/provone/2015/01/15/ontology#hasSubProgram> <http://wholetale.org/program/1119/step/8> .
+<http://wholetale.org/program/1119/program/1> <http://purl.dataone.org/provone/2015/01/15/ontology#hasSubProgram> <http://wholetale.org/program/1119/step/9> .
 <http://wholetale.org/program/1119/program/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://wholetale.org/program/1119/program/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Workflow> .
 <http://wholetale.org/program/1119/program/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Program> .
 <http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/1> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/2> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/3> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/4> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/5> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/6> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/7> .
 <http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/8> .
+<http://wholetale.org/program/1119/program/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasProgramStep> <http://wholetale.org/program/1119/step/9> .
 <http://wholetale.org/program/1119/step/1/dataframechannel/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
 <http://wholetale.org/program/1119/step/1/dataframeport/df_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/1/dataframechannel/0> .
 <http://wholetale.org/program/1119/step/1/dataframeport/df_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://wholetale.org/program/1119/step/1/dataframeport/df_out> <https://rdf-vocabulary.ddialliance.org/sdth#hasDataframe> <http://wholetale.org/program/1119/dataframe/1> .
 <http://wholetale.org/program/1119/step/1/variablechannel/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
-<http://wholetale.org/program/1119/step/1/variablechannel/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/1/variablechannel/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/1/variablechannel/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/1/variablechannel/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/1/variablechannel/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
 <http://wholetale.org/program/1119/step/1/variableport/A_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/1/variablechannel/0> .
+<http://wholetale.org/program/1119/step/1/variableport/A_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/1/variablechannel/2> .
 <http://wholetale.org/program/1119/step/1/variableport/A_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://wholetale.org/program/1119/step/1/variableport/A_out> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/1> .
-<http://wholetale.org/program/1119/step/1/variableport/B_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/1/variablechannel/1> .
+<http://wholetale.org/program/1119/step/1/variableport/B_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/1/variablechannel/10> .
+<http://wholetale.org/program/1119/step/1/variableport/B_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/1/variablechannel/4> .
+<http://wholetale.org/program/1119/step/1/variableport/B_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/1/variablechannel/7> .
 <http://wholetale.org/program/1119/step/1/variableport/B_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://wholetale.org/program/1119/step/1/variableport/B_out> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/2> .
 <http://wholetale.org/program/1119/step/1> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://wholetale.org/program/1119/step/1/dataframeport/df_out> .
 <http://wholetale.org/program/1119/step/1> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://wholetale.org/program/1119/step/1/variableport/A_out> .
 <http://wholetale.org/program/1119/step/1> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://wholetale.org/program/1119/step/1/variableport/B_out> .
-<http://wholetale.org/program/1119/step/1> <http://purl.org/dc/terms/identifier> "LoadAB"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/1> <http://purl.org/dc/terms/identifier> "load_1"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://wholetale.org/program/1119/step/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
 <http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/1> .
 <http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/2> .
-<http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "LoadAB"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "load_1"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "df = pd.read_csv('inputs/df.csv')"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#loadsFile> <http://wholetale.org/program/1119/file/1> .
 <http://wholetale.org/program/1119/step/1> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/1> .
-<http://wholetale.org/program/1119/step/8/dataframeport/df_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/1/dataframechannel/0> .
+<http://wholetale.org/program/1119/step/2/dataframechannel/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/1/dataframechannel/0> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasDataframe> <http://wholetale.org/program/1119/dataframe/1> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/2/dataframechannel/1> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_out> <https://rdf-vocabulary.ddialliance.org/sdth#hasDataframe> <http://wholetale.org/program/1119/dataframe/2> .
+<http://wholetale.org/program/1119/step/2/variablechannel/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/2/variablechannel/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/2/variableport/A_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/2/variablechannel/1> .
+<http://wholetale.org/program/1119/step/2/variableport/A_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/2/variablechannel/3> .
+<http://wholetale.org/program/1119/step/2/variableport/A_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/2/variableport/A_out> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/step/2> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/2/dataframeport/df_in> .
+<http://wholetale.org/program/1119/step/2> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://wholetale.org/program/1119/step/2/dataframeport/df_out> .
+<http://wholetale.org/program/1119/step/2> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://wholetale.org/program/1119/step/2/variableport/A_out> .
+<http://wholetale.org/program/1119/step/2> <http://purl.org/dc/terms/identifier> "compute_1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://wholetale.org/program/1119/step/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/2> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/step/2> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/1> .
+<http://wholetale.org/program/1119/step/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "compute_1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "df['A'] = 3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/2> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/2> .
+<http://wholetale.org/program/1119/step/3/dataframechannel/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/2/dataframechannel/1> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasDataframe> <http://wholetale.org/program/1119/dataframe/2> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/3/dataframechannel/2> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_out> <https://rdf-vocabulary.ddialliance.org/sdth#hasDataframe> <http://wholetale.org/program/1119/dataframe/3> .
+<http://wholetale.org/program/1119/step/3/variablechannel/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/3/variablechannel/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/3/variablechannel/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/1/variablechannel/4> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/3/variablechannel/5> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/4/variablechannel/6> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/3/variablechannel/11> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/3/variablechannel/5> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/3/variablechannel/8> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/3> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/3/dataframeport/df_in> .
+<http://wholetale.org/program/1119/step/3> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/3/variableport/B_in> .
+<http://wholetale.org/program/1119/step/3> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://wholetale.org/program/1119/step/3/dataframeport/df_out> .
+<http://wholetale.org/program/1119/step/3> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://wholetale.org/program/1119/step/3/variableport/B_out> .
+<http://wholetale.org/program/1119/step/3> <http://purl.org/dc/terms/identifier> "compute_2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://wholetale.org/program/1119/step/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/2> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "compute_2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "df['B'] = df.B + 6.5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/3> .
+<http://wholetale.org/program/1119/step/3> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/4/dataframechannel/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/3/dataframechannel/2> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasDataframe> <http://wholetale.org/program/1119/dataframe/3> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/4/dataframechannel/3> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_out> <https://rdf-vocabulary.ddialliance.org/sdth#hasDataframe> <http://wholetale.org/program/1119/dataframe/4> .
+<http://wholetale.org/program/1119/step/4/variablechannel/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/4/variablechannel/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/4/variablechannel/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/4/variableport/A_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/1/variablechannel/0> .
+<http://wholetale.org/program/1119/step/4/variableport/A_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/2/variablechannel/1> .
+<http://wholetale.org/program/1119/step/4/variableport/A_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/4/variableport/A_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/1/variablechannel/7> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/3/variablechannel/8> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/4/variablechannel/9> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/4/variablechannel/12> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/4/variablechannel/6> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/4/variablechannel/9> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/4> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/4/dataframeport/df_in> .
+<http://wholetale.org/program/1119/step/4> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/4/variableport/A_in> .
+<http://wholetale.org/program/1119/step/4> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/4/variableport/B_in> .
+<http://wholetale.org/program/1119/step/4> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://wholetale.org/program/1119/step/4/dataframeport/df_out> .
+<http://wholetale.org/program/1119/step/4> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://wholetale.org/program/1119/step/4/variableport/B_out> .
+<http://wholetale.org/program/1119/step/4> <http://purl.org/dc/terms/identifier> "compute_3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://wholetale.org/program/1119/step/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/3> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "compute_3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "df['C'] = df.A - df.B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/4> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/step/4> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/5/dataframechannel/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/5/dataframeport/temps_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/5/dataframechannel/4> .
+<http://wholetale.org/program/1119/step/5/dataframeport/temps_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/5/dataframeport/temps_out> <https://rdf-vocabulary.ddialliance.org/sdth#hasDataframe> <http://wholetale.org/program/1119/dataframe/5> .
+<http://wholetale.org/program/1119/step/5/variablechannel/13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/5/variablechannel/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/5/variablechannel/13> .
+<http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/5/variablechannel/14> .
+<http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/5> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://wholetale.org/program/1119/step/5/dataframeport/temps_out> .
+<http://wholetale.org/program/1119/step/5> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> .
+<http://wholetale.org/program/1119/step/5> <http://purl.org/dc/terms/identifier> "load_2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://wholetale.org/program/1119/step/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/5> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/5> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "load_2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/5> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "temps = pd.read_csv('inputs/temps.csv')"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/5> <https://rdf-vocabulary.ddialliance.org/sdth#loadsFile> <http://wholetale.org/program/1119/file/2> .
+<http://wholetale.org/program/1119/step/5> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/5> .
+<http://wholetale.org/program/1119/step/6/dataframechannel/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/5/dataframechannel/4> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasDataframe> <http://wholetale.org/program/1119/dataframe/5> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/6/dataframechannel/5> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_out> <https://rdf-vocabulary.ddialliance.org/sdth#hasDataframe> <http://wholetale.org/program/1119/dataframe/6> .
+<http://wholetale.org/program/1119/step/6/variablechannel/15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/6/variablechannel/16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/6/variableport/Celsius_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/6/variablechannel/15> .
+<http://wholetale.org/program/1119/step/6/variableport/Celsius_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/6/variablechannel/16> .
+<http://wholetale.org/program/1119/step/6/variableport/Celsius_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/6/variableport/Celsius_out> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/6/variableport/Fahrenheit_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/5/variablechannel/13> .
+<http://wholetale.org/program/1119/step/6/variableport/Fahrenheit_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/6/variableport/Fahrenheit_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/6> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/6/dataframeport/temps_in> .
+<http://wholetale.org/program/1119/step/6> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/6/variableport/Fahrenheit_in> .
+<http://wholetale.org/program/1119/step/6> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://wholetale.org/program/1119/step/6/dataframeport/temps_out> .
+<http://wholetale.org/program/1119/step/6> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://wholetale.org/program/1119/step/6/variableport/Celsius_out> .
+<http://wholetale.org/program/1119/step/6> <http://purl.org/dc/terms/identifier> "compute_4"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://wholetale.org/program/1119/step/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/5> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "compute_4"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/6> .
+<http://wholetale.org/program/1119/step/6> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/7/dataframechannel/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/6/dataframechannel/5> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasDataframe> <http://wholetale.org/program/1119/dataframe/6> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/7/dataframechannel/6> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_out> <https://rdf-vocabulary.ddialliance.org/sdth#hasDataframe> <http://wholetale.org/program/1119/dataframe/7> .
+<http://wholetale.org/program/1119/step/7/variablechannel/17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://wholetale.org/program/1119/step/7/variableport/Celsius_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/6/variablechannel/15> .
+<http://wholetale.org/program/1119/step/7/variableport/Celsius_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/7/variableport/Celsius_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/7/variableport/Kelvin_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/7/variablechannel/17> .
+<http://wholetale.org/program/1119/step/7/variableport/Kelvin_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/7/variableport/Kelvin_out> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/6> .
+<http://wholetale.org/program/1119/step/7> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/7/dataframeport/temps_in> .
+<http://wholetale.org/program/1119/step/7> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/7/variableport/Celsius_in> .
+<http://wholetale.org/program/1119/step/7> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://wholetale.org/program/1119/step/7/dataframeport/temps_out> .
+<http://wholetale.org/program/1119/step/7> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://wholetale.org/program/1119/step/7/variableport/Kelvin_out> .
+<http://wholetale.org/program/1119/step/7> <http://purl.org/dc/terms/identifier> "compute_5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://wholetale.org/program/1119/step/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#assignsVariable> <http://wholetale.org/program/1119/variable/6> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/6> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "compute_5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "temps = temps.assign(Kelvin=(temps.Celsius + 273))"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#producesDataframe> <http://wholetale.org/program/1119/dataframe/7> .
+<http://wholetale.org/program/1119/step/7> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/8/dataframeport/df_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/4/dataframechannel/3> .
 <http://wholetale.org/program/1119/step/8/dataframeport/df_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
-<http://wholetale.org/program/1119/step/8/dataframeport/df_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasDataframe> <http://wholetale.org/program/1119/dataframe/1> .
-<http://wholetale.org/program/1119/step/8/variableport/A_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/1/variablechannel/0> .
+<http://wholetale.org/program/1119/step/8/dataframeport/df_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasDataframe> <http://wholetale.org/program/1119/dataframe/4> .
+<http://wholetale.org/program/1119/step/8/variableport/A_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/1/variablechannel/2> .
+<http://wholetale.org/program/1119/step/8/variableport/A_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/2/variablechannel/3> .
 <http://wholetale.org/program/1119/step/8/variableport/A_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://wholetale.org/program/1119/step/8/variableport/A_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/1> .
-<http://wholetale.org/program/1119/step/8/variableport/B_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/1/variablechannel/1> .
+<http://wholetale.org/program/1119/step/8/variableport/B_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/1/variablechannel/10> .
+<http://wholetale.org/program/1119/step/8/variableport/B_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/3/variablechannel/11> .
+<http://wholetale.org/program/1119/step/8/variableport/B_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/4/variablechannel/12> .
 <http://wholetale.org/program/1119/step/8/variableport/B_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://wholetale.org/program/1119/step/8/variableport/B_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/8/variableport/C_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/8/variableport/C_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/3> .
 <http://wholetale.org/program/1119/step/8> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/8/dataframeport/df_in> .
 <http://wholetale.org/program/1119/step/8> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/8/variableport/A_in> .
 <http://wholetale.org/program/1119/step/8> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/8/variableport/B_in> .
-<http://wholetale.org/program/1119/step/8> <http://purl.org/dc/terms/identifier> "SaveAB"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/8> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/8/variableport/C_in> .
+<http://wholetale.org/program/1119/step/8> <http://purl.org/dc/terms/identifier> "save_1"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://wholetale.org/program/1119/step/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
-<http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/1> .
-<http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "SaveAB"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/4> .
+<http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "save_1"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "df.to_csv('outputs/df_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#savesFile> <http://wholetale.org/program/1119/file/2> .
 <http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/1> .
 <http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/8> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/3> .
+<http://wholetale.org/program/1119/step/9/dataframeport/temps_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/7/dataframechannel/6> .
+<http://wholetale.org/program/1119/step/9/dataframeport/temps_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/9/dataframeport/temps_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasDataframe> <http://wholetale.org/program/1119/dataframe/7> .
+<http://wholetale.org/program/1119/step/9/variableport/Celsius_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/6/variablechannel/16> .
+<http://wholetale.org/program/1119/step/9/variableport/Celsius_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/9/variableport/Celsius_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/9/variableport/Fahrenheit_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/5/variablechannel/14> .
+<http://wholetale.org/program/1119/step/9/variableport/Fahrenheit_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/9/variableport/Fahrenheit_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://wholetale.org/program/1119/step/7/variablechannel/17> .
+<http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> <https://rdf-vocabulary.ddialliance.org/sdth#hasVariable> <http://wholetale.org/program/1119/variable/6> .
+<http://wholetale.org/program/1119/step/9> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/9/dataframeport/temps_in> .
+<http://wholetale.org/program/1119/step/9> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/9/variableport/Celsius_in> .
+<http://wholetale.org/program/1119/step/9> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/9/variableport/Fahrenheit_in> .
+<http://wholetale.org/program/1119/step/9> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> .
+<http://wholetale.org/program/1119/step/9> <http://purl.org/dc/terms/identifier> "save_2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://wholetale.org/program/1119/step/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#ProgramStep> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/7> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "save_2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#hasSourceCode> "temps.to_csv('outputs/temps_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#savesFile> <http://wholetale.org/program/1119/file/3> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/9> <https://rdf-vocabulary.ddialliance.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/6> .
 <http://wholetale.org/program/1119/variable/1> <http://purl.org/dc/terms/identifier> "A"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/variable/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
 <http://wholetale.org/program/1119/variable/1> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "A"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/variable/2> <http://purl.org/dc/terms/identifier> "B"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/variable/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
 <http://wholetale.org/program/1119/variable/2> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/3> <http://purl.org/dc/terms/identifier> "C"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
+<http://wholetale.org/program/1119/variable/3> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "C"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/4> <http://purl.org/dc/terms/identifier> "Fahrenheit"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
+<http://wholetale.org/program/1119/variable/4> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "Fahrenheit"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/5> <http://purl.org/dc/terms/identifier> "Celsius"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
+<http://wholetale.org/program/1119/variable/5> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "Celsius"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/6> <http://purl.org/dc/terms/identifier> "Kelvin"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/variable/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://rdf-vocabulary.ddialliance.org/sdth#Variable> .
+<http://wholetale.org/program/1119/variable/6> <https://rdf-vocabulary.ddialliance.org/sdth#hasName> "Kelvin"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt> .
@@ -904,11 +1736,24 @@ subgraph cluster_program_graph_inner { label=""; color=white
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
 node[width=8]
 
-"http://wholetale.org/program/1119/step/1" [label="LoadAB"]
-"http://wholetale.org/program/1119/step/8" [label="SaveAB"]
+"http://wholetale.org/program/1119/step/1" [label="load_1"]
+"http://wholetale.org/program/1119/step/2" [label="compute_1"]
+"http://wholetale.org/program/1119/step/3" [label="compute_2"]
+"http://wholetale.org/program/1119/step/4" [label="compute_3"]
+"http://wholetale.org/program/1119/step/5" [label="load_2"]
+"http://wholetale.org/program/1119/step/6" [label="compute_4"]
+"http://wholetale.org/program/1119/step/7" [label="compute_5"]
+"http://wholetale.org/program/1119/step/8" [label="save_1"]
+"http://wholetale.org/program/1119/step/9" [label="save_2"]
 
 # dataframe channels
-"http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/8" [label="df"]
+"http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/2" [label="df"]
+"http://wholetale.org/program/1119/step/2" -> "http://wholetale.org/program/1119/step/3" [label="df"]
+"http://wholetale.org/program/1119/step/3" -> "http://wholetale.org/program/1119/step/4" [label="df"]
+"http://wholetale.org/program/1119/step/5" -> "http://wholetale.org/program/1119/step/6" [label="temps"]
+"http://wholetale.org/program/1119/step/6" -> "http://wholetale.org/program/1119/step/7" [label="temps"]
+"http://wholetale.org/program/1119/step/4" -> "http://wholetale.org/program/1119/step/8" [label="df"]
+"http://wholetale.org/program/1119/step/7" -> "http://wholetale.org/program/1119/step/9" [label="temps"]
 }}
 
 }
@@ -928,7 +1773,7 @@ geist report << '__END_REPORT_TEMPLATE__'
 
     {{ gv_graph "provone_workflow" }}
 
-    {{ gv_title "Dataframe Flow Through ProvONE Programs" }}
+    {{ gv_title "Variable Flow Through ProvONE Programs" }}
 
     {{ gv_cluster "program_graph" }}
 
@@ -961,7 +1806,7 @@ digraph provone_workflow {
 rankdir=TB
 
 fontname=Courier; fontsize=18; labelloc=t
-label="Dataframe Flow Through ProvONE Programs"
+label="Variable Flow Through ProvONE Programs"
 
 subgraph cluster_program_graph { label=""; color=white; penwidth=0
 subgraph cluster_program_graph_inner { label=""; color=white
@@ -970,12 +1815,35 @@ subgraph cluster_program_graph_inner { label=""; color=white
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
 node[width=8]
 
-"http://wholetale.org/program/1119/step/1" [label="LoadAB"]
-"http://wholetale.org/program/1119/step/8" [label="SaveAB"]
+"http://wholetale.org/program/1119/step/1" [label="load_1"]
+"http://wholetale.org/program/1119/step/2" [label="compute_1"]
+"http://wholetale.org/program/1119/step/3" [label="compute_2"]
+"http://wholetale.org/program/1119/step/4" [label="compute_3"]
+"http://wholetale.org/program/1119/step/5" [label="load_2"]
+"http://wholetale.org/program/1119/step/6" [label="compute_4"]
+"http://wholetale.org/program/1119/step/7" [label="compute_5"]
+"http://wholetale.org/program/1119/step/8" [label="save_1"]
+"http://wholetale.org/program/1119/step/9" [label="save_2"]
 
 # dataframe channels
+"http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/3" [label="B"]
+"http://wholetale.org/program/1119/step/3" -> "http://wholetale.org/program/1119/step/3" [label="B"]
+"http://wholetale.org/program/1119/step/4" -> "http://wholetale.org/program/1119/step/3" [label="B"]
+"http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/4" [label="A"]
+"http://wholetale.org/program/1119/step/2" -> "http://wholetale.org/program/1119/step/4" [label="A"]
+"http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/4" [label="B"]
+"http://wholetale.org/program/1119/step/3" -> "http://wholetale.org/program/1119/step/4" [label="B"]
+"http://wholetale.org/program/1119/step/4" -> "http://wholetale.org/program/1119/step/4" [label="B"]
+"http://wholetale.org/program/1119/step/5" -> "http://wholetale.org/program/1119/step/6" [label="Fahrenheit"]
+"http://wholetale.org/program/1119/step/6" -> "http://wholetale.org/program/1119/step/7" [label="Celsius"]
 "http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/8" [label="A"]
+"http://wholetale.org/program/1119/step/2" -> "http://wholetale.org/program/1119/step/8" [label="A"]
 "http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/8" [label="B"]
+"http://wholetale.org/program/1119/step/3" -> "http://wholetale.org/program/1119/step/8" [label="B"]
+"http://wholetale.org/program/1119/step/4" -> "http://wholetale.org/program/1119/step/8" [label="B"]
+"http://wholetale.org/program/1119/step/6" -> "http://wholetale.org/program/1119/step/9" [label="Celsius"]
+"http://wholetale.org/program/1119/step/5" -> "http://wholetale.org/program/1119/step/9" [label="Fahrenheit"]
+"http://wholetale.org/program/1119/step/7" -> "http://wholetale.org/program/1119/step/9" [label="Kelvin"]
 }}
 
 }

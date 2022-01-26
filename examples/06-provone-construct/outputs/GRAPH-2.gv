@@ -3,7 +3,7 @@ digraph provone_workflow {
 rankdir=TB
 
 fontname=Courier; fontsize=18; labelloc=t
-label="Dataframe Flow Through ProvONE Programs"
+label="Variable Flow Through ProvONE Programs"
 
 subgraph cluster_program_graph { label=""; color=white; penwidth=0
 subgraph cluster_program_graph_inner { label=""; color=white
@@ -12,12 +12,35 @@ subgraph cluster_program_graph_inner { label=""; color=white
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
 node[width=8]
 
-"http://wholetale.org/program/1119/step/1" [label="LoadAB"]
-"http://wholetale.org/program/1119/step/8" [label="SaveAB"]
+"http://wholetale.org/program/1119/step/1" [label="load_1"]
+"http://wholetale.org/program/1119/step/2" [label="compute_1"]
+"http://wholetale.org/program/1119/step/3" [label="compute_2"]
+"http://wholetale.org/program/1119/step/4" [label="compute_3"]
+"http://wholetale.org/program/1119/step/5" [label="load_2"]
+"http://wholetale.org/program/1119/step/6" [label="compute_4"]
+"http://wholetale.org/program/1119/step/7" [label="compute_5"]
+"http://wholetale.org/program/1119/step/8" [label="save_1"]
+"http://wholetale.org/program/1119/step/9" [label="save_2"]
 
 # dataframe channels
+"http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/3" [label="B"]
+"http://wholetale.org/program/1119/step/3" -> "http://wholetale.org/program/1119/step/3" [label="B"]
+"http://wholetale.org/program/1119/step/4" -> "http://wholetale.org/program/1119/step/3" [label="B"]
+"http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/4" [label="A"]
+"http://wholetale.org/program/1119/step/2" -> "http://wholetale.org/program/1119/step/4" [label="A"]
+"http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/4" [label="B"]
+"http://wholetale.org/program/1119/step/3" -> "http://wholetale.org/program/1119/step/4" [label="B"]
+"http://wholetale.org/program/1119/step/4" -> "http://wholetale.org/program/1119/step/4" [label="B"]
+"http://wholetale.org/program/1119/step/5" -> "http://wholetale.org/program/1119/step/6" [label="Fahrenheit"]
+"http://wholetale.org/program/1119/step/6" -> "http://wholetale.org/program/1119/step/7" [label="Celsius"]
 "http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/8" [label="A"]
+"http://wholetale.org/program/1119/step/2" -> "http://wholetale.org/program/1119/step/8" [label="A"]
 "http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/8" [label="B"]
+"http://wholetale.org/program/1119/step/3" -> "http://wholetale.org/program/1119/step/8" [label="B"]
+"http://wholetale.org/program/1119/step/4" -> "http://wholetale.org/program/1119/step/8" [label="B"]
+"http://wholetale.org/program/1119/step/6" -> "http://wholetale.org/program/1119/step/9" [label="Celsius"]
+"http://wholetale.org/program/1119/step/5" -> "http://wholetale.org/program/1119/step/9" [label="Fahrenheit"]
+"http://wholetale.org/program/1119/step/7" -> "http://wholetale.org/program/1119/step/9" [label="Kelvin"]
 }}
 
 }

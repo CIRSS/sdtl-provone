@@ -5,23 +5,242 @@
 @prefix provone: <http://purl.dataone.org/provone/2015/01/15/ontology#> .
 @prefix sdth: <https://rdf-vocabulary.ddialliance.org/sdth#> .
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/1> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/2> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/3> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/4> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/5> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/6> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/7> .
 <http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/8> .
+<http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/9> .
 <http://wholetale.org/program/1119/step/1/dataframeport/df_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/dataframechannel/0> .
 <http://wholetale.org/program/1119/step/1/dataframeport/df_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/1> .
 <http://wholetale.org/program/1119/step/1/variableport/A_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/0> .
+<http://wholetale.org/program/1119/step/1/variableport/A_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/2> .
 <http://wholetale.org/program/1119/step/1/variableport/A_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/1> .
-<http://wholetale.org/program/1119/step/1/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/1> .
+<http://wholetale.org/program/1119/step/1/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/10> .
+<http://wholetale.org/program/1119/step/1/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/4> .
+<http://wholetale.org/program/1119/step/1/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/7> .
 <http://wholetale.org/program/1119/step/1/variableport/B_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
 <http://wholetale.org/program/1119/step/1> provone:hasOutPort <http://wholetale.org/program/1119/step/1/dataframeport/df_out> .
 <http://wholetale.org/program/1119/step/1> provone:hasOutPort <http://wholetale.org/program/1119/step/1/variableport/A_out> .
 <http://wholetale.org/program/1119/step/1> provone:hasOutPort <http://wholetale.org/program/1119/step/1/variableport/B_out> .
-<http://wholetale.org/program/1119/step/8/dataframeport/df_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/dataframechannel/0> .
-<http://wholetale.org/program/1119/step/8/dataframeport/df_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/1> .
-<http://wholetale.org/program/1119/step/8/variableport/A_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/0> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/dataframechannel/0> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/1> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_out> provone:connectsTo <http://wholetale.org/program/1119/step/2/dataframechannel/1> .
+<http://wholetale.org/program/1119/step/2/dataframeport/df_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/2> .
+<http://wholetale.org/program/1119/step/2/variableport/A_out> provone:connectsTo <http://wholetale.org/program/1119/step/2/variablechannel/1> .
+<http://wholetale.org/program/1119/step/2/variableport/A_out> provone:connectsTo <http://wholetale.org/program/1119/step/2/variablechannel/3> .
+<http://wholetale.org/program/1119/step/2/variableport/A_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/step/2> provone:hasInPort <http://wholetale.org/program/1119/step/2/dataframeport/df_in> .
+<http://wholetale.org/program/1119/step/2> provone:hasOutPort <http://wholetale.org/program/1119/step/2/dataframeport/df_out> .
+<http://wholetale.org/program/1119/step/2> provone:hasOutPort <http://wholetale.org/program/1119/step/2/variableport/A_out> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_in> provone:connectsTo <http://wholetale.org/program/1119/step/2/dataframechannel/1> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/2> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_out> provone:connectsTo <http://wholetale.org/program/1119/step/3/dataframechannel/2> .
+<http://wholetale.org/program/1119/step/3/dataframeport/df_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/3> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/4> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/5> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/6> .
+<http://wholetale.org/program/1119/step/3/variableport/B_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/11> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/5> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/8> .
+<http://wholetale.org/program/1119/step/3/variableport/B_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/3> provone:hasInPort <http://wholetale.org/program/1119/step/3/dataframeport/df_in> .
+<http://wholetale.org/program/1119/step/3> provone:hasInPort <http://wholetale.org/program/1119/step/3/variableport/B_in> .
+<http://wholetale.org/program/1119/step/3> provone:hasOutPort <http://wholetale.org/program/1119/step/3/dataframeport/df_out> .
+<http://wholetale.org/program/1119/step/3> provone:hasOutPort <http://wholetale.org/program/1119/step/3/variableport/B_out> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_in> provone:connectsTo <http://wholetale.org/program/1119/step/3/dataframechannel/2> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/3> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_out> provone:connectsTo <http://wholetale.org/program/1119/step/4/dataframechannel/3> .
+<http://wholetale.org/program/1119/step/4/dataframeport/df_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/4> .
+<http://wholetale.org/program/1119/step/4/variableport/A_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/0> .
+<http://wholetale.org/program/1119/step/4/variableport/A_in> provone:connectsTo <http://wholetale.org/program/1119/step/2/variablechannel/1> .
+<http://wholetale.org/program/1119/step/4/variableport/A_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/1> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/7> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/8> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/9> .
+<http://wholetale.org/program/1119/step/4/variableport/B_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/12> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/6> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/9> .
+<http://wholetale.org/program/1119/step/4/variableport/B_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/4> provone:hasInPort <http://wholetale.org/program/1119/step/4/dataframeport/df_in> .
+<http://wholetale.org/program/1119/step/4> provone:hasInPort <http://wholetale.org/program/1119/step/4/variableport/A_in> .
+<http://wholetale.org/program/1119/step/4> provone:hasInPort <http://wholetale.org/program/1119/step/4/variableport/B_in> .
+<http://wholetale.org/program/1119/step/4> provone:hasOutPort <http://wholetale.org/program/1119/step/4/dataframeport/df_out> .
+<http://wholetale.org/program/1119/step/4> provone:hasOutPort <http://wholetale.org/program/1119/step/4/variableport/B_out> .
+<http://wholetale.org/program/1119/step/5/dataframeport/temps_out> provone:connectsTo <http://wholetale.org/program/1119/step/5/dataframechannel/4> .
+<http://wholetale.org/program/1119/step/5/dataframeport/temps_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/5> .
+<http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> provone:connectsTo <http://wholetale.org/program/1119/step/5/variablechannel/13> .
+<http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> provone:connectsTo <http://wholetale.org/program/1119/step/5/variablechannel/14> .
+<http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/5> provone:hasOutPort <http://wholetale.org/program/1119/step/5/dataframeport/temps_out> .
+<http://wholetale.org/program/1119/step/5> provone:hasOutPort <http://wholetale.org/program/1119/step/5/variableport/Fahrenheit_out> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_in> provone:connectsTo <http://wholetale.org/program/1119/step/5/dataframechannel/4> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/5> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_out> provone:connectsTo <http://wholetale.org/program/1119/step/6/dataframechannel/5> .
+<http://wholetale.org/program/1119/step/6/dataframeport/temps_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/6> .
+<http://wholetale.org/program/1119/step/6/variableport/Celsius_out> provone:connectsTo <http://wholetale.org/program/1119/step/6/variablechannel/15> .
+<http://wholetale.org/program/1119/step/6/variableport/Celsius_out> provone:connectsTo <http://wholetale.org/program/1119/step/6/variablechannel/16> .
+<http://wholetale.org/program/1119/step/6/variableport/Celsius_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/6/variableport/Fahrenheit_in> provone:connectsTo <http://wholetale.org/program/1119/step/5/variablechannel/13> .
+<http://wholetale.org/program/1119/step/6/variableport/Fahrenheit_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/6> provone:hasInPort <http://wholetale.org/program/1119/step/6/dataframeport/temps_in> .
+<http://wholetale.org/program/1119/step/6> provone:hasInPort <http://wholetale.org/program/1119/step/6/variableport/Fahrenheit_in> .
+<http://wholetale.org/program/1119/step/6> provone:hasOutPort <http://wholetale.org/program/1119/step/6/dataframeport/temps_out> .
+<http://wholetale.org/program/1119/step/6> provone:hasOutPort <http://wholetale.org/program/1119/step/6/variableport/Celsius_out> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_in> provone:connectsTo <http://wholetale.org/program/1119/step/6/dataframechannel/5> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/6> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_out> provone:connectsTo <http://wholetale.org/program/1119/step/7/dataframechannel/6> .
+<http://wholetale.org/program/1119/step/7/dataframeport/temps_out> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/7> .
+<http://wholetale.org/program/1119/step/7/variableport/Celsius_in> provone:connectsTo <http://wholetale.org/program/1119/step/6/variablechannel/15> .
+<http://wholetale.org/program/1119/step/7/variableport/Celsius_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/7/variableport/Kelvin_out> provone:connectsTo <http://wholetale.org/program/1119/step/7/variablechannel/17> .
+<http://wholetale.org/program/1119/step/7/variableport/Kelvin_out> sdth:hasVariable <http://wholetale.org/program/1119/variable/6> .
+<http://wholetale.org/program/1119/step/7> provone:hasInPort <http://wholetale.org/program/1119/step/7/dataframeport/temps_in> .
+<http://wholetale.org/program/1119/step/7> provone:hasInPort <http://wholetale.org/program/1119/step/7/variableport/Celsius_in> .
+<http://wholetale.org/program/1119/step/7> provone:hasOutPort <http://wholetale.org/program/1119/step/7/dataframeport/temps_out> .
+<http://wholetale.org/program/1119/step/7> provone:hasOutPort <http://wholetale.org/program/1119/step/7/variableport/Kelvin_out> .
+<http://wholetale.org/program/1119/step/8/dataframeport/df_in> provone:connectsTo <http://wholetale.org/program/1119/step/4/dataframechannel/3> .
+<http://wholetale.org/program/1119/step/8/dataframeport/df_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/4> .
+<http://wholetale.org/program/1119/step/8/variableport/A_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/2> .
+<http://wholetale.org/program/1119/step/8/variableport/A_in> provone:connectsTo <http://wholetale.org/program/1119/step/2/variablechannel/3> .
 <http://wholetale.org/program/1119/step/8/variableport/A_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/1> .
-<http://wholetale.org/program/1119/step/8/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/1> .
+<http://wholetale.org/program/1119/step/8/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/1/variablechannel/10> .
+<http://wholetale.org/program/1119/step/8/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/3/variablechannel/11> .
+<http://wholetale.org/program/1119/step/8/variableport/B_in> provone:connectsTo <http://wholetale.org/program/1119/step/4/variablechannel/12> .
 <http://wholetale.org/program/1119/step/8/variableport/B_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/2> .
+<http://wholetale.org/program/1119/step/8/variableport/C_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/3> .
 <http://wholetale.org/program/1119/step/8> provone:hasInPort <http://wholetale.org/program/1119/step/8/dataframeport/df_in> .
 <http://wholetale.org/program/1119/step/8> provone:hasInPort <http://wholetale.org/program/1119/step/8/variableport/A_in> .
 <http://wholetale.org/program/1119/step/8> provone:hasInPort <http://wholetale.org/program/1119/step/8/variableport/B_in> .
+<http://wholetale.org/program/1119/step/8> provone:hasInPort <http://wholetale.org/program/1119/step/8/variableport/C_in> .
+<http://wholetale.org/program/1119/step/9/dataframeport/temps_in> provone:connectsTo <http://wholetale.org/program/1119/step/7/dataframechannel/6> .
+<http://wholetale.org/program/1119/step/9/dataframeport/temps_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/7> .
+<http://wholetale.org/program/1119/step/9/variableport/Celsius_in> provone:connectsTo <http://wholetale.org/program/1119/step/6/variablechannel/16> .
+<http://wholetale.org/program/1119/step/9/variableport/Celsius_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/5> .
+<http://wholetale.org/program/1119/step/9/variableport/Fahrenheit_in> provone:connectsTo <http://wholetale.org/program/1119/step/5/variablechannel/14> .
+<http://wholetale.org/program/1119/step/9/variableport/Fahrenheit_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/4> .
+<http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> provone:connectsTo <http://wholetale.org/program/1119/step/7/variablechannel/17> .
+<http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> sdth:hasVariable <http://wholetale.org/program/1119/variable/6> .
+<http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/dataframeport/temps_in> .
+<http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Celsius_in> .
+<http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Fahrenheit_in> .
+<http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> .

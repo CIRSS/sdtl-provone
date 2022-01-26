@@ -12,11 +12,24 @@ subgraph cluster_program_graph_inner { label=""; color=white
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
 node[width=8]
 
-"http://wholetale.org/program/1119/step/1" [label="LoadAB"]
-"http://wholetale.org/program/1119/step/8" [label="SaveAB"]
+"http://wholetale.org/program/1119/step/1" [label="load_1"]
+"http://wholetale.org/program/1119/step/2" [label="compute_1"]
+"http://wholetale.org/program/1119/step/3" [label="compute_2"]
+"http://wholetale.org/program/1119/step/4" [label="compute_3"]
+"http://wholetale.org/program/1119/step/5" [label="load_2"]
+"http://wholetale.org/program/1119/step/6" [label="compute_4"]
+"http://wholetale.org/program/1119/step/7" [label="compute_5"]
+"http://wholetale.org/program/1119/step/8" [label="save_1"]
+"http://wholetale.org/program/1119/step/9" [label="save_2"]
 
 # dataframe channels
-"http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/8" [label="df"]
+"http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/2" [label="df"]
+"http://wholetale.org/program/1119/step/2" -> "http://wholetale.org/program/1119/step/3" [label="df"]
+"http://wholetale.org/program/1119/step/3" -> "http://wholetale.org/program/1119/step/4" [label="df"]
+"http://wholetale.org/program/1119/step/5" -> "http://wholetale.org/program/1119/step/6" [label="temps"]
+"http://wholetale.org/program/1119/step/6" -> "http://wholetale.org/program/1119/step/7" [label="temps"]
+"http://wholetale.org/program/1119/step/4" -> "http://wholetale.org/program/1119/step/8" [label="df"]
+"http://wholetale.org/program/1119/step/7" -> "http://wholetale.org/program/1119/step/9" [label="temps"]
 }}
 
 }
