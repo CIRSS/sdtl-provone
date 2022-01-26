@@ -24,27 +24,27 @@
             "sdth:hasName": "inputs/df.csv",
             "sdth:hasFormat": "csv"
           },
+          "sdth:assignsVariable": [
+            {
+              "@id": "run:variable/1",
+              "@type": "sdth:Variable",
+              "sdth:hasName": "A"
+            },
+            {
+              "@id": "run:variable/2",
+              "@type": "sdth:Variable",
+              "sdth:hasName": "B"
+            }
+          ],
           "sdth:producesDataframe": {
             "@id": "run:dataframe/1",
             "@type": "sdth:Dataframe",
             "sdth:hasName": "df",
             "sdth:includesVariable": [
-              {
-                "@id": "run:variable/1",
-                "@type": "sdth:Variable",
-                "sdth:hasName": "A"
-              },
-              {
-                "@id": "run:variable/2",
-                "@type": "sdth:Variable",
-                "sdth:hasName": "B"
-              }
-            ]
+              { "@id": "run:variable/1" },
+              { "@id": "run:variable/2" }
+             ]
           },
-          "sdth:assignsVariable": [
-            { "@id": "run:variable/1" },
-            { "@id": "run:variable/2" }
-          ],
           "sdth:hasSourceCode": "df = pd.read_csv('inputs/df.csv')"
         },
         
@@ -53,18 +53,22 @@
           "@type": "sdth:ProgramStep",
           "sdth:hasName": "compute_1",
           "sdth:consumesDataframe": {"@id": "run:dataframe/1"},
+          "sdth:assignsVariable": [
+            { 
+              "@id": "run:variable/3",
+              "@type": "sdth:Variable",
+              "sdth:hasName": "A"
+            }
+          ],
           "sdth:producesDataframe": {
             "@id": "run:dataframe/2",
             "@type": "sdth:Dataframe",
             "sdth:hasName": "df",
             "sdth:includesVariable": [
-              { "@id": "run:variable/1 "},
-              { "@id": "run:variable/2" }
+              { "@id": "run:variable/2 "},
+              { "@id": "run:variable/3" }
             ]
           },
-          "sdth:assignsVariable": [
-            { "@id": "run:variable/1" }
-          ],
           "sdth:hasSourceCode": "df['A'] = 3"
         },
 
@@ -76,18 +80,21 @@
           "sdth:usesVariable": [
             { "@id": "run:variable/2" }
           ],
+          "sdth:assignsVariable": [
+            { "@id": "run:variable/4",
+              "@type": "sdth:Variable",
+              "sdth:hasName": "B"
+            }
+          ],
           "sdth:producesDataframe": {
             "@id": "run:dataframe/3",
             "@type": "sdth:Dataframe",
             "sdth:hasName": "df",
             "sdth:includesVariable": [
-              { "@id": "run:variable/1" },
-              { "@id": "run:variable/2" }
+              { "@id": "run:variable/3" },
+              { "@id": "run:variable/4" }
             ]
           },
-          "sdth:assignsVariable": [
-            { "@id": "run:variable/2" }
-          ],
           "sdth:hasSourceCode": "df['B'] = df.B + 6.5"
         },
 
@@ -97,30 +104,26 @@
           "sdth:hasName": "compute_3",
           "sdth:consumesDataframe": {"@id": "run:dataframe/3"},
           "sdth:usesVariable": [
-            { "@id": "run:variable/1" },
-            { "@id": "run:variable/2" }
+            { "@id": "run:variable/3" },
+            { "@id": "run:variable/4" }
+          ],
+          "sdth:assignsVariable": [
+            {
+              "@id": "run:variable/5",
+              "@type": "sdth:Variable",
+              "sdth:hasName": "C"
+            }
           ],
           "sdth:producesDataframe": {
             "@id": "run:dataframe/4",
             "@type": "sdth:Dataframe",
             "sdth:hasName": "df",
             "sdth:includesVariable": [
-              {
-                "@id": "run:variable/1"
-              },
-              {
-                "@id": "run:variable/2"
-              },
-              {
-                "@id": "run:variable/3",
-                "@type": "sdth:Variable",
-                "sdth:hasName": "C"
-              }
+              { "@id": "run:variable/3" },
+              { "@id": "run:variable/4" },
+              { "@id": "run:variable/5" }
             ]
           },
-          "sdth:assignsVariable": [
-            { "@id": "run:variable/2" }
-          ],
           "sdth:hasSourceCode":  "df['C'] = df.A - df.B"
         },
 
@@ -134,21 +137,21 @@
             "sdth:hasName": "inputs/temps.csv",
             "sdth:hasFormat": "csv"
           },
+          "sdth:assignsVariable": [
+            {
+              "@id": "run:variable/6",
+              "@type": "sdth:Variable",
+              "sdth:hasName": "Fahrenheit"
+            }
+          ],
           "sdth:producesDataframe": {
             "@id": "run:dataframe/5",
             "@type": "sdth:Dataframe",
             "sdth:hasName": "temps",
             "sdth:includesVariable": [
-              {
-                "@id": "run:variable/4",
-                "@type": "sdth:Variable",
-                "sdth:hasName": "Fahrenheit"
-              }
+              { "@id": "run:variable/6" }
             ]
           },
-          "sdth:assignsVariable": [
-            { "@id": "run:variable/4" }
-          ],
           "sdth:hasSourceCode": "temps = pd.read_csv('inputs/temps.csv')"
         },
         
@@ -158,24 +161,24 @@
           "sdth:hasName": "compute_4",
           "sdth:consumesDataframe": {"@id": "run:dataframe/5"},
           "sdth:usesVariable": [
-            { "@id": "run:variable/4" }
+            { "@id": "run:variable/6" }
+          ],
+          "sdth:assignsVariable": [
+            { 
+              "@id": "run:variable/7",
+              "@type": "sdth:Variable",
+              "sdth:hasName": "Celsius"
+            }
           ],
           "sdth:producesDataframe": {
             "@id": "run:dataframe/6",
             "@type": "sdth:Dataframe",
             "sdth:hasName": "temps",
             "sdth:includesVariable": [
-              { "@id": "run:variable/4" },
-              { 
-                "@id": "run:variable/5",
-                "@type": "sdth:Variable",
-                "sdth:hasName": "Celsius"
-              }
+              { "@id": "run:variable/6" },
+              { "@id": "run:variable/7" }
             ]
           },
-          "sdth:assignsVariable": [
-            { "@id": "run:variable/5" }
-          ],
           "sdth:hasSourceCode": "temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))"
         },
 
@@ -185,25 +188,25 @@
           "sdth:hasName": "compute_5",
           "sdth:consumesDataframe": {"@id": "run:dataframe/6"},
           "sdth:usesVariable": [
-            { "@id": "run:variable/5" }
+            { "@id": "run:variable/7" }
+          ],
+          "sdth:assignsVariable": [
+            { 
+              "@id": "run:variable/8",
+              "@type": "sdth:Variable",
+              "sdth:hasName": "Kelvin"
+            }
           ],
           "sdth:producesDataframe": {
             "@id": "run:dataframe/7",
             "@type": "sdth:Dataframe",
             "sdth:hasName": "temps",
             "sdth:includesVariable": [
-              { "@id": "run:variable/4" },
-              { "@id": "run:variable/5" },
-              { 
-                "@id": "run:variable/6",
-                "@type": "sdth:Variable",
-                "sdth:hasName": "Kelvin"
-              }
+              { "@id": "run:variable/6" },
+              { "@id": "run:variable/7" },
+              { "@id": "run:variable/8" }
             ]
           },
-          "sdth:assignsVariable": [
-            { "@id": "run:variable/6" }
-          ],
           "sdth:hasSourceCode": "temps = temps.assign(Kelvin=(temps.Celsius + 273))"
         },
 
@@ -213,9 +216,9 @@
           "sdth:hasName": "save_1",
           "sdth:consumesDataframe": {"@id": "run:dataframe/4"},
           "sdth:usesVariable": [
-            { "@id": "run:variable/1" },
-            { "@id": "run:variable/2" },
-            { "@id": "run:variable/3" }
+            { "@id": "run:variable/3" },
+            { "@id": "run:variable/4" },
+            { "@id": "run:variable/5" }
           ],
           "sdth:savesFile": {
             "@id": "run:file/2",
@@ -232,9 +235,9 @@
           "sdth:hasName": "save_2",
           "sdth:consumesDataframe": {"@id": "run:dataframe/7"},
           "sdth:usesVariable": [
-            { "@id": "run:variable/4" },
-            { "@id": "run:variable/5" },
-            { "@id": "run:variable/6" }
+            { "@id": "run:variable/6" },
+            { "@id": "run:variable/7" },
+            { "@id": "run:variable/8" }
           ],
           "sdth:savesFile": {
             "@id": "run:file/3",
