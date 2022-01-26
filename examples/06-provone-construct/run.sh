@@ -215,7 +215,7 @@ geist report << '__END_REPORT_TEMPLATE__'
 
     {{ gv_graph "provone_workflow" }}
 
-    {{ gv_title "Dataframe Flow Through ProvONE Programs" }}
+    {{ gv_title "Variable Flow Through ProvONE Programs" }}
 
     {{ gv_cluster "program_graph" }}
 
