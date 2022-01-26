@@ -102,21 +102,31 @@
     }
 '''}}
 
-
-
 {{ query "select_provone_dataframe_channels" "WorkflowId" '''
     SELECT ?source_program_id ?sink_program_id ?source_port_name
     WHERE {
         <{{$WorkflowId}}> provone:hasSubProgram ?source_program_id .
         ?source_program_id provone:hasOutPort ?source_port_id .
-        ?source_port_id provone:connectsTo ?channel_id .
         ?source_port_id sdth:hasDataframe ?dataframe_id .
+        ?source_port_id provone:connectsTo ?channel_id .
         ?sink_port_id provone:connectsTo ?channel_id .
         ?sink_program_id provone:hasInPort ?sink_port_id .
         ?dataframe_id dcterms:identifier ?source_port_name .
     }
 '''}}
 
+{{ query "select_provone_variable_channels" "WorkflowId" '''
+    SELECT ?source_program_id ?sink_program_id ?source_port_name
+    WHERE {
+        <{{$WorkflowId}}> provone:hasSubProgram ?source_program_id .
+        ?source_program_id provone:hasOutPort ?source_port_id .
+        ?source_port_id sdth:hasVariable ?variable_id .
+        ?source_port_id provone:connectsTo ?channel_id .
+        ?sink_port_id provone:connectsTo ?channel_id .
+        ?sink_program_id provone:hasInPort ?sink_port_id .
+        ?variable_id dcterms:identifier ?source_port_name .
+    }
+'''}}
 
 {{ query "select_dataframe_producers" '''
     SELECT ?step_id ?dataframe_id ?dataframe_name

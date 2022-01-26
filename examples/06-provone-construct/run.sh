@@ -199,3 +199,47 @@ __END_REPORT_TEMPLATE__
 
 __END_SCRIPT__
 
+
+# *****************************************************************************
+
+bash ${GRAPHER} GRAPH-2 "VARIABLE FLOW THROUGH PROVONE PROGRAMS" \
+    << '__END_SCRIPT__'
+
+geist report << '__END_REPORT_TEMPLATE__'
+
+    {{{
+        {{ include "../common/graphviz.g" }}
+        {{ include "../common/sdtl.g" }}
+        {{ include "../common/sdth.g" }}
+    }}}
+
+    {{ gv_graph "provone_workflow" }}
+
+    {{ gv_title "Dataframe Flow Through ProvONE Programs" }}
+
+    {{ gv_cluster "program_graph" }}
+
+    # program nodes
+    {{ sdtl_program_node_style }}
+    node[width=8]
+    {{ with $WorkflowId := select_provone_workflow | value }}                               \\
+
+        {{ range $Program := (select_provone_programs $WorkflowId | rows ) }}               \\
+            {{ gv_labeled_node (index $Program 0) (index $Program 1) }}
+        {{ end }}                                                                           \\
+
+        # dataframe channels
+        {{ range $Channel := (select_provone_variable_channels $WorkflowId | rows) }}      \\
+            {{ gv_labeled_edge (index $Channel 0) (index $Channel 1) (index $Channel 2) }}
+        {{ end }}                                                                           \\
+                                                                                            \\
+    {{ end }}                                                                               \\
+                                                                                            \\
+    {{ gv_cluster_end }}
+
+    {{ gv_end }}                                                                            \\
+
+__END_REPORT_TEMPLATE__
+
+__END_SCRIPT__
+
