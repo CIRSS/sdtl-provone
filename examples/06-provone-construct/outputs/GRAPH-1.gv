@@ -1,0 +1,22 @@
+
+digraph provone_workflow {
+rankdir=TB
+
+fontname=Courier; fontsize=18; labelloc=t
+label="Dataframe Flow Through ProvONE Programs"
+
+subgraph cluster_program_graph { label=""; color=white; penwidth=0
+subgraph cluster_program_graph_inner { label=""; color=white
+
+# program nodes
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+node[width=8]
+
+"http://wholetale.org/program/1119/step/1" [label="LoadAB"]
+"http://wholetale.org/program/1119/step/8" [label="SaveAB"]
+
+# dataframe channels
+"http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/8" [label="df"]
+}}
+
+}

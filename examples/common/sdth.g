@@ -1,5 +1,6 @@
 
 
+{{ prefix "dcterms"    "http://purl.org/dc/terms/" }}
 {{ prefix "sdtl"       "https://rdf-vocabulary.ddialliance.org/sdth#" }}
 {{ prefix "prov"       "http://www.w3.org/ns/prov#" }}
 {{ prefix "provone"    "http://purl.dataone.org/provone/2015/01/15/ontology#" }}
@@ -78,11 +79,41 @@
     }
 '''}}
 
+{{ query "select_provone_workflow" '''
+    SELECT ?program
+    WHERE {
+        ?program rdf:type provone:Workflow .
+    }
+'''}}
+
 
 {{ query "select_program_steps" '''
     SELECT ?program ?step
     WHERE {
         ?program sdth:hasProgramStep ?step .
+    }
+'''}}
+
+{{ query "select_provone_programs" "WorkflowId" '''
+    SELECT ?program ?name
+    WHERE {
+        <{{$WorkflowId}}> provone:hasSubProgram ?program .
+        ?program dcterms:identifier ?name .
+    }
+'''}}
+
+
+
+{{ query "select_provone_dataframe_channels" "WorkflowId" '''
+    SELECT ?source_program_id ?sink_program_id ?source_port_name
+    WHERE {
+        <{{$WorkflowId}}> provone:hasSubProgram ?source_program_id .
+        ?source_program_id provone:hasOutPort ?source_port_id .
+        ?source_port_id provone:connectsTo ?channel_id .
+        ?source_port_id sdth:hasDataframe ?dataframe_id .
+        ?sink_port_id provone:connectsTo ?channel_id .
+        ?sink_program_id provone:hasInPort ?sink_port_id .
+        ?dataframe_id dcterms:identifier ?source_port_name .
     }
 '''}}
 

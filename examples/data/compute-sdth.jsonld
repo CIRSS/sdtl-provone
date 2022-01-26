@@ -18,6 +18,7 @@
         {
           "@id": "run:step/1",
           "@type": "sdth:ProgramStep",
+          "sdth:hasName": "LoadAB",
           "sdth:loadsFile": {
             "@id": "run:file/1",
             "@type": "sdth:File",
@@ -51,6 +52,7 @@
         {
           "@id": "run:step/8",
           "@type": "sdth:ProgramStep",
+          "sdth:hasName": "SaveAB",
           "sdth:consumesDataframe": {"@id": "run:dataframe/1"},
           "sdth:usesVariable": [
             { "@id": "run:variable/1" },
