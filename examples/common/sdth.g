@@ -86,11 +86,17 @@
     }
 '''}}
 
-
 {{ query "select_program_steps" '''
     SELECT ?program ?step
     WHERE {
         ?program sdth:hasProgramStep ?step .
+    }
+'''}}
+
+{{ query "select_program_sourcecode" "ProgramId" '''
+    SELECT ?sourcecode
+    WHERE {
+        <{{$ProgramId}}> sdth:hasSourceCode ?sourcecode .
     }
 '''}}
 

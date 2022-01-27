@@ -181,7 +181,11 @@ geist report << '__END_REPORT_TEMPLATE__'
     {{ with $WorkflowId := select_provone_workflow | value }}                               \\
 
         {{ range $Program := (select_provone_programs $WorkflowId | rows ) }}               \\
-            {{ gv_labeled_node (index $Program 0) (index $Program 1) }}
+            {{ with $ProgramId := (index $Program 0) }}                                     \\
+            {{ with $SourceCode := (select_program_sourcecode $ProgramId | value ) }}       \\
+                {{ gv_labeled_node $ProgramId $SourceCode }}                             
+            {{ end }}                                                                       \\
+            {{ end }}                                                                       \\
         {{ end }}                                                                           \\
 
         # dataframe channels
@@ -225,11 +229,15 @@ geist report << '__END_REPORT_TEMPLATE__'
     {{ with $WorkflowId := select_provone_workflow | value }}                               \\
 
         {{ range $Program := (select_provone_programs $WorkflowId | rows ) }}               \\
-            {{ gv_labeled_node (index $Program 0) (index $Program 1) }}
+            {{ with $ProgramId := (index $Program 0) }}                                     \\
+            {{ with $SourceCode := (select_program_sourcecode $ProgramId | value ) }}       \\
+                {{ gv_labeled_node $ProgramId $SourceCode }}                             
+            {{ end }}                                                                       \\
+            {{ end }}                                                                       \\
         {{ end }}                                                                           \\
 
         # dataframe channels
-        {{ range $Channel := (select_provone_variable_channels $WorkflowId | rows) }}      \\
+        {{ range $Channel := (select_provone_variable_channels $WorkflowId | rows) }}       \\
             {{ gv_labeled_edge (index $Channel 0) (index $Channel 1) (index $Channel 2) }}
         {{ end }}                                                                           \\
                                                                                             \\
