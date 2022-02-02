@@ -35,42 +35,42 @@ RUN echo '***** Add the REPRO user and group *****'                         \
     && chmod 0440 /etc/sudoers.d/repro
 
 ENV HOME /home/${REPRO_USER}
-ENV USER_BIN ${HOME}/bin
+ENV BUNDLES ${HOME}/bundles
+ENV BUNDLE_PATH $BUNDLES
 ENV BASHRC ${HOME}/.bashrc
-USER  ${REPRO_USER}
+USER ${REPRO_USER}
 WORKDIR $HOME
 
-RUN echo '***** Make the user bin directory *****'                          \
-    && mkdir ${USER_BIN}
-
 ENV GEIST_VERSION 0.2.6
-ENV GEIST_RELEASES https://github.com/cirss/geist/releases
-ENV GEIST_DOWNLOADS ${GEIST_RELEASES}/download/v${GEIST_VERSION}
-ENV GEIST_DOWNLOAD ${GEIST_DOWNLOADS}/geist-${GEIST_VERSION}-linux-x86-64-static
-ENV GEIST_BINARY ${USER_BIN}/geist
+ENV GEIST_URL https://github.com/cirss/geist/releases/download/v${GEIST_VERSION}/geist-${GEIST_VERSION}-linux-x86-64-static
+ENV GEIST_BUNDLE ${BUNDLES}/geist-${GEIST_VERSION}
+ENV GEIST_BINARY ${GEIST_BUNDLE}/geist
+ENV BUNDLE_PATH ${BUNDLE_PATH}:$GEIST_BUNDLE
 
-RUN echo '***** Install Geist in user bin directory *****'                  \
-    && wget -O ${GEIST_BINARY} ${GEIST_DOWNLOAD}                           \
+RUN echo '***** Install Geist bundle *****'                  \
+    && mkdir -p ${GEIST_BUNDLE}                                             \
+    && wget -O ${GEIST_BINARY} ${GEIST_URL}                           \
     && chmod u+x ${GEIST_BINARY}
 
 ENV BLAZE_VERSION 0.2.6
-ENV BLAZE_RELEASES https://github.com/cirss/blaze/releases
-ENV BLAZE_DOWNLOADS ${BLAZE_RELEASES}/download/v${BLAZE_VERSION}
-ENV BLAZE_DOWNLOAD ${BLAZE_DOWNLOADS}/blaze-${BLAZE_VERSION}-linux-x86-64-static
-ENV BLAZE_BINARY ${USER_BIN}/blaze
+ENV BLAZE_URL https://github.com/cirss/blaze/releases/download/v${BLAZE_VERSION}/blaze-${BLAZE_VERSION}-linux-x86-64-static
+ENV BLAZE_BUNDLE ${BUNDLES}/blaze-${BLAZE_VERSION}
+ENV BLAZE_BINARY ${BLAZE_BUNDLE}/blaze
+ENV BUNDLE_PATH ${BUNDLE_PATH}:$BLAZE_BUNDLE
 
-RUN echo '***** Install Blaze in user bin directory *****'                  \
-    && wget -O ${BLAZE_BINARY} ${BLAZE_DOWNLOAD}                            \
+RUN echo '***** Install Blaze bundle *****'                             \
+    && mkdir -p ${BLAZE_BUNDLE}                                         \
+    && wget -O ${BLAZE_BINARY} ${BLAZE_URL}                             \
     && chmod u+x ${BLAZE_BINARY}
 
-ENV BLAZEGRAPH_VER RELEASE_2_1_5
-ENV BLAZEGRAPH_RELEASES https://github.com/blazegraph/database/releases
-ENV BLAZEGRAPH_DOWNLOAD_DIR ${BLAZEGRAPH_RELEASES}/download/BLAZEGRAPH_${BLAZEGRAPH_VER}
-ENV BLAZEGRAPH_DOWNLOAD_JAR ${BLAZEGRAPH_DOWNLOAD_DIR}/blazegraph.jar
-ENV BLAZEGRAPH_JAR $HOME/blazegraph-${BLAZEGRAPH_VER}.jar
+ENV BLAZEGRAPH_VERSION RELEASE_2_1_5
+ENV BLAZEGRAPH_JAR_URL https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_${BLAZEGRAPH_VERSION}/blazegraph.jar
+ENV BLAZEGRAPH_BUNDLE ${BUNDLES}/blazegraph-${BLAZEGRAPH_VERSION}
+ENV BLAZEGRAPH_JAR ${BLAZEGRAPH_BUNDLE}/blazegraph.jar
 
 RUN echo '***** Download Blazegraph jar *****'                              \
-    && wget -O ${BLAZEGRAPH_JAR} ${BLAZEGRAPH_DOWNLOAD_JAR}
+    && mkdir -p ${BLAZEGRAPH_BUNDLE}                                         \
+    && wget -O ${BLAZEGRAPH_JAR} ${BLAZEGRAPH_JAR_URL}
 
 ENV BLAZEGRAPH_DOT_DIR ${REPRO_MNT}/.blazegraph
 ENV BLAZEGRAPH_PROPERTY_FILE=${BLAZEGRAPH_DOT_DIR}/.properties
@@ -82,7 +82,7 @@ RUN echo '***** Start Blazegraph at login *****'                            \
     && echo "source .bashrc" >> .bash_profile                               \
     && echo "cd ${BLAZEGRAPH_DOT_DIR} && ${BLAZEGRAPH_CMD} 2>&1 > ${BLAZEGRAPH_LOG} &" >> .bash_profile
 
-RUN echo "export PATH=${REPRO_MNT}/binaries:${HOME}/bin:$PATH" >> ${BASHRC}
+RUN echo "export PATH=${REPRO_MNT}/binaries:${BUNDLE_PATH}:$PATH" >> ${BASHRC}
 RUN echo "export IN_RUNNING_REPRO=${REPRO_NAME}" >> ${BASHRC}
 RUN echo "cd ${REPRO_MNT}" >> ${BASHRC}
 
