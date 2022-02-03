@@ -35,37 +35,24 @@ RUN echo '***** Add the REPRO user and group *****'                         \
     && chmod 0440 /etc/sudoers.d/repro
 
 ENV HOME /home/${REPRO_USER}
-ENV BUNDLES ${HOME}/bundles
-ENV BUNDLE_PATH $BUNDLES
 ENV BASHRC ${HOME}/.bashrc
 USER ${REPRO_USER}
 WORKDIR $HOME
 
-ENV GEIST_VERSION 0.2.6
-ENV GEIST_URL https://github.com/cirss/geist/releases/download/v${GEIST_VERSION}/geist-${GEIST_VERSION}-linux-x86-64-static
-ENV GEIST_BUNDLE ${BUNDLES}/geist-${GEIST_VERSION}
-ENV GEIST_BINARY ${GEIST_BUNDLE}/geist
-ENV BUNDLE_PATH ${BUNDLE_PATH}:$GEIST_BUNDLE
+# install scripts for building and configuring the REPRO
+ENV REPRO_SCRIPTS_DIR ${HOME}/scripts
+COPY --chown=repro:repro .repro/scripts ${REPRO_SCRIPTS_DIR}
+RUN chmod a+rx ${REPRO_SCRIPTS_DIR}/*.sh
 
-RUN echo '***** Install Geist bundle *****'                  \
-    && mkdir -p ${GEIST_BUNDLE}                                             \
-    && wget -O ${GEIST_BINARY} ${GEIST_URL}                           \
-    && chmod u+x ${GEIST_BINARY}
-
-ENV BLAZE_VERSION 0.2.6
-ENV BLAZE_URL https://github.com/cirss/blaze/releases/download/v${BLAZE_VERSION}/blaze-${BLAZE_VERSION}-linux-x86-64-static
-ENV BLAZE_BUNDLE ${BUNDLES}/blaze-${BLAZE_VERSION}
-ENV BLAZE_BINARY ${BLAZE_BUNDLE}/blaze
-ENV BUNDLE_PATH ${BUNDLE_PATH}:$BLAZE_BUNDLE
-
-RUN echo '***** Install Blaze bundle *****'                             \
-    && mkdir -p ${BLAZE_BUNDLE}                                         \
-    && wget -O ${BLAZE_BINARY} ${BLAZE_URL}                             \
-    && chmod u+x ${BLAZE_BINARY}
+# install dependency bundles
+ENV BUNDLES_DIR ${HOME}/bundles
+ENV BUNDLES_URL_TEMPLATE 'https://github.com/cirss/${name}/releases/download/v${version}/${name}-${version}-linux-x86-64-static'
+RUN scripts/install-bundle.sh geist 0.2.6
+RUN scripts/install-bundle.sh blaze 0.2.6
 
 ENV BLAZEGRAPH_VERSION RELEASE_2_1_5
 ENV BLAZEGRAPH_JAR_URL https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_${BLAZEGRAPH_VERSION}/blazegraph.jar
-ENV BLAZEGRAPH_BUNDLE ${BUNDLES}/blazegraph-${BLAZEGRAPH_VERSION}
+ENV BLAZEGRAPH_BUNDLE ${BUNDLES_DIR}/blazegraph-${BLAZEGRAPH_VERSION}
 ENV BLAZEGRAPH_JAR ${BLAZEGRAPH_BUNDLE}/blazegraph.jar
 
 RUN echo '***** Download Blazegraph jar *****'                              \
@@ -82,7 +69,7 @@ RUN echo '***** Start Blazegraph at login *****'                            \
     && echo "source .bashrc" >> .bash_profile                               \
     && echo "cd ${BLAZEGRAPH_DOT_DIR} && ${BLAZEGRAPH_CMD} 2>&1 > ${BLAZEGRAPH_LOG} &" >> .bash_profile
 
-RUN echo "export PATH=${REPRO_MNT}/binaries:${BUNDLE_PATH}:$PATH" >> ${BASHRC}
+RUN echo "export PATH=${REPRO_MNT}/binaries:`cat ~/.bundle_path`$PATH" >> ${BASHRC}
 RUN echo "export IN_RUNNING_REPRO=${REPRO_NAME}" >> ${BASHRC}
 RUN echo "cd ${REPRO_MNT}" >> ${BASHRC}
 

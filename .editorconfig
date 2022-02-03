@@ -19,3 +19,6 @@ trim_trailing_whitespace = true
 
 [*.g]
 trim_trailing_whitespace = true
+
+[*.sh]
+trim_trailing_whitespace = true
