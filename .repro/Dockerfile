@@ -50,14 +50,11 @@ ENV BUNDLES_URL_TEMPLATE 'https://github.com/cirss/${name}/releases/download/v${
 RUN scripts/install-bundle.sh geist 0.2.6
 RUN scripts/install-bundle.sh blaze 0.2.6
 
+ENV BUNDLES_URL_TEMPLATE 'https://github.com/${name}/database/releases/download/BLAZEGRAPH_${version}/${name}.jar'
 ENV BLAZEGRAPH_VERSION RELEASE_2_1_5
-ENV BLAZEGRAPH_JAR_URL https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_${BLAZEGRAPH_VERSION}/blazegraph.jar
-ENV BLAZEGRAPH_BUNDLE ${BUNDLES_DIR}/blazegraph-${BLAZEGRAPH_VERSION}
-ENV BLAZEGRAPH_JAR ${BLAZEGRAPH_BUNDLE}/blazegraph.jar
+RUN scripts/install-bundle-jar.sh blazegraph ${BLAZEGRAPH_VERSION}
 
-RUN echo '***** Download Blazegraph jar *****'                              \
-    && mkdir -p ${BLAZEGRAPH_BUNDLE}                                         \
-    && wget -O ${BLAZEGRAPH_JAR} ${BLAZEGRAPH_JAR_URL}
+ENV BLAZEGRAPH_JAR ${BUNDLES_DIR}/blazegraph-RELEASE_2_1_5/blazegraph.jar
 
 ENV BLAZEGRAPH_DOT_DIR ${REPRO_MNT}/.blazegraph
 ENV BLAZEGRAPH_PROPERTY_FILE=${BLAZEGRAPH_DOT_DIR}/.properties
