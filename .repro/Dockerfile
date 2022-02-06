@@ -54,12 +54,10 @@ ENV BUNDLES_URL_TEMPLATE 'https://github.com/${name}/database/releases/download/
 ENV BLAZEGRAPH_VERSION RELEASE_2_1_5
 RUN scripts/install-bundle-jar.sh blazegraph ${BLAZEGRAPH_VERSION}
 
-ENV BLAZEGRAPH_JAR ${BUNDLES_DIR}/blazegraph-RELEASE_2_1_5/blazegraph.jar
-
 ENV BLAZEGRAPH_DOT_DIR ${REPRO_MNT}/.blazegraph
 ENV BLAZEGRAPH_PROPERTY_FILE=${BLAZEGRAPH_DOT_DIR}/.properties
 ENV BLAZEGRAPH_OPTIONS "-server -Xmx4g -Dbigdata.propertyFile=${BLAZEGRAPH_PROPERTY_FILE}"
-ENV BLAZEGRAPH_CMD "java ${BLAZEGRAPH_OPTIONS} -jar ${BLAZEGRAPH_JAR}"
+ENV BLAZEGRAPH_CMD "java ${BLAZEGRAPH_OPTIONS} -jar `cat ~/.blazegraph_jar`"
 ENV BLAZEGRAPH_LOG ${BLAZEGRAPH_DOT_DIR}/blazegraph_`date +%s`.log
 
 RUN echo '***** Start Blazegraph at login *****'                            \

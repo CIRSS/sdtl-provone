@@ -6,7 +6,9 @@ version=$2
 url=`eval echo ${BUNDLES_URL_TEMPLATE}`
 
 bundle_dir=${BUNDLES_DIR}/${name}-${version}
-jar=${bundle_dir}/${name}.jar
+bundle_jar=${bundle_dir}/${name}.jar
 
 mkdir -p ${bundle_dir}
-wget -O ${jar} ${url}
+wget -O ${bundle_jar} ${url}
+
+echo -n "${bundle_jar}" >> ~/.${name}_jar
