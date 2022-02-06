@@ -54,11 +54,11 @@ ENV BUNDLES_URL_TEMPLATE 'https://github.com/${name}/database/releases/download/
 ENV BLAZEGRAPH_VERSION RELEASE_2_1_5
 RUN scripts/install-bundle-jar.sh blazegraph ${BLAZEGRAPH_VERSION}
 
-RUN cp ${REPRO_SCRIPTS_DIR}/blazegraph.sh ${HOME}/bundles/blazegraph-RELEASE_2_1_5/
+RUN cp ${REPRO_SCRIPTS_DIR}/start_blazegraph.sh ${HOME}/bundles/blazegraph-RELEASE_2_1_5/
 
 RUN echo "export PATH=${REPRO_MNT}/binaries:`cat ~/.bundle_path`$PATH" >> ${BASHRC}
 RUN echo "export IN_RUNNING_REPRO=${REPRO_NAME}" >> ${BASHRC}
 RUN echo "cd ${REPRO_MNT}" >> ${BASHRC}
-RUN echo "blazegraph.sh" >> ${BASHRC}
+RUN echo "start_blazegraph.sh" >> ${BASHRC}
 
 CMD  /bin/bash -il
