@@ -54,18 +54,11 @@ ENV BUNDLES_URL_TEMPLATE 'https://github.com/${name}/database/releases/download/
 ENV BLAZEGRAPH_VERSION RELEASE_2_1_5
 RUN scripts/install-bundle-jar.sh blazegraph ${BLAZEGRAPH_VERSION}
 
-ENV BLAZEGRAPH_DOT_DIR ${REPRO_MNT}/.blazegraph
-ENV BLAZEGRAPH_PROPERTY_FILE=${BLAZEGRAPH_DOT_DIR}/.properties
-ENV BLAZEGRAPH_OPTIONS "-server -Xmx4g -Dbigdata.propertyFile=${BLAZEGRAPH_PROPERTY_FILE}"
-ENV BLAZEGRAPH_CMD "java ${BLAZEGRAPH_OPTIONS} -jar `cat ~/.blazegraph_jar`"
-ENV BLAZEGRAPH_LOG ${BLAZEGRAPH_DOT_DIR}/blazegraph_`date +%s`.log
-
-RUN echo '***** Start Blazegraph at login *****'                            \
-    && echo "source .bashrc" >> .bash_profile                               \
-    && echo "cd ${BLAZEGRAPH_DOT_DIR} && ${BLAZEGRAPH_CMD} 2>&1 > ${BLAZEGRAPH_LOG} &" >> .bash_profile
+RUN cp ${REPRO_SCRIPTS_DIR}/blazegraph.sh ${HOME}/bundles/blazegraph-RELEASE_2_1_5/
 
 RUN echo "export PATH=${REPRO_MNT}/binaries:`cat ~/.bundle_path`$PATH" >> ${BASHRC}
 RUN echo "export IN_RUNNING_REPRO=${REPRO_NAME}" >> ${BASHRC}
 RUN echo "cd ${REPRO_MNT}" >> ${BASHRC}
+RUN echo "blazegraph.sh" >> ${BASHRC}
 
 CMD  /bin/bash -il
