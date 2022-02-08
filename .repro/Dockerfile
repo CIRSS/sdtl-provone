@@ -47,10 +47,12 @@ RUN chmod a+rx ${REPRO_SCRIPTS_DIR}/*.sh
 # install dependency bundles
 ENV BUNDLES_DIR ${HOME}/bundles
 ENV BUNDLES_URL_TEMPLATE 'https://github.com/cirss/${name}/releases/download/v${version}/${name}-${version}-linux-x86-64-static'
-RUN scripts/install-bundle.sh geist 0.2.6
 RUN scripts/install-bundle.sh blaze 0.2.6
 
-ENV REPMOD_URL_TEMPLATE 'https://raw.githubusercontent.com/tmcphillips/${name}/${version}/exports/'
+ENV REPMOD_URL_TEMPLATE 'https://github.com/cirss/${name}/releases/download/v${version}/'
+RUN scripts/install-repmod.sh geist 0.2.6
+
+ENV REPMOD_URL_TEMPLATE 'https://raw.githubusercontent.com/tmcphillips/${name}/${version}/repmod/'
 RUN scripts/install-repmod.sh blazegraph master
 
 RUN echo "export PATH=${REPRO_MNT}/binaries:`cat ~/.bundle_path`$PATH" >> ${BASHRC}

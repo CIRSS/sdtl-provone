@@ -9,15 +9,26 @@ repmod_dir=${BUNDLES_DIR}/${name}-${version}
 mkdir -p ${repmod_dir}
 cd ${repmod_dir}
 
-wget -O repmod.txt ${url}/repmod.txt
+wget --quiet -O repmod.txt ${url}/repmod.txt
 
-mapfile entries  < repmod.txt
+readarray entries  < repmod.txt
 
-for entry in ${entries[@]}
+for entry in "${entries[@]}"
 do
-    echo "Downloading $entry"
-    wget -O $entry ${url}/${entry}
-    chmod u+x ${entry}
+    read -ra elements <<< $entry
+    if [ ${#elements[@]} -gt 1 ]
+    then
+        entryname=${elements[0]}
+        filename=${elements[1]}
+    else
+        entryname=${elements[0]}
+        filename=${elements[0]}
+    fi
+
+    echo "Downloading $filename as $entryname"
+    wget -nv -O $entryname ${url}/${filename}
+    chmod u+x ${entryname}
+
 done
 
 echo -n "${repmod_dir}:" >> ~/.bundle_path
