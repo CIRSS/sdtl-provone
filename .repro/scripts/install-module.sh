@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 
-# save command line arguments
-name=$1
-version=$2
-url=`eval echo ${REPMOD_URL_TEMPLATE}`
+module_name=$1
+module_version=$2
+module_url=`eval echo ${MODULES_URL_TEMPLATE}`
+module_dir=${MODULES_DIR}/${module_name}-${module_version}
 
-repmod_dir=${BUNDLES_DIR}/${name}-${version}
-mkdir -p ${repmod_dir}
-cd ${repmod_dir}
+mkdir -p ${module_dir}
+cd ${module_dir}
 
-wget --quiet -O repmod.txt ${url}/repmod.txt
+wget --quiet -O module.txt ${module_url}/module.txt
 
-readarray entries  < repmod.txt
+readarray entries  < module.txt
 
 for entry in "${entries[@]}"
 do
@@ -26,9 +25,9 @@ do
     fi
 
     echo "Downloading $filename as $entryname"
-    wget -nv -O $entryname ${url}/${filename}
+    wget -nv -O $entryname ${module_url}/${filename}
     chmod u+x ${entryname}
 
 done
 
-echo -n "${repmod_dir}:" >> ~/.bundle_path
+echo -n "${module_dir}:" >> ~/.bundle_path

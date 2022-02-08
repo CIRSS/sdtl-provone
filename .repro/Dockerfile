@@ -44,16 +44,14 @@ ENV REPRO_SCRIPTS_DIR ${HOME}/scripts
 COPY --chown=repro:repro .repro/scripts ${REPRO_SCRIPTS_DIR}
 RUN chmod a+rx ${REPRO_SCRIPTS_DIR}/*.sh
 
-# install dependency bundles
-ENV BUNDLES_DIR ${HOME}/bundles
-ENV BUNDLES_URL_TEMPLATE 'https://github.com/cirss/${name}/releases/download/v${version}/${name}-${version}-linux-x86-64-static'
-RUN scripts/install-bundle.sh blaze 0.2.6
+# install repro modules
+ENV MODULES_DIR ${HOME}/bundles/
+ENV MODULES_URL_TEMPLATE 'https://github.com/cirss/${module_name}/releases/download/v${module_version}/'
+RUN scripts/install-module.sh blaze 0.2.6
+RUN scripts/install-module.sh geist 0.2.6
 
-ENV REPMOD_URL_TEMPLATE 'https://github.com/cirss/${name}/releases/download/v${version}/'
-RUN scripts/install-repmod.sh geist 0.2.6
-
-ENV REPMOD_URL_TEMPLATE 'https://raw.githubusercontent.com/tmcphillips/${name}/${version}/repmod/'
-RUN scripts/install-repmod.sh blazegraph master
+ENV MODULES_URL_TEMPLATE 'https://github.com/tmcphillips/${module_name}/releases/download/v${module_version}/'
+RUN scripts/install-module.sh blazegraph 0.1.0
 
 RUN echo "export PATH=${REPRO_MNT}/binaries:`cat ~/.bundle_path`$PATH" >> ${BASHRC}
 RUN echo "export IN_RUNNING_REPRO=${REPRO_NAME}" >> ${BASHRC}
