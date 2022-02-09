@@ -23,12 +23,12 @@ do
     # interpret the line based on the number its tokens
     case ${#tokens[@]} in
 
-    1)  short_name=${tokens[0]}
-        full_name=${short_name}
+    1)  artifact_name=${tokens[0]}
+        artifact_path=${artifact_name}
     ;;
 
-    2)  short_name=${tokens[0]}
-        full_name=${tokens[1]}
+    2)  artifact_name=${tokens[0]}
+        artifact_path=${tokens[1]}
     ;;
 
     *) continue
@@ -36,14 +36,20 @@ do
 
     esac
 
-    echo "Downloading $full_name as $short_name"
-    wget -nv -O $short_name ${module_url}/${full_name}
+    if [[ ${artifact_path} == http?:* ]] ; then
+        artifact_url=${artifact_path}
+    else
+        artifact_url=${module_url}/${artifact_path}
+    fi
 
-    mimetype=`file --mime ${short_name}`
+    echo "Downloading ${artifact_url} to ${artifact_name}"
+    wget -nv -O $artifact_name ${artifact_url}
+
+    mimetype=`file --mime ${artifact_name}`
     if echo ${mimetype} | grep -q "application/x-executable"; then
-        chmod u+x ${short_name}
+        chmod u+x ${artifact_name}
     elif echo ${mimetype} | grep -q "text/x-shellscript"; then
-        chmod u+x ${short_name}
+        chmod u+x ${artifact_name}
     fi
 
 done
