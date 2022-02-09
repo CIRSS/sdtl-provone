@@ -10,33 +10,43 @@ cd ${module_dir}
 
 wget --quiet -O module.txt ${module_url}/module.txt
 
-readarray entries  < module.txt
+readarray lines < module.txt
 
-for entry in "${entries[@]}"
+for full_line in "${lines[@]}"
 do
-    read -ra elements <<< $entry
-    if [ ${#elements[@]} -gt 1 ]
-    then
-        entryname=${elements[0]}
-        filename=${elements[1]}
-    else
-        entryname=${elements[0]}
-        filename=${elements[0]}
-    fi
+    # trim comments starting with a `#` character on the line
+    trimmed_line=${full_line%%#*}
 
-    echo "Downloading $filename as $entryname"
-    wget -nv -O $entryname ${module_url}/${filename}
+    # split the trimmed line using whitespace as token delimiter
+    read -ra tokens <<< ${trimmed_line}
 
-    mimetype=`file --mime ${entryname}`
+    # interpret the line based on the number its tokens
+    case ${#tokens[@]} in
+
+    1)  short_name=${tokens[0]}
+        full_name=${short_name}
+    ;;
+
+    2)  short_name=${tokens[0]}
+        full_name=${tokens[1]}
+    ;;
+
+    *) continue
+    ;;
+
+    esac
+
+    echo "Downloading $full_name as $short_name"
+    wget -nv -O $short_name ${module_url}/${full_name}
+
+    mimetype=`file --mime ${short_name}`
     if echo ${mimetype} | grep -q "application/x-executable"; then
-        chmod u+x ${entryname}
+        chmod u+x ${short_name}
     elif echo ${mimetype} | grep -q "text/x-shellscript"; then
-        chmod u+x ${entryname}
+        chmod u+x ${short_name}
     fi
 
 done
 
 echo -n "${module_dir}:" >> ~/.bundle_path
 
-# repro@f91ff61920a2:~/bundles/geist-0.2.6$ file --mime geist
-# geist: application/x-executable; charset=binary
