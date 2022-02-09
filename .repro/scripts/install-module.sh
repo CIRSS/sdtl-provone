@@ -26,8 +26,17 @@ do
 
     echo "Downloading $filename as $entryname"
     wget -nv -O $entryname ${module_url}/${filename}
-    chmod u+x ${entryname}
+
+    mimetype=`file --mime ${entryname}`
+    if echo ${mimetype} | grep -q "application/x-executable"; then
+        chmod u+x ${entryname}
+    elif echo ${mimetype} | grep -q "text/x-shellscript"; then
+        chmod u+x ${entryname}
+    fi
 
 done
 
 echo -n "${module_dir}:" >> ~/.bundle_path
+
+# repro@f91ff61920a2:~/bundles/geist-0.2.6$ file --mime geist
+# geist: application/x-executable; charset=binary
