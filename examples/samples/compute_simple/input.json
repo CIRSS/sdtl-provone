@@ -1,0 +1,5 @@
+{
+  "sdtlPath" : "compute_simple_sdtl.json",
+  "ddiPath" : "compute_simple_ddi.xml",
+  "scriptFileName" : ["df.csv","temps.csv"]
+}

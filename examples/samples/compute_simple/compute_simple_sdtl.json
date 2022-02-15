@@ -1,0 +1,440 @@
+{
+    "commands": [
+        {
+            "$type": "NoTransformOp",
+            "command": "NoTransformOp",
+            "sourceInformation": [
+                {
+                    "$type": "SourceInformation",
+                    "lineNumberStart": 1,
+                    "lineNumberEnd": 1,
+                    "sourceStartIndex": 1,
+                    "sourceStopIndex": 19,
+                    "originalSourceText": "import pandas as pd"
+                }
+            ]
+        },
+        {
+            "$type": "Load",
+            "command": "Load",
+            "sourceInformation": [
+                {
+                    "$type": "SourceInformation",
+                    "lineNumberStart": 3,
+                    "lineNumberEnd": 3,
+                    "sourceStartIndex": 22,
+                    "sourceStopIndex": 47,
+                    "originalSourceText": "df = pd.read_csv('df.csv')"
+                }
+            ],
+            "producesDataframe": [
+                {
+                    "dataframeName": "df",
+                    "variableInventory": [
+                        "A",
+                        "B"
+                    ]
+                }
+            ],
+            "fileName": "df.csv",
+            "fileFormat": "csv"
+        },
+        {
+            "$type": "Compute",
+            "command": "Compute",
+            "sourceInformation": [
+                {
+                    "$type": "SourceInformation",
+                    "lineNumberStart": 5,
+                    "lineNumberEnd": 5,
+                    "sourceStartIndex": 50,
+                    "sourceStopIndex": 60,
+                    "originalSourceText": "df['A'] = 3"
+                }
+            ],
+            "consumesDataframe": [
+                {
+                    "dataframeName": "df",
+                    "variableInventory": [
+                        "A",
+                        "B"
+                    ]
+                }
+            ],
+            "producesDataframe": [
+                {
+                    "dataframeName": "df",
+                    "variableInventory": [
+                        "A",
+                        "B"
+                    ]
+                }
+            ],
+            "variable": {
+                "$type": "VariableSymbolExpression",
+                "variableName": "A"
+            },
+            "expression": {
+                "$type": "NumericConstantExpression",
+                "value": "3",
+                "numericType": "Integer"
+            }
+        },
+        {
+            "$type": "Compute",
+            "command": "Compute",
+            "sourceInformation": [
+                {
+                    "$type": "SourceInformation",
+                    "lineNumberStart": 7,
+                    "lineNumberEnd": 7,
+                    "sourceStartIndex": 63,
+                    "sourceStopIndex": 82,
+                    "originalSourceText": "df['B'] = df.B + 6.5"
+                }
+            ],
+            "consumesDataframe": [
+                {
+                    "dataframeName": "df",
+                    "variableInventory": [
+                        "A",
+                        "B"
+                    ]
+                }
+            ],
+            "producesDataframe": [
+                {
+                    "dataframeName": "df",
+                    "variableInventory": [
+                        "A",
+                        "B"
+                    ]
+                }
+            ],
+            "variable": {
+                "$type": "VariableSymbolExpression",
+                "variableName": "B"
+            },
+            "expression": {
+                "$type": "FunctionCallExpression",
+                "function": "addition",
+                "isSdtlName": true,
+                "arguments": [
+                    {
+                        "$type": "FunctionArgument",
+                        "argumentName": "EXP1",
+                        "argumentValue": {
+                            "$type": "VariableSymbolExpression",
+                            "variableName": "B"
+                        }
+                    },
+                    {
+                        "$type": "FunctionArgument",
+                        "argumentName": "EXP2",
+                        "argumentValue": {
+                            "$type": "NumericConstantExpression",
+                            "value": "6.5",
+                            "numericType": "Real"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "Compute",
+            "command": "Compute",
+            "sourceInformation": [
+                {
+                    "$type": "SourceInformation",
+                    "lineNumberStart": 9,
+                    "lineNumberEnd": 9,
+                    "sourceStartIndex": 85,
+                    "sourceStopIndex": 105,
+                    "originalSourceText": "df['C'] = df.A - df.B"
+                }
+            ],
+            "consumesDataframe": [
+                {
+                    "dataframeName": "df",
+                    "variableInventory": [
+                        "A",
+                        "B"
+                    ]
+                }
+            ],
+            "producesDataframe": [
+                {
+                    "dataframeName": "df",
+                    "variableInventory": [
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ],
+            "variable": {
+                "$type": "VariableSymbolExpression",
+                "variableName": "C"
+            },
+            "expression": {
+                "$type": "FunctionCallExpression",
+                "function": "subtraction",
+                "isSdtlName": true,
+                "arguments": [
+                    {
+                        "$type": "FunctionArgument",
+                        "argumentName": "EXP1",
+                        "argumentValue": {
+                            "$type": "VariableSymbolExpression",
+                            "variableName": "A"
+                        }
+                    },
+                    {
+                        "$type": "FunctionArgument",
+                        "argumentName": "EXP2",
+                        "argumentValue": {
+                            "$type": "VariableSymbolExpression",
+                            "variableName": "B"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "Load",
+            "command": "Load",
+            "sourceInformation": [
+                {
+                    "$type": "SourceInformation",
+                    "lineNumberStart": 11,
+                    "lineNumberEnd": 11,
+                    "sourceStartIndex": 108,
+                    "sourceStopIndex": 139,
+                    "originalSourceText": "temps = pd.read_csv('temps.csv')"
+                }
+            ],
+            "producesDataframe": [
+                {
+                    "dataframeName": "temps",
+                    "variableInventory": [
+                        "fahrenheit"
+                    ]
+                }
+            ],
+            "fileName": "temps.csv",
+            "fileFormat": "csv"
+        },
+        {
+            "$type": "Compute",
+            "command": "Compute",
+            "sourceInformation": [
+                {
+                    "$type": "SourceInformation",
+                    "lineNumberStart": 13,
+                    "lineNumberEnd": 13,
+                    "sourceStartIndex": 142,
+                    "sourceStopIndex": 204,
+                    "originalSourceText": "temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))"
+                }
+            ],
+            "consumesDataframe": [
+                {
+                    "dataframeName": "temps",
+                    "variableInventory": [
+                        "fahrenheit"
+                    ]
+                }
+            ],
+            "producesDataframe": [
+                {
+                    "dataframeName": "temps",
+                    "variableInventory": [
+                        "fahrenheit",
+                        "Celsius"
+                    ]
+                }
+            ],
+            "variable": {
+                "$type": "VariableSymbolExpression",
+                "variableName": "Celsius"
+            },
+            "expression": {
+                "$type": "FunctionCallExpression",
+                "function": "division",
+                "isSdtlName": true,
+                "arguments": [
+                    {
+                        "$type": "FunctionArgument",
+                        "argumentName": "EXP1",
+                        "argumentValue": {
+                            "$type": "FunctionCallExpression",
+                            "function": "multiplication",
+                            "isSdtlName": true,
+                            "arguments": [
+                                {
+                                    "$type": "FunctionArgument",
+                                    "argumentName": "EXP1",
+                                    "argumentValue": {
+                                        "$type": "FunctionCallExpression",
+                                        "function": "subtraction",
+                                        "isSdtlName": true,
+                                        "arguments": [
+                                            {
+                                                "$type": "FunctionArgument",
+                                                "argumentName": "EXP1",
+                                                "argumentValue": {
+                                                    "$type": "VariableSymbolExpression",
+                                                    "variableName": "Fahrenheit"
+                                                }
+                                            },
+                                            {
+                                                "$type": "FunctionArgument",
+                                                "argumentName": "EXP2",
+                                                "argumentValue": {
+                                                    "$type": "NumericConstantExpression",
+                                                    "value": "32",
+                                                    "numericType": "Integer"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "$type": "FunctionArgument",
+                                    "argumentName": "EXP2",
+                                    "argumentValue": {
+                                        "$type": "NumericConstantExpression",
+                                        "value": "5",
+                                        "numericType": "Integer"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "$type": "FunctionArgument",
+                        "argumentName": "EXP2",
+                        "argumentValue": {
+                            "$type": "NumericConstantExpression",
+                            "value": "9",
+                            "numericType": "Integer"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "Compute",
+            "command": "Compute",
+            "sourceInformation": [
+                {
+                    "$type": "SourceInformation",
+                    "lineNumberStart": 15,
+                    "lineNumberEnd": 15,
+                    "sourceStartIndex": 207,
+                    "sourceStopIndex": 256,
+                    "originalSourceText": "temps = temps.assign(Kelvin=(temps.Celsius + 273))"
+                }
+            ],
+            "consumesDataframe": [
+                {
+                    "dataframeName": "temps",
+                    "variableInventory": [
+                        "fahrenheit",
+                        "Celsius"
+                    ]
+                }
+            ],
+            "producesDataframe": [
+                {
+                    "dataframeName": "temps",
+                    "variableInventory": [
+                        "fahrenheit",
+                        "Celsius",
+                        "Kelvin"
+                    ]
+                }
+            ],
+            "variable": {
+                "$type": "VariableSymbolExpression",
+                "variableName": "Kelvin"
+            },
+            "expression": {
+                "$type": "FunctionCallExpression",
+                "function": "addition",
+                "isSdtlName": true,
+                "arguments": [
+                    {
+                        "$type": "FunctionArgument",
+                        "argumentName": "EXP1",
+                        "argumentValue": {
+                            "$type": "VariableSymbolExpression",
+                            "variableName": "Celsius"
+                        }
+                    },
+                    {
+                        "$type": "FunctionArgument",
+                        "argumentName": "EXP2",
+                        "argumentValue": {
+                            "$type": "NumericConstantExpression",
+                            "value": "273",
+                            "numericType": "Integer"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "Save",
+            "command": "Save",
+            "sourceInformation": [
+                {
+                    "$type": "SourceInformation",
+                    "lineNumberStart": 17,
+                    "lineNumberEnd": 17,
+                    "sourceStartIndex": 259,
+                    "sourceStopIndex": 306,
+                    "originalSourceText": "df.to_csv('outputs/df_updated.csv', index=False)"
+                }
+            ],
+            "consumesDataframe": [
+                {
+                    "dataframeName": "df",
+                    "variableInventory": [
+                        "A",
+                        "B",
+                        "C"
+                    ]
+                }
+            ],
+            "fileName": "outputs/df_updated.csv",
+            "fileFormat": "csv"
+        },
+        {
+            "$type": "Save",
+            "command": "Save",
+            "sourceInformation": [
+                {
+                    "$type": "SourceInformation",
+                    "lineNumberStart": 19,
+                    "lineNumberEnd": 19,
+                    "sourceStartIndex": 309,
+                    "sourceStopIndex": 362,
+                    "originalSourceText": "temps.to_csv('outputs/temps_updated.csv', index=False)"
+                }
+            ],
+            "consumesDataframe": [
+                {
+                    "dataframeName": "temps",
+                    "variableInventory": [
+                        "fahrenheit",
+                        "Celsius",
+                        "Kelvin"
+                    ]
+                }
+            ],
+            "fileName": "outputs/temps_updated.csv",
+            "fileFormat": "csv"
+        }
+    ]
+}
