@@ -2,7 +2,7 @@
   "@context": [
     {
       "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-      "sdth": "https://rdf-vocabulary.ddialliance.org/sdth#"
+      "sdth": "http://c2metadata.org/sdth#"
     },
     {
       "run": "http://wholetale.org/program/1119/"

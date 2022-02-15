@@ -3,4 +3,4 @@
 @prefix wt: <http://wholetale.org/ontology/wt#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix provone: <http://purl.dataone.org/provone/2015/01/15/ontology#> .
-@prefix sdth: <https://rdf-vocabulary.ddialliance.org/sdth#> .
+@prefix sdth: <http://c2metadata.org/sdth#> .

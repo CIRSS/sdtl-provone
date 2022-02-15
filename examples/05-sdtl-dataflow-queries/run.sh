@@ -8,7 +8,7 @@ GRAPHER='../common/run_dot_examples.sh'
 bash ${RUNNER} SETUP "IMPORT SDTL" << END_SCRIPT
 
 geist destroy --dataset kb --quiet
-geist create --dataset kb --quiet 
+geist create --dataset kb --quiet
 geist import --format jsonld --file ../data/compute-sdth.jsonld
 
 END_SCRIPT
@@ -26,7 +26,7 @@ bash ${RUNNER} Q1 "WHAT STEPS ARE EXECUTED BY THE PROGRAM?" << END_SCRIPT
 
 geist query --format table << __END_QUERY__
 
-    PREFIX sdth: <https://rdf-vocabulary.ddialliance.org/sdth#>
+    PREFIX sdth: <http://c2metadata.org/sdth#>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -46,7 +46,7 @@ bash ${RUNNER} Q2 "WHAT DATA FILES ARE LOADED BY THE PROGRAM?" << END_SCRIPT
 
 geist query --format table << __END_QUERY__
 
-    PREFIX sdth: <https://rdf-vocabulary.ddialliance.org/sdth#>
+    PREFIX sdth: <http://c2metadata.org/sdth#>
 
     SELECT DISTINCT ?file_name ?step ?step_source_text
     WHERE {
@@ -66,7 +66,7 @@ bash ${RUNNER} Q3 "WHAT DATA FILES ARE SAVED BY THE PROGRAM?" << END_SCRIPT
 
 geist query --format table << __END_QUERY__
 
-    PREFIX sdth: <https://rdf-vocabulary.ddialliance.org/sdth#>
+    PREFIX sdth: <http://c2metadata.org/sdth#>
 
     SELECT DISTINCT ?file_name ?step ?step_source_text
     WHERE {
@@ -87,7 +87,7 @@ bash ${RUNNER} Q4 "WHAT VARIABLES ARE LOADED BY THE PROGRAM?" << END_SCRIPT
 
 geist query --format table << __END_QUERY__
 
-    PREFIX sdth: <https://rdf-vocabulary.ddialliance.org/sdth#>
+    PREFIX sdth: <http://c2metadata.org/sdth#>
 
     SELECT DISTINCT ?dataframe_name ?variable_name ?step_source_text
     WHERE {
@@ -111,7 +111,7 @@ bash ${RUNNER} Q5 "WHAT VARIABLES ARE SAVED BY THE SCRIPT?" << END_SCRIPT
 
 geist query --format table << __END_QUERY__
 
-    PREFIX sdth: <https://rdf-vocabulary.ddialliance.org/sdth#>
+    PREFIX sdth: <http://c2metadata.org/sdth#>
 
     SELECT DISTINCT ?dataframe_name ?variable_name ?step_source_text
     WHERE {
