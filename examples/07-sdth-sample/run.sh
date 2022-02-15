@@ -8,8 +8,8 @@ GRAPHER='../common/run_dot_examples.sh'
 bash ${RUNNER} SETUP-1 "CREATE NEW DATASET AND LOAD RULES" << END_SCRIPT
 
 geist destroy --dataset kb --quiet
-geist create --dataset kb --quiet # --infer owl
-#geist import --file ../data/provone-rules.ttl
+geist create --dataset kb --quiet --infer owl
+geist import --file ../data/provone-rules.ttl
 geist import --format ttl --file ../samples/compute_simple/sdth_output.ttl
 
 END_SCRIPT
