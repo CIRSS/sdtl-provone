@@ -12,6 +12,15 @@ subgraph cluster_program_graph_inner { label=""; color=white
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
 node[width=8]
 
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1" [label="df = pd.read_csv('df.csv')"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10" [label="temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 \/ 9))"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12" [label="temps = temps.assign(Kelvin=(temps.Celsius + 273))"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13" [label="df.to_csv('outputs\/df_updated.csv', index=False)"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14" [label="temps.to_csv('outputs\/temps_updated.csv', index=False)"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3" [label="df['A'] = 3"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5" [label="df['B'] = df.B + 6.5"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7" [label="df['C'] = df.A - df.B"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8" [label="temps = pd.read_csv('temps.csv')"]
 
 # dataframe channels
 "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10" [label="temps"]

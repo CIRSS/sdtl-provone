@@ -100,10 +100,9 @@
 '''}}
 
 {{ query "select_provone_programs" "WorkflowId" '''
-    SELECT ?program ?name
+    SELECT ?program
     WHERE {
         <{{$WorkflowId}}> provone:hasSubProgram ?program .
-        ?program dcterms:identifier ?name .
     }
 '''}}
 
