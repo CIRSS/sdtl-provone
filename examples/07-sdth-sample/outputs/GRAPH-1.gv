@@ -1,0 +1,26 @@
+
+digraph provone_workflow {
+rankdir=TB
+
+fontname=Courier; fontsize=18; labelloc=t
+label="Dataframe Flow Through ProvONE Programs"
+
+subgraph cluster_program_graph { label=""; color=white; penwidth=0
+subgraph cluster_program_graph_inner { label=""; color=white
+
+# program nodes
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+node[width=8]
+
+
+# dataframe channels
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10" [label="temps"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12" [label="temps"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13" [label="df"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14" [label="temps"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3" [label="df"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5" [label="df"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7" [label="df"]
+}}
+
+}

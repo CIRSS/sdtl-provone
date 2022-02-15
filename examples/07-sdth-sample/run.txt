@@ -20,27 +20,41 @@ geist export --format nt --sort
 
 ------------------------------------------- E2 OUTPUTS ------------------------------------------------
 
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://c2metadata.org/sdth#hasName> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://purl.org/dc/terms/identifier> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Dataframe> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe2> <http://c2metadata.org/sdth#hasName> "temps" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe2> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe2> <http://purl.org/dc/terms/identifier> "temps" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Dataframe> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> <http://c2metadata.org/sdth#hasName> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V2> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable1> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> <http://purl.org/dc/terms/identifier> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Dataframe> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> <http://c2metadata.org/sdth#hasName> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> <http://purl.org/dc/terms/identifier> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Dataframe> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> <http://c2metadata.org/sdth#hasName> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable2> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> <http://purl.org/dc/terms/identifier> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Dataframe> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> <http://c2metadata.org/sdth#hasName> "temps" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable4> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> <http://purl.org/dc/terms/identifier> "temps" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Dataframe> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> <http://c2metadata.org/sdth#hasName> "temps" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable4> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable5> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> <http://purl.org/dc/terms/identifier> "temps" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Dataframe> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File3> <http://c2metadata.org/sdth#hasName> "df.csv" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File3> <http://purl.org/dc/terms/identifier> "df.csv" .
@@ -486,6 +500,140 @@ __END_REPORT_TEMPLATE__
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframeport/df_out> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_in> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_out> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_out> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_in> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_out> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_out> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/dataframeport/df_in> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/dataframeport/df_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/dataframeport/temps_in> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/dataframeport/temps_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframeport/df_out> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_in> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_out> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_out> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_in> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_out> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_out> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_in> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_out> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_out> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframeport/temps_out> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframeport/temps_out> .
+
+
 ******************************************* EXAMPLE R4 ************************************************
 
 # CONSTRUCT VARIABLE PORTS
@@ -562,7 +710,20 @@ __END_REPORT_TEMPLATE__
 
 ------------------------------------------- R5 OUTPUTS ------------------------------------------------
 
-
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframeport/df_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframechannel/0> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframechannel/1> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframechannel/5> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframechannel/5> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframechannel/6> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/dataframeport/df_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframechannel/4> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/dataframeport/temps_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframechannel/6> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframechannel/0> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframechannel/2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframechannel/2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframechannel/3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframechannel/3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframechannel/4> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframeport/temps_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframechannel/1> .
 
 
 ******************************************* EXAMPLE R6 ************************************************
@@ -643,6 +804,111 @@ cat outputs/augment.ttl
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> provone:hasSubProgram <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> provone:hasSubProgram <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> provone:hasSubProgram <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> .
@@ -652,65 +918,107 @@ cat outputs/augment.ttl
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> provone:hasSubProgram <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> provone:hasSubProgram <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> provone:hasSubProgram <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframeport/df_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframechannel/0> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframeport/df_out> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variableport/A_out> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variableport/B_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variablechannel/0> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variableport/B_out> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframechannel/1> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_in> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframechannel/5> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_out> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variableport/Celsius_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variablechannel/8> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variableport/Celsius_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variablechannel/9> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variableport/Celsius_out> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable4> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variableport/Fahrenheit_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variablechannel/1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variableport/Fahrenheit_in> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variableport/Fahrenheit_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variableport/Celsius_out> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframechannel/5> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_in> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframechannel/6> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_out> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/variableport/Celsius_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variablechannel/8> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/variableport/Celsius_in> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable4> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/variableport/Kelvin_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/variablechannel/10> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/variableport/Kelvin_out> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable5> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/variableport/Celsius_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/variableport/Kelvin_out> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/dataframeport/df_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframechannel/4> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/dataframeport/df_in> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/A_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/variablechannel/3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/A_in> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/B_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/variablechannel/5> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/B_in> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable2> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/C_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variablechannel/7> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/C_in> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/dataframeport/df_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/A_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/B_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/C_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/dataframeport/temps_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframechannel/6> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/dataframeport/temps_in> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Celsius_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variablechannel/9> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Celsius_in> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable4> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Fahrenheit_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variablechannel/2> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Fahrenheit_in> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Kelvin_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/variablechannel/10> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Kelvin_in> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable5> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/dataframeport/temps_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Celsius_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Fahrenheit_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Kelvin_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframeport/df_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variableport/A_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variableport/B_out> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframechannel/0> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_in> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframechannel/2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_out> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/variableport/A_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/variablechannel/3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/variableport/A_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/variablechannel/4> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/variableport/A_out> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable1> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/variableport/A_out> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframechannel/2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_in> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframechannel/3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_out> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/variableport/B_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variablechannel/0> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/variableport/B_in> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V2> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/variableport/B_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/variablechannel/5> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/variableport/B_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/variablechannel/6> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/variableport/B_out> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/variableport/B_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/variableport/B_out> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframechannel/3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_in> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframechannel/4> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_out> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/A_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/variablechannel/4> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/A_in> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/B_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/variablechannel/6> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/B_in> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable2> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/C_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variablechannel/7> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/C_out> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/A_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> provone:hasInPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/B_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/C_out> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframeport/temps_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframechannel/1> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframeport/temps_out> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe2> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variablechannel/1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variablechannel/2> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframeport/temps_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> .
 
 
@@ -732,27 +1040,41 @@ geist export --format nt --sort
 
 ------------------------------------------- E3 OUTPUTS ------------------------------------------------
 
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://c2metadata.org/sdth#hasName> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://purl.org/dc/terms/identifier> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Dataframe> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe2> <http://c2metadata.org/sdth#hasName> "temps" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe2> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe2> <http://purl.org/dc/terms/identifier> "temps" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Dataframe> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> <http://c2metadata.org/sdth#hasName> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V2> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable1> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> <http://purl.org/dc/terms/identifier> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Dataframe> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> <http://c2metadata.org/sdth#hasName> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> <http://purl.org/dc/terms/identifier> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Dataframe> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> <http://c2metadata.org/sdth#hasName> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable2> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> <http://purl.org/dc/terms/identifier> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Dataframe> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> <http://c2metadata.org/sdth#hasName> "temps" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable4> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> <http://purl.org/dc/terms/identifier> "temps" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Dataframe> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> <http://c2metadata.org/sdth#hasName> "temps" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable4> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable5> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> <http://purl.org/dc/terms/identifier> "temps" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Dataframe> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File3> <http://c2metadata.org/sdth#hasName> "df.csv" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File3> <http://purl.org/dc/terms/identifier> "df.csv" .
@@ -787,12 +1109,23 @@ geist export --format nt --sort
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Program> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Workflow> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframechannel/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframeport/df_out> <http://c2metadata.org/sdth#hasDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframeport/df_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframechannel/0> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframeport/df_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variablechannel/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variableport/A_out> <http://c2metadata.org/sdth#hasVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variableport/A_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variableport/B_out> <http://c2metadata.org/sdth#hasVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V2> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variableport/B_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variablechannel/0> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variableport/B_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframechannel/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_in> <http://c2metadata.org/sdth#hasDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframechannel/1> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_out> <http://c2metadata.org/sdth#hasDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframechannel/5> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variablechannel/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variablechannel/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variableport/Celsius_out> <http://c2metadata.org/sdth#hasVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable4> .
@@ -808,10 +1141,19 @@ geist export --format nt --sort
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> <http://c2metadata.org/sdth#hasSourceCode> "temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 \\/ 9))" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> <http://c2metadata.org/sdth#producesDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variableport/Fahrenheit_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variableport/Celsius_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#ProgramStep> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframechannel/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_in> <http://c2metadata.org/sdth#hasDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe6> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframechannel/5> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_out> <http://c2metadata.org/sdth#hasDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframechannel/6> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/variablechannel/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/variableport/Celsius_in> <http://c2metadata.org/sdth#hasVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable4> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/variableport/Celsius_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variablechannel/8> .
@@ -825,10 +1167,15 @@ geist export --format nt --sort
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> <http://c2metadata.org/sdth#hasSourceCode> "temps = temps.assign(Kelvin=(temps.Celsius + 273))" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> <http://c2metadata.org/sdth#producesDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable4> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/variableport/Celsius_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframeport/temps_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/variableport/Kelvin_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#ProgramStep> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/dataframeport/df_in> <http://c2metadata.org/sdth#hasDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/dataframeport/df_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframechannel/4> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/dataframeport/df_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/A_in> <http://c2metadata.org/sdth#hasVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/A_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/variablechannel/3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/A_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
@@ -845,11 +1192,15 @@ geist export --format nt --sort
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable2> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/dataframeport/df_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/A_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/B_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/C_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#ProgramStep> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/dataframeport/temps_in> <http://c2metadata.org/sdth#hasDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/dataframeport/temps_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/dataframechannel/6> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/dataframeport/temps_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Celsius_in> <http://c2metadata.org/sdth#hasVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable4> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Celsius_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variablechannel/9> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Celsius_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
@@ -866,6 +1217,7 @@ geist export --format nt --sort
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable4> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable5> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/dataframeport/temps_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Celsius_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Fahrenheit_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Kelvin_in> .
@@ -877,10 +1229,18 @@ geist export --format nt --sort
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1> <http://c2metadata.org/sdth#hasSourceCode> "df = pd.read_csv('df.csv')" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1> <http://c2metadata.org/sdth#loadsFile> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1> <http://c2metadata.org/sdth#producesDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframeport/df_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variableport/A_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variableport/B_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#ProgramStep> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframechannel/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_in> <http://c2metadata.org/sdth#hasDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframechannel/0> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_out> <http://c2metadata.org/sdth#hasDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframechannel/2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/variablechannel/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/variablechannel/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/variableport/A_out> <http://c2metadata.org/sdth#hasVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable1> .
@@ -892,9 +1252,18 @@ geist export --format nt --sort
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3> <http://c2metadata.org/sdth#hasSDTL> "{\"$type\":\"Compute\",\"unknownProperties\":[],\"command\":\"Compute\",\"sourceInformation\":[{\"lineNumberStart\":5,\"lineNumberEnd\":5,\"sourceStartIndex\":50,\"sourceStopIndex\":60,\"originalSourceText\":\"df['A'] = 3\",\"processedSourceText\":null}],\"messageText\":null,\"producesDataframe\":[{\"dataframeName\":\"df\",\"variableInventory\":[\"A\",\"B\"],\"rowDimensions\":[],\"columnDimensions\":[]}],\"consumesDataframe\":[{\"dataframeName\":\"df\",\"variableInventory\":[\"A\",\"B\"],\"rowDimensions\":[],\"columnDimensions\":[]}],\"variable\":{\"$type\":\"VariableSymbolExpression\",\"name\":null,\"typeName\":null,\"unknownProperties\":[],\"variableName\":\"A\"},\"expression\":{\"$type\":\"NumericConstantExpression\",\"name\":null,\"typeName\":null,\"unknownProperties\":[],\"value\":\"3\",\"numericType\":\"Integer\"},\"$type\":\"Compute\"}" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3> <http://c2metadata.org/sdth#hasSourceCode> "df['A'] = 3" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3> <http://c2metadata.org/sdth#producesDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframeport/df_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/variableport/A_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#ProgramStep> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframechannel/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_in> <http://c2metadata.org/sdth#hasDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/dataframechannel/2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_out> <http://c2metadata.org/sdth#hasDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframechannel/3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/variablechannel/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/variablechannel/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/variableport/B_in> <http://c2metadata.org/sdth#hasVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V2> .
@@ -910,10 +1279,19 @@ geist export --format nt --sort
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> <http://c2metadata.org/sdth#hasSourceCode> "df['B'] = df.B + 6.5" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> <http://c2metadata.org/sdth#producesDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/variableport/B_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframeport/df_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/variableport/B_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#ProgramStep> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframechannel/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_in> <http://c2metadata.org/sdth#hasDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe4> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframechannel/3> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_out> <http://c2metadata.org/sdth#hasDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframechannel/4> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variablechannel/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/A_in> <http://c2metadata.org/sdth#hasVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/A_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3/variablechannel/4> .
@@ -931,11 +1309,17 @@ geist export --format nt --sort
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> <http://c2metadata.org/sdth#producesDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/A_in> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> <http://purl.dataone.org/provone/2015/01/15/ontology#hasInPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/B_in> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/C_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#ProgramStep> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframechannel/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframeport/temps_out> <http://c2metadata.org/sdth#hasDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframeport/temps_out> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframechannel/1> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframeport/temps_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variablechannel/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variablechannel/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Channel> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> <http://c2metadata.org/sdth#hasVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
@@ -947,6 +1331,7 @@ geist export --format nt --sort
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> <http://c2metadata.org/sdth#hasSourceCode> "temps = pd.read_csv('temps.csv')" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> <http://c2metadata.org/sdth#loadsFile> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File4> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> <http://c2metadata.org/sdth#producesDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe2> .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframeport/temps_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> <http://purl.dataone.org/provone/2015/01/15/ontology#hasOutPort> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#ProgramStep> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
@@ -994,6 +1379,8 @@ geist export --format nt --sort
 <http://c2metadata.org/sdth#assignsVariable> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://c2metadata.org/sdth#assignsVariable> .
 <http://c2metadata.org/sdth#consumesDataframe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://c2metadata.org/sdth#consumesDataframe> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://c2metadata.org/sdth#consumesDataframe> .
+<http://c2metadata.org/sdth#hasDataframe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://c2metadata.org/sdth#hasDataframe> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://c2metadata.org/sdth#hasDataframe> .
 <http://c2metadata.org/sdth#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://c2metadata.org/sdth#hasName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://c2metadata.org/sdth#hasName> .
 <http://c2metadata.org/sdth#hasName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
@@ -1232,4 +1619,156 @@ geist export --format nt --sort
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#sameAs> .
+
+
+******************************************* EXAMPLE GRAPH-1 ************************************************
+
+# DATAFRAME FLOW THROUGH PROVONE PROGRAMS
+
+geist report << '__END_REPORT_TEMPLATE__'
+
+    {{{
+        {{ include "../common/graphviz.g" }}
+        {{ include "../common/sdtl.g" }}
+        {{ include "../common/sdth.g" }}
+    }}}
+
+    {{ gv_graph "provone_workflow" }}
+
+    {{ gv_title "Dataframe Flow Through ProvONE Programs" }}
+
+    {{ gv_cluster "program_graph" }}
+
+    # program nodes
+    {{ sdtl_program_node_style }}
+    node[width=8]
+    {{ with $WorkflowId := select_provone_workflow | value }}                               \
+
+        {{ range $Program := (select_provone_programs $WorkflowId | rows ) }}               \
+            {{ with $ProgramId := (index $Program 0) }}                                     \
+            {{ with $SourceCode := (select_program_sourcecode $ProgramId | value ) }}       \
+                {{ gv_labeled_node $ProgramId $SourceCode }}
+            {{ end }}                                                                       \
+            {{ end }}                                                                       \
+        {{ end }}                                                                           \
+
+        # dataframe channels
+        {{ range $Channel := (select_provone_dataframe_channels $WorkflowId | rows) }}      \
+            {{ gv_labeled_edge (index $Channel 0) (index $Channel 1) (index $Channel 2) }}
+        {{ end }}                                                                           \
+                                                                                            \
+    {{ end }}                                                                               \
+                                                                                            \
+    {{ gv_cluster_end }}
+
+    {{ gv_end }}                                                                            \
+
+__END_REPORT_TEMPLATE__
+
+----------------------------------------- GRAPH-1 DOT OUTPUT -----------------------------------------------
+
+
+digraph provone_workflow {
+rankdir=TB
+
+fontname=Courier; fontsize=18; labelloc=t
+label="Dataframe Flow Through ProvONE Programs"
+
+subgraph cluster_program_graph { label=""; color=white; penwidth=0
+subgraph cluster_program_graph_inner { label=""; color=white
+
+# program nodes
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+node[width=8]
+
+
+# dataframe channels
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10" [label="temps"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12" [label="temps"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13" [label="df"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14" [label="temps"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3" [label="df"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5" [label="df"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7" [label="df"]
+}}
+
+}
+
+
+******************************************* EXAMPLE GRAPH-2 ************************************************
+
+# VARIABLE FLOW THROUGH PROVONE PROGRAMS
+
+geist report << '__END_REPORT_TEMPLATE__'
+
+    {{{
+        {{ include "../common/graphviz.g" }}
+        {{ include "../common/sdtl.g" }}
+        {{ include "../common/sdth.g" }}
+    }}}
+
+    {{ gv_graph "provone_workflow" }}
+
+    {{ gv_title "Variable Flow Through ProvONE Programs" }}
+
+    {{ gv_cluster "program_graph" }}
+
+    # program nodes
+    {{ sdtl_program_node_style }}
+    node[width=8]
+    {{ with $WorkflowId := select_provone_workflow | value }}                               \
+
+        {{ range $Program := (select_provone_programs $WorkflowId | rows ) }}               \
+            {{ with $ProgramId := (index $Program 0) }}                                     \
+            {{ with $SourceCode := (select_program_sourcecode $ProgramId | value ) }}       \
+                {{ gv_labeled_node $ProgramId $SourceCode }}
+            {{ end }}                                                                       \
+            {{ end }}                                                                       \
+        {{ end }}                                                                           \
+
+        # dataframe channels
+        {{ range $Channel := (select_provone_variable_channels $WorkflowId | rows) }}       \
+            {{ gv_labeled_edge (index $Channel 0) (index $Channel 1) (index $Channel 2) }}
+        {{ end }}                                                                           \
+                                                                                            \
+    {{ end }}                                                                               \
+                                                                                            \
+    {{ gv_cluster_end }}
+
+    {{ gv_end }}                                                                            \
+
+__END_REPORT_TEMPLATE__
+
+----------------------------------------- GRAPH-2 DOT OUTPUT -----------------------------------------------
+
+
+digraph provone_workflow {
+rankdir=TB
+
+fontname=Courier; fontsize=18; labelloc=t
+label="Variable Flow Through ProvONE Programs"
+
+subgraph cluster_program_graph { label=""; color=white; penwidth=0
+subgraph cluster_program_graph_inner { label=""; color=white
+
+# program nodes
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+node[width=8]
+
+
+# dataframe channels
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10" [label="Fahrenheit"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12" [label="Celsius"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13" [label="A"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13" [label="B"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13" [label="C"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14" [label="Celsius"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14" [label="Fahrenheit"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14" [label="Kelvin"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5" [label="B"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7" [label="A"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5" -> "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7" [label="B"]
+}}
+
+}
 
