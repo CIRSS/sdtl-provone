@@ -1,5 +1,5 @@
-@ prefix run: <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/>.
-@ prefix sdth: <http://c2metadata.org/sdth#>.
+@prefix run: <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/>.
+@prefix sdth: <http://c2metadata.org/sdth#>.
 run:ProgramStep1 a sdth:ProgramStep.
 run:ProgramStep1 sdth:hasSDTL "{\"$type\":\"Load\",\"unknownProperties\":[],\"command\":\"Load\",\"sourceInformation\":[{\"lineNumberStart\":3,\"lineNumberEnd\":3,\"sourceStartIndex\":22,\"sourceStopIndex\":47,\"originalSourceText\":\"df = pd.read_csv('df.csv')\",\"processedSourceText\":null}],\"messageText\":null,\"producesDataframe\":[{\"dataframeName\":\"df\",\"variableInventory\":[\"A\",\"B\"],\"rowDimensions\":[],\"columnDimensions\":[]}],\"consumesDataframe\":null,\"fileName\":\"df.csv\",\"software\":null,\"fileFormat\":\"csv\",\"isCompressed\":false,\"$type\":\"Load\"}".
 run:ProgramStep1 sdth:hasSourceCode "df = pd.read_csv('df.csv')".
