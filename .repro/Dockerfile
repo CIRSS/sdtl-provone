@@ -49,9 +49,7 @@ ENV MODULES_DIR ${HOME}/bundles/
 ENV MODULES_URL_TEMPLATE 'https://github.com/cirss/${module_name}/releases/download/v${module_version}/'
 RUN scripts/install-module.sh blaze 0.2.6
 RUN scripts/install-module.sh geist 0.2.6
-
-ENV MODULES_URL_TEMPLATE 'https://github.com/tmcphillips/${module_name}/releases/download/v${module_version}/'
-RUN scripts/install-module.sh blazegraph 0.1.0
+RUN scripts/install-module.sh blazegraph-service  0.2.6
 
 RUN echo "export PATH=${REPRO_MNT}/binaries:`cat ~/.bundle_path`$PATH" >> ${BASHRC}
 RUN echo "export IN_RUNNING_REPRO=${REPRO_NAME}" >> ${BASHRC}
