@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
 module_name=$1
-module_version=$2
-module_dir=${MODULES_DIR}/${module_name}-${module_version}
+package_version=$2
+module_dir=${MODULES_DIR}/${module_name}-${package_version}
 
 mkdir -p ${module_dir}
 cd ${module_dir}
 
-if [[ $module_version == local ]] ; then
-    cp ${PACKAGE_DIR}/module.txt .
+if [[ $package_version == local ]] ; then
+    cp ${PACKAGE_SNAPSHOT}/module.txt .
 else
-    module_url=`eval echo ${MODULES_URL_TEMPLATE}`
-    wget --quiet ${module_url}/module.txt
+    package_url=`eval echo ${PACKAGE_URL_TEMPLATE}`
+    wget --quiet ${package_url}/module.txt
 fi
 
 readarray lines < module.txt
@@ -42,10 +42,10 @@ do
 
     if [[ ${artifact_path} == http?:* ]] ; then
         wget -nv -O ${artifact_name} ${artifact_path}
-    elif [[ $module_version == local ]] ; then
-        cp ${PACKAGE_DIR}/${artifact_path} ${artifact_name}
+    elif [[ $package_version == local ]] ; then
+        cp ${PACKAGE_SNAPSHOT}/${artifact_path} ${artifact_name}
     else
-        wget -nv -O ${artifact_name} ${module_url}/${artifact_path}
+        wget -nv -O ${artifact_name} ${package_url}/${artifact_path}
     fi
 
     mimetype=`file --mime ${artifact_name}`
