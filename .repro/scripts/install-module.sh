@@ -2,13 +2,17 @@
 
 module_name=$1
 module_version=$2
-module_url=`eval echo ${MODULES_URL_TEMPLATE}`
 module_dir=${MODULES_DIR}/${module_name}-${module_version}
 
 mkdir -p ${module_dir}
 cd ${module_dir}
 
-wget --quiet -O module.txt ${module_url}/module.txt
+if [[ $module_version == local ]] ; then
+    cp ${PACKAGE_DIR}/module.txt .
+else
+    module_url=`eval echo ${MODULES_URL_TEMPLATE}`
+    wget --quiet ${module_url}/module.txt
+fi
 
 readarray lines < module.txt
 
@@ -37,19 +41,23 @@ do
     esac
 
     if [[ ${artifact_path} == http?:* ]] ; then
-        artifact_url=${artifact_path}
+        wget -nv -O ${artifact_name} ${artifact_path}
+    elif [[ $module_version == local ]] ; then
+        cp ${PACKAGE_DIR}/${artifact_path} ${artifact_name}
     else
-        artifact_url=${module_url}/${artifact_path}
+        wget -nv -O ${artifact_name} ${module_url}/${artifact_path}
     fi
-
-    echo "Downloading ${artifact_url} to ${artifact_name}"
-    wget -nv -O $artifact_name ${artifact_url}
 
     mimetype=`file --mime ${artifact_name}`
     if echo ${mimetype} | grep -q "application/x-executable"; then
         chmod u+x ${artifact_name}
     elif echo ${mimetype} | grep -q "text/x-shellscript"; then
         chmod u+x ${artifact_name}
+    fi
+
+    if [[ ${artifact_name} == configure.sh ]] ; then
+        echo "Running  ${artifact_name}"
+        source ${artifact_name}
     fi
 
 done

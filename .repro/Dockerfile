@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 ENV REPRO_NAME  sdtl-provone
 ENV REPRO_MNT   /mnt/${REPRO_NAME}
@@ -6,23 +6,14 @@ ENV REPRO_USER  repro
 ENV REPRO_UID   1000
 ENV REPRO_GID   1000
 
-RUN echo '***** Update packages *****'                                      \
-    && apt-get -y update
+RUN apt-get -y update &&                                                        \
+    apt -y install apt-utils wget makepasswd make git sudo man less file tree
 
-RUN echo '***** Set timezone noninteractively install JDK8 *****'
+RUN apt -y install graphviz
+
 RUN DEBIAN_FRONTEND="noninteractive" TZ="America/Los_Angeles"               \
-    apt -y install tzdata openjdk-8-jdk
+    apt -y install tzdata
 
-RUN echo '***** Install packages required for creating this image *****'    \
-    && apt -y install apt-utils wget curl makepasswd gcc make git           \
-                                                                            \
-    && echo '***** Install command-line utility packages *****'             \
-    && apt -y install sudo man less file tree jq graphviz libxml2-utils
-
-RUN echo '***** Install python3 and required pip packages *****'            \
-    && apt -y install python3 python3-pip                                   \
-    && pip3 install -U pip                                                  \
-    && pip3 install pandas
 
 RUN echo '***** Add the REPRO user and group *****'                         \
     && groupadd ${REPRO_USER} --gid ${REPRO_GID}                            \
@@ -49,7 +40,14 @@ ENV MODULES_DIR ${HOME}/bundles/
 ENV MODULES_URL_TEMPLATE 'https://github.com/cirss/${module_name}/releases/download/v${module_version}/'
 RUN scripts/install-module.sh blaze 0.2.6
 RUN scripts/install-module.sh geist 0.2.6
-RUN scripts/install-module.sh blazegraph-service  0.2.6
+RUN scripts/install-module.sh blazegraph-service 0.2.6
+
+
+RUN echo '***** Install python3 and required pip packages *****'            \
+    && sudo apt -y install python3 python3-pip                                   \
+    && sudo pip3 install -U pip                                                  \
+    && pip3 install pandas
+
 
 RUN echo "export PATH=${REPRO_MNT}/binaries:`cat ~/.bundle_path`$PATH" >> ${BASHRC}
 RUN echo "export IN_RUNNING_REPRO=${REPRO_NAME}" >> ${BASHRC}
