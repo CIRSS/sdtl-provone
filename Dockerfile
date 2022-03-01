@@ -3,7 +3,8 @@ FROM ubuntu:22.04
 ENV REPRO_NAME sdtl-provone
 
 COPY .repro .repro
-RUN bash .repro/bootstrap
+ADD https://github.com/CIRSS/repro-builder/releases/download/v0.1.0/bootstrap.sh .repro/
+RUN bash .repro/bootstrap.sh
 
 USER repro
 
