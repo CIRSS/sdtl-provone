@@ -1,10 +1,6 @@
-FROM ubuntu:22.04
-
-ENV REPRO_NAME sdtl-provone
+FROM docker.io/cirss/repro-template
 
 COPY .repro .repro
-ADD https://github.com/CIRSS/repro-builder/releases/download/v0.1.0/bootstrap.sh .repro/
-RUN bash .repro/bootstrap.sh
 
 USER repro
 
