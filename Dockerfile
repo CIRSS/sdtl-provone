@@ -8,11 +8,11 @@ USER repro
 ENV CIRSS_RELEASES 'https://github.com/cirss/${1}/releases/download/v${2}/'
 
 # install required repro modules
-#RUN repro.require blaze 0.2.6 ${CIRSS_RELEASES}
+RUN repro.require blaze 0.2.6 ${CIRSS_RELEASES}
 RUN repro.require geist 0.2.6 ${CIRSS_RELEASES}
-#RUN repro.require blazegraph-service 0.2.6  ${CIRSS_RELEASES}
+RUN repro.require blazegraph-service 0.2.6  ${CIRSS_RELEASES}
 RUN repro.require sdtl-provone local ${CIRSS_RELEASES}
 
-#RUN repro.atstart start-blazegraph
+RUN repro.atstart start-blazegraph
 
 CMD  /bin/bash -il
