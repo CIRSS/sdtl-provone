@@ -1,4 +1,4 @@
-FROM docker.io/cirss/repro-template
+FROM docker.io/cirss/blazegraph-service
 
 COPY .repro .repro
 
