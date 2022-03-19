@@ -10,6 +10,6 @@ RUN repro.require geist 0.2.6 ${CIRSS_RELEASE}
 RUN repro.require blazegraph-service 0.2.6 ${CIRSS_RELEASE}
 RUN repro.require sdtl-provone exported --demo
 
-RUN repro.atstart start-blazegraph
+RUN repro.atstart blazegraph-service.start
 
 CMD  /bin/bash -il
