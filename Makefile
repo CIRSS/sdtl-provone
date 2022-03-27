@@ -68,11 +68,11 @@ endif
 ## 
 ## # Targets for running the examples in this REPRO.
 
-## run-examples:           Run all of the examples.
-run-examples: 
+## run-demos:           Run all of the demos.
+run-demos: 
 	$(RUN_IN_REPRO) 'repro.run_target run-demos'
 
-clean-examples:         ## Delete all products of examples.
+clean-demos:         ## Delete all products of demos.
 	$(RUN_IN_REPRO) 'repro.run_target clean-demos'
 
 
