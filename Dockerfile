@@ -8,7 +8,7 @@ USER repro
 RUN repro.require blaze 0.2.6 ${CIRSS_RELEASE}
 RUN repro.require geist 0.2.6 ${CIRSS_RELEASE}
 RUN repro.require blazegraph-service master ${CIRSS_BRANCH}
-RUN repro.require sdtl-provone exported --demos
+RUN repro.require sdtl-provone exported --demo
 
 RUN repro.atstart blazegraph-service.start
 
