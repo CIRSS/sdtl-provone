@@ -1,5 +1,5 @@
 run:
-	blaze status --timeout 5000 --quiet &&	\
+	blazegraph-service.wait 		&&	\
 	make -C ${REPRO_MNT}/demo all
 
 clean:
