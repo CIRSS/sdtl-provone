@@ -394,7 +394,7 @@
                     "lineNumberEnd": 17,
                     "sourceStartIndex": 259,
                     "sourceStopIndex": 306,
-                    "originalSourceText": "df.to_csv('outputs/df_updated.csv', index=False)"
+                    "originalSourceText": "df.to_csv('products/df_updated.csv', index=False)"
                 }
             ],
             "consumesDataframe": [
@@ -407,7 +407,7 @@
                     ]
                 }
             ],
-            "fileName": "outputs/df_updated.csv",
+            "fileName": "products/df_updated.csv",
             "fileFormat": "csv"
         },
         {
@@ -420,7 +420,7 @@
                     "lineNumberEnd": 19,
                     "sourceStartIndex": 309,
                     "sourceStopIndex": 362,
-                    "originalSourceText": "temps.to_csv('outputs/temps_updated.csv', index=False)"
+                    "originalSourceText": "temps.to_csv('products/temps_updated.csv', index=False)"
                 }
             ],
             "consumesDataframe": [
@@ -433,7 +433,7 @@
                     ]
                 }
             ],
-            "fileName": "outputs/temps_updated.csv",
+            "fileName": "products/temps_updated.csv",
             "fileFormat": "csv"
         }
     ]

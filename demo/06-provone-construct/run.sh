@@ -117,7 +117,7 @@ __END_CELL__
 
 run_cell R7 "CONSTRUCT ALL PROVONE TRIPLES" << '__END_CELL__'
 
-cp ../data/prefixes.ttl outputs/augment.ttl
+cp ../data/prefixes.ttl products/augment.ttl
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
@@ -131,9 +131,9 @@ geist report << '__END_REPORT_TEMPLATE__'
     {{ construct_dataframe_channels }}
     {{ construct_variable_channels }}
 __END_REPORT_TEMPLATE__
-) | sort >> outputs/augment.ttl
+) | sort >> products/augment.ttl
 
-cat outputs/augment.ttl
+cat products/augment.ttl
 
 __END_CELL__
 
@@ -141,7 +141,7 @@ __END_CELL__
 
 run_cell LOAD-3 "LOAD PROVONE TRIPLES" << '__END_CELL__'
 
-geist import --file outputs/augment.ttl
+geist import --file products/augment.ttl
 
 __END_CELL__
 

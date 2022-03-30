@@ -1,22 +1,15 @@
-RULES_DIR = ../common/rules
-SCRIPTS_DIR = ../common/scripts
-
 RUN_SCRIPT_FILE=./run.sh
 RUN_OUTPUT_FILE=./run.txt
-RUN_OUTPUTS_DIR=./outputs
+RUN_PRODUCTS_DIR=./products
 RUN_SCRATCH_DIR=./.scratch
-
-DIRS=${RUN_OUTPUTS_DIR} ${RUN_SCRATCH_DIR}
+DIRS=${RUN_PRODUCTS_DIR}
 
 all: run
 
 clean:
 	rm -fv ${RUN_OUTPUT_FILE}
-	rm -rfv ${DIRS}
+	rm -rfv ${RUN_PRODUCTS_DIR}
+	rm -rfv ${RUN_SCRATCH_DIR}
 
-run: $(DIRS)
+run: 
 	bash ${RUN_SCRIPT_FILE} > ${RUN_OUTPUT_FILE}
-
-$(DIRS):
-	mkdir -p $@
-

@@ -14,6 +14,6 @@ temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))
 
 temps = temps.assign(Kelvin=(temps.Celsius + 273))
 
-df.to_csv('outputs/df_updated.csv', index=False)
+df.to_csv('products/df_updated.csv', index=False)
 
-temps.to_csv('outputs/temps_updated.csv', index=False)
+temps.to_csv('products/temps_updated.csv', index=False)

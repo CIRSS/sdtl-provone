@@ -207,7 +207,7 @@ geist export --format nt --sort
 <http://wholetale.org/program/1119/step/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#ProgramStep> .
 <http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/4> .
 <http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#hasName> "save_1"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#hasSourceCode> "df.to_csv('outputs/df_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#hasSourceCode> "df.to_csv('products/df_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#savesFile> <http://wholetale.org/program/1119/file/2> .
 <http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/3> .
 <http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/4> .
@@ -216,7 +216,7 @@ geist export --format nt --sort
 <http://wholetale.org/program/1119/step/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#ProgramStep> .
 <http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/7> .
 <http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#hasName> "save_2"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#hasSourceCode> "temps.to_csv('outputs/temps_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#hasSourceCode> "temps.to_csv('products/temps_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#savesFile> <http://wholetale.org/program/1119/file/3> .
 <http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/6> .
 <http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/7> .
@@ -779,7 +779,7 @@ __END_REPORT_TEMPLATE__
 
 # CONSTRUCT ALL PROVONE TRIPLES
 
-cp ../data/prefixes.ttl outputs/augment.ttl
+cp ../data/prefixes.ttl products/augment.ttl
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
@@ -793,9 +793,9 @@ geist report << '__END_REPORT_TEMPLATE__'
     {{ construct_dataframe_channels }}
     {{ construct_variable_channels }}
 __END_REPORT_TEMPLATE__
-) | sort >> outputs/augment.ttl
+) | sort >> products/augment.ttl
 
-cat outputs/augment.ttl
+cat products/augment.ttl
 
 ------------------------------------------- R7 OUTPUTS ------------------------------------------------
 
@@ -1037,7 +1037,7 @@ cat outputs/augment.ttl
 
 # LOAD PROVONE TRIPLES
 
-geist import --file outputs/augment.ttl
+geist import --file products/augment.ttl
 
 ------------------------------------------- LOAD-3 OUTPUTS ------------------------------------------------
 
@@ -1392,7 +1392,7 @@ geist export --format nt --sort
 <http://wholetale.org/program/1119/step/8/variableport/C_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/4> .
 <http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#hasName> "save_1"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#hasSourceCode> "df.to_csv('outputs/df_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#hasSourceCode> "df.to_csv('products/df_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#savesFile> <http://wholetale.org/program/1119/file/2> .
 <http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/3> .
 <http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/4> .
@@ -1418,7 +1418,7 @@ geist export --format nt --sort
 <http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/7> .
 <http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#hasName> "save_2"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#hasSourceCode> "temps.to_csv('outputs/temps_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#hasSourceCode> "temps.to_csv('products/temps_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#savesFile> <http://wholetale.org/program/1119/file/3> .
 <http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/6> .
 <http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/7> .
@@ -1710,8 +1710,8 @@ node[width=8]
 "http://wholetale.org/program/1119/step/5" [label="temps = pd.read_csv('inputs/temps.csv')"]
 "http://wholetale.org/program/1119/step/6" [label="temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))"]
 "http://wholetale.org/program/1119/step/7" [label="temps = temps.assign(Kelvin=(temps.Celsius + 273))"]
-"http://wholetale.org/program/1119/step/8" [label="df.to_csv('outputs/df_updated.csv', index=False)"]
-"http://wholetale.org/program/1119/step/9" [label="temps.to_csv('outputs/temps_updated.csv', index=False)"]
+"http://wholetale.org/program/1119/step/8" [label="df.to_csv('products/df_updated.csv', index=False)"]
+"http://wholetale.org/program/1119/step/9" [label="temps.to_csv('products/temps_updated.csv', index=False)"]
 
 # dataframe channels
 "http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/2" [label="df"]
@@ -1793,8 +1793,8 @@ node[width=8]
 "http://wholetale.org/program/1119/step/5" [label="temps = pd.read_csv('inputs/temps.csv')"]
 "http://wholetale.org/program/1119/step/6" [label="temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))"]
 "http://wholetale.org/program/1119/step/7" [label="temps = temps.assign(Kelvin=(temps.Celsius + 273))"]
-"http://wholetale.org/program/1119/step/8" [label="df.to_csv('outputs/df_updated.csv', index=False)"]
-"http://wholetale.org/program/1119/step/9" [label="temps.to_csv('outputs/temps_updated.csv', index=False)"]
+"http://wholetale.org/program/1119/step/8" [label="df.to_csv('products/df_updated.csv', index=False)"]
+"http://wholetale.org/program/1119/step/9" [label="temps.to_csv('products/temps_updated.csv', index=False)"]
 
 # dataframe channels
 "http://wholetale.org/program/1119/step/1" -> "http://wholetale.org/program/1119/step/3" [label="B"]

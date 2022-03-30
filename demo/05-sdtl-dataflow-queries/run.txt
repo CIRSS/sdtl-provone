@@ -118,7 +118,7 @@ geist export --format nt | sort
 <http://wholetale.org/program/1119/step/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#ProgramStep> .
 <http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/4> .
 <http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#hasName> "save_1"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#hasSourceCode> "df.to_csv('outputs/df_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#hasSourceCode> "df.to_csv('products/df_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#savesFile> <http://wholetale.org/program/1119/file/2> .
 <http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/3> .
 <http://wholetale.org/program/1119/step/8> <http://c2metadata.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/4> .
@@ -126,7 +126,7 @@ geist export --format nt | sort
 <http://wholetale.org/program/1119/step/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#ProgramStep> .
 <http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#consumesDataframe> <http://wholetale.org/program/1119/dataframe/7> .
 <http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#hasName> "save_2"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#hasSourceCode> "temps.to_csv('outputs/temps_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#hasSourceCode> "temps.to_csv('products/temps_updated.csv', index=False)"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#savesFile> <http://wholetale.org/program/1119/file/3> .
 <http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/6> .
 <http://wholetale.org/program/1119/step/9> <http://c2metadata.org/sdth#usesVariable> <http://wholetale.org/program/1119/variable/7> .
@@ -180,8 +180,8 @@ http://wholetale.org/program/1119/step/4 | df['C'] = df.A - df.B
 http://wholetale.org/program/1119/step/5 | temps = pd.read_csv('inputs/temps.csv')
 http://wholetale.org/program/1119/step/6 | temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))
 http://wholetale.org/program/1119/step/7 | temps = temps.assign(Kelvin=(temps.Celsius + 273))
-http://wholetale.org/program/1119/step/8 | df.to_csv('outputs/df_updated.csv', index=False)
-http://wholetale.org/program/1119/step/9 | temps.to_csv('outputs/temps_updated.csv', index=False)
+http://wholetale.org/program/1119/step/8 | df.to_csv('products/df_updated.csv', index=False)
+http://wholetale.org/program/1119/step/9 | temps.to_csv('products/temps_updated.csv', index=False)
 
 
 ********************************************** CELL Q2 ************************************************
@@ -234,10 +234,10 @@ __END_QUERY__
 ------------------------------------------- Q3 OUTPUTS ------------------------------------------------
 
 file_name         | step                                     | step_source_text
-======================================================================================================================
-df_updated.csv    | http://wholetale.org/program/1119/step/8 | df.to_csv('outputs/df_updated.csv', index=False)
-inputs/temps.csv  | http://wholetale.org/program/1119/step/8 | df.to_csv('outputs/df_updated.csv', index=False)
-temps_updated.csv | http://wholetale.org/program/1119/step/9 | temps.to_csv('outputs/temps_updated.csv', index=False)
+=======================================================================================================================
+df_updated.csv    | http://wholetale.org/program/1119/step/8 | df.to_csv('products/df_updated.csv', index=False)
+inputs/temps.csv  | http://wholetale.org/program/1119/step/8 | df.to_csv('products/df_updated.csv', index=False)
+temps_updated.csv | http://wholetale.org/program/1119/step/9 | temps.to_csv('products/temps_updated.csv', index=False)
 
 
 ********************************************** CELL Q4 ************************************************
@@ -297,11 +297,11 @@ __END_QUERY__
 ------------------------------------------- Q5 OUTPUTS ------------------------------------------------
 
 dataframe_name | variable_name | step_source_text
-============================================================================
-df             | A             | df.to_csv('outputs/df_updated.csv', index=False)
-df             | B             | df.to_csv('outputs/df_updated.csv', index=False)
-df             | C             | df.to_csv('outputs/df_updated.csv', index=False)
-temps          | Fahrenheit    | temps.to_csv('outputs/temps_updated.csv', index=False)
-temps          | Celsius       | temps.to_csv('outputs/temps_updated.csv', index=False)
-temps          | Kelvin        | temps.to_csv('outputs/temps_updated.csv', index=False)
+=============================================================================
+df             | A             | df.to_csv('products/df_updated.csv', index=False)
+df             | B             | df.to_csv('products/df_updated.csv', index=False)
+df             | C             | df.to_csv('products/df_updated.csv', index=False)
+temps          | Fahrenheit    | temps.to_csv('products/temps_updated.csv', index=False)
+temps          | Celsius       | temps.to_csv('products/temps_updated.csv', index=False)
+temps          | Kelvin        | temps.to_csv('products/temps_updated.csv', index=False)
 

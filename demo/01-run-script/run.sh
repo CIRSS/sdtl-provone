@@ -13,7 +13,7 @@ END_CELL
 
 run_cell C2 "Print csv file with final A, B, and C variables" << END_CELL
 
-cat outputs/df_updated.csv
+cat products/df_updated.csv
 
 END_CELL
 
@@ -22,6 +22,6 @@ END_CELL
 
 run_cell C3 "Print csv file with final Fahrenheit, Celsius, and Kelvin variables" << END_CELL
 
-cat outputs/temps_updated.csv
+cat products/temps_updated.csv
 
 END_CELL

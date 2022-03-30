@@ -62,11 +62,11 @@ geist export --format nt --sort
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File4> <http://c2metadata.org/sdth#hasName> "temps.csv" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File4> <http://purl.org/dc/terms/identifier> "temps.csv" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#File> .
-<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File5> <http://c2metadata.org/sdth#hasName> "outputs/df_updated.csv" .
-<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File5> <http://purl.org/dc/terms/identifier> "outputs/df_updated.csv" .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File5> <http://c2metadata.org/sdth#hasName> "products/df_updated.csv" .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File5> <http://purl.org/dc/terms/identifier> "products/df_updated.csv" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#File> .
-<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File6> <http://c2metadata.org/sdth#hasName> "outputs/temps_updated.csv" .
-<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File6> <http://purl.org/dc/terms/identifier> "outputs/temps_updated.csv" .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File6> <http://c2metadata.org/sdth#hasName> "products/temps_updated.csv" .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File6> <http://purl.org/dc/terms/identifier> "products/temps_updated.csv" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#File> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> <http://c2metadata.org/sdth#hasProgramStep> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> <http://c2metadata.org/sdth#hasProgramStep> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> .
@@ -94,16 +94,16 @@ geist export --format nt --sort
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable4> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#ProgramStep> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#consumesDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> .
-<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#hasSDTL> "{\\\"$type\\\":\\\"Save\\\",\\\"unknownProperties\\\":[],\\\"command\\\":\\\"Save\\\",\\\"sourceInformation\\\":[{\\\"lineNumberStart\\\":17,\\\"lineNumberEnd\\\":17,\\\"sourceStartIndex\\\":259,\\\"sourceStopIndex\\\":306,\\\"originalSourceText\\\":\\\"df.to_csv('outputs\\/df_updated.csv', index=False)\\\",\\\"processedSourceText\\\":null}],\\\"messageText\\\":null,\\\"producesDataframe\\\":null,\\\"consumesDataframe\\\":[{\\\"dataframeName\\\":\\\"df\\\",\\\"variableInventory\\\":[\\\"A\\\",\\\"B\\\",\\\"C\\\"],\\\"rowDimensions\\\":[],\\\"columnDimensions\\\":[]}],\\\"fileName\\\":\\\"outputs\\/df_updated.csv\\\",\\\"software\\\":null,\\\"fileFormat\\\":\\\"csv\\\",\\\"isCompressed\\\":false,\\\"$type\\\":\\\"Save\\\"}" .
-<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#hasSourceCode> "df.to_csv('outputs\\/df_updated.csv', index=False)" .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#hasSDTL> "{\\\"$type\\\":\\\"Save\\\",\\\"unknownProperties\\\":[],\\\"command\\\":\\\"Save\\\",\\\"sourceInformation\\\":[{\\\"lineNumberStart\\\":17,\\\"lineNumberEnd\\\":17,\\\"sourceStartIndex\\\":259,\\\"sourceStopIndex\\\":306,\\\"originalSourceText\\\":\\\"df.to_csv('products\\/df_updated.csv', index=False)\\\",\\\"processedSourceText\\\":null}],\\\"messageText\\\":null,\\\"producesDataframe\\\":null,\\\"consumesDataframe\\\":[{\\\"dataframeName\\\":\\\"df\\\",\\\"variableInventory\\\":[\\\"A\\\",\\\"B\\\",\\\"C\\\"],\\\"rowDimensions\\\":[],\\\"columnDimensions\\\":[]}],\\\"fileName\\\":\\\"products\\/df_updated.csv\\\",\\\"software\\\":null,\\\"fileFormat\\\":\\\"csv\\\",\\\"isCompressed\\\":false,\\\"$type\\\":\\\"Save\\\"}" .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#hasSourceCode> "df.to_csv('products\\/df_updated.csv', index=False)" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#savesFile> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File5> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable2> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#ProgramStep> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#consumesDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> .
-<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#hasSDTL> "{\\\"$type\\\":\\\"Save\\\",\\\"unknownProperties\\\":[],\\\"command\\\":\\\"Save\\\",\\\"sourceInformation\\\":[{\\\"lineNumberStart\\\":19,\\\"lineNumberEnd\\\":19,\\\"sourceStartIndex\\\":309,\\\"sourceStopIndex\\\":362,\\\"originalSourceText\\\":\\\"temps.to_csv('outputs\\/temps_updated.csv', index=False)\\\",\\\"processedSourceText\\\":null}],\\\"messageText\\\":null,\\\"producesDataframe\\\":null,\\\"consumesDataframe\\\":[{\\\"dataframeName\\\":\\\"temps\\\",\\\"variableInventory\\\":[\\\"fahrenheit\\\",\\\"Celsius\\\",\\\"Kelvin\\\"],\\\"rowDimensions\\\":[],\\\"columnDimensions\\\":[]}],\\\"fileName\\\":\\\"outputs\\/temps_updated.csv\\\",\\\"software\\\":null,\\\"fileFormat\\\":\\\"csv\\\",\\\"isCompressed\\\":false,\\\"$type\\\":\\\"Save\\\"}" .
-<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#hasSourceCode> "temps.to_csv('outputs\\/temps_updated.csv', index=False)" .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#hasSDTL> "{\\\"$type\\\":\\\"Save\\\",\\\"unknownProperties\\\":[],\\\"command\\\":\\\"Save\\\",\\\"sourceInformation\\\":[{\\\"lineNumberStart\\\":19,\\\"lineNumberEnd\\\":19,\\\"sourceStartIndex\\\":309,\\\"sourceStopIndex\\\":362,\\\"originalSourceText\\\":\\\"temps.to_csv('products\\/temps_updated.csv', index=False)\\\",\\\"processedSourceText\\\":null}],\\\"messageText\\\":null,\\\"producesDataframe\\\":null,\\\"consumesDataframe\\\":[{\\\"dataframeName\\\":\\\"temps\\\",\\\"variableInventory\\\":[\\\"fahrenheit\\\",\\\"Celsius\\\",\\\"Kelvin\\\"],\\\"rowDimensions\\\":[],\\\"columnDimensions\\\":[]}],\\\"fileName\\\":\\\"products\\/temps_updated.csv\\\",\\\"software\\\":null,\\\"fileFormat\\\":\\\"csv\\\",\\\"isCompressed\\\":false,\\\"$type\\\":\\\"Save\\\"}" .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#hasSourceCode> "temps.to_csv('products\\/temps_updated.csv', index=False)" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#savesFile> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File6> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable4> .
@@ -768,7 +768,7 @@ __END_REPORT_TEMPLATE__
 
 # CONSTRUCT ALL PROVONE TRIPLES
 
-cp ../data/prefixes.ttl outputs/augment.ttl
+cp ../data/prefixes.ttl products/augment.ttl
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
@@ -782,9 +782,9 @@ geist report << '__END_REPORT_TEMPLATE__'
     {{ construct_dataframe_channels }}
     {{ construct_variable_channels }}
 __END_REPORT_TEMPLATE__
-) | sort >> outputs/augment.ttl
+) | sort >> products/augment.ttl
 
-cat outputs/augment.ttl
+cat products/augment.ttl
 
 ------------------------------------------- R7 OUTPUTS ------------------------------------------------
 
@@ -1026,7 +1026,7 @@ cat outputs/augment.ttl
 
 # LOAD PROVONE TRIPLES
 
-geist import --file outputs/augment.ttl
+geist import --file products/augment.ttl
 
 ------------------------------------------- LOAD-3 OUTPUTS ------------------------------------------------
 
@@ -1082,11 +1082,11 @@ geist export --format nt --sort
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File4> <http://c2metadata.org/sdth#hasName> "temps.csv" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File4> <http://purl.org/dc/terms/identifier> "temps.csv" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#File> .
-<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File5> <http://c2metadata.org/sdth#hasName> "outputs/df_updated.csv" .
-<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File5> <http://purl.org/dc/terms/identifier> "outputs/df_updated.csv" .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File5> <http://c2metadata.org/sdth#hasName> "products/df_updated.csv" .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File5> <http://purl.org/dc/terms/identifier> "products/df_updated.csv" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#File> .
-<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File6> <http://c2metadata.org/sdth#hasName> "outputs/temps_updated.csv" .
-<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File6> <http://purl.org/dc/terms/identifier> "outputs/temps_updated.csv" .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File6> <http://c2metadata.org/sdth#hasName> "products/temps_updated.csv" .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File6> <http://purl.org/dc/terms/identifier> "products/temps_updated.csv" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#File> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> <http://c2metadata.org/sdth#hasProgramStep> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> <http://c2metadata.org/sdth#hasProgramStep> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> .
@@ -1186,8 +1186,8 @@ geist export --format nt --sort
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/C_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variablechannel/7> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13/variableport/C_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#consumesDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe5> .
-<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#hasSDTL> "{\\\"$type\\\":\\\"Save\\\",\\\"unknownProperties\\\":[],\\\"command\\\":\\\"Save\\\",\\\"sourceInformation\\\":[{\\\"lineNumberStart\\\":17,\\\"lineNumberEnd\\\":17,\\\"sourceStartIndex\\\":259,\\\"sourceStopIndex\\\":306,\\\"originalSourceText\\\":\\\"df.to_csv('outputs\\/df_updated.csv', index=False)\\\",\\\"processedSourceText\\\":null}],\\\"messageText\\\":null,\\\"producesDataframe\\\":null,\\\"consumesDataframe\\\":[{\\\"dataframeName\\\":\\\"df\\\",\\\"variableInventory\\\":[\\\"A\\\",\\\"B\\\",\\\"C\\\"],\\\"rowDimensions\\\":[],\\\"columnDimensions\\\":[]}],\\\"fileName\\\":\\\"outputs\\/df_updated.csv\\\",\\\"software\\\":null,\\\"fileFormat\\\":\\\"csv\\\",\\\"isCompressed\\\":false,\\\"$type\\\":\\\"Save\\\"}" .
-<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#hasSourceCode> "df.to_csv('outputs\\/df_updated.csv', index=False)" .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#hasSDTL> "{\\\"$type\\\":\\\"Save\\\",\\\"unknownProperties\\\":[],\\\"command\\\":\\\"Save\\\",\\\"sourceInformation\\\":[{\\\"lineNumberStart\\\":17,\\\"lineNumberEnd\\\":17,\\\"sourceStartIndex\\\":259,\\\"sourceStopIndex\\\":306,\\\"originalSourceText\\\":\\\"df.to_csv('products\\/df_updated.csv', index=False)\\\",\\\"processedSourceText\\\":null}],\\\"messageText\\\":null,\\\"producesDataframe\\\":null,\\\"consumesDataframe\\\":[{\\\"dataframeName\\\":\\\"df\\\",\\\"variableInventory\\\":[\\\"A\\\",\\\"B\\\",\\\"C\\\"],\\\"rowDimensions\\\":[],\\\"columnDimensions\\\":[]}],\\\"fileName\\\":\\\"products\\/df_updated.csv\\\",\\\"software\\\":null,\\\"fileFormat\\\":\\\"csv\\\",\\\"isCompressed\\\":false,\\\"$type\\\":\\\"Save\\\"}" .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#hasSourceCode> "df.to_csv('products\\/df_updated.csv', index=False)" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#savesFile> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File5> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable2> .
@@ -1211,8 +1211,8 @@ geist export --format nt --sort
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Kelvin_in> <http://purl.dataone.org/provone/2015/01/15/ontology#connectsTo> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12/variablechannel/10> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14/variableport/Kelvin_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Port> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#consumesDataframe> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe7> .
-<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#hasSDTL> "{\\\"$type\\\":\\\"Save\\\",\\\"unknownProperties\\\":[],\\\"command\\\":\\\"Save\\\",\\\"sourceInformation\\\":[{\\\"lineNumberStart\\\":19,\\\"lineNumberEnd\\\":19,\\\"sourceStartIndex\\\":309,\\\"sourceStopIndex\\\":362,\\\"originalSourceText\\\":\\\"temps.to_csv('outputs\\/temps_updated.csv', index=False)\\\",\\\"processedSourceText\\\":null}],\\\"messageText\\\":null,\\\"producesDataframe\\\":null,\\\"consumesDataframe\\\":[{\\\"dataframeName\\\":\\\"temps\\\",\\\"variableInventory\\\":[\\\"fahrenheit\\\",\\\"Celsius\\\",\\\"Kelvin\\\"],\\\"rowDimensions\\\":[],\\\"columnDimensions\\\":[]}],\\\"fileName\\\":\\\"outputs\\/temps_updated.csv\\\",\\\"software\\\":null,\\\"fileFormat\\\":\\\"csv\\\",\\\"isCompressed\\\":false,\\\"$type\\\":\\\"Save\\\"}" .
-<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#hasSourceCode> "temps.to_csv('outputs\\/temps_updated.csv', index=False)" .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#hasSDTL> "{\\\"$type\\\":\\\"Save\\\",\\\"unknownProperties\\\":[],\\\"command\\\":\\\"Save\\\",\\\"sourceInformation\\\":[{\\\"lineNumberStart\\\":19,\\\"lineNumberEnd\\\":19,\\\"sourceStartIndex\\\":309,\\\"sourceStopIndex\\\":362,\\\"originalSourceText\\\":\\\"temps.to_csv('products\\/temps_updated.csv', index=False)\\\",\\\"processedSourceText\\\":null}],\\\"messageText\\\":null,\\\"producesDataframe\\\":null,\\\"consumesDataframe\\\":[{\\\"dataframeName\\\":\\\"temps\\\",\\\"variableInventory\\\":[\\\"fahrenheit\\\",\\\"Celsius\\\",\\\"Kelvin\\\"],\\\"rowDimensions\\\":[],\\\"columnDimensions\\\":[]}],\\\"fileName\\\":\\\"products\\/temps_updated.csv\\\",\\\"software\\\":null,\\\"fileFormat\\\":\\\"csv\\\",\\\"isCompressed\\\":false,\\\"$type\\\":\\\"Save\\\"}" .
+<http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#hasSourceCode> "temps.to_csv('products\\/temps_updated.csv', index=False)" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#savesFile> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/File6> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14> <http://c2metadata.org/sdth#usesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Variable4> .
@@ -1684,8 +1684,8 @@ node[width=8]
 "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1" [label="df = pd.read_csv('df.csv')"]
 "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10" [label="temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 \/ 9))"]
 "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12" [label="temps = temps.assign(Kelvin=(temps.Celsius + 273))"]
-"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13" [label="df.to_csv('outputs\/df_updated.csv', index=False)"]
-"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14" [label="temps.to_csv('outputs\/temps_updated.csv', index=False)"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13" [label="df.to_csv('products\/df_updated.csv', index=False)"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14" [label="temps.to_csv('products\/temps_updated.csv', index=False)"]
 "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3" [label="df['A'] = 3"]
 "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5" [label="df['B'] = df.B + 6.5"]
 "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7" [label="df['C'] = df.A - df.B"]
@@ -1767,8 +1767,8 @@ node[width=8]
 "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1" [label="df = pd.read_csv('df.csv')"]
 "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10" [label="temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 \/ 9))"]
 "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12" [label="temps = temps.assign(Kelvin=(temps.Celsius + 273))"]
-"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13" [label="df.to_csv('outputs\/df_updated.csv', index=False)"]
-"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14" [label="temps.to_csv('outputs\/temps_updated.csv', index=False)"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13" [label="df.to_csv('products\/df_updated.csv', index=False)"]
+"http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep14" [label="temps.to_csv('products\/temps_updated.csv', index=False)"]
 "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep3" [label="df['A'] = 3"]
 "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5" [label="df['B'] = df.B + 6.5"]
 "http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7" [label="df['C'] = df.A - df.B"]
