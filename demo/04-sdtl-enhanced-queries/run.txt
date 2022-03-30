@@ -1,5 +1,5 @@
 
-******************************************* EXAMPLE SETUP ************************************************
+********************************************** CELL SETUP ************************************************
 
 # IMPORT SDTL
 
@@ -12,7 +12,7 @@ geist import --format jsonld --file ../data/compute-sdtl.jsonld
 
 
 
-******************************************* EXAMPLE E1 ************************************************
+********************************************** CELL E1 ************************************************
 
 # EXPORT AS N-TRIPLES
 
@@ -709,7 +709,7 @@ geist export --format nt | sort
 <https://rdf-vocabulary.ddialliance.org/sdtl#VariableSymbolExpression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://rdf-vocabulary.ddialliance.org/sdtl#VariableSymbolExpression> .
 
 
-******************************************* EXAMPLE Q1 ************************************************
+********************************************** CELL Q1 ************************************************
 
 # WHAT COMMANDS USE EACH VARIABLE?
 
@@ -744,7 +744,7 @@ Celsius       | http://wholetale.org/program/1119/compute/5 | 28          | temp
 Fahrenheit    | http://wholetale.org/program/1119/compute/4 | 24          | temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))
 
 
-******************************************* EXAMPLE Q2 ************************************************
+********************************************** CELL Q2 ************************************************
 
 # WHAT VARIABLES DIRECTLY AFFECT OTHER VARIABLES?
 
@@ -780,7 +780,7 @@ Celsius            | Kelvin            | http://wholetale.org/program/1119/compu
 Fahrenheit         | Celsius           | http://wholetale.org/program/1119/compute/4 | 24          | temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))
 
 
-******************************************* EXAMPLE Q3 ************************************************
+********************************************** CELL Q3 ************************************************
 
 # WHAT VARIABLES DIRECTLY AFFECT THE KELVIN VARIABLE?
 
@@ -812,7 +812,7 @@ affecting_variable | command                                     | source_line |
 Celsius            | http://wholetale.org/program/1119/compute/5 | 28          | temps = temps.assign(Kelvin=(temps.Celsius + 273))
 
 
-******************************************* EXAMPLE Q4 ************************************************
+********************************************** CELL Q4 ************************************************
 
 # WHAT VARIABLES DIRECTLY AFFECT VARIABLES THAT DIRECTLY AFFECT THE KELVIN VARIABLE?
 
@@ -848,7 +848,7 @@ indirectly_affecting_variable | indirectly_affecting_command                | so
 Fahrenheit                    | http://wholetale.org/program/1119/compute/4 | 24          | temps = temps.assign(Celsius=((temps.Fahrenheit - 32) * 5 / 9))
 
 
-******************************************* EXAMPLE Q5 ************************************************
+********************************************** CELL Q5 ************************************************
 
 # WHAT VARIABLES DIRECTLY OR INDIRECTLY AFFECT THE KELVIN VARIABLE?
 
@@ -874,7 +874,7 @@ Celsius
 Fahrenheit
 
 
-******************************************* EXAMPLE Q6 ************************************************
+********************************************** CELL Q6 ************************************************
 
 # WHAT COMMANDS AFFECT EACH VARIABLE?
 
@@ -920,7 +920,7 @@ Fahrenheit        | http://wholetale.org/program/1119/load/2    | 20          | 
 Kelvin            | http://wholetale.org/program/1119/compute/5 | 28          | temps = temps.assign(Kelvin=(temps.Celsius + 273))
 
 
-******************************************* EXAMPLE Q7 ************************************************
+********************************************** CELL Q7 ************************************************
 
 # WHAT COMMANDS READ VARIABLE VALUES ASSIGNED BY OTHER COMMANDS?
 
@@ -953,7 +953,7 @@ A        | 8           | df['A'] = 3 | 16          | df['C'] = df.A - df.B
 A        | 8           | df['A'] = 3 | 32          | df.to_csv('outputs/df_updated.csv', index=False)
 
 
-******************************************* EXAMPLE R1 ************************************************
+********************************************** CELL R1 ************************************************
 
 # REPORT HISTORY OF EACH VARIABLE
 
@@ -1037,7 +1037,7 @@ Save    | Line 35 | temps.to_csv('outputs/temps_updated.csv', index=False)
 
 
 
-******************************************* EXAMPLE R2 ************************************************
+********************************************** CELL R2 ************************************************
 
 # WHAT COMMANDS WRITE TO EACH VARIABLE?
 
@@ -1080,7 +1080,7 @@ Kelvin           | 28          | temps = temps.assign(Kelvin=(temps.Celsius + 27
 
 
 
-******************************************* EXAMPLE R3 ************************************************
+********************************************** CELL R3 ************************************************
 
 # WHAT COMMANDS READ FROM EACH VARIABLE?
 
@@ -1126,7 +1126,7 @@ Kelvin        | 35          | temps.to_csv('outputs/temps_updated.csv', index=Fa
 
 
 
-******************************************* EXAMPLE R4 ************************************************
+********************************************** CELL R4 ************************************************
 
 # WHAT COMMANDS WRITE VARIABLES READ BY DOWNSTREAM COMMANDS?
 
@@ -1178,7 +1178,7 @@ Kelvin     | 28          | temps = temps.assign(Kelvin=(temps.Celsius + 273))   
 
 
 
-******************************************* EXAMPLE R5 ************************************************
+********************************************** CELL R5 ************************************************
 
 # WHAT COMMANDS READ VARIABLES WRITTEN BY MULTIPLE UPSTREAM COMMANDS?
 

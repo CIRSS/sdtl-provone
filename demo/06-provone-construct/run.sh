@@ -1,30 +1,29 @@
 #!/usr/bin/env bash
 
-RUNNER='../common/run_script_example.sh'
 GRAPHER='../common/run_dot_examples.sh'
 
 # *****************************************************************************
 
-bash ${RUNNER} SETUP-1 "CREATE NEW DATASET AND LOAD RULES" << END_SCRIPT
+run_cell SETUP-1 "CREATE NEW DATASET AND LOAD RULES" << END_CELL
 
 geist destroy --dataset kb --quiet
 geist create --dataset kb --quiet --infer owl
 geist import --file ../data/provone-rules.ttl
 geist import --format jsonld --file ../data/compute-sdth.jsonld
 
-END_SCRIPT
+END_CELL
 
 # *****************************************************************************
 
-bash ${RUNNER} E2 "EXPORT LOADED SDTL AND RULES AS N-TRIPLES" << END_SCRIPT
+run_cell E2 "EXPORT LOADED SDTL AND RULES AS N-TRIPLES" << END_CELL
 
 geist export --format nt --sort
 
-END_SCRIPT
+END_CELL
 
 # *****************************************************************************
 
-bash ${RUNNER} R1 "CONSTRUCT PROVONE PROGRAMS" << '__END_SCRIPT__'
+run_cell R1 "CONSTRUCT PROVONE PROGRAMS" << '__END_CELL__'
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
@@ -40,11 +39,11 @@ geist report << '__END_REPORT_TEMPLATE__'
 __END_REPORT_TEMPLATE__
 ) | sort
 
-__END_SCRIPT__
+__END_CELL__
 
 # *****************************************************************************
 
-bash ${RUNNER} R2 "CONSTRUCT HASSUBPROGRAM TRIPLES" << '__END_SCRIPT__'
+run_cell R2 "CONSTRUCT HASSUBPROGRAM TRIPLES" << '__END_CELL__'
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
@@ -54,11 +53,11 @@ geist report << '__END_REPORT_TEMPLATE__'
 __END_REPORT_TEMPLATE__
 ) | sort
 
-__END_SCRIPT__
+__END_CELL__
 
 # *****************************************************************************
 
-bash ${RUNNER} R3 "CONSTRUCT DATAFRAME PORTS" << '__END_SCRIPT__'
+run_cell R3 "CONSTRUCT DATAFRAME PORTS" << '__END_CELL__'
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
@@ -69,11 +68,11 @@ geist report << '__END_REPORT_TEMPLATE__'
 __END_REPORT_TEMPLATE__
 ) | sort
 
-__END_SCRIPT__
+__END_CELL__
 
 # *****************************************************************************
 
-bash ${RUNNER} R4 "CONSTRUCT VARIABLE PORTS" << '__END_SCRIPT__'
+run_cell R4 "CONSTRUCT VARIABLE PORTS" << '__END_CELL__'
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
@@ -84,48 +83,48 @@ geist report << '__END_REPORT_TEMPLATE__'
 __END_REPORT_TEMPLATE__
 ) | sort
 
-__END_SCRIPT__
+__END_CELL__
 
 # *****************************************************************************
 
-bash ${RUNNER} R5 "CONSTRUCT DATAFRAME CHANNELS" << '__END_SCRIPT__'
+run_cell R5 "CONSTRUCT DATAFRAME CHANNELS" << '__END_CELL__'
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
     {{{ {{ include "../common/sdth.g" }} }}}
- 
+
     {{ construct_dataframe_channels }}
 __END_REPORT_TEMPLATE__
 ) | sort
 
-__END_SCRIPT__
+__END_CELL__
 
 
 # *****************************************************************************
 
-bash ${RUNNER} R6 "CONSTRUCT VARIABLE CHANNELS" << '__END_SCRIPT__'
+run_cell R6 "CONSTRUCT VARIABLE CHANNELS" << '__END_CELL__'
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
     {{{ {{ include "../common/sdth.g" }} }}}
- 
+
     {{ construct_variable_channels }}
 __END_REPORT_TEMPLATE__
 ) | sort
 
-__END_SCRIPT__
+__END_CELL__
 
 
 # *****************************************************************************
 
-bash ${RUNNER} R7 "CONSTRUCT ALL PROVONE TRIPLES" << '__END_SCRIPT__'
+run_cell R7 "CONSTRUCT ALL PROVONE TRIPLES" << '__END_CELL__'
 
 cp ../data/prefixes.ttl outputs/augment.ttl
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
     {{{ {{ include "../common/sdth.g" }} }}}
- 
+
     {{ construct_subprogram_triples }}
     {{ construct_dataframe_out_ports }}
     {{ construct_dataframe_in_ports }}
@@ -138,28 +137,28 @@ __END_REPORT_TEMPLATE__
 
 cat outputs/augment.ttl
 
-__END_SCRIPT__
+__END_CELL__
 
 # *****************************************************************************
 
-bash ${RUNNER} LOAD-3 "LOAD PROVONE TRIPLES" << '__END_SCRIPT__'
+run_cell LOAD-3 "LOAD PROVONE TRIPLES" << '__END_CELL__'
 
 geist import --file outputs/augment.ttl
 
-__END_SCRIPT__
+__END_CELL__
 
 # *****************************************************************************
 
-bash ${RUNNER} E3  "EXPORT UPDATED DATASET AS N-TRIPLES" << END_SCRIPT
+run_cell E3  "EXPORT UPDATED DATASET AS N-TRIPLES" << END_CELL
 
 geist export --format nt --sort
 
-END_SCRIPT
+END_CELL
 
 # *****************************************************************************
 
 bash ${GRAPHER} GRAPH-1 "DATAFRAME FLOW THROUGH PROVONE PROGRAMS" \
-    << '__END_SCRIPT__'
+    << '__END_CELL__'
 
 geist report << '__END_REPORT_TEMPLATE__'
 
@@ -183,7 +182,7 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ range $Program := (select_provone_programs $WorkflowId | rows ) }}               \\
             {{ with $ProgramId := (index $Program 0) }}                                     \\
             {{ with $SourceCode := (select_program_sourcecode $ProgramId | value ) }}       \\
-                {{ gv_labeled_node $ProgramId $SourceCode }}                             
+                {{ gv_labeled_node $ProgramId $SourceCode }}
             {{ end }}                                                                       \\
             {{ end }}                                                                       \\
         {{ end }}                                                                           \\
@@ -201,13 +200,13 @@ geist report << '__END_REPORT_TEMPLATE__'
 
 __END_REPORT_TEMPLATE__
 
-__END_SCRIPT__
+__END_CELL__
 
 
 # *****************************************************************************
 
 bash ${GRAPHER} GRAPH-2 "VARIABLE FLOW THROUGH PROVONE PROGRAMS" \
-    << '__END_SCRIPT__'
+    << '__END_CELL__'
 
 geist report << '__END_REPORT_TEMPLATE__'
 
@@ -231,7 +230,7 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ range $Program := (select_provone_programs $WorkflowId | rows ) }}               \\
             {{ with $ProgramId := (index $Program 0) }}                                     \\
             {{ with $SourceCode := (select_program_sourcecode $ProgramId | value ) }}       \\
-                {{ gv_labeled_node $ProgramId $SourceCode }}                             
+                {{ gv_labeled_node $ProgramId $SourceCode }}
             {{ end }}                                                                       \\
             {{ end }}                                                                       \\
         {{ end }}                                                                           \\
@@ -249,5 +248,5 @@ geist report << '__END_REPORT_TEMPLATE__'
 
 __END_REPORT_TEMPLATE__
 
-__END_SCRIPT__
+__END_CELL__
 

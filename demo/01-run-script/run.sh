@@ -1,30 +1,27 @@
 #!/usr/bin/env bash
 
-
-RUNNER='../common/run_command.sh'
-
 # *****************************************************************************
 
-bash ${RUNNER} COMPUTE "Run the compute script" << END_COMMAND
+run_cell C1 "Run the compute script" << END_CELL
 
 python3 compute.py
 
-END_COMMAND
+END_CELL
 
 
 # *****************************************************************************
 
-bash ${RUNNER} "" "Print csv file with final A, B, and C variables" << END_COMMAND
+run_cell C2 "Print csv file with final A, B, and C variables" << END_CELL
 
 cat outputs/df_updated.csv
 
-END_COMMAND
+END_CELL
 
 
 # *****************************************************************************
 
-bash ${RUNNER} "" "Print csv file with final Fahrenheit, Celsius, and Kelvin variables" << END_COMMAND
+run_cell C3 "Print csv file with final Fahrenheit, Celsius, and Kelvin variables" << END_CELL
 
 cat outputs/temps_updated.csv
 
-END_COMMAND
+END_CELL

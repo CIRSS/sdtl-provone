@@ -1,5 +1,5 @@
 
-******************************************* EXAMPLE SETUP-1 ************************************************
+********************************************** CELL SETUP-1 ************************************************
 
 # CREATE NEW DATASET AND LOAD RULES
 
@@ -12,7 +12,7 @@ geist import --format ttl --file ../samples/compute_simple/sdth_output.ttl
 
 
 
-******************************************* EXAMPLE E2 ************************************************
+********************************************** CELL E2 ************************************************
 
 # EXPORT LOADED SDTL AND RULES AS N-TRIPLES
 
@@ -425,7 +425,7 @@ geist export --format nt --sort
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#sameAs> .
 
 
-******************************************* EXAMPLE R1 ************************************************
+********************************************** CELL R1 ************************************************
 
 # CONSTRUCT PROVONE PROGRAMS
 
@@ -456,7 +456,7 @@ __END_REPORT_TEMPLATE__
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 
 
-******************************************* EXAMPLE R2 ************************************************
+********************************************** CELL R2 ************************************************
 
 # CONSTRUCT HASSUBPROGRAM TRIPLES
 
@@ -481,7 +481,7 @@ __END_REPORT_TEMPLATE__
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> provone:hasSubProgram <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> .
 
 
-******************************************* EXAMPLE R3 ************************************************
+********************************************** CELL R3 ************************************************
 
 # CONSTRUCT DATAFRAME PORTS
 
@@ -634,7 +634,7 @@ __END_REPORT_TEMPLATE__
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframeport/temps_out> .
 
 
-******************************************* EXAMPLE R4 ************************************************
+********************************************** CELL R4 ************************************************
 
 # CONSTRUCT VARIABLE PORTS
 
@@ -696,7 +696,7 @@ __END_REPORT_TEMPLATE__
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> .
 
 
-******************************************* EXAMPLE R5 ************************************************
+********************************************** CELL R5 ************************************************
 
 # CONSTRUCT DATAFRAME CHANNELS
 
@@ -726,7 +726,7 @@ __END_REPORT_TEMPLATE__
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframeport/temps_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframechannel/1> .
 
 
-******************************************* EXAMPLE R6 ************************************************
+********************************************** CELL R6 ************************************************
 
 # CONSTRUCT VARIABLE CHANNELS
 
@@ -764,7 +764,7 @@ __END_REPORT_TEMPLATE__
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variablechannel/2> .
 
 
-******************************************* EXAMPLE R7 ************************************************
+********************************************** CELL R7 ************************************************
 
 # CONSTRUCT ALL PROVONE TRIPLES
 
@@ -1022,7 +1022,7 @@ cat outputs/augment.ttl
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> .
 
 
-******************************************* EXAMPLE LOAD-3 ************************************************
+********************************************** CELL LOAD-3 ************************************************
 
 # LOAD PROVONE TRIPLES
 
@@ -1032,7 +1032,7 @@ geist import --file outputs/augment.ttl
 
 
 
-******************************************* EXAMPLE E3 ************************************************
+********************************************** CELL E3 ************************************************
 
 # EXPORT UPDATED DATASET AS N-TRIPLES
 

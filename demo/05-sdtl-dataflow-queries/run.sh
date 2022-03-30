@@ -1,28 +1,27 @@
 #!/usr/bin/env bash
 
-RUNNER='../common/run_script_example.sh'
 GRAPHER='../common/run_dot_examples.sh'
 
 # *****************************************************************************
 
-bash ${RUNNER} SETUP "IMPORT SDTL" << END_SCRIPT
+run_cell SETUP "IMPORT SDTL" << END_CELL
 
 geist destroy --dataset kb --quiet
 geist create --dataset kb --quiet
 geist import --format jsonld --file ../data/compute-sdth.jsonld
 
-END_SCRIPT
+END_CELL
 
 # *****************************************************************************
 
-bash ${RUNNER} E1 "EXPORT AS N-TRIPLES" << END_SCRIPT
+run_cell E1 "EXPORT AS N-TRIPLES" << END_CELL
 
 geist export --format nt | sort
 
-END_SCRIPT
+END_CELL
 
 
-bash ${RUNNER} Q1 "WHAT STEPS ARE EXECUTED BY THE PROGRAM?" << END_SCRIPT
+run_cell Q1 "WHAT STEPS ARE EXECUTED BY THE PROGRAM?" << END_CELL
 
 geist query --format table << __END_QUERY__
 
@@ -39,10 +38,10 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
-END_SCRIPT
+END_CELL
 
 
-bash ${RUNNER} Q2 "WHAT DATA FILES ARE LOADED BY THE PROGRAM?" << END_SCRIPT
+run_cell Q2 "WHAT DATA FILES ARE LOADED BY THE PROGRAM?" << END_CELL
 
 geist query --format table << __END_QUERY__
 
@@ -59,10 +58,10 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
-END_SCRIPT
+END_CELL
 
 
-bash ${RUNNER} Q3 "WHAT DATA FILES ARE SAVED BY THE PROGRAM?" << END_SCRIPT
+run_cell Q3 "WHAT DATA FILES ARE SAVED BY THE PROGRAM?" << END_CELL
 
 geist query --format table << __END_QUERY__
 
@@ -79,11 +78,11 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
-END_SCRIPT
+END_CELL
 
 
 
-bash ${RUNNER} Q4 "WHAT VARIABLES ARE LOADED BY THE PROGRAM?" << END_SCRIPT
+run_cell Q4 "WHAT VARIABLES ARE LOADED BY THE PROGRAM?" << END_CELL
 
 geist query --format table << __END_QUERY__
 
@@ -103,11 +102,11 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
-END_SCRIPT
+END_CELL
 
 
 
-bash ${RUNNER} Q5 "WHAT VARIABLES ARE SAVED BY THE SCRIPT?" << END_SCRIPT
+run_cell Q5 "WHAT VARIABLES ARE SAVED BY THE SCRIPT?" << END_CELL
 
 geist query --format table << __END_QUERY__
 
@@ -128,11 +127,11 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
-END_SCRIPT
+END_CELL
 
 
 
-# bash ${RUNNER} Q6 "WHAT COMMANDS UPDATE EACH DATAFRAME?" << END_SCRIPT
+# run_cell Q6 "WHAT COMMANDS UPDATE EACH DATAFRAME?" << END_CELL
 
 # geist query --format table << __END_QUERY__
 
@@ -152,11 +151,11 @@ END_SCRIPT
 
 # __END_QUERY__
 
-# END_SCRIPT
+# END_CELL
 
 
 
-# bash ${RUNNER} Q7 "WHAT COMMANDS UPDATE EACH VARIABLE?" << END_SCRIPT
+# run_cell Q7 "WHAT COMMANDS UPDATE EACH VARIABLE?" << END_CELL
 
 # geist query --format table << __END_QUERY__
 
@@ -176,10 +175,10 @@ END_SCRIPT
 
 # __END_QUERY__
 
-# END_SCRIPT
+# END_CELL
 
 
-# bash ${RUNNER} Q8 "WHAT COMMANDS USE EACH VARIABLE?" << END_SCRIPT
+# run_cell Q8 "WHAT COMMANDS USE EACH VARIABLE?" << END_CELL
 
 # geist query --format table << __END_QUERY__
 
@@ -199,11 +198,11 @@ END_SCRIPT
 
 # __END_QUERY__
 
-# END_SCRIPT
+# END_CELL
 
 
 
-# bash ${RUNNER} Q9 "WHAT VARIABLES WERE DIRECTLY AFFECTED BY OTHER VARIABLES?" << END_SCRIPT
+# run_cell Q9 "WHAT VARIABLES WERE DIRECTLY AFFECTED BY OTHER VARIABLES?" << END_CELL
 
 # geist query --format table << __END_QUERY__
 
@@ -224,11 +223,11 @@ END_SCRIPT
 
 # __END_QUERY__
 
-# END_SCRIPT
+# END_CELL
 
 
 # # bash ${GRAPHER} GRAPH-1 "DATAFRAME FLOW THROUGH COMMANDS" \
-# #     << '__END_SCRIPT__'
+# #     << '__END_CELL__'
 
 # # geist report << '__END_REPORT_TEMPLATE__'
 
@@ -265,12 +264,12 @@ END_SCRIPT
 
 # # __END_REPORT_TEMPLATE__
 
-# # __END_SCRIPT__
+# # __END_CELL__
 
 
 # # *****************************************************************************
 
-# bash ${RUNNER} Q1 "WHAT COMMANDS USE EACH VARIABLE?" << END_SCRIPT
+# run_cell Q1 "WHAT COMMANDS USE EACH VARIABLE?" << END_CELL
 
 # geist query --format table << __END_QUERY__
 
@@ -293,11 +292,11 @@ END_SCRIPT
 # __END_QUERY__
 
 
-# END_SCRIPT
+# END_CELL
 
 # # *****************************************************************************
 
-# bash ${RUNNER} Q2 "WHAT VARIABLES DIRECTLY AFFECT OTHER VARIABLES?" << END_SCRIPT
+# run_cell Q2 "WHAT VARIABLES DIRECTLY AFFECT OTHER VARIABLES?" << END_CELL
 
 # geist query --format table << __END_QUERY__
 
@@ -320,11 +319,11 @@ END_SCRIPT
 
 # __END_QUERY__
 
-# END_SCRIPT
+# END_CELL
 
 # # *****************************************************************************
 
-# bash ${RUNNER} Q3 "WHAT VARIABLES DIRECTLY AFFECT THE KELVIN VARIABLE?" << END_SCRIPT
+# run_cell Q3 "WHAT VARIABLES DIRECTLY AFFECT THE KELVIN VARIABLE?" << END_CELL
 
 # geist query --format table << __END_QUERY__
 
@@ -347,11 +346,11 @@ END_SCRIPT
 
 # __END_QUERY__
 
-# END_SCRIPT
+# END_CELL
 
 # # *****************************************************************************
 
-# bash ${RUNNER} Q4 "WHAT VARIABLES DIRECTLY AFFECT VARIABLES THAT DIRECTLY AFFECT THE KELVIN VARIABLE?" << END_SCRIPT
+# run_cell Q4 "WHAT VARIABLES DIRECTLY AFFECT VARIABLES THAT DIRECTLY AFFECT THE KELVIN VARIABLE?" << END_CELL
 
 # geist query --format table << __END_QUERY__
 
@@ -378,11 +377,11 @@ END_SCRIPT
 
 # __END_QUERY__
 
-# END_SCRIPT
+# END_CELL
 
 # # *****************************************************************************
 
-# bash ${RUNNER} Q5 "WHAT VARIABLES DIRECTLY OR INDIRECTLY AFFECT THE KELVIN VARIABLE?" << END_SCRIPT
+# run_cell Q5 "WHAT VARIABLES DIRECTLY OR INDIRECTLY AFFECT THE KELVIN VARIABLE?" << END_CELL
 
 # geist query --format table << __END_QUERY__
 
@@ -398,11 +397,11 @@ END_SCRIPT
 
 # __END_QUERY__
 
-# END_SCRIPT
+# END_CELL
 
 # # *****************************************************************************
 
-# bash ${RUNNER} Q6 "WHAT COMMANDS AFFECT EACH VARIABLE?" << END_SCRIPT
+# run_cell Q6 "WHAT COMMANDS AFFECT EACH VARIABLE?" << END_CELL
 
 # geist query --format table << __END_QUERY__
 
@@ -432,11 +431,11 @@ END_SCRIPT
 
 # __END_QUERY__
 
-# END_SCRIPT
+# END_CELL
 
 # # *****************************************************************************
 
-# bash ${RUNNER} Q7 "WHAT COMMANDS READ VARIABLE VALUES ASSIGNED BY OTHER COMMANDS?" << END_SCRIPT
+# run_cell Q7 "WHAT COMMANDS READ VARIABLE VALUES ASSIGNED BY OTHER COMMANDS?" << END_CELL
 
 # geist query --format table << __END_QUERY__
 
@@ -459,9 +458,9 @@ END_SCRIPT
 
 # __END_QUERY__
 
-# END_SCRIPT
+# END_CELL
 
-# bash ${RUNNER} R1 "REPORT HISTORY OF EACH VARIABLE" << 'END_SCRIPT'
+# run_cell R1 "REPORT HISTORY OF EACH VARIABLE" << 'END_CELL'
 
 # geist report << '__END_REPORT_TEMPLATE__'
 
@@ -492,11 +491,11 @@ END_SCRIPT
 
 # __END_REPORT_TEMPLATE__
 
-# END_SCRIPT
+# END_CELL
 
 # # *****************************************************************************
 
-# bash ${RUNNER} R2 "WHAT COMMANDS WRITE TO EACH VARIABLE?" << END_SCRIPT
+# run_cell R2 "WHAT COMMANDS WRITE TO EACH VARIABLE?" << END_CELL
 
 # geist report << '__END_REPORT_TEMPLATE__'
 
@@ -518,12 +517,12 @@ END_SCRIPT
 
 # __END_REPORT_TEMPLATE__
 
-# END_SCRIPT
+# END_CELL
 
 
 # # *****************************************************************************
 
-# bash ${RUNNER} R3 "WHAT COMMANDS READ FROM EACH VARIABLE?" << END_SCRIPT
+# run_cell R3 "WHAT COMMANDS READ FROM EACH VARIABLE?" << END_CELL
 
 # geist report << '__END_REPORT_TEMPLATE__'
 
@@ -545,11 +544,11 @@ END_SCRIPT
 
 # __END_REPORT_TEMPLATE__
 
-# END_SCRIPT
+# END_CELL
 
 # # *****************************************************************************
 
-# bash ${RUNNER} R4 "WHAT COMMANDS WRITE VARIABLES READ BY DOWNSTREAM COMMANDS?" << END_SCRIPT
+# run_cell R4 "WHAT COMMANDS WRITE VARIABLES READ BY DOWNSTREAM COMMANDS?" << END_CELL
 
 # geist report << '__END_REPORT_TEMPLATE__'
 
@@ -573,11 +572,11 @@ END_SCRIPT
 
 # __END_REPORT_TEMPLATE__
 
-# END_SCRIPT
+# END_CELL
 
 # # *****************************************************************************
 
-# bash ${RUNNER} R5 "WHAT COMMANDS READ VARIABLES WRITTEN BY MULTIPLE UPSTREAM COMMANDS?" << END_SCRIPT
+# run_cell R5 "WHAT COMMANDS READ VARIABLES WRITTEN BY MULTIPLE UPSTREAM COMMANDS?" << END_CELL
 
 # geist report << '__END_REPORT_TEMPLATE__'
 
@@ -605,12 +604,12 @@ END_SCRIPT
 
 # __END_REPORT_TEMPLATE__
 
-# END_SCRIPT
+# END_CELL
 
 # # # *****************************************************************************
 
 # # bash ${GRAPHER} GRAPH-1 "DATAFRAME FLOW THROUGH COMMANDS" \
-# #     << '__END_SCRIPT__'
+# #     << '__END_CELL__'
 
 # # geist report << '__END_REPORT_TEMPLATE__'
 
@@ -647,13 +646,13 @@ END_SCRIPT
 
 # # __END_REPORT_TEMPLATE__
 
-# # __END_SCRIPT__
+# # __END_CELL__
 
 
 # # # *****************************************************************************
 
 # # bash ${GRAPHER} GRAPH-2 "VARIABLE FLOW THROUGH COMMANDS" \
-# #     << '__END_SCRIPT__'
+# #     << '__END_CELL__'
 
 # # geist report << '__END_REPORT_TEMPLATE__'
 
@@ -690,5 +689,5 @@ END_SCRIPT
 
 # # __END_REPORT_TEMPLATE__
 
-# # __END_SCRIPT__
+# # __END_CELL__
 

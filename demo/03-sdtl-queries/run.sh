@@ -1,29 +1,28 @@
 #!/usr/bin/env bash
 
-RUNNER='../common/run_script_example.sh'
 GRAPHER='../common/run_dot_examples.sh'
 
 # *****************************************************************************
 
-bash ${RUNNER} SETUP "IMPORT SDTL" << END_SCRIPT
+run_cell SETUP "IMPORT SDTL" << END_CELL
 
 geist destroy --dataset kb --quiet
 geist create --dataset kb --quiet
 geist import --format jsonld --file ../data/compute-sdtl.jsonld
 
-END_SCRIPT
+END_CELL
 
 # *****************************************************************************
 
-bash ${RUNNER} E1 "EXPORT AS N-TRIPLES" << END_SCRIPT
+run_cell E1 "EXPORT AS N-TRIPLES" << END_CELL
 
 geist export --format nt | sort
 
-END_SCRIPT
+END_CELL
 
 # *****************************************************************************
 
-bash ${RUNNER} Q1 "WHAT COMMANDS ARE EXECUTED BY THE SCRIPT?" << END_SCRIPT
+run_cell Q1 "WHAT COMMANDS ARE EXECUTED BY THE SCRIPT?" << END_CELL
 
 geist query --format table << __END_QUERY__
 
@@ -43,11 +42,11 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
-END_SCRIPT
+END_CELL
 
 
 
-bash ${RUNNER} Q2 "WHAT DATA FILES ARE LOADED BY THE SCRIPT?" << END_SCRIPT
+run_cell Q2 "WHAT DATA FILES ARE LOADED BY THE SCRIPT?" << END_CELL
 
 geist query --format table << __END_QUERY__
 
@@ -67,11 +66,11 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
-END_SCRIPT
+END_CELL
 
 
 
-bash ${RUNNER} Q3 "WHAT DATA FILES ARE SAVED BY THE SCRIPT?" << END_SCRIPT
+run_cell Q3 "WHAT DATA FILES ARE SAVED BY THE SCRIPT?" << END_CELL
 
 geist query --format table << __END_QUERY__
 
@@ -91,11 +90,11 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
-END_SCRIPT
+END_CELL
 
 
 
-bash ${RUNNER} Q4 "WHAT VARIABLES ARE LOADED BY THE SCRIPT?" << END_SCRIPT
+run_cell Q4 "WHAT VARIABLES ARE LOADED BY THE SCRIPT?" << END_CELL
 
 geist query --format table << __END_QUERY__
 
@@ -118,11 +117,11 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
-END_SCRIPT
+END_CELL
 
 
 
-bash ${RUNNER} Q5 "WHAT VARIABLES ARE SAVED BY THE SCRIPT?" << END_SCRIPT
+run_cell Q5 "WHAT VARIABLES ARE SAVED BY THE SCRIPT?" << END_CELL
 
 geist query --format table << __END_QUERY__
 
@@ -145,11 +144,11 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
-END_SCRIPT
+END_CELL
 
 
 
-bash ${RUNNER} Q6 "WHAT COMMANDS UPDATE EACH DATAFRAME?" << END_SCRIPT
+run_cell Q6 "WHAT COMMANDS UPDATE EACH DATAFRAME?" << END_CELL
 
 geist query --format table << __END_QUERY__
 
@@ -169,11 +168,11 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
-END_SCRIPT
+END_CELL
 
 
 
-bash ${RUNNER} Q7 "WHAT COMMANDS UPDATE EACH VARIABLE?" << END_SCRIPT
+run_cell Q7 "WHAT COMMANDS UPDATE EACH VARIABLE?" << END_CELL
 
 geist query --format table << __END_QUERY__
 
@@ -193,10 +192,10 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
-END_SCRIPT
+END_CELL
 
 
-bash ${RUNNER} Q8 "WHAT COMMANDS USE EACH VARIABLE?" << END_SCRIPT
+run_cell Q8 "WHAT COMMANDS USE EACH VARIABLE?" << END_CELL
 
 geist query --format table << __END_QUERY__
 
@@ -216,11 +215,11 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
-END_SCRIPT
+END_CELL
 
 
 
-bash ${RUNNER} Q9 "WHAT VARIABLES WERE DIRECTLY AFFECTED BY OTHER VARIABLES?" << END_SCRIPT
+run_cell Q9 "WHAT VARIABLES WERE DIRECTLY AFFECTED BY OTHER VARIABLES?" << END_CELL
 
 geist query --format table << __END_QUERY__
 
@@ -241,11 +240,11 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
-END_SCRIPT
+END_CELL
 
 
 bash ${GRAPHER} GRAPH-1 "DATAFRAME FLOW THROUGH COMMANDS" \
-    << '__END_SCRIPT__'
+    << '__END_CELL__'
 
 geist report << '__END_REPORT_TEMPLATE__'
 
@@ -282,4 +281,4 @@ geist report << '__END_REPORT_TEMPLATE__'
 
 __END_REPORT_TEMPLATE__
 
-__END_SCRIPT__
+__END_CELL__

@@ -1,5 +1,5 @@
 
-******************************************* EXAMPLE SETUP-1 ************************************************
+********************************************** CELL SETUP-1 ************************************************
 
 # CREATE NEW DATASET AND LOAD RULES
 
@@ -12,7 +12,7 @@ geist import --format jsonld --file ../data/compute-sdth.jsonld
 
 
 
-******************************************* EXAMPLE E2 ************************************************
+********************************************** CELL E2 ************************************************
 
 # EXPORT LOADED SDTL AND RULES AS N-TRIPLES
 
@@ -436,7 +436,7 @@ geist export --format nt --sort
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#sameAs> .
 
 
-******************************************* EXAMPLE R1 ************************************************
+********************************************** CELL R1 ************************************************
 
 # CONSTRUCT PROVONE PROGRAMS
 
@@ -467,7 +467,7 @@ __END_REPORT_TEMPLATE__
 <http://wholetale.org/program/1119/step/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 
 
-******************************************* EXAMPLE R2 ************************************************
+********************************************** CELL R2 ************************************************
 
 # CONSTRUCT HASSUBPROGRAM TRIPLES
 
@@ -492,7 +492,7 @@ __END_REPORT_TEMPLATE__
 <http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/9> .
 
 
-******************************************* EXAMPLE R3 ************************************************
+********************************************** CELL R3 ************************************************
 
 # CONSTRUCT DATAFRAME PORTS
 
@@ -645,7 +645,7 @@ __END_REPORT_TEMPLATE__
 <http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/dataframeport/temps_in> .
 
 
-******************************************* EXAMPLE R4 ************************************************
+********************************************** CELL R4 ************************************************
 
 # CONSTRUCT VARIABLE PORTS
 
@@ -707,14 +707,14 @@ __END_REPORT_TEMPLATE__
 <http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> .
 
 
-******************************************* EXAMPLE R5 ************************************************
+********************************************** CELL R5 ************************************************
 
 # CONSTRUCT DATAFRAME CHANNELS
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
     {{{ {{ include "../common/sdth.g" }} }}}
- 
+
     {{ construct_dataframe_channels }}
 __END_REPORT_TEMPLATE__
 ) | sort
@@ -737,14 +737,14 @@ __END_REPORT_TEMPLATE__
 <http://wholetale.org/program/1119/step/9/dataframeport/temps_in> provone:connectsTo <http://wholetale.org/program/1119/step/7/dataframechannel/6> .
 
 
-******************************************* EXAMPLE R6 ************************************************
+********************************************** CELL R6 ************************************************
 
 # CONSTRUCT VARIABLE CHANNELS
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
     {{{ {{ include "../common/sdth.g" }} }}}
- 
+
     {{ construct_variable_channels }}
 __END_REPORT_TEMPLATE__
 ) | sort
@@ -775,7 +775,7 @@ __END_REPORT_TEMPLATE__
 <http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> provone:connectsTo <http://wholetale.org/program/1119/step/7/variablechannel/10> .
 
 
-******************************************* EXAMPLE R7 ************************************************
+********************************************** CELL R7 ************************************************
 
 # CONSTRUCT ALL PROVONE TRIPLES
 
@@ -784,7 +784,7 @@ cp ../data/prefixes.ttl outputs/augment.ttl
 (
 geist report << '__END_REPORT_TEMPLATE__'
     {{{ {{ include "../common/sdth.g" }} }}}
- 
+
     {{ construct_subprogram_triples }}
     {{ construct_dataframe_out_ports }}
     {{ construct_dataframe_in_ports }}
@@ -1033,7 +1033,7 @@ cat outputs/augment.ttl
 <http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> .
 
 
-******************************************* EXAMPLE LOAD-3 ************************************************
+********************************************** CELL LOAD-3 ************************************************
 
 # LOAD PROVONE TRIPLES
 
@@ -1043,7 +1043,7 @@ geist import --file outputs/augment.ttl
 
 
 
-******************************************* EXAMPLE E3 ************************************************
+********************************************** CELL E3 ************************************************
 
 # EXPORT UPDATED DATASET AS N-TRIPLES
 
@@ -1669,7 +1669,7 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ range $Program := (select_provone_programs $WorkflowId | rows ) }}               \
             {{ with $ProgramId := (index $Program 0) }}                                     \
             {{ with $SourceCode := (select_program_sourcecode $ProgramId | value ) }}       \
-                {{ gv_labeled_node $ProgramId $SourceCode }}                             
+                {{ gv_labeled_node $ProgramId $SourceCode }}
             {{ end }}                                                                       \
             {{ end }}                                                                       \
         {{ end }}                                                                           \
@@ -1752,7 +1752,7 @@ geist report << '__END_REPORT_TEMPLATE__'
         {{ range $Program := (select_provone_programs $WorkflowId | rows ) }}               \
             {{ with $ProgramId := (index $Program 0) }}                                     \
             {{ with $SourceCode := (select_program_sourcecode $ProgramId | value ) }}       \
-                {{ gv_labeled_node $ProgramId $SourceCode }}                             
+                {{ gv_labeled_node $ProgramId $SourceCode }}
             {{ end }}                                                                       \
             {{ end }}                                                                       \
         {{ end }}                                                                           \
