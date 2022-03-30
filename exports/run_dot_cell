@@ -23,14 +23,14 @@ done
 bash ${script_file} > ${dot_file}
 
 # use graphviz to create the visualization
-dot -Tpng ${dot_file} -o ${png_file} 
+dot -Tpng ${dot_file} -o ${png_file}
 
 # print the script results
 echo
-echo "******************************************* EXAMPLE ${script_id} ************************************************"
+echo "********************************************** CELL ${script_id} ************************************************"
 echo
 cat ${script_file}
-echo "----------------------------------------- ${script_id} DOT OUTPUT -----------------------------------------------"
+echo "------------------------------------------- ${script_id} OUTPUTS ------------------------------------------------"
 echo
 cat ${dot_file}
 echo

@@ -590,7 +590,7 @@ Celsius           | Fahrenheit         | http://wholetale.org/program/1119/compu
 Kelvin            | Celsius            | http://wholetale.org/program/1119/compute/5 | 28          | temps = temps.assign(Kelvin=(temps.Celsius + 273))
 
 
-******************************************* EXAMPLE GRAPH-1 ************************************************
+********************************************** CELL GRAPH-1 ************************************************
 
 # DATAFRAME FLOW THROUGH COMMANDS
 
@@ -629,7 +629,7 @@ geist report << '__END_REPORT_TEMPLATE__'
 
 __END_REPORT_TEMPLATE__
 
------------------------------------------ GRAPH-1 DOT OUTPUT -----------------------------------------------
+------------------------------------------- GRAPH-1 OUTPUTS ------------------------------------------------
 
 
 digraph sdtl_program {

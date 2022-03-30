@@ -1643,7 +1643,7 @@ geist export --format nt --sort
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#sameAs> .
 
 
-******************************************* EXAMPLE GRAPH-1 ************************************************
+********************************************** CELL GRAPH-1 ************************************************
 
 # DATAFRAME FLOW THROUGH PROVONE PROGRAMS
 
@@ -1687,7 +1687,7 @@ geist report << '__END_REPORT_TEMPLATE__'
 
 __END_REPORT_TEMPLATE__
 
------------------------------------------ GRAPH-1 DOT OUTPUT -----------------------------------------------
+------------------------------------------- GRAPH-1 OUTPUTS ------------------------------------------------
 
 
 digraph provone_workflow {
@@ -1726,7 +1726,7 @@ node[width=8]
 }
 
 
-******************************************* EXAMPLE GRAPH-2 ************************************************
+********************************************** CELL GRAPH-2 ************************************************
 
 # VARIABLE FLOW THROUGH PROVONE PROGRAMS
 
@@ -1770,7 +1770,7 @@ geist report << '__END_REPORT_TEMPLATE__'
 
 __END_REPORT_TEMPLATE__
 
------------------------------------------ GRAPH-2 DOT OUTPUT -----------------------------------------------
+------------------------------------------- GRAPH-2 OUTPUTS ------------------------------------------------
 
 
 digraph provone_workflow {

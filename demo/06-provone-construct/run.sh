@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-GRAPHER='../common/run_dot_examples.sh'
-
 # *****************************************************************************
 
 run_cell SETUP-1 "CREATE NEW DATASET AND LOAD RULES" << END_CELL
@@ -157,7 +155,7 @@ END_CELL
 
 # *****************************************************************************
 
-bash ${GRAPHER} GRAPH-1 "DATAFRAME FLOW THROUGH PROVONE PROGRAMS" \
+run_dot_cell GRAPH-1 "DATAFRAME FLOW THROUGH PROVONE PROGRAMS" \
     << '__END_CELL__'
 
 geist report << '__END_REPORT_TEMPLATE__'
@@ -205,7 +203,7 @@ __END_CELL__
 
 # *****************************************************************************
 
-bash ${GRAPHER} GRAPH-2 "VARIABLE FLOW THROUGH PROVONE PROGRAMS" \
+run_dot_cell GRAPH-2 "VARIABLE FLOW THROUGH PROVONE PROGRAMS" \
     << '__END_CELL__'
 
 geist report << '__END_REPORT_TEMPLATE__'

@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-GRAPHER='../common/run_dot_examples.sh'
-
 # *****************************************************************************
 
 run_cell SETUP "IMPORT SDTL" << END_CELL
@@ -243,7 +241,7 @@ __END_QUERY__
 END_CELL
 
 
-bash ${GRAPHER} GRAPH-1 "DATAFRAME FLOW THROUGH COMMANDS" \
+run_dot_cell GRAPH-1 "DATAFRAME FLOW THROUGH COMMANDS" \
     << '__END_CELL__'
 
 geist report << '__END_REPORT_TEMPLATE__'

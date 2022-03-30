@@ -2,3 +2,4 @@ Makefile-demo
 setup-demo
 targets-demo
 run_cell
+run_dot_cell
