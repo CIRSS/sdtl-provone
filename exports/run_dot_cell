@@ -1,16 +1,23 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # save command line arguments
 script_id=$1
 script_description=$2
 
-scratch_dir=./.scratch
-outputs_dir=./outputs
+if [[ -v BASH_DEV_SCRATCH_DIR ]] ; then
+    scratch_dir=${BASH_DEV_SCRATCH_DIR}
+    mkdir -p ${scratch_dir}
+else
+    scratch_dir=$(mktemp --tmpdir=/tmp -d bash_dev_XXXXXXX)
+fi
+
+products_dir=./products
+mkdir -p ${products_dir}
 
 # define name of result file
 script_file=${scratch_dir}/${script_id}.sh
-dot_file=${outputs_dir}/${script_id}.gv
-png_file=${outputs_dir}/${script_id}.png
+dot_file=${products_dir}/${script_id}.gv
+png_file=${products_dir}/${script_id}.png
 
 # copy query from stdin to the query file
 echo "# ${script_description}" > ${script_file}
