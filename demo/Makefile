@@ -2,16 +2,15 @@
 SHELL := /bin/bash
 
 # assign default names of demo files and directories if not set
-REPRO_DEMO_RUN_FILE     ?= run.sh
-REPRO_DEMO_OUT_FILE     ?= run.txt
-REPRO_DEMO_SCRATCH_DIR  ?= .scratch
-REPRO_DEMO_PRODUCTS_DIR ?= products
+REPRO_DEMO_RUN_FILENAME ?= run.sh
+REPRO_DEMO_OUT_FILENAME ?= run.txt
 
-######################################################################################
-# define targets for when there is no REPRO_DEMO_RUN_FILE in the working directory
-######################################################################################
+export REPRO_DEMO_OUT_DIRNAME ?= products
 
-ifeq ("$(wildcard ./$(REPRO_DEMO_RUN_FILE))","")
+################################################################################
+# targets for when there is NO demo run file in the working directory
+################################################################################
+ifeq ("$(wildcard ./$(REPRO_DEMO_RUN_FILENAME))","")
 
 # Example directory names start with a digit
 EXAMPLE_DIRS = $(wildcard [0-9]*/)
@@ -30,29 +29,29 @@ clean:
 		$(MAKE) -C $$dir clean;                                             \
 	done
 
-######################################################################################
-# alternative targets for when there is a REPRO_DEMO_RUN_FILE in the working directory
-######################################################################################
-
+################################################################################
+# alternative targets for when there IS a demo run file in the working directory
+################################################################################
 else
 
 run: 
-	bash $(REPRO_DEMO_RUN_FILE) > $(REPRO_DEMO_OUT_FILE)
-
+	bash $(REPRO_DEMO_RUN_FILENAME) > $(REPRO_DEMO_OUT_FILENAME)
 
 clean:
-	if [[ -f ./"$(REPRO_DEMO_OUT_FILE)" ]] ; then                           \
-	    rm -v ./"$(REPRO_DEMO_OUT_FILE)" ;                                  \
+	if [[ -f ./"$(REPRO_DEMO_OUT_FILENAME)" ]] ; then                       \
+	    rm -v ./"$(REPRO_DEMO_OUT_FILENAME)" ;                              \
 	fi
 
-	if [[ -d ./"$(REPRO_DEMO_SCRATCH_DIR)" ]] ; then		                \
-	    rm -vf ./"$(REPRO_DEMO_SCRATCH_DIR)"/* ;                            \
-	    rmdir -v ./"$(REPRO_DEMO_SCRATCH_DIR)" ;                            \
+ifneq ($(origin REPRO_DEMO_TMP_DIRNAME),undefined) 
+	if [[ -d ./"$(REPRO_DEMO_TMP_DIRNAME)" ]] ; then		                \
+	    rm -vf ./"$(REPRO_DEMO_TMP_DIRNAME)"/* ;                            \
+	    rmdir -v ./"$(REPRO_DEMO_TMP_DIRNAME)" ;                            \
 	fi
+endif
 
-	if [[ -d ./"$(REPRO_DEMO_PRODUCTS_DIR)" ]] ; then                       \
-	    rm -vf ./"$(REPRO_DEMO_PRODUCTS_DIR)"/* ;                           \
-	    rmdir -v ./"$(REPRO_DEMO_PRODUCTS_DIR)" ;                           \
+	if [[ -d ./"$(REPRO_DEMO_OUT_DIRNAME)" ]] ; then                       \
+	    rm -vf ./"$(REPRO_DEMO_OUT_DIRNAME)"/* ;                           \
+	    rmdir -v ./"$(REPRO_DEMO_OUT_DIRNAME)" ;                           \
 	fi
 
 endif
