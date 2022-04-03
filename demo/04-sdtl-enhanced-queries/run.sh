@@ -359,7 +359,7 @@ END_CELL
 
 # *****************************************************************************
 
-run_dot_cell GRAPH-1 "DATAFRAME FLOW THROUGH COMMANDS" \
+dot_cell GRAPH-1 "DATAFRAME FLOW THROUGH COMMANDS" \
     << '__END_CELL__'
 
 geist report << '__END_REPORT_TEMPLATE__'
@@ -402,7 +402,7 @@ __END_CELL__
 
 # *****************************************************************************
 
-run_dot_cell GRAPH-2 "VARIABLE FLOW THROUGH COMMANDS" \
+dot_cell GRAPH-2 "VARIABLE FLOW THROUGH COMMANDS" \
     << '__END_CELL__'
 
 geist report << '__END_REPORT_TEMPLATE__'

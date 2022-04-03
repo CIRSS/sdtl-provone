@@ -1,3 +1,5 @@
+repro.require shell-notebook master ${REPROS_DEV} --dot
+
 sudo apt update
 sudo apt -y install graphviz
 sudo apt -y install python3 python3-pip
