@@ -8,11 +8,10 @@ RUN bash /repro/dist/setup
 USER repro
 
 # install required repro modules
-RUN repro.require repro master ${REPROS_DEV}
-RUN repro.require blaze 0.2.6 ${CIRSS_RELEASE}
+RUN repro.require sdtl-provone exports --demo
 RUN repro.require geist 0.2.6 ${CIRSS_RELEASE}
 RUN repro.require blazegraph-service master ${CIRSS}
-RUN repro.require sdtl-provone exports --demo
+RUN repro.require blaze 0.2.6 ${CIRSS_RELEASE}
 
 RUN repro.atstart blazegraph-service.start
 
