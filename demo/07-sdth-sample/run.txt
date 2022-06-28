@@ -1,5 +1,4 @@
-
-********************************************** CELL SETUP-1 ************************************************
+=========================================== BASH CELL SETUP-1 ==============================================
 
 # CREATE NEW DATASET AND LOAD RULES
 
@@ -8,18 +7,16 @@ geist create --dataset kb --quiet --infer owl
 geist import --file ../data/provone-rules.ttl
 geist import --format ttl --file ../samples/compute_simple/sdth_output.ttl
 
-------------------------------------------- SETUP-1 OUTPUTS ------------------------------------------------
+--------------------------------------------- OUTPUTS -------------------------------------------------
+=======================================================================================================
 
-
-
-********************************************** CELL E2 ************************************************
+=========================================== BASH CELL E2 ==============================================
 
 # EXPORT LOADED SDTL AND RULES AS N-TRIPLES
 
 geist export --format nt --sort
 
-------------------------------------------- E2 OUTPUTS ------------------------------------------------
-
+--------------------------------------------- OUTPUTS -------------------------------------------------
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://c2metadata.org/sdth#hasName> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V2> .
@@ -423,9 +420,9 @@ geist export --format nt --sort
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#sameAs> .
+=======================================================================================================
 
-
-********************************************** CELL R1 ************************************************
+=========================================== BASH CELL R1 ==============================================
 
 # CONSTRUCT PROVONE PROGRAMS
 
@@ -442,8 +439,7 @@ geist report << '__END_REPORT_TEMPLATE__'
 __END_REPORT_TEMPLATE__
 ) | sort
 
-------------------------------------------- R1 OUTPUTS ------------------------------------------------
-
+--------------------------------------------- OUTPUTS -------------------------------------------------
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
@@ -454,9 +450,9 @@ __END_REPORT_TEMPLATE__
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
+=======================================================================================================
 
-
-********************************************** CELL R2 ************************************************
+=========================================== BASH CELL R2 ==============================================
 
 # CONSTRUCT HASSUBPROGRAM TRIPLES
 
@@ -468,8 +464,7 @@ geist report << '__END_REPORT_TEMPLATE__'
 __END_REPORT_TEMPLATE__
 ) | sort
 
-------------------------------------------- R2 OUTPUTS ------------------------------------------------
-
+--------------------------------------------- OUTPUTS -------------------------------------------------
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> provone:hasSubProgram <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> provone:hasSubProgram <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> provone:hasSubProgram <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> .
@@ -479,9 +474,9 @@ __END_REPORT_TEMPLATE__
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> provone:hasSubProgram <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> provone:hasSubProgram <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Program1> provone:hasSubProgram <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> .
+=======================================================================================================
 
-
-********************************************** CELL R3 ************************************************
+=========================================== BASH CELL R3 ==============================================
 
 # CONSTRUCT DATAFRAME PORTS
 
@@ -494,8 +489,7 @@ geist report << '__END_REPORT_TEMPLATE__'
 __END_REPORT_TEMPLATE__
 ) | sort
 
-------------------------------------------- R3 OUTPUTS ------------------------------------------------
-
+--------------------------------------------- OUTPUTS -------------------------------------------------
 
 
 
@@ -632,9 +626,9 @@ __END_REPORT_TEMPLATE__
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframeport/temps_out> sdth:hasDataframe <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe2> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframeport/temps_out> .
+=======================================================================================================
 
-
-********************************************** CELL R4 ************************************************
+=========================================== BASH CELL R4 ==============================================
 
 # CONSTRUCT VARIABLE PORTS
 
@@ -647,8 +641,7 @@ geist report << '__END_REPORT_TEMPLATE__'
 __END_REPORT_TEMPLATE__
 ) | sort
 
-------------------------------------------- R4 OUTPUTS ------------------------------------------------
-
+--------------------------------------------- OUTPUTS -------------------------------------------------
 
 
 
@@ -694,9 +687,9 @@ __END_REPORT_TEMPLATE__
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/C_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> .
+=======================================================================================================
 
-
-********************************************** CELL R5 ************************************************
+=========================================== BASH CELL R5 ==============================================
 
 # CONSTRUCT DATAFRAME CHANNELS
 
@@ -708,8 +701,7 @@ geist report << '__END_REPORT_TEMPLATE__'
 __END_REPORT_TEMPLATE__
 ) | sort
 
-------------------------------------------- R5 OUTPUTS ------------------------------------------------
-
+--------------------------------------------- OUTPUTS -------------------------------------------------
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframeport/df_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/dataframechannel/0> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframechannel/1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframeport/temps_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/dataframechannel/5> .
@@ -724,9 +716,9 @@ __END_REPORT_TEMPLATE__
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_in> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5/dataframechannel/3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframeport/df_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/dataframechannel/4> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframeport/temps_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframechannel/1> .
+=======================================================================================================
 
-
-********************************************** CELL R6 ************************************************
+=========================================== BASH CELL R6 ==============================================
 
 # CONSTRUCT VARIABLE CHANNELS
 
@@ -738,8 +730,7 @@ geist report << '__END_REPORT_TEMPLATE__'
 __END_REPORT_TEMPLATE__
 ) | sort
 
-------------------------------------------- R6 OUTPUTS ------------------------------------------------
-
+--------------------------------------------- OUTPUTS -------------------------------------------------
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variableport/B_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep1/variablechannel/0> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variableport/Celsius_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variablechannel/8> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variableport/Celsius_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10/variablechannel/9> .
@@ -762,9 +753,9 @@ __END_REPORT_TEMPLATE__
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/C_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variablechannel/7> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variablechannel/1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> provone:connectsTo <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variablechannel/2> .
+=======================================================================================================
 
-
-********************************************** CELL R7 ************************************************
+=========================================== BASH CELL R7 ==============================================
 
 # CONSTRUCT ALL PROVONE TRIPLES
 
@@ -786,8 +777,7 @@ __END_REPORT_TEMPLATE__
 
 cat products/augment.ttl
 
-------------------------------------------- R7 OUTPUTS ------------------------------------------------
-
+--------------------------------------------- OUTPUTS -------------------------------------------------
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix wt: <http://wholetale.org/ontology/wt#> .
@@ -1020,26 +1010,24 @@ cat products/augment.ttl
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/dataframeport/temps_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> .
+=======================================================================================================
 
-
-********************************************** CELL LOAD-3 ************************************************
+=========================================== BASH CELL LOAD-3 ==============================================
 
 # LOAD PROVONE TRIPLES
 
 geist import --file products/augment.ttl
 
-------------------------------------------- LOAD-3 OUTPUTS ------------------------------------------------
+--------------------------------------------- OUTPUTS -------------------------------------------------
+=======================================================================================================
 
-
-
-********************************************** CELL E3 ************************************************
+=========================================== BASH CELL E3 ==============================================
 
 # EXPORT UPDATED DATASET AS N-TRIPLES
 
 geist export --format nt --sort
 
-------------------------------------------- E3 OUTPUTS ------------------------------------------------
-
+--------------------------------------------- OUTPUTS -------------------------------------------------
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://c2metadata.org/sdth#hasName> "df" .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V2> .
@@ -1619,9 +1607,9 @@ geist export --format nt --sort
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#sameAs> .
+=======================================================================================================
 
-
-********************************************** CELL GRAPH-1 ************************************************
+=========================================== BASH CELL GRAPH-1 ==============================================
 
 # DATAFRAME FLOW THROUGH PROVONE PROGRAMS
 
@@ -1665,8 +1653,7 @@ geist report << '__END_REPORT_TEMPLATE__'
 
 __END_REPORT_TEMPLATE__
 
-------------------------------------------- GRAPH-1 OUTPUTS ------------------------------------------------
-
+--------------------------------------------- OUTPUTS -------------------------------------------------
 
 digraph provone_workflow {
 rankdir=TB
@@ -1702,9 +1689,9 @@ node[width=8]
 }}
 
 }
+=======================================================================================================
 
-
-********************************************** CELL GRAPH-2 ************************************************
+=========================================== BASH CELL GRAPH-2 ==============================================
 
 # VARIABLE FLOW THROUGH PROVONE PROGRAMS
 
@@ -1748,8 +1735,7 @@ geist report << '__END_REPORT_TEMPLATE__'
 
 __END_REPORT_TEMPLATE__
 
-------------------------------------------- GRAPH-2 OUTPUTS ------------------------------------------------
-
+--------------------------------------------- OUTPUTS -------------------------------------------------
 
 digraph provone_workflow {
 rankdir=TB
@@ -1789,4 +1775,5 @@ node[width=8]
 }}
 
 }
+=======================================================================================================
 

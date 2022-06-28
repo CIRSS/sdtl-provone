@@ -2,7 +2,9 @@
 
 # *****************************************************************************
 
-bash_cell SETUP-1 "CREATE NEW DATASET AND LOAD RULES" << END_CELL
+bash_cell SETUP-1 << END_CELL
+
+# CREATE NEW DATASET AND LOAD RULES
 
 geist destroy --dataset kb --quiet
 geist create --dataset kb --quiet --infer owl
@@ -13,7 +15,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_cell E2 "EXPORT LOADED SDTL AND RULES AS N-TRIPLES" << END_CELL
+bash_cell E2 << END_CELL
+
+# EXPORT LOADED SDTL AND RULES AS N-TRIPLES
 
 geist export --format nt --sort
 
@@ -21,7 +25,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_cell R1 "CONSTRUCT PROVONE PROGRAMS" << '__END_CELL__'
+bash_cell R1 << '__END_CELL__'
+
+# CONSTRUCT PROVONE PROGRAMS
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
@@ -41,7 +47,9 @@ __END_CELL__
 
 # *****************************************************************************
 
-bash_cell R2 "CONSTRUCT HASSUBPROGRAM TRIPLES" << '__END_CELL__'
+bash_cell R2 << '__END_CELL__'
+
+# CONSTRUCT HASSUBPROGRAM TRIPLES
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
@@ -55,7 +63,9 @@ __END_CELL__
 
 # *****************************************************************************
 
-bash_cell R3 "CONSTRUCT DATAFRAME PORTS" << '__END_CELL__'
+bash_cell R3 << '__END_CELL__'
+
+# CONSTRUCT DATAFRAME PORTS
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
@@ -70,7 +80,9 @@ __END_CELL__
 
 # *****************************************************************************
 
-bash_cell R4 "CONSTRUCT VARIABLE PORTS" << '__END_CELL__'
+bash_cell R4 << '__END_CELL__'
+
+# CONSTRUCT VARIABLE PORTS
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
@@ -85,7 +97,9 @@ __END_CELL__
 
 # *****************************************************************************
 
-bash_cell R5 "CONSTRUCT DATAFRAME CHANNELS" << '__END_CELL__'
+bash_cell R5 << '__END_CELL__'
+
+# CONSTRUCT DATAFRAME CHANNELS
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
@@ -100,7 +114,9 @@ __END_CELL__
 
 # *****************************************************************************
 
-bash_cell R6 "CONSTRUCT VARIABLE CHANNELS" << '__END_CELL__'
+bash_cell R6 << '__END_CELL__'
+
+# CONSTRUCT VARIABLE CHANNELS
 
 (
 geist report << '__END_REPORT_TEMPLATE__'
@@ -115,7 +131,9 @@ __END_CELL__
 
 # *****************************************************************************
 
-bash_cell R7 "CONSTRUCT ALL PROVONE TRIPLES" << '__END_CELL__'
+bash_cell R7 << '__END_CELL__'
+
+# CONSTRUCT ALL PROVONE TRIPLES
 
 cp ../data/prefixes.ttl products/augment.ttl
 
@@ -139,7 +157,9 @@ __END_CELL__
 
 # *****************************************************************************
 
-bash_cell LOAD-3 "LOAD PROVONE TRIPLES" << '__END_CELL__'
+bash_cell LOAD-3 << '__END_CELL__'
+
+# LOAD PROVONE TRIPLES
 
 geist import --file products/augment.ttl
 
@@ -147,7 +167,9 @@ __END_CELL__
 
 # *****************************************************************************
 
-bash_cell E3  "EXPORT UPDATED DATASET AS N-TRIPLES" << END_CELL
+bash_cell E3 << END_CELL
+
+# EXPORT UPDATED DATASET AS N-TRIPLES
 
 geist export --format nt --sort
 
@@ -155,8 +177,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_dot_cell GRAPH-1 "DATAFRAME FLOW THROUGH PROVONE PROGRAMS" \
-    << '__END_CELL__'
+bash_dot_cell GRAPH-1 << '__END_CELL__'
+
+# DATAFRAME FLOW THROUGH PROVONE PROGRAMS
 
 geist report << '__END_REPORT_TEMPLATE__'
 
@@ -203,8 +226,9 @@ __END_CELL__
 
 # *****************************************************************************
 
-bash_dot_cell GRAPH-2 "VARIABLE FLOW THROUGH PROVONE PROGRAMS" \
-    << '__END_CELL__'
+bash_dot_cell GRAPH-2 << '__END_CELL__'
+
+# VARIABLE FLOW THROUGH PROVONE PROGRAMS
 
 geist report << '__END_REPORT_TEMPLATE__'
 

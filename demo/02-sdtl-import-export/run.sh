@@ -2,7 +2,9 @@
 
 # *****************************************************************************
 
-bash_cell DUMP-1 "IMPORT SDTL AS JSON-LD AND EXPORT AS N-TRIPLES" << END_CELL
+bash_cell DUMP-1 << END_CELL
+
+# IMPORT SDTL AS JSON-LD AND EXPORT AS N-TRIPLES
 
 geist destroy --dataset kb --quiet
 geist create --dataset kb --quiet

@@ -2,7 +2,9 @@
 
 # *****************************************************************************
 
-bash_cell SETUP "IMPORT SDTL" << END_CELL
+bash_cell SETUP << END_CELL
+
+# IMPORT SDTL
 
 geist destroy --dataset kb --quiet
 geist create --dataset kb --quiet --infer owl
@@ -13,7 +15,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_cell E1 "EXPORT AS N-TRIPLES" << END_CELL
+bash_cell E1 << END_CELL
+
+# EXPORT AS N-TRIPLES
 
 geist export --format nt | sort
 
@@ -21,7 +25,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_cell Q1 "WHAT COMMANDS USE EACH VARIABLE?" << END_CELL
+bash_cell Q1 << END_CELL
+
+# WHAT COMMANDS USE EACH VARIABLE?
 
 geist query --format table << __END_QUERY__
 
@@ -47,7 +53,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_cell Q2 "WHAT VARIABLES DIRECTLY AFFECT OTHER VARIABLES?" << END_CELL
+bash_cell Q2 << END_CELL
+
+# WHAT VARIABLES DIRECTLY AFFECT OTHER VARIABLES?
 
 geist query --format table << __END_QUERY__
 
@@ -74,7 +82,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_cell Q3 "WHAT VARIABLES DIRECTLY AFFECT THE KELVIN VARIABLE?" << END_CELL
+bash_cell Q3 << END_CELL
+
+# WHAT VARIABLES DIRECTLY AFFECT THE KELVIN VARIABLE?
 
 geist query --format table << __END_QUERY__
 
@@ -101,7 +111,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_cell Q4 "WHAT VARIABLES DIRECTLY AFFECT VARIABLES THAT DIRECTLY AFFECT THE KELVIN VARIABLE?" << END_CELL
+bash_cell Q4 << END_CELL
+
+# WHAT VARIABLES DIRECTLY AFFECT VARIABLES THAT DIRECTLY AFFECT THE KELVIN VARIABLE?
 
 geist query --format table << __END_QUERY__
 
@@ -132,7 +144,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_cell Q5 "WHAT VARIABLES DIRECTLY OR INDIRECTLY AFFECT THE KELVIN VARIABLE?" << END_CELL
+bash_cell Q5 << END_CELL
+
+# WHAT VARIABLES DIRECTLY OR INDIRECTLY AFFECT THE KELVIN VARIABLE?
 
 geist query --format table << __END_QUERY__
 
@@ -152,7 +166,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_cell Q6 "WHAT COMMANDS AFFECT EACH VARIABLE?" << END_CELL
+bash_cell Q6 << END_CELL
+
+# WHAT COMMANDS AFFECT EACH VARIABLE?
 
 geist query --format table << __END_QUERY__
 
@@ -186,7 +202,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_cell Q7 "WHAT COMMANDS READ VARIABLE VALUES ASSIGNED BY OTHER COMMANDS?" << END_CELL
+bash_cell Q7 << END_CELL
+
+# WHAT COMMANDS READ VARIABLE VALUES ASSIGNED BY OTHER COMMANDS?
 
 geist query --format table << __END_QUERY__
 
@@ -211,7 +229,10 @@ __END_QUERY__
 
 END_CELL
 
-bash_cell R1 "REPORT HISTORY OF EACH VARIABLE" << 'END_CELL'
+
+bash_cell R1 << 'END_CELL'
+
+# REPORT HISTORY OF EACH VARIABLE
 
 geist report << '__END_REPORT_TEMPLATE__'
 
@@ -246,7 +267,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_cell R2 "WHAT COMMANDS WRITE TO EACH VARIABLE?" << END_CELL
+bash_cell R2 << END_CELL
+
+# WHAT COMMANDS WRITE TO EACH VARIABLE?
 
 geist report << '__END_REPORT_TEMPLATE__'
 
@@ -273,7 +296,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_cell R3 "WHAT COMMANDS READ FROM EACH VARIABLE?" << END_CELL
+bash_cell R3 << END_CELL
+
+# WHAT COMMANDS READ FROM EACH VARIABLE?
 
 geist report << '__END_REPORT_TEMPLATE__'
 
@@ -299,7 +324,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_cell R4 "WHAT COMMANDS WRITE VARIABLES READ BY DOWNSTREAM COMMANDS?" << END_CELL
+bash_cell R4 << END_CELL
+
+# WHAT COMMANDS WRITE VARIABLES READ BY DOWNSTREAM COMMANDS?
 
 geist report << '__END_REPORT_TEMPLATE__'
 
@@ -327,7 +354,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_cell R5 "WHAT COMMANDS READ VARIABLES WRITTEN BY MULTIPLE UPSTREAM COMMANDS?" << END_CELL
+bash_cell R5 << END_CELL
+
+# WHAT COMMANDS READ VARIABLES WRITTEN BY MULTIPLE UPSTREAM COMMANDS?
 
 geist report << '__END_REPORT_TEMPLATE__'
 
@@ -359,8 +388,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_dot_cell GRAPH-1 "DATAFRAME FLOW THROUGH COMMANDS" \
-    << '__END_CELL__'
+bash_dot_cell GRAPH-1 << '__END_CELL__'
+
+# DATAFRAME FLOW THROUGH COMMANDS
 
 geist report << '__END_REPORT_TEMPLATE__'
 
@@ -402,8 +432,9 @@ __END_CELL__
 
 # *****************************************************************************
 
-bash_dot_cell GRAPH-2 "VARIABLE FLOW THROUGH COMMANDS" \
-    << '__END_CELL__'
+bash_dot_cell GRAPH-2 << '__END_CELL__'
+
+# VARIABLE FLOW THROUGH COMMANDS
 
 geist report << '__END_REPORT_TEMPLATE__'
 

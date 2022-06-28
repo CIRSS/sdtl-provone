@@ -2,7 +2,9 @@
 
 # *****************************************************************************
 
-bash_cell SETUP "IMPORT SDTL" << END_CELL
+bash_cell SETUP << END_CELL
+
+# IMPORT SDTL
 
 geist destroy --dataset kb --quiet
 geist create --dataset kb --quiet
@@ -12,7 +14,9 @@ END_CELL
 
 # *****************************************************************************
 
-bash_cell E1 "EXPORT AS N-TRIPLES" << END_CELL
+bash_cell E1 << END_CELL
+
+# EXPORT AS N-TRIPLES
 
 geist export --format nt | sort
 
@@ -39,7 +43,9 @@ __END_QUERY__
 END_CELL
 
 
-bash_cell Q2 "WHAT DATA FILES ARE LOADED BY THE PROGRAM?" << END_CELL
+bash_cell Q2 << END_CELL
+
+# WHAT DATA FILES ARE LOADED BY THE PROGRAM?
 
 geist query --format table << __END_QUERY__
 
@@ -59,7 +65,9 @@ __END_QUERY__
 END_CELL
 
 
-bash_cell Q3 "WHAT DATA FILES ARE SAVED BY THE PROGRAM?" << END_CELL
+bash_cell Q3 << END_CELL
+
+# WHAT DATA FILES ARE SAVED BY THE PROGRAM?
 
 geist query --format table << __END_QUERY__
 
@@ -80,7 +88,9 @@ END_CELL
 
 
 
-bash_cell Q4 "WHAT VARIABLES ARE LOADED BY THE PROGRAM?" << END_CELL
+bash_cell Q4 << END_CELL
+
+# WHAT VARIABLES ARE LOADED BY THE PROGRAM?
 
 geist query --format table << __END_QUERY__
 
@@ -104,7 +114,9 @@ END_CELL
 
 
 
-bash_cell Q5 "WHAT VARIABLES ARE SAVED BY THE SCRIPT?" << END_CELL
+bash_cell Q5 << END_CELL
+
+# WHAT VARIABLES ARE SAVED BY THE SCRIPT?
 
 geist query --format table << __END_QUERY__
 
