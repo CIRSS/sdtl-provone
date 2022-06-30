@@ -1,5 +1,0 @@
-REPRO_NAME=sdtl-provone
-REPRO_DOCKER_ORG=cirss
-REPRO_IMAGE_TAG=latest
-
-BASE_IMAGE=cirss/sdtl-provone-base:latest

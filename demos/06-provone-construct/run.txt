@@ -8,7 +8,8 @@ geist import --file ../data/provone-rules.ttl
 geist import --format jsonld --file ../data/compute-sdth.jsonld
 
 --------------------------------------------- OUTPUTS -------------------------------------------------
-=======================================================================================================
+-------------------------------------------------------------------------------------------------------
+
 
 =========================================== BASH CELL E2 ==============================================
 
@@ -431,7 +432,8 @@ geist export --format nt --sort
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#sameAs> .
-=======================================================================================================
+-------------------------------------------------------------------------------------------------------
+
 
 =========================================== BASH CELL R1 ==============================================
 
@@ -461,7 +463,8 @@ __END_REPORT_TEMPLATE__
 <http://wholetale.org/program/1119/step/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://wholetale.org/program/1119/step/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://wholetale.org/program/1119/step/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
-=======================================================================================================
+-------------------------------------------------------------------------------------------------------
+
 
 =========================================== BASH CELL R2 ==============================================
 
@@ -485,7 +488,8 @@ __END_REPORT_TEMPLATE__
 <http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/7> .
 <http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/8> .
 <http://wholetale.org/program/1119/program/1> provone:hasSubProgram <http://wholetale.org/program/1119/step/9> .
-=======================================================================================================
+-------------------------------------------------------------------------------------------------------
+
 
 =========================================== BASH CELL R3 ==============================================
 
@@ -637,7 +641,8 @@ __END_REPORT_TEMPLATE__
 <http://wholetale.org/program/1119/step/8> provone:hasInPort <http://wholetale.org/program/1119/step/8/dataframeport/df_in> .
 <http://wholetale.org/program/1119/step/9/dataframeport/temps_in> sdth:hasDataframe <http://wholetale.org/program/1119/dataframe/7> .
 <http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/dataframeport/temps_in> .
-=======================================================================================================
+-------------------------------------------------------------------------------------------------------
+
 
 =========================================== BASH CELL R4 ==============================================
 
@@ -698,7 +703,8 @@ __END_REPORT_TEMPLATE__
 <http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Celsius_in> .
 <http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Fahrenheit_in> .
 <http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> .
-=======================================================================================================
+-------------------------------------------------------------------------------------------------------
+
 
 =========================================== BASH CELL R5 ==============================================
 
@@ -727,7 +733,8 @@ __END_REPORT_TEMPLATE__
 <http://wholetale.org/program/1119/step/7/dataframeport/temps_out> provone:connectsTo <http://wholetale.org/program/1119/step/7/dataframechannel/6> .
 <http://wholetale.org/program/1119/step/8/dataframeport/df_in> provone:connectsTo <http://wholetale.org/program/1119/step/4/dataframechannel/3> .
 <http://wholetale.org/program/1119/step/9/dataframeport/temps_in> provone:connectsTo <http://wholetale.org/program/1119/step/7/dataframechannel/6> .
-=======================================================================================================
+-------------------------------------------------------------------------------------------------------
+
 
 =========================================== BASH CELL R6 ==============================================
 
@@ -764,7 +771,8 @@ __END_REPORT_TEMPLATE__
 <http://wholetale.org/program/1119/step/9/variableport/Celsius_in> provone:connectsTo <http://wholetale.org/program/1119/step/6/variablechannel/9> .
 <http://wholetale.org/program/1119/step/9/variableport/Fahrenheit_in> provone:connectsTo <http://wholetale.org/program/1119/step/5/variablechannel/7> .
 <http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> provone:connectsTo <http://wholetale.org/program/1119/step/7/variablechannel/10> .
-=======================================================================================================
+-------------------------------------------------------------------------------------------------------
+
 
 =========================================== BASH CELL R7 ==============================================
 
@@ -1021,7 +1029,8 @@ cat products/augment.ttl
 <http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Celsius_in> .
 <http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Fahrenheit_in> .
 <http://wholetale.org/program/1119/step/9> provone:hasInPort <http://wholetale.org/program/1119/step/9/variableport/Kelvin_in> .
-=======================================================================================================
+-------------------------------------------------------------------------------------------------------
+
 
 =========================================== BASH CELL LOAD-3 ==============================================
 
@@ -1030,7 +1039,8 @@ cat products/augment.ttl
 geist import --file products/augment.ttl
 
 --------------------------------------------- OUTPUTS -------------------------------------------------
-=======================================================================================================
+-------------------------------------------------------------------------------------------------------
+
 
 =========================================== BASH CELL E3 ==============================================
 
@@ -1629,9 +1639,10 @@ geist export --format nt --sort
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#sameAs> .
-=======================================================================================================
+-------------------------------------------------------------------------------------------------------
 
-=========================================== BASH CELL GRAPH-1 ==============================================
+
+========================================= BASH DOT CELL GRAPH-1 ============================================
 
 # DATAFRAME FLOW THROUGH PROVONE PROGRAMS
 
@@ -1711,9 +1722,10 @@ node[width=8]
 }}
 
 }
-=======================================================================================================
+-------------------------------------------------------------------------------------------------------
 
-=========================================== BASH CELL GRAPH-2 ==============================================
+
+========================================= BASH DOT CELL GRAPH-2 ============================================
 
 # VARIABLE FLOW THROUGH PROVONE PROGRAMS
 
@@ -1797,5 +1809,6 @@ node[width=8]
 }}
 
 }
-=======================================================================================================
+-------------------------------------------------------------------------------------------------------
+
 
