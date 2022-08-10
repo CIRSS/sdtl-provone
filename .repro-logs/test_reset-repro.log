@@ -1,0 +1,38 @@
+I MESG Initialized REPRO logging system and macros
+I MESG Initializing REPRO session
+I MESG Building PATH variable
+I MESG Skipping rest of session initialization because REPRO_DEFER_INIT is set to 'true'
+I MESG Resetting REPRO
+I MESG Resetting all modules
+I MESG Resetting the 'repro' module
+I MESG Re-initializing trim files for module 'repro'
+I MESG Resetting the 'sdtl-provone' module
+I MESG Re-initializing trim files for module 'sdtl-provone'
+I MESG Copying /home/repro/repro-modules/sdtl-provone-exports/Makefile-demos to the 'sdtl-provone' trim directory (/mnt/sdtl-provone/.sdtl-provone)
+I MESG Resetting the 'shell-notebook' module
+I MESG Re-initializing trim files for module 'shell-notebook'
+I MESG Ensuring other files listed in the 'shell-notebook' module trim manifest are in the module trim directory (/mnt/sdtl-provone/.shell-notebook)
+I MESG Copying trim file Makefile.demo-runner from /home/repro/repro-modules/shell-notebook-master to /mnt/sdtl-provone/.shell-notebook
+I MESG Resetting the 'graphviz-runtime' module
+I MESG Re-initializing trim files for module 'graphviz-runtime'
+I MESG Resetting the 'python-dev' module
+I MESG Re-initializing trim files for module 'python-dev'
+I MESG Resetting the 'geist' module
+I MESG Re-initializing trim files for module 'geist'
+I MESG Resetting the 'blazegraph-service' module
+I MESG Re-initializing trim files for module 'blazegraph-service'
+I MESG Copying /home/repro/repro-modules/blazegraph-service-master/Makefile-base to the 'blazegraph-service' trim directory (/mnt/sdtl-provone/.blazegraph-service)
+I MESG Ensuring other files listed in the 'blazegraph-service' module trim manifest are in the module trim directory (/mnt/sdtl-provone/.blazegraph-service)
+I MESG Copying trim file blazegraph.properties from /home/repro/repro-modules/blazegraph-service-master to /mnt/sdtl-provone/.blazegraph-service
+I MESG Resetting the 'java-runtime' module
+I MESG Re-initializing trim files for module 'java-runtime'
+I MESG Resetting the 'blaze' module
+I MESG Re-initializing trim files for module 'blaze'
+I MESG Resetting the REPRO target mapping file (/mnt/sdtl-provone/.repro/repro-targets)
+I MESG Installing a default (empty) target mapping file to /mnt/sdtl-provone/.repro/repro-targets
+I MESG Mapping the 'sdtl-provone:demos:run' target to the REPRO 'run-demos' target
+I MESG Mapping the 'sdtl-provone:demos:clean' target to the REPRO 'clean-demos' target
+I MESG Mapping the 'blazegraph-service:base:clean' target to the REPRO 'clean-databases' target
+I MESG Mapping the 'blazegraph-service:base:drop' target to the REPRO 'drop-databases' target
+I MESG Mapping the 'blazegraph-service:base:purge' target to the REPRO 'purge-databases' target
+I MESG Mapping the 'blazegraph-service:base:start' target to the REPRO 'start-services' target

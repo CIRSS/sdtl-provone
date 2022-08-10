@@ -13,6 +13,4 @@ RUN repro.require geist 0.2.6 ${CIRSS_RELEASE}
 RUN repro.require blazegraph-service master ${CIRSS}
 RUN repro.require blaze 0.2.6 ${CIRSS_RELEASE}
 
-RUN repro.atstart blazegraph-service.start
-
 CMD  /bin/bash -il
