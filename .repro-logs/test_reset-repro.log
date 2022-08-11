@@ -17,6 +17,10 @@ I MESG Resetting the 'graphviz-runtime' module
 I MESG Re-initializing trim files for module 'graphviz-runtime'
 I MESG Resetting the 'python-dev' module
 I MESG Re-initializing trim files for module 'python-dev'
+I MESG Resetting the 'sdth-runtime' module
+I MESG Re-initializing trim files for module 'sdth-runtime'
+I MESG Resetting the 'java-runtime' module
+I MESG Re-initializing trim files for module 'java-runtime'
 I MESG Resetting the 'geist' module
 I MESG Re-initializing trim files for module 'geist'
 I MESG Resetting the 'blazegraph-service' module
@@ -24,8 +28,6 @@ I MESG Re-initializing trim files for module 'blazegraph-service'
 I MESG Copying /home/repro/repro-modules/blazegraph-service-master/Makefile-base to the 'blazegraph-service' trim directory (/mnt/sdtl-provone/.blazegraph-service)
 I MESG Ensuring other files listed in the 'blazegraph-service' module trim manifest are in the module trim directory (/mnt/sdtl-provone/.blazegraph-service)
 I MESG Copying trim file blazegraph.properties from /home/repro/repro-modules/blazegraph-service-master to /mnt/sdtl-provone/.blazegraph-service
-I MESG Resetting the 'java-runtime' module
-I MESG Re-initializing trim files for module 'java-runtime'
 I MESG Resetting the 'blaze' module
 I MESG Re-initializing trim files for module 'blaze'
 I MESG Resetting the REPRO target mapping file (/mnt/sdtl-provone/.repro/repro-targets)
