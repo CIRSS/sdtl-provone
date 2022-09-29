@@ -1,16 +1,5 @@
 @prefix run: <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/>.
 @prefix sdth: <http://c2metadata.org/sdth#>.
-
-run:Program1 a sdth:Program.
-run:Program1 sdth:hasProgramStep run:ProgramStep1.
-run:Program1 sdth:hasProgramStep run:ProgramStep3.
-run:Program1 sdth:hasProgramStep run:ProgramStep5.
-run:Program1 sdth:hasProgramStep run:ProgramStep7.
-run:Program1 sdth:hasProgramStep run:ProgramStep8.
-run:Program1 sdth:hasProgramStep run:ProgramStep10.
-run:Program1 sdth:hasProgramStep run:ProgramStep12.
-run:Program1 sdth:hasProgramStep run:ProgramStep13.
-run:Program1 sdth:hasProgramStep run:ProgramStep14.
 run:ProgramStep1 a sdth:ProgramStep.
 run:ProgramStep1 sdth:hasSDTL "{\"$type\":\"Load\",\"unknownProperties\":[],\"command\":\"Load\",\"sourceInformation\":[{\"lineNumberStart\":3,\"lineNumberEnd\":3,\"sourceStartIndex\":22,\"sourceStopIndex\":47,\"originalSourceText\":\"df = pd.read_csv('df.csv')\",\"processedSourceText\":null}],\"messageText\":null,\"producesDataframe\":[{\"dataframeName\":\"df\",\"variableInventory\":[\"A\",\"B\"],\"rowDimensions\":[],\"columnDimensions\":[]}],\"consumesDataframe\":null,\"fileName\":\"df.csv\",\"software\":null,\"fileFormat\":\"csv\",\"isCompressed\":false,\"$type\":\"Load\"}".
 run:ProgramStep1 sdth:hasSourceCode "df = pd.read_csv('df.csv')".
@@ -60,16 +49,16 @@ run:ProgramStep12 sdth:producesDataframe run:Dataframe7.
 run:ProgramStep12 sdth:usesVariable run:Variable4.
 run:ProgramStep12 sdth:assignsVariable run:Variable5.
 run:ProgramStep13 a sdth:ProgramStep.
-run:ProgramStep13 sdth:hasSDTL "{\"$type\":\"Save\",\"unknownProperties\":[],\"command\":\"Save\",\"sourceInformation\":[{\"lineNumberStart\":17,\"lineNumberEnd\":17,\"sourceStartIndex\":259,\"sourceStopIndex\":306,\"originalSourceText\":\"df.to_csv('products\/df_updated.csv', index=False)\",\"processedSourceText\":null}],\"messageText\":null,\"producesDataframe\":null,\"consumesDataframe\":[{\"dataframeName\":\"df\",\"variableInventory\":[\"A\",\"B\",\"C\"],\"rowDimensions\":[],\"columnDimensions\":[]}],\"fileName\":\"products\/df_updated.csv\",\"software\":null,\"fileFormat\":\"csv\",\"isCompressed\":false,\"$type\":\"Save\"}".
-run:ProgramStep13 sdth:hasSourceCode "df.to_csv('products\/df_updated.csv', index=False)".
+run:ProgramStep13 sdth:hasSDTL "{\"$type\":\"Save\",\"unknownProperties\":[],\"command\":\"Save\",\"sourceInformation\":[{\"lineNumberStart\":17,\"lineNumberEnd\":17,\"sourceStartIndex\":259,\"sourceStopIndex\":306,\"originalSourceText\":\"df.to_csv('outputs\/df_updated.csv', index=False)\",\"processedSourceText\":null}],\"messageText\":null,\"producesDataframe\":null,\"consumesDataframe\":[{\"dataframeName\":\"df\",\"variableInventory\":[\"A\",\"B\",\"C\"],\"rowDimensions\":[],\"columnDimensions\":[]}],\"fileName\":\"outputs\/df_updated.csv\",\"software\":null,\"fileFormat\":\"csv\",\"isCompressed\":false,\"$type\":\"Save\"}".
+run:ProgramStep13 sdth:hasSourceCode "df.to_csv('outputs\/df_updated.csv', index=False)".
 run:ProgramStep13 sdth:savesFile run:File5.
 run:ProgramStep13 sdth:consumesDataframe run:Dataframe5.
 run:ProgramStep13 sdth:usesVariable run:Variable1.
 run:ProgramStep13 sdth:usesVariable run:Variable2.
 run:ProgramStep13 sdth:usesVariable run:Variable3.
 run:ProgramStep14 a sdth:ProgramStep.
-run:ProgramStep14 sdth:hasSDTL "{\"$type\":\"Save\",\"unknownProperties\":[],\"command\":\"Save\",\"sourceInformation\":[{\"lineNumberStart\":19,\"lineNumberEnd\":19,\"sourceStartIndex\":309,\"sourceStopIndex\":362,\"originalSourceText\":\"temps.to_csv('products\/temps_updated.csv', index=False)\",\"processedSourceText\":null}],\"messageText\":null,\"producesDataframe\":null,\"consumesDataframe\":[{\"dataframeName\":\"temps\",\"variableInventory\":[\"fahrenheit\",\"Celsius\",\"Kelvin\"],\"rowDimensions\":[],\"columnDimensions\":[]}],\"fileName\":\"products\/temps_updated.csv\",\"software\":null,\"fileFormat\":\"csv\",\"isCompressed\":false,\"$type\":\"Save\"}".
-run:ProgramStep14 sdth:hasSourceCode "temps.to_csv('products\/temps_updated.csv', index=False)".
+run:ProgramStep14 sdth:hasSDTL "{\"$type\":\"Save\",\"unknownProperties\":[],\"command\":\"Save\",\"sourceInformation\":[{\"lineNumberStart\":19,\"lineNumberEnd\":19,\"sourceStartIndex\":309,\"sourceStopIndex\":362,\"originalSourceText\":\"temps.to_csv('outputs\/temps_updated.csv', index=False)\",\"processedSourceText\":null}],\"messageText\":null,\"producesDataframe\":null,\"consumesDataframe\":[{\"dataframeName\":\"temps\",\"variableInventory\":[\"fahrenheit\",\"Celsius\",\"Kelvin\"],\"rowDimensions\":[],\"columnDimensions\":[]}],\"fileName\":\"outputs\/temps_updated.csv\",\"software\":null,\"fileFormat\":\"csv\",\"isCompressed\":false,\"$type\":\"Save\"}".
+run:ProgramStep14 sdth:hasSourceCode "temps.to_csv('outputs\/temps_updated.csv', index=False)".
 run:ProgramStep14 sdth:savesFile run:File6.
 run:ProgramStep14 sdth:consumesDataframe run:Dataframe7.
 run:ProgramStep14 sdth:usesVariable run:V3.
@@ -80,35 +69,28 @@ run:File3 sdth:hasName "df.csv".
 run:File4 a sdth:File.
 run:File4 sdth:hasName "temps.csv".
 run:File5 a sdth:File.
-run:File5 sdth:hasName "products/df_updated.csv".
+run:File5 sdth:hasName "outputs/df_updated.csv".
 run:File6 a sdth:File.
-run:File6 sdth:hasName "products/temps_updated.csv".
+run:File6 sdth:hasName "outputs/temps_updated.csv".
 run:Dataframe1 a sdth:Dataframe.
-run:Dataframe1 sdth:hasName "df".
 run:Dataframe1 sdth:includesVariable run:V1.
 run:Dataframe1 sdth:includesVariable run:V2.
 run:Dataframe2 a sdth:Dataframe.
-run:Dataframe2 sdth:hasName "temps".
 run:Dataframe2 sdth:includesVariable run:V3.
 run:Dataframe3 a sdth:Dataframe.
-run:Dataframe3 sdth:hasName "df".
 run:Dataframe3 sdth:includesVariable run:Variable1.
 run:Dataframe3 sdth:includesVariable run:V2.
 run:Dataframe4 a sdth:Dataframe.
-run:Dataframe4 sdth:hasName "df".
 run:Dataframe4 sdth:includesVariable run:Variable1.
 run:Dataframe4 sdth:includesVariable run:Variable2.
 run:Dataframe5 a sdth:Dataframe.
-run:Dataframe5 sdth:hasName "df".
 run:Dataframe5 sdth:includesVariable run:Variable1.
 run:Dataframe5 sdth:includesVariable run:Variable2.
 run:Dataframe5 sdth:includesVariable run:Variable3.
 run:Dataframe6 a sdth:Dataframe.
-run:Dataframe6 sdth:hasName "temps".
 run:Dataframe6 sdth:includesVariable run:V3.
 run:Dataframe6 sdth:includesVariable run:Variable4.
 run:Dataframe7 a sdth:Dataframe.
-run:Dataframe7 sdth:hasName "temps".
 run:Dataframe7 sdth:includesVariable run:V3.
 run:Dataframe7 sdth:includesVariable run:Variable4.
 run:Dataframe7 sdth:includesVariable run:Variable5.
