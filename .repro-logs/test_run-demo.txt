@@ -12,5 +12,3 @@
 ---------- Running example 06-provone-construct/ -------------
 
 ---------- Running example 07-sdth-sample/ -------------
-template: main:11:49: executing "main" at <value>: error calling value: runtime error: index out of range [0] with length 0geist report: template: main:11:49: executing "main" at <value>: error calling value: runtime error: index out of range [0] with length 0
-template: main:11:49: executing "main" at <value>: error calling value: runtime error: index out of range [0] with length 0geist report: template: main:11:49: executing "main" at <value>: error calling value: runtime error: index out of range [0] with length 0
