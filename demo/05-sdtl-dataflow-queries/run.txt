@@ -1,4 +1,4 @@
-=========================================== BASH CELL SETUP ==============================================
+============================== bash cell | SETUP ===============================
 
 # IMPORT SDTL
 
@@ -6,17 +6,17 @@ geist destroy --dataset kb --quiet
 geist create --dataset kb --quiet
 geist import --format jsonld --file ../data/compute-sdth.jsonld
 
---------------------------------------------- OUTPUTS -------------------------------------------------
--------------------------------------------------------------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========================================== BASH CELL E1 ==============================================
+================================ bash cell | E1 ================================
 
 # EXPORT AS N-TRIPLES
 
 geist export --format nt | sort
 
---------------------------------------------- OUTPUTS -------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
 <http://wholetale.org/program/1119/dataframe/1> <http://c2metadata.org/sdth#hasName> "df"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/dataframe/1> <http://c2metadata.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/1> .
 <http://wholetale.org/program/1119/dataframe/1> <http://c2metadata.org/sdth#includesVariable> <http://wholetale.org/program/1119/variable/2> .
@@ -146,10 +146,10 @@ geist export --format nt | sort
 <http://wholetale.org/program/1119/variable/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Variable> .
 <http://wholetale.org/program/1119/variable/8> <http://c2metadata.org/sdth#hasName> "Kelvin"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://wholetale.org/program/1119/variable/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Variable> .
--------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========================================== BASH CELL Q1 ==============================================
+================================ bash cell | Q1 ================================
 
 geist query --format table << __END_QUERY__
 
@@ -166,7 +166,7 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
---------------------------------------------- OUTPUTS -------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
 step                                     | step_source_text
 ==========================================================================================================
 http://wholetale.org/program/1119/step/1 | df = pd.read_csv('inputs/df.csv')
@@ -178,10 +178,10 @@ http://wholetale.org/program/1119/step/6 | temps = temps.assign(Celsius=((temps.
 http://wholetale.org/program/1119/step/7 | temps = temps.assign(Kelvin=(temps.Celsius + 273))
 http://wholetale.org/program/1119/step/8 | df.to_csv('products/df_updated.csv', index=False)
 http://wholetale.org/program/1119/step/9 | temps.to_csv('products/temps_updated.csv', index=False)
--------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========================================== BASH CELL Q2 ==============================================
+================================ bash cell | Q2 ================================
 
 # WHAT DATA FILES ARE LOADED BY THE PROGRAM?
 
@@ -200,16 +200,16 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
---------------------------------------------- OUTPUTS -------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
 file_name        | step                                     | step_source_text
 ======================================================================================================
 inputs/df.csv    | http://wholetale.org/program/1119/step/1 | df = pd.read_csv('inputs/df.csv')
 df_updated.csv   | http://wholetale.org/program/1119/step/5 | temps = pd.read_csv('inputs/temps.csv')
 inputs/temps.csv | http://wholetale.org/program/1119/step/5 | temps = pd.read_csv('inputs/temps.csv')
--------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========================================== BASH CELL Q3 ==============================================
+================================ bash cell | Q3 ================================
 
 # WHAT DATA FILES ARE SAVED BY THE PROGRAM?
 
@@ -228,16 +228,16 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
---------------------------------------------- OUTPUTS -------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
 file_name         | step                                     | step_source_text
 =======================================================================================================================
 df_updated.csv    | http://wholetale.org/program/1119/step/8 | df.to_csv('products/df_updated.csv', index=False)
 inputs/temps.csv  | http://wholetale.org/program/1119/step/8 | df.to_csv('products/df_updated.csv', index=False)
 temps_updated.csv | http://wholetale.org/program/1119/step/9 | temps.to_csv('products/temps_updated.csv', index=False)
--------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========================================== BASH CELL Q4 ==============================================
+================================ bash cell | Q4 ================================
 
 # WHAT VARIABLES ARE LOADED BY THE PROGRAM?
 
@@ -259,16 +259,16 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
---------------------------------------------- OUTPUTS -------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
 dataframe_name | variable_name | step_source_text
 =============================================================
 df             | A             | df = pd.read_csv('inputs/df.csv')
 df             | B             | df = pd.read_csv('inputs/df.csv')
 temps          | Fahrenheit    | temps = pd.read_csv('inputs/temps.csv')
--------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========================================== BASH CELL Q5 ==============================================
+================================ bash cell | Q5 ================================
 
 # WHAT VARIABLES ARE SAVED BY THE SCRIPT?
 
@@ -291,7 +291,7 @@ geist query --format table << __END_QUERY__
 
 __END_QUERY__
 
---------------------------------------------- OUTPUTS -------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
 dataframe_name | variable_name | step_source_text
 =============================================================================
 df             | A             | df.to_csv('products/df_updated.csv', index=False)
@@ -300,6 +300,6 @@ df             | C             | df.to_csv('products/df_updated.csv', index=Fals
 temps          | Fahrenheit    | temps.to_csv('products/temps_updated.csv', index=False)
 temps          | Celsius       | temps.to_csv('products/temps_updated.csv', index=False)
 temps          | Kelvin        | temps.to_csv('products/temps_updated.csv', index=False)
--------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 

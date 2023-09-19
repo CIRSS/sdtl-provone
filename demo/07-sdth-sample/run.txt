@@ -1,4 +1,4 @@
-=========================================== BASH CELL SETUP-1 ==============================================
+============================= bash cell | SETUP-1 ==============================
 
 # CREATE NEW DATASET AND LOAD RULES
 
@@ -7,17 +7,17 @@ geist create --dataset kb --quiet --infer owl
 geist import --file ../data/provone-rules.ttl
 geist import --format ttl --file ../samples/compute_simple/sdth_output.ttl
 
---------------------------------------------- OUTPUTS -------------------------------------------------
--------------------------------------------------------------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========================================== BASH CELL E2 ==============================================
+================================ bash cell | E2 ================================
 
 # EXPORT LOADED SDTL AND RULES AS N-TRIPLES
 
 geist export --format nt --sort
 
---------------------------------------------- OUTPUTS -------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V2> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Dataframe> .
@@ -394,10 +394,10 @@ geist export --format nt --sort
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#sameAs> .
--------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========================================== BASH CELL R1 ==============================================
+================================ bash cell | R1 ================================
 
 # CONSTRUCT PROVONE PROGRAMS
 
@@ -414,7 +414,7 @@ geist report << '__END_REPORT_TEMPLATE__'
 __END_REPORT_TEMPLATE__
 ) | sort
 
---------------------------------------------- OUTPUTS -------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
@@ -424,10 +424,10 @@ __END_REPORT_TEMPLATE__
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.dataone.org/provone/2015/01/15/ontology#Program> .
--------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========================================== BASH CELL R2 ==============================================
+================================ bash cell | R2 ================================
 
 # CONSTRUCT HASSUBPROGRAM TRIPLES
 
@@ -439,12 +439,12 @@ geist report << '__END_REPORT_TEMPLATE__'
 __END_REPORT_TEMPLATE__
 ) | sort
 
---------------------------------------------- OUTPUTS -------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
 
--------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========================================== BASH CELL R3 ==============================================
+================================ bash cell | R3 ================================
 
 # CONSTRUCT DATAFRAME PORTS
 
@@ -457,13 +457,13 @@ geist report << '__END_REPORT_TEMPLATE__'
 __END_REPORT_TEMPLATE__
 ) | sort
 
---------------------------------------------- OUTPUTS -------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
 
 
--------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========================================== BASH CELL R4 ==============================================
+================================ bash cell | R4 ================================
 
 # CONSTRUCT VARIABLE PORTS
 
@@ -476,7 +476,7 @@ geist report << '__END_REPORT_TEMPLATE__'
 __END_REPORT_TEMPLATE__
 ) | sort
 
---------------------------------------------- OUTPUTS -------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
 
 
 
@@ -522,10 +522,10 @@ __END_REPORT_TEMPLATE__
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/C_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> .
--------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========================================== BASH CELL R5 ==============================================
+================================ bash cell | R5 ================================
 
 # CONSTRUCT DATAFRAME CHANNELS
 
@@ -537,12 +537,12 @@ geist report << '__END_REPORT_TEMPLATE__'
 __END_REPORT_TEMPLATE__
 ) | sort
 
---------------------------------------------- OUTPUTS -------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
 
--------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========================================== BASH CELL R6 ==============================================
+================================ bash cell | R6 ================================
 
 # CONSTRUCT VARIABLE CHANNELS
 
@@ -554,12 +554,12 @@ geist report << '__END_REPORT_TEMPLATE__'
 __END_REPORT_TEMPLATE__
 ) | sort
 
---------------------------------------------- OUTPUTS -------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
 
--------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========================================== BASH CELL R7 ==============================================
+================================ bash cell | R7 ================================
 
 # CONSTRUCT ALL PROVONE TRIPLES
 
@@ -581,7 +581,7 @@ __END_REPORT_TEMPLATE__
 
 cat products/augment.ttl
 
---------------------------------------------- OUTPUTS -------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix wt: <http://wholetale.org/ontology/wt#> .
@@ -638,26 +638,26 @@ cat products/augment.ttl
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep7/variableport/C_out> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> sdth:hasVariable <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V3> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8> provone:hasOutPort <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/ProgramStep8/variableport/Fahrenheit_out> .
--------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========================================== BASH CELL LOAD-3 ==============================================
+============================== bash cell | LOAD-3 ==============================
 
 # LOAD PROVONE TRIPLES
 
 geist import --file products/augment.ttl
 
---------------------------------------------- OUTPUTS -------------------------------------------------
--------------------------------------------------------------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-=========================================== BASH CELL E3 ==============================================
+================================ bash cell | E3 ================================
 
 # EXPORT UPDATED DATASET AS N-TRIPLES
 
 geist export --format nt --sort
 
---------------------------------------------- OUTPUTS -------------------------------------------------
+--------------------------------- cell outputs ---------------------------------
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V1> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://c2metadata.org/sdth#includesVariable> <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/V2> .
 <http://c2metadata.org/run/D41D8CD98F00B204E9800998ECF8427E/Dataframe1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://c2metadata.org/sdth#Dataframe> .
@@ -1102,6 +1102,6 @@ geist export --format nt --sort
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#sameAs> .
--------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
